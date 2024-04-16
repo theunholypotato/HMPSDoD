@@ -1,0 +1,432 @@
+﻿napoleonic_warfare = {
+	# Unlocks Mobile Artillery PM in Barracks
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/napoleonic_warfare.dds"
+	category = military
+	
+	unlocking_technologies = {
+		line_infantry
+		artillery
+	}
+	
+	modifier = {
+		state_FAE_building_forts_max_level_add = 1
+	}
+	
+	ai_weight = {
+		value = 1.5 # Important tech in general
+		
+		if = {
+			limit = { has_journal_entry = je_sick_man_army }
+			add = 5
+		}
+	}
+}
+
+field_works = {
+	# Increases defense
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/field_works.dds"
+	category = military
+	
+	modifier = {
+		# defensive bonus, either directly to army or (ideally) a fortifications bonus, if we get forts
+		# Lower kill rate?
+		unit_morale_loss_mult = -0.05
+		unit_army_defense_mult = 0.1
+		
+		state_FAE_building_forts_max_level_add = 1
+	}
+	
+	unlocking_technologies = {
+		napoleonic_warfare
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+mandatory_service = {
+	# Unlocks Army Model - National Militia
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/mandatory_service.dds"
+	category = military
+	
+	modifier = {
+		state_conscription_rate_mult = 0.2
+		country_institution_army_model_max_investment_add = 1
+	}
+	
+	unlocking_technologies = {
+		standing_army
+	}
+	
+	ai_weight = {
+		value = 2 # Important tech in general
+	}
+}
+
+shell_gun = {
+	# Unlocks Explosive Shell Artillery Production PM in Arms Industries
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/shell_gun.dds"
+	category = military
+	
+	unlocking_technologies = {	
+		artillery
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+rifling = {
+	# Unlocks Rifles PM in Arms Industry
+	era = era_1 #era_2
+	texture = "gfx/interface/icons/invention_icons/rifling.dds"
+	category = military
+	
+	can_research = no
+	
+	#unlocking_technologies = {	
+	#	percussion_cap
+	#}
+	
+	ai_weight = {
+		value = 2 # Important tech in general
+	}
+}
+
+power_of_the_purse = {
+	# Unlocks the Power of the Purse PM in Naval Bases
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/power_of_the_purse.dds"
+	category = military
+	
+	modifier = {
+		state_building_naval_base_max_level_add = 20
+	}
+	
+	unlocking_technologies = {	
+		admiralty
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+repeaters = {
+	# Unlocks Repeaters PM in Arms Industry
+	# Global Unlock for Repeaters PM in Barracks
+	era = era_1 #era_3
+	texture = "gfx/interface/icons/invention_icons/repeaters.dds"
+	category = military
+	
+	can_research = no
+	
+	#unlocking_technologies = {	
+	#	percussion_cap
+	#}
+	
+	ai_weight = {
+		value = 1.5 # Important tech in general
+	}
+}
+
+breech_loading_artillery = {
+	# Unlocks Breech Loading Artillery Production PM in Arms Industries
+	# Unlocks Breech Loading Artillery PM in Barracks
+	# Unlocks Railway Guns PM in Railways
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/breech_loading_artillery.dds"
+	category = military
+	
+	unlocking_technologies = {	
+		percussion_cap
+		shell_gun
+	}
+	
+	modifier = {
+		state_FAE_building_forts_max_level_add = 2
+	}
+	
+	ai_weight = {
+		value = 1.5 # Important tech in general
+	}
+}
+
+handcranked_machine_gun = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/handcranked_machine_gun.dds"
+	category = military
+	
+	modifier = {
+		unit_army_defense_add = 5
+		unit_kill_rate_add = 0.05
+	}
+	
+	unlocking_technologies = {
+		breech_loading_artillery
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+jeune_ecole = {
+	# Unlocks Jeune Ecole PM in Naval Base
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/jeune_ecole.dds"
+	category = military
+	
+	modifier = {
+		state_building_naval_base_max_level_add = 20
+	}
+	
+	unlocking_technologies = {	
+		power_of_the_purse
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+military_statistics = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/military_statistics.dds"
+	category = military
+	
+	modifier = {
+		building_mobilization_cost_mult = -0.2
+		country_institution_army_model_max_investment_add = 1
+	}
+	
+	unlocking_technologies = {	
+		electric_telegraph
+		general_staff
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+bolt_action_rifles = {
+	# Unlocks Bolt Action Rifles PM in Arms Industry
+	# Global Unlock for Bolt Action Rifles PM in Barracks
+	era = era_1 #era_4
+	texture = "gfx/interface/icons/invention_icons/bolt_action_rifles.dds"
+	category = military
+	
+	can_research = no
+	
+	#unlocking_technologies = {	
+	#	repeaters
+	#}
+	
+	ai_weight = {
+		value = 2 # important for everyone
+	}
+}
+
+automatic_machine_guns = {
+	# #todo#! Does nothing yet
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/machine_gun.dds"
+	category = military
+	
+	unlocking_technologies = {	
+		handcranked_machine_gun
+	}
+	
+	ai_weight = {
+		value = 1.5 # important for everyone
+	}
+}
+
+wargaming = {
+	# #todo#! Does nothing yet
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/wargaming.dds"
+	category = military
+
+	modifier = {
+		unit_morale_loss_mult = -0.05
+	}
+	
+	unlocking_technologies = {
+		military_statistics
+		breech_loading_artillery
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+war_propaganda = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/war_propaganda.dds"
+	category = military
+
+	modifier = {
+		unit_morale_loss_mult = -0.05
+		state_conscription_rate_mult = 0.2
+		country_institution_army_model_max_investment_add = 1
+	}
+	
+	unlocking_technologies = {	
+		enlistment_offices
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+sea_lane_strategies = {
+	# Unlocks Sea Lane Strategies PM in Naval Bases
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/sea_lane_strategies.dds"
+	category = military
+	
+	modifier = {
+		state_building_naval_base_max_level_add = 20
+	}
+	
+	unlocking_technologies = {	
+		jeune_ecole
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+battlefleet_tactics = {
+	# Unlocks Battlefleet Tactics PM in Naval Bases
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/battlefleet_tactics.dds"
+	category = military
+	
+	modifier = {
+		state_building_naval_base_max_level_add = 20
+	}
+	
+	unlocking_technologies = {	
+		battleship_tech
+		sea_lane_strategies
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+defense_in_depth = {
+	# Increases defense
+	# Unlock Delay Order?
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/defense_in_depth.dds"
+	category = military
+	
+	modifier = {
+		unit_morale_loss_mult = -0.05
+		# defensive bonus, either to the army or ideally to fortifications
+		unit_army_defense_mult = 0.15
+		
+		state_FAE_building_forts_max_level_add = 3
+	}
+	
+	unlocking_technologies = {	
+		trench_works
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+concrete_fortifications = {
+	# Increases defense
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/concrete_fortifications.dds"
+	category = military
+	
+	modifier = {
+		unit_morale_loss_mult = -0.05
+		# build the maginot line and be completely unstoppable, forever, especially if you're France
+		# bonus to general defensiveness or specifically to forts if they become a thing
+		unit_army_defense_mult = 0.2
+		
+		state_FAE_building_forts_max_level_add = 3
+	}
+	
+	unlocking_technologies = {	
+		defense_in_depth
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+stormtroopers = {
+	# #todo#! Does nothing yet
+	era = era_1 #era_5
+	texture = "gfx/interface/icons/invention_icons/stormtroopers.dds"
+	category = military
+	
+	can_research = no
+	
+	#unlocking_technologies = {	
+	#	wargaming
+	#	trench_works
+	#}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+military_aviation = {
+	# Unlocks Vehicles Industries
+	# Unlocks Tanks, Planes and Tanks PM in Barracks
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/military_aviation.dds"
+	category = military
+	
+	modifier = {
+		# increased oil consumption
+		# increased recon/scouting/go fast
+	}
+	
+	unlocking_technologies = {	
+		trench_works
+	}
+	
+	ai_weight = {
+		value = 1.5 # Important tech in general
+	}
+}
+
+chemical_warfare = {
+	# Unlocks Chemical Artillery PM in Barracks
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/chemical_warfare.dds"
+	category = military
+	
+	unlocking_technologies = {	
+		automatic_machine_guns
+		flamethrowers
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}

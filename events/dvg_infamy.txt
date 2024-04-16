@@ -1,0 +1,82 @@
+﻿namespace = dod_infamy
+
+dod_infamy.1 = {
+	popup = yes
+
+    type = country_event
+    placement = ROOT
+    title = dod_infamy.1.t
+    desc = dod_infamy.1.d
+    flavor = dod_infamy.1.f
+
+    duration = 1
+
+    event_image = {
+        video = "europenorthamerica_capitalists_meeting"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    duration = 1
+
+	trigger = {
+		NOT = {
+			OR = {
+				has_modifier = no_concert_of_europe
+				has_global_variable = concert_of_europe
+			}
+		}		
+	}
+
+	immediate = {
+		set_global_variable = no_concert_of_europe
+	}
+
+	option = {
+		name = dod_infamy.1.a
+		#gives country modifier to reduce Infamy Reduciton
+		add_modifier = {
+			name = no_concert_of_europe
+		}
+	}
+}
+
+dod_infamy.2 = {
+	
+	popup = yes
+
+    type = country_event
+    placement = ROOT
+    title = dod_infamy.1.t
+    desc = dod_infamy.1.d
+    flavor = dod_infamy.1.f
+
+    duration = 3
+
+    event_image = {
+        video = "europenorthamerica_capitalists_meeting"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		has_modifier = no_concert_of_europe
+		OR = {
+			has_global_variable = anglois_accepted
+			exists = c:HLR
+			exists = c:RUS
+			exists = c:ITA
+			exists = c:PLC
+			exists = c:ARI
+			exists = c:ELB
+		}
+	}
+
+	immediate = {
+		set_global_variable = concert_of_europe
+	}
+	option = {
+		name = dod_infamy.2.a
+		remove_modifier = no_concert_of_europe
+	}
+}	

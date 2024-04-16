@@ -1,0 +1,39 @@
+﻿KAP = { #Kapitunan/Philippines 
+
+	states = {
+		STATE_LUZON
+		STATE_VISAYAS
+		STATE_MINDANAO
+		
+	}
+
+	
+	required_states_fraction = 1.00
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		any_country = {
+			OR = {
+				country_has_primary_culture = cu:visayan
+				country_has_primary_culture = cu:filipino
+			}
+					
+			
+		}
+	}
+}
+
+NUS = { #Nusantara
+	
+	use_culture_states = yes
+
+	required_states_fraction = 0.60
+	
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_technology_researched = pan-nationalism
+
+	}
+}

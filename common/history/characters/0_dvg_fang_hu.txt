@@ -1,0 +1,19 @@
+﻿CHARACTERS = {
+	c:HAW = {
+#		create_character = {
+#			historical = yes
+#			first_name = Futing
+#			last_name = Yeng
+#			birth_date = 1795.10.24
+#			culture = cu:qingqiu
+#			ruler = yes
+#			religion = catholic
+#			ideology = ideology_ethno_nationalist
+#			traits = { 
+#				bigoted 
+#				wrathful 
+#				ambitious
+#			}
+#		}
+	}
+}
