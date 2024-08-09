@@ -2329,7 +2329,7 @@ basque={
 	}
 }
 
-spanish={
+spanish={ #Castillian
 	color= hsv{ 0.16 0.56 0.86 }
 	religion = catholic
 	traits = { iberian_culture_group hispanophone european_heritage }
@@ -2694,7 +2694,7 @@ catalan={
 	}
 }
 
-portuguese={
+portuguese={ #Spanish
 	color= hsv{ 0.21 0.56 0.86 }
 	religion = catholic
 	traits = { iberian_culture_group lusophone european_heritage }
