@@ -585,61 +585,61 @@ dutch={
 	}
 }
 
-flemish={
-	color= hsv{ 0.07 0.49 0.93 }
-	religion = protestant
-	traits = { }
-	male_common_first_names={
-		Abraham
-	}
-	female_common_first_names = {
-		Aletta Annewies Anna Anna_Louisa
-	}	
-	noble_last_names = {
-		van_Boetzelaer
-	}
-	common_last_names={
-		Batenburg
-	}
-	male_regal_first_names = {
-		Alexander
-	}
-	female_regal_first_names = {
-		Alexia Ariane
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
+#flemish={
+#	color= hsv{ 0.07 0.49 0.93 }
+#	religion = protestant
+#	traits = { }
+#	male_common_first_names={
+#		Abraham
+#	}
+#	female_common_first_names = {
+#		Aletta Annewies Anna Anna_Louisa
+#	}	
+#	noble_last_names = {
+#		van_Boetzelaer
+#	}
+#	common_last_names={
+#		Batenburg
+#	}
+#	male_regal_first_names = {
+#		Alexander
+#	}
+#	female_regal_first_names = {
+#		Alexia Ariane
+#	}
+#	graphics = european
+#	ethnicities = {
+#		1 = caucasian
+#	}
+#}
 
-wallonian={
-	color= hsv{ 0.07 0.49 0.93 }
-	religion = protestant
-	traits = { }
-	male_common_first_names={
-		Abraham
-	}
-	female_common_first_names = {
-		Aletta Annewies Anna Anna_Louisa
-	}	
-	noble_last_names = {
-		van_Boetzelaer
-	}
-	common_last_names={
-		Batenburg
-	}
-	male_regal_first_names = {
-		Alexander
-	}
-	female_regal_first_names = {
-		Alexia Ariane
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
+#allonian={
+#	color= hsv{ 0.07 0.49 0.93 }
+#	religion = protestant
+#	traits = { }
+#	male_common_first_names={
+#		Abraham
+#	}
+#	female_common_first_names = {
+#		Aletta Annewies Anna Anna_Louisa
+#	}	
+#	noble_last_names = {
+#		van_Boetzelaer
+#	}
+#	common_last_names={
+#		Batenburg
+#	}
+#	male_regal_first_names = {
+#		Alexander
+#	}
+#	female_regal_first_names = {
+#		Alexia Ariane
+#	}
+#	graphics = european
+#	ethnicities = {
+#		1 = caucasian
+#	}
+#
 #wallonians and flems gone DVG
 boer={
 	color= hsv{ 0.10 0.80 0.86 }
@@ -1823,33 +1823,33 @@ irish={
 	}
 }
 
-australian={
-	color= hsv{ 0.07 0.49 0.93 }
-	religion = protestant
-	traits = {  }
-	male_common_first_names={
-		Abraham
-	}
-	female_common_first_names = {
-		Aletta Annewies Anna Anna_Louisa
-	}	
-	noble_last_names = {
-		van_Boetzelaer
-	}
-	common_last_names={
-		Batenburg
-	}
-	male_regal_first_names = {
-		Alexander
-	}
-	female_regal_first_names = {
-		Alexia Ariane
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
+#australian={
+#	color= hsv{ 0.07 0.49 0.93 }
+#	religion = protestant
+#	traits = {  }
+#	male_common_first_names={
+#		Abraham
+#	}
+#	female_common_first_names = {
+#		Aletta Annewies Anna Anna_Louisa
+#	}	
+#	noble_last_names = {
+#		van_Boetzelaer
+#	}
+#	common_last_names={
+#		Batenburg
+#	}
+#	male_regal_first_names = {
+#		Alexander
+#	}
+#	female_regal_first_names = {
+#		Alexia Ariane
+#	}
+#	graphics = european
+#	ethnicities = {
+#		1 = caucasian
+#	}
+#}
 
 #australian was removed dvg
 north_italian={
@@ -2539,7 +2539,7 @@ spanish={
 catalan={
 	color= hsv{ 0.07 0.56 0.86 }
 	religion = catholic
-	traits = { occitanophone european_heritage }
+	traits = { iberian_culture_group european_heritage }
 	male_common_first_names={
 		Albert
 		Alexandre
@@ -3023,7 +3023,7 @@ french={
 occitan={
 	color= rgb{ 164 193 223 }
 	religion = protestant #DVG
-	traits = { occitanophone gallo_romance european_heritage }
+	traits = { francophone european_heritage }
 
 	# the best wine is from Occitania, of course.
 	obsessions = {
@@ -3117,7 +3117,7 @@ occitan={
 breton={
 	color= hsv{ 0.16 0.39 0.95 }
 	religion = catholic
-	traits = { francophone gallo_romance celtic_people european_heritage }
+	traits = { francophone celtic_people european_heritage }
 	male_common_first_names={
 		Aimery
 		Alphonse
@@ -5054,7 +5054,7 @@ russian={
 ruthenian={
 	color= rgb{ 99 163 206 }
 	religion = catholic
-	traits = { central_slavic european_heritage }
+	traits = { east_slavic west_slavic european_heritage }
 	male_common_first_names={
 		Alexei
 		Andrei
@@ -5164,7 +5164,7 @@ ruthenian={
 byelorussian={
 	color= rgb{ 211 184 207 }
 	religion = catholic
-	traits = { central_slavic european_heritage }
+	traits = { east_slavic west_slavic european_heritage }
 	male_common_first_names={
 		Alaksandr
 		Alexei
@@ -11936,33 +11936,33 @@ tupinamba={
 	graphics = decentralised_americas
 }
 
-metis={
-	color= hsv{ 0.07 0.49 0.93 }
-	religion = protestant
-	traits = { }
-	male_common_first_names={
-		Abraham
-	}
-	female_common_first_names = {
-		Aletta Annewies Anna Anna_Louisa
-	}	
-	noble_last_names = {
-		van_Boetzelaer
-	}
-	common_last_names={
-		Batenburg
-	}
-	male_regal_first_names = {
-		Alexander
-	}
-	female_regal_first_names = {
-		Alexia Ariane
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
+#etis={
+#	color= hsv{ 0.07 0.49 0.93 }
+#	religion = protestant
+#	traits = { }
+#	male_common_first_names={
+#		Abraham
+#	}
+#	female_common_first_names = {
+#		Aletta Annewies Anna Anna_Louisa
+#	}	
+#	noble_last_names = {
+#		van_Boetzelaer
+#	}
+#	common_last_names={
+#		Batenburg
+#	}
+#	male_regal_first_names = {
+#		Alexander
+#	}
+#	female_regal_first_names = {
+#		Alexia Ariane
+#	}
+#	graphics = european
+#	ethnicities = {
+#		1 = caucasian
+#	}
+#
 
 #no more metis, which is sad dvg
 dakota={
@@ -13156,7 +13156,7 @@ miskito = {
 cariban={ # Hispanicized. Also includes some Garifuna and Warao names.
 	color= hsv{ 0.23 0.49 0.77 }
 	religion = catholic 
-	traits = { indigenous_american_heritage south_american_group }
+	traits = { indigenous_american_heritage south_american_group hispanophone }
 	
 	male_common_first_names={
 		Antonio Aurelio
@@ -13202,61 +13202,61 @@ cariban={ # Hispanicized. Also includes some Garifuna and Warao names.
 	graphics = decentralised_americas
 }
 
-yankee={
-	color= hsv{ 0.07 0.49 0.93 }
-	religion = protestant
-	traits = { }
-	male_common_first_names={
-		Abraham
-	}
-	female_common_first_names = {
-		Aletta Annewies Anna Anna_Louisa
-	}	
-	noble_last_names = {
-		van_Boetzelaer
-	}
-	common_last_names={
-		Batenburg
-	}
-	male_regal_first_names = {
-		Alexander
-	}
-	female_regal_first_names = {
-		Alexia Ariane
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
-
-dixie={
-	color= hsv{ 0.07 0.49 0.93 }
-	religion = protestant
-	traits = { }
-	male_common_first_names={
-		Abraham
-	}
-	female_common_first_names = {
-		Aletta Annewies Anna Anna_Louisa
-	}	
-	noble_last_names = {
-		van_Boetzelaer
-	}
-	common_last_names={
-		Batenburg
-	}
-	male_regal_first_names = {
-		Alexander
-	}
-	female_regal_first_names = {
-		Alexia Ariane
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
+#yankee={
+#	color= hsv{ 0.07 0.49 0.93 }
+#	religion = protestant
+#	traits = { }
+#	male_common_first_names={
+#		Abraham
+#	}
+#	female_common_first_names = {
+#		Aletta Annewies Anna Anna_Louisa
+#	}	
+#	noble_last_names = {
+#		van_Boetzelaer
+#	}
+#	common_last_names={
+#		Batenburg
+#	}
+#	male_regal_first_names = {
+#		Alexander
+#	}
+#	female_regal_first_names = {
+#		Alexia Ariane
+#	}
+#	graphics = european
+#	ethnicities = {
+#		1 = caucasian
+#	}
+#}
+#
+#dixie={
+#	color= hsv{ 0.07 0.49 0.93 }
+#	religion = protestant
+#	traits = { }
+#	male_common_first_names={
+#		Abraham
+#	}
+#	female_common_first_names = {
+#		Aletta Annewies Anna Anna_Louisa
+#	}	
+#	noble_last_names = {
+#		van_Boetzelaer
+#	}
+#	common_last_names={
+#		Batenburg
+#	}
+#	male_regal_first_names = {
+#		Alexander
+#	}
+#	female_regal_first_names = {
+#		Alexia Ariane
+#	}
+#	graphics = european
+#	ethnicities = {
+#		1 = caucasian
+#	}
+#}
 #yankee and dixie was remove dvg
 mexican={
 	color=hsv{ 0.99 0.50 0.65 }
@@ -13473,7 +13473,7 @@ mexican={
 central_american={ #Salvadoran
 	color= hsv{ 0.51 0.21 0.67 }
 	religion = catholic
-	traits = { hispanophone lusophone gran_colombian european_heritage }
+	traits = { hispanophone gran_colombian european_heritage }
 	male_common_first_names={
 		Alejandro
 		Andres
@@ -14019,117 +14019,117 @@ south_andean={
 	graphics = decentralised_americas
 }
 
-brazilian={
-	color= hsv{ 0.07 0.49 0.93 }
-	religion = protestant
-	traits = { }
-	male_common_first_names={
-		Abraham
-	}
-	female_common_first_names = {
-		Aletta Annewies Anna Anna_Louisa
-	}	
-	noble_last_names = {
-		van_Boetzelaer
-	}
-	common_last_names={
-		Batenburg
-	}
-	male_regal_first_names = {
-		Alexander
-	}
-	female_regal_first_names = {
-		Alexia Ariane
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
-
-platinean={
-	color= hsv{ 0.07 0.49 0.93 }
-	religion = protestant
-	traits = { }
-	male_common_first_names={
-		Abraham
-	}
-	female_common_first_names = {
-		Aletta Annewies Anna Anna_Louisa
-	}	
-	noble_last_names = {
-		van_Boetzelaer
-	}
-	common_last_names={
-		Batenburg
-	}
-	male_regal_first_names = {
-		Alexander
-	}
-	female_regal_first_names = {
-		Alexia Ariane
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
-
-afro_american={
-	color= hsv{ 0.07 0.49 0.93 }
-	religion = protestant
-	traits = { }
-	male_common_first_names={
-		Abraham
-	}
-	female_common_first_names = {
-		Aletta Annewies Anna Anna_Louisa
-	}	
-	noble_last_names = {
-		van_Boetzelaer
-	}
-	common_last_names={
-		Batenburg
-	}
-	male_regal_first_names = {
-		Alexander
-	}
-	female_regal_first_names = {
-		Alexia Ariane
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
-
-afro_caribbean={
-	color= hsv{ 0.07 0.49 0.93 }
-	religion = protestant
-	traits = { }
-	male_common_first_names={
-		Abraham
-	}
-	female_common_first_names = {
-		Aletta Annewies Anna Anna_Louisa
-	}	
-	noble_last_names = {
-		van_Boetzelaer
-	}
-	common_last_names={
-		Batenburg
-	}
-	male_regal_first_names = {
-		Alexander
-	}
-	female_regal_first_names = {
-		Alexia Ariane
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
+#brazilian={
+#	color= hsv{ 0.07 0.49 0.93 }
+#	religion = protestant
+#	traits = { }
+#	male_common_first_names={
+#		Abraham
+#	}
+#	female_common_first_names = {
+#		Aletta Annewies Anna Anna_Louisa
+#	}	
+#	noble_last_names = {
+#		van_Boetzelaer
+#	}
+#	common_last_names={
+#		Batenburg
+#	}
+#	male_regal_first_names = {
+#		Alexander
+#	}
+#	female_regal_first_names = {
+#		Alexia Ariane
+#	}
+#	graphics = european
+#	ethnicities = {
+#		1 = caucasian
+#	}
+#}
+#
+#platinean={
+#	color= hsv{ 0.07 0.49 0.93 }
+#	religion = protestant
+#	traits = { }
+#	male_common_first_names={
+#		Abraham
+#	}
+#	female_common_first_names = {
+#		Aletta Annewies Anna Anna_Louisa
+#	}	
+#	noble_last_names = {
+#		van_Boetzelaer
+#	}
+#	common_last_names={
+#		Batenburg
+#	}
+#	male_regal_first_names = {
+#		Alexander
+#	}
+#	female_regal_first_names = {
+#		Alexia Ariane
+#	}
+#	graphics = european
+#	ethnicities = {
+#		1 = caucasian
+#	}
+#}
+#
+#afro_american={
+#	color= hsv{ 0.07 0.49 0.93 }
+#	religion = protestant
+#	traits = { }
+#	male_common_first_names={
+#		Abraham
+#	}
+#	female_common_first_names = {
+#		Aletta Annewies Anna Anna_Louisa
+#	}	
+#	noble_last_names = {
+#		van_Boetzelaer
+#	}
+#	common_last_names={
+#		Batenburg
+#	}
+#	male_regal_first_names = {
+#		Alexander
+#	}
+#	female_regal_first_names = {
+#		Alexia Ariane
+#	}
+#	graphics = european
+#	ethnicities = {
+#		1 = caucasian
+#	}
+#}
+#
+#afro_caribbean={
+#	color= hsv{ 0.07 0.49 0.93 }
+#	religion = protestant
+#	traits = { }
+#	male_common_first_names={
+#		Abraham
+#	}
+#	female_common_first_names = {
+#		Aletta Annewies Anna Anna_Louisa
+#	}	
+#	noble_last_names = {
+#		van_Boetzelaer
+#	}
+#	common_last_names={
+#		Batenburg
+#	}
+#	male_regal_first_names = {
+#		Alexander
+#	}
+#	female_regal_first_names = {
+#		Alexia Ariane
+#	}
+#	graphics = european
+#	ethnicities = {
+#		1 = caucasian
+#	}
+#}
 
 #platinean and brazilian were removed DVG as well as afro americans and carribbeans
 afro_caribeno={
@@ -14239,33 +14239,33 @@ afro_caribeno={
 	graphics = african
 }
 
-afro_brazilian={
-	color= hsv{ 0.07 0.49 0.93 }
-	religion = protestant
-	traits = { }
-	male_common_first_names={
-		Abraham
-	}
-	female_common_first_names = {
-		Aletta Annewies Anna Anna_Louisa
-	}	
-	noble_last_names = {
-		van_Boetzelaer
-	}
-	common_last_names={
-		Batenburg
-	}
-	male_regal_first_names = {
-		Alexander
-	}
-	female_regal_first_names = {
-		Alexia Ariane
-	}
-	graphics = european
-	ethnicities = {
-		1 = caucasian
-	}
-}
+#afro_brazilian={
+#	color= hsv{ 0.07 0.49 0.93 }
+#	religion = protestant
+#	traits = { }
+#	male_common_first_names={
+#		Abraham
+#	}
+#	female_common_first_names = {
+#		Aletta Annewies Anna Anna_Louisa
+#	}	
+#	noble_last_names = {
+#		van_Boetzelaer
+#	}
+#	common_last_names={
+#		Batenburg
+#	}
+#	male_regal_first_names = {
+#		Alexander
+#	}
+#	female_regal_first_names = {
+#		Alexia Ariane
+#	}
+#	graphics = european
+#	ethnicities = {
+#		1 = caucasian
+#	}
+#}
 
 #no more afro brazilians(dvg is cancelled)
 afro_antillean={
