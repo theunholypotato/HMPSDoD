@@ -1,8 +1,14 @@
 ﻿je_hre_internal = {
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-
+	
+	group = je_group_internal_affairs
+	
 	complete = {
+		cu:north_german = {
+			NOT = { culture_is_discriminated_in = ROOT }
+		}
 		has_law = law_type:law_state_religion
+		has_law = law_type:law_racial_segregation
 		has_law = law_type:law_autocracy
 
 		NOT = {
@@ -39,8 +45,8 @@
 		has_revolution = yes
 	}
 
-	# 36 Years
-	timeout = 13140
+	# 12 Years
+	timeout = 4380
 
 	invalid = {
 		has_law = law_type:law_landed_voting
@@ -54,6 +60,8 @@
 
 je_hre_external = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_foreign_affairs
 
 	complete = {
 		country_or_subject_owns_entire_state_region = STATE_BOHEMIA
@@ -99,18 +107,22 @@ je_hre_external = {
 
 	on_fail = {
 		set_global_variable = hre_fail
-	
+		add_journal_entry = {
+			type = je_elbian_confederation 
+		}
 	}
 
-	# 36 Years
-	timeout = 13140
+	# 12 Years
+	timeout = 4380
 
 	on_timeout = {
 		set_global_variable = hre_fail
-		trigger_event = {
-			id = elbian_confederation.1
+		#trigger_event = {
+			#id = elbian_confederation.4
+		#}
+		add_journal_entry = {
+			type = je_elbian_confederation 
 		}
-		set_global_variable = elbian_confederation	
 	}
 
 	invalid = {

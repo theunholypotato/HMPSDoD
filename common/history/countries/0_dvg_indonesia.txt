@@ -51,31 +51,73 @@
 	#	#any other starting effects
 	#}
 	
-	c:JOH = { #Malacca
+	c:JOH = { #Johor
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_slave_trade
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
-		add_journal_entry = {
-			type = je_simple_urbanize_nation
+
+		ig:ig_devout = { 
+			set_interest_group_name = ig_sunni_madrasahs
 		}
-		add_journal_entry = {
-			type = je_simple_build_military
+	}
+	
+	c:PTN = { #Pattani
+		effect_starting_technology_tier_4_tech = yes
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		
+		set_ruling_interest_groups = {
+			ig_landowners
 		}
-		add_journal_entry = {
-			type = je_simple_build_navy
+
+		ig:ig_devout = { 
+			set_interest_group_name = ig_sunni_madrasahs
 		}
+	}
+	
+	c:KDH = { #Kedah
+		effect_starting_technology_tier_4_tech = yes
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		
+		set_ruling_interest_groups = {
+			ig_landowners
+		}
+
+		ig:ig_devout = { 
+			set_interest_group_name = ig_sunni_madrasahs
+		}
+	}
+	
+	c:PSA = { #Pasang
+		effect_starting_technology_tier_4_tech = yes
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
+		
+		set_ruling_interest_groups = {
+			ig_landowners
+		}
+
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 		}
@@ -86,27 +128,15 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_right_of_assembly
 
-		set_tax_level = medium
 		
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
-		add_journal_entry = {
-			type = je_simple_urbanize_nation
-		}
-		add_journal_entry = {
-			type = je_simple_build_military
-		}
-		add_journal_entry = {
-			type = je_simple_build_navy
-		}
-		add_journal_entry = {
-			type = je_simple_conquer_sumatra
-		}
+
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 		}
@@ -116,9 +146,9 @@
 		effect_starting_politics_traditional = yes
 		effect_starting_technology_tier_2_tech = yes
 		
-		 activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_oligarchy
-		activate_law = law_type:law_total_separation
+		activate_law = law_type:law_religious_autonomy
 		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_national_militia
@@ -131,11 +161,6 @@
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_migration_controls
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		add_taxed_goods = g:liquor
 
@@ -158,40 +183,25 @@
 		add_technology_researched = empiricism
 		add_technology_researched = egalitarianism
 		
-		effect_starting_politics_traditional = yes
+		
+		effect_starting_politics_traditional  = yes
 		activate_law = law_type:law_monarchy
-		activate_law = law_type:law_universal_suffrage 
-		activate_law = law_type:law_total_separation
+		#activate_law = law_type:law_universal_suffrage 
+		activate_law = law_type:law_religious_autonomy
 		activate_law = law_type:law_land_based_taxation
-		activate_law = law_type:law_no_migration_controls
-		activate_law = law_type:law_homesteading
+		#activate_law = law_type:law_no_migration_controls
+		#activate_law = law_type:law_homesteading
 		activate_law = law_type:law_national_militia
 		activate_law = law_type:law_national_guard
 		activate_law = law_type:law_cultural_exclusion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
+		#activate_law = law_type:law_slave_trade
 
-		set_tax_level = medium
-		
-		effect_starting_politics_liberal = yes
 
 		
 		set_ruling_interest_groups = {
 			ig_petty_bourgeoisie
 		}
-		add_journal_entry = {
-			type = je_simple_urbanize_nation
-		}
-		add_journal_entry = {
-			type = je_simple_build_military
-		}
-		add_journal_entry = {
-			type = je_simple_build_navy
-		}
-		add_journal_entry = {
-			type = je_simple_conquer_borneo
-		}
+		
 		ig:ig_petty_bourgeoisie = {
 			set_interest_group_name = ig_shang
 		}
@@ -202,9 +212,12 @@
 		}
 		ig:ig_landowners = {
 			set_interest_group_name = ig_kongsi
-			remove_ideology = ideology_paternalistic
-			add_ideology = ideology_republican_paternalistic
 		}
+		ig:ig_intelligentsia = {
+			remove_ideology = ideology_anti_clerical
+			add_ideology = ideology_mengzi
+		}
+		
 		add_modifier = {
 			name = dvg_kongsi_modifier
 		}
@@ -225,23 +238,16 @@
 		activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_homesteading
 		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_slave_trade
 		
 		set_ruling_interest_groups = {
 			ig_petty_bourgeoisie
 		}
-		add_journal_entry = {
-			type = je_simple_urbanize_nation
-		}
-		add_journal_entry = {
-			type = je_simple_build_military
-		}
-		add_journal_entry = {
-			type = je_simple_build_navy
-		}
-		add_journal_entry = {
-			type = je_simple_conquer_borneo
-		}
 		
+		set_variable = indonesia_subject_var
+		ig:ig_petty_bourgeoisie = {
+			set_interest_group_name = ig_yakuza
+		}
 
 	}
 	
@@ -251,37 +257,21 @@
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_autocracy
-		activate_law = law_type:law_debt_slavery
-		activate_law = law_low_income_tax
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_migration_controls
-		activate_law = law_type:law_ethnostate 
+		activate_law = law_type:law_national_supremacy 
 		activate_law = law_type:law_local_police
 		activate_law = law_type:law_state_religion
-		activate_law = law_type:law_religious_schools
+		#activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_slave_trade
+
 		
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
 		
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
-		add_journal_entry = {
-			type = je_simple_urbanize_nation
-		}
-		add_journal_entry = {
-			type = je_simple_build_military
-		}
-		add_journal_entry = {
-			type = je_simple_build_navy
-		}
-		add_journal_entry = {
-			type = je_simple_conquer_borneo
-		}
+		
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 		}
@@ -292,11 +282,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -311,27 +297,12 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
-		add_journal_entry = {
-			type = je_simple_urbanize_nation
-		}
-		add_journal_entry = {
-			type = je_simple_build_military
-		}
-		add_journal_entry = {
-			type = je_simple_build_navy
-		}
-		add_journal_entry = {
-			type = je_simple_conquer_borneo
-		}
+		
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 		}
@@ -342,27 +313,12 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
-		add_journal_entry = {
-			type = je_simple_urbanize_nation
-		}
-		add_journal_entry = {
-			type = je_simple_build_military
-		}
-		add_journal_entry = {
-			type = je_simple_build_navy
-		}
-		add_journal_entry = {
-			type = je_simple_conquer_borneo
-		}
+		
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 		}
@@ -372,28 +328,13 @@
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_debt_slavery
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
-		add_journal_entry = {
-			type = je_simple_urbanize_nation
-		}
-		add_journal_entry = {
-			type = je_simple_build_military
-		}
-		add_journal_entry = {
-			type = je_simple_build_navy
-		}
-		add_journal_entry = {
-			type = je_simple_conquer_borneo
-		}
+		
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 		}
@@ -401,30 +342,12 @@
 	
 	c:SUG = { #Sugbo
 		effect_starting_technology_tier_4_tech = yes
-		add_technology_researched = mass_communication
-		add_technology_researched = nationalism
+		#add_technology_researched = mass_communication
+		#add_technology_researched = nationalism
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_monarchy
-		activate_law = law_type:law_oligarchy
-		activate_law = law_type:law_total_separation
-		activate_law = law_type:law_ethnostate
-		activate_law = law_type:law_hereditary_bureaucrats
-		activate_law = law_type:law_national_militia
-		activate_law = law_type:law_free_trade
-		activate_law = law_type:law_laissez_faire
-		activate_law = law_type:law_land_based_taxation
-		activate_law = law_type:law_dedicated_police
-		activate_law = law_type:law_no_migration_control
-		activate_law = law_type:law_women_own_property
-		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_slave_trade
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -439,80 +362,55 @@
 		}
 	}
 	
-	c:JAV = { #Java
+	c:YOG = { #Yogyakarta
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_debt_slavery
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
-		add_journal_entry = {
-			type = je_simple_urbanize_nation
-		}
-		add_journal_entry = {
-			type = je_simple_build_military
-		}
-		add_journal_entry = {
-			type = je_simple_build_navy
-		}
-		add_journal_entry = {
-			type = je_simple_conquer_java
-		}
+		
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 			
 		}
+	}
+
+	c:MDR = { #Yogyakarta
+	effect_starting_technology_tier_4_tech = yes
+	
+	effect_starting_politics_traditional = yes
+	activate_law = law_type:law_slave_trade
+	activate_law = law_type:law_right_of_assembly
+	
+	set_ruling_interest_groups = {
+		ig_landowners
+	}
+	
+	ig:ig_devout = { 
+		set_interest_group_name = ig_sunni_madrasahs
+		
+	}
 	}
 	
 	c:BAL = { #Bali
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_monarchy
-		activate_law = law_type:law_landed_voting
-		activate_law = law_type:law_state_religion
-		activate_law = law_type:law_national_supremacy
-		activate_law = law_type:law_hereditary_bureaucrats
-		activate_law = law_type:law_national_militia
-		activate_law = law_type:law_free_trade
-		activate_law = law_type:law_laissez_faire
-		activate_law = law_type:law_land_based_taxation
-		activate_law = law_type:law_local_police
-		activate_law = law_type:law_migration_controls
-		activate_law = law_type:law_women_own_property
-		activate_law = law_type:law_serfdom
-		activate_law = law_type:law_debt_slavery
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners
-		}
-		add_journal_entry = {
-			type = je_simple_urbanize_nation
-		}
-		add_journal_entry = {
-			type = je_simple_build_military
-		}
-		add_journal_entry = {
-			type = je_simple_build_navy
 		}
 		
 		ig:ig_devout = {
 			set_interest_group_name = ig_hindu_priesthood
 			remove_ideology = ideology_moralist
 			remove_ideology = ideology_patriarchal
-			add_ideology = ideology_hindu_moralist
+			add_ideology = ideology_dharmic
 		}
 		trigger_event = {
             id = dvg_bali.1
@@ -521,61 +419,42 @@
 	
 	c:MKS = { #Makassar
 		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = colonization
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_debt_slavery
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_colonial_exploitation
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
-		add_journal_entry = {
-			type = je_simple_urbanize_nation
-		}
-		add_journal_entry = {
-			type = je_simple_build_military
-		}
-		add_journal_entry = {
-			type = je_simple_build_navy
-		}
+
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 		}
 	}
 
-	c:DEL = { #Deli
-		effect_starting_technology_tier_4_tech = yes
-		
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_debt_slavery
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-		
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = { 
-			set_interest_group_name = ig_sunni_madrasahs
-		}
-	}
+	#c:DEL = { #Deli
+	#	effect_starting_technology_tier_4_tech = yes
+	#	
+	#	effect_starting_politics_traditional = yes
+	#	activate_law = law_type:law_legacy_slavery
+	#	
+	#	set_ruling_interest_groups = {
+	#		ig_landowners
+	#	}
+	#	ig:ig_devout = { 
+	#		set_interest_group_name = ig_sunni_madrasahs
+	#	}
+	#}
 
 	c:IAK = { #Siak
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -590,11 +469,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -608,12 +483,6 @@
 		effect_starting_technology_tier_7_tech = yes
 		effect_native_conscription_3 = yes
 		effect_starting_politics_traditional = yes
-
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -621,6 +490,16 @@
 	}
 	
 	c:PPU = { #Papua
+		effect_starting_technology_tier_7_tech = yes
+		effect_native_conscription_1 = yes
+		effect_starting_politics_traditional = yes
+		
+		set_ruling_interest_groups = {
+			ig_landowners
+		}
+	}
+	
+	c:STG = { #Sintang
 		effect_starting_technology_tier_7_tech = yes
 		effect_native_conscription_1 = yes
 		effect_starting_politics_traditional = yes
@@ -644,11 +523,6 @@
 		effect_starting_technology_tier_7_tech = yes
 		effect_native_conscription_3 = yes
 		effect_starting_politics_traditional = yes
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -659,12 +533,6 @@
 		effect_starting_technology_tier_7_tech = yes
 		effect_native_conscription_3 = yes
 		effect_starting_politics_traditional = yes
-
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -675,12 +543,6 @@
 		effect_starting_technology_tier_7_tech = yes
 		effect_native_conscription_3 = yes
 		effect_starting_politics_traditional = yes
-
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -691,12 +553,6 @@
 		effect_starting_technology_tier_7_tech = yes
 		effect_native_conscription_3 = yes
 		effect_starting_politics_traditional = yes
-
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -707,12 +563,6 @@
 		effect_starting_technology_tier_7_tech = yes
 		effect_native_conscription_3 = yes
 		effect_starting_politics_traditional = yes
-
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -723,12 +573,6 @@
 		effect_starting_technology_tier_7_tech = yes
 		effect_native_conscription_3 = yes
 		effect_starting_politics_traditional = yes
-
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -737,27 +581,9 @@
 	
 	c:TNG = { #Tonga
 		effect_starting_technology_tier_4_tech = yes
-		effect_native_conscription_3 = yes
 		effect_starting_politics_traditional = yes
-
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
-		activate_law = law_type:law_monarchy
-		activate_law = law_type:law_oligarchy
-		activate_law = law_type:law_total_separation
-		activate_law = law_type:law_racial_segregation
-		activate_law = law_type:law_hereditary_bureaucrats
-		activate_law = law_type:law_national_militia
-		activate_law = law_type:law_free_trade
-		activate_law = law_type:law_interventionism
-		activate_law = law_type:law_land_based_taxation
-		activate_law = law_type:law_women_own_property
-		activate_law = law_type:law_no_colonial_affairs
-		activate_law = law_type:law_no_migration_controls
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -771,20 +597,28 @@
 			remove_ideology = ideology_patriarchal
 			
 		}
-		ig:ig_rural_folk = {
-			remove_ideology = ideology_isolationist
-			add_ideology = ideology_isolationist_expansionism
-		}
+		#IF = {
+		#	limit = {
+		#		has_game_rule = rohnnst_tonga_hyperstates_are_canon
+		#	}
+		#	trigger_event = {
+		#		id = dvg_bapril.2
+		#	}
+		#	add_modifier = {
+		#		name = lore_accurate_tonga
+		#		months = -1
+		#	}
+		#}
 		trigger_event = {
-            id = dvg_polynesia.1
-        }
+			id = dvg_polynesia.1 
+		}
 	}
 
 	c:BEI = { #Burgundian East Indies
 		effect_starting_politics_conservative = yes
 		effect_starting_technology_tier_2_tech = yes
 		
-		 activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_racial_segregation
@@ -795,11 +629,6 @@
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_debt_slavery
 		activate_law = law_type:law_colonial_exploitation
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		add_taxed_goods = g:tobacco
 		add_taxed_goods = g:liquor
@@ -808,6 +637,8 @@
 			institution = institution_colonial_affairs
 			level = 2
 		}
+
+		
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -816,13 +647,15 @@
 		ig:ig_devout = {
 			set_interest_group_name = ig_evangelical_church
 		}
+		set_variable = indonesia_subject_var
+
 	}
 
 	c:CHR = { #Scandi East Indies
 		effect_starting_politics_traditional = yes
 		effect_starting_technology_tier_2_tech = yes
 		
-		 activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_racial_segregation
@@ -836,13 +669,7 @@
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_migration_controls
-		activate_law = law_type:law_debt_slavery
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
+		activate_law = law_type:law_slavery_banned
 		add_taxed_goods = g:tobacco
 		add_taxed_goods = g:liquor
 
@@ -858,46 +685,77 @@
 		ig:ig_devout = {
 			set_interest_group_name = ig_evangelical_church
 		}
+		set_variable = indonesia_subject_var
+
 	}
 
-	c:CEL = { #Celebes Agency
-		effect_starting_politics_traditional = yes
-		effect_starting_technology_tier_2_tech = yes
+	# Country does not exist
+	#c:CEL = { #Celebes Agency
+	#	effect_starting_politics_traditional = yes
+	#	effect_starting_technology_tier_2_tech = yes
+	#	
+	#	activate_law = law_type:law_presidential_republic
+	#	activate_law = law_type:law_oligarchy
+	#	activate_law = law_type:law_total_separation
+	#	activate_law = law_type:law_racial_segregation
+	#	activate_law = law_type:law_appointed_bureaucrats
+	#	activate_law = law_type:law_national_militia
+	#	activate_law = law_type:law_free_trade
+	#	activate_law = law_type:law_agrarianism
+	#	activate_law = law_type:law_land_based_taxation
+	#	activate_law = law_type:law_colonial_exploitation
+	#	activate_law = law_type:law_local_police
+	#	activate_law = law_type:law_private_schools
+	#	activate_law = law_type:law_censorship
+	#	activate_law = law_type:law_migration_controls
+	#	activate_law = law_type:law_debt_slavery
+	#
+	#	add_taxed_goods = g:liquor
+	#
+	#	set_institution_investment_level = {
+	#		institution = institution_colonial_affairs
+	#		level = 1
+	#	}
+	#	
+	#	set_ruling_interest_groups = {
+	#		ig_landowners
+	#		ig_armed_forces
+	#	}
+	#	ig:ig_devout = {
+	#		set_interest_group_name = ig_evangelical_church
+	#	}
+	#}
+	c:MRK = { #Morikawa
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = empiricism
+		add_technology_researched = egalitarianism
 		
-		 activate_law = law_type:law_republic
+		
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_racial_segregation 
 		activate_law = law_type:law_total_separation
-		activate_law = law_type:law_racial_segregation
-		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_national_militia
-		activate_law = law_type:law_free_trade
-		activate_law = law_type:law_agrarianism
 		activate_law = law_type:law_land_based_taxation
-		activate_law = law_type:law_colonial_exploitation
-		activate_law = law_type:law_local_police
-		activate_law = law_type:law_private_schools
-		activate_law = law_type:law_censorship
-		activate_law = law_type:law_migration_controls
-		activate_law = law_type:law_debt_slavery
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
-		add_taxed_goods = g:liquor
-
-		set_institution_investment_level = {
-			institution = institution_colonial_affairs
-			level = 1
-		}
+		activate_law = law_type:law_no_migration_controls
+		activate_law = law_type:law_homesteading
+		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_slave_trade
 		
 		set_ruling_interest_groups = {
-			ig_landowners
-			ig_armed_forces
+			ig_petty_bourgeoisie
 		}
 		ig:ig_devout = {
-			set_interest_group_name = ig_evangelical_church
+			set_interest_group_name = ig_mahayana_monks
 		}
+		ig:ig_armed_forces = {
+			set_interest_group_name = ig_samurai
+		}
+		ig:ig_petty_bourgeoisie = {
+			set_interest_group_name = ig_yakuza
+		}
+		set_variable = indonesia_subject_var
+		
+
 	}
 }

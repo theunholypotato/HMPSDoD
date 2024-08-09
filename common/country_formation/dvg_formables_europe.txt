@@ -22,6 +22,14 @@
 	# }
 }
 
+POM = { #Pommerania
+	use_culture_states = yes
+
+	required_states_fraction = 0.60
+
+	ai_will_do = { always = yes }
+}
+
 NGF = { #League of Berlin
 	use_culture_states = yes
 
@@ -73,10 +81,10 @@ RHI = { #Rhineland
 
 MUS = { #Rus/Muscovy
 	states = {
-		STATE_MOSCOW
+		STATE_DVG_MOSCOW
 		STATE_BRYANSK
-		STATE_SMOLENSK
-		STATE_TVER
+		STATE_DVG_SMOLENSK
+		STATE_DVG_TVER
 		STATE_OKA
 	}
 
@@ -132,17 +140,17 @@ YUG = { #Yugoslavia
 
 PLC = { #Poland-Lithuania
 	states = {
-		STATE_BREST
+		STATE_DVG_BREST
 		STATE_EAST_GALICIA
-		STATE_GREATER_POLAND
-		STATE_LESSER_POLAND
+		STATE_DVG_GREATER_POLAND
+		STATE_DVG_LESSER_POLAND
 		STATE_LITHUANIA
-		STATE_MAZOVIA
+		STATE_DVG_MAZOVIA
 		STATE_POSEN
-		STATE_VOLHYNIA
+		STATE_DVG_VOLHYNIA
 		STATE_WEST_GALICIA
 		STATE_WEST_PRUSSIA
-		STATE_MINSK
+		STATE_DVG_MINSK
 	}
 
 	required_states_fraction = 1
@@ -161,9 +169,9 @@ PLC = { #Poland-Lithuania
 
 BYE= { #Belarus
 	states = {
-		STATE_SMOLENSK
-		STATE_BREST
-		STATE_MINSK
+		STATE_DVG_SMOLENSK
+		STATE_DVG_BREST
+		STATE_DVG_MINSK
 	}
 
 	required_states_fraction = 0.75	
@@ -176,8 +184,8 @@ BYE= { #Belarus
 
 UKR = {
 	states = {
-		STATE_KIEV
-		STATE_KURSK
+		STATE_DVG_KIEV
+		STATE_DVG_KURSK
 		STATE_SLOBOZ
 	}
 
@@ -260,59 +268,12 @@ LIV = { #Livonia
 ROM = { #Romania
 	use_culture_states = yes
 
-	required_states_fraction = 0.
+	required_states_fraction = 0.5
 
 	ai_will_do = { always = yes }
 }
 
-ARI = { #Aragon-Italy
 
-	is_major_formation = yes
-
-	unification_play = dp_unify_italy
-	leadership_play = dp_leadership_italy
-
-	states = {
-		STATE_CATALONIA
-		STATE_ARAGON
-		STATE_VALENCIA
-		STATE_BALEARES
-		STATE_SARDINIA
-		STATE_CORSICA
-		STATE_MALTA
-		STATE_SICILY
-		STATE_CALABRIA
-		STATE_CAMPANIA
-		STATE_APULIA
-		STATE_ABRUZZO
-		STATE_LAZIO
-		STATE_UMBRIA
-		STATE_TUSCANY
-		STATE_ROMAGNA
-		STATE_EMILIA
-		STATE_PIEDMONT
-		STATE_LOMBARDY
-		STATE_SAVOY
-		STATE_VENETIA
-		STATE_ISTRIA
-		STATE_DALMATIA
-		STATE_MALTA
-	}
-
-	required_states_fraction = 0.8
-
-	ai_will_do = { always = yes }
-
-	possible = {
-		country_has_primary_culture = cu:catalan
-		has_technology_researched = pan-nationalism
-    
-		NOT = { country_has_primary_culture = cu:central_italian}	
-		NOT = { country_has_primary_culture = cu:north_italian}
-		NOT = { country_has_primary_culture = cu:venetian}
-		NOT = { country_has_primary_culture = cu:maltese}
-	}
-}
 
 RUT = { #Ruthenia
 	use_culture_states = yes
@@ -362,38 +323,6 @@ OCC = { #Occitania
 	ai_will_do = { always = yes }
 }
 
-ELB = {
-	states = {
-		STATE_BOHEMIA
-		STATE_BRANDENBURG
-		STATE_ANHALT
-		STATE_SILESIA
-		STATE_MORAVIA
-		STATE_POMERANIA
-		STATE_MECKLENBURG
-		STATE_SCHLESWIG_HOLSTEIN
-		STATE_HANNOVER
-		STATE_THURINGIA
-		STATE_SAXONY
-	}
-
-	required_states_fraction = 1
-
-	ai_will_do = { always = yes}
-	
-	possible = {
-		any_country = {
-			OR = {
-				country_has_primary_culture = cu:czech
-				country_has_primary_culture = cu:north_german
-			}
-				
-			has_technology_researched = nationalism
-		}
-
-	}
-	
-}
 HLR = { #Holy Roman Empire
 	states = {
 		STATE_BOHEMIA
@@ -635,6 +564,7 @@ GER = { #Germany
 			country_has_primary_culture = cu:rheinish
 		}
 		#NOT = { country_has_primary_culture = cu:czech }
+		NOT = { country_has_primary_culture = cu:burgundian}
 		any_country = {
 			OR = {
 				country_has_primary_culture = cu:north_german
@@ -763,10 +693,10 @@ RHI = { #Rhineland
 
 MUS = { #Rus/Muscovy
 	states = {
-		STATE_MOSCOW
+		STATE_DVG_MOSCOW
 		STATE_BRYANSK
-		STATE_SMOLENSK
-		STATE_TVER
+		STATE_DVG_SMOLENSK
+		STATE_DVG_TVER
 		STATE_OKA
 	}
 
@@ -848,17 +778,17 @@ YUG = { #Yugoslavia
 
 PLC = { #Poland-Lithuania
 	states = {
-		STATE_BREST
+		STATE_DVG_BREST
 		STATE_EAST_GALICIA
-		STATE_GREATER_POLAND
-		STATE_LESSER_POLAND
+		STATE_DVG_GREATER_POLAND
+		STATE_DVG_LESSER_POLAND
 		STATE_LITHUANIA
-		STATE_MAZOVIA
+		STATE_DVG_MAZOVIA
 		STATE_POSEN
-		STATE_VOLHYNIA
+		STATE_DVG_VOLHYNIA
 		STATE_WEST_GALICIA
 		STATE_WEST_PRUSSIA
-		STATE_MINSK
+		STATE_DVG_MINSK
 	}
 
 	required_states_fraction = 1
@@ -877,9 +807,9 @@ PLC = { #Poland-Lithuania
 
 BYE= { #Belarus
 	states = {
-		STATE_SMOLENSK
-		STATE_BREST
-		STATE_MINSK
+		STATE_DVG_SMOLENSK
+		STATE_DVG_BREST
+		STATE_DVG_MINSK
 	}
 
 	required_states_fraction = 0.75	
@@ -892,8 +822,8 @@ BYE= { #Belarus
 
 UKR = {
 	states = {
-		STATE_KIEV
-		STATE_KURSK
+		STATE_DVG_KIEV
+		STATE_DVG_KURSK
 		STATE_SLOBOZ
 	}
 
@@ -1014,7 +944,7 @@ ARI = { #Aragon-Italy
 	ai_will_do = { always = yes }
 
 	possible = {
-		country_has_primary_culture = cu:catalan
+		country_has_primary_culture = cu:navarragon
 		has_technology_researched = pan-nationalism
     
 		NOT = { country_has_primary_culture = cu:central_italian}	
@@ -1331,4 +1261,86 @@ DIE = { #Dietsland
 
 	ai_will_do = { always = yes }
 }
+ZAP = { #Zapadoslavia
+	use_culture_states = yes
+
+	required_states_fraction = 0.85
+
+	possible = {
+		has_technology_researched = pan-nationalism
+		NOT = { has_game_rule = plausible_formable_nations }
+		NOT = { has_journal_entry = je_elbian_confederation }
+		NOT = { has_journal_entry = je_hre_internal }
+		NOT = { has_journal_entry = je_hre_external }
+	}
+	
+	ai_will_do = { always = yes }
+}
+CPT = { #Carpathia
+	use_culture_states = yes
+
+	required_states_fraction = 0.85
+
+	possible = {
+		has_technology_researched = pan-nationalism
+		NOT = { has_game_rule = plausible_formable_nations }
+	}
+	
+	ai_will_do = { always = yes }
+}
+TLT = { #Transleithania
+
+	states = {
+		STATE_TRANSDANUBIA
+		STATE_CENTRAL_HUNGARY
+		STATE_AUSTRIA
+	}
+	required_states_fraction = 1.0
+
+	possible = {
+		has_technology_researched = pan-nationalism
+		NOT = { has_game_rule = plausible_formable_nations }
+	}
+
+	ai_will_do = { always = yes }
+}
+FRK = { #Frankish Empire
+	use_culture_states = yes
+
+	required_states_fraction = 0.85
+
+	possible = {
+		has_technology_researched = pan-nationalism
+		NOT = { has_game_rule = plausible_formable_nations }
+	}
+	
+	ai_will_do = { always = yes }
+}
+
+NVA = { #Navarro-Aragon
+	use_culture_states = yes
+
+	required_states_fraction = 1.00
+
+	possible = {
+		has_technology_researched = pan-nationalism
+		
+	}
+	
+	ai_will_do = { always = yes }
+}
+
+CLT = { #Carpathia
+	use_culture_states = yes
+
+	required_states_fraction = 0.85
+
+	possible = {
+		has_technology_researched = pan-nationalism
+		NOT = { has_game_rule = plausible_formable_nations }
+	}
+	
+	ai_will_do = { always = yes }
+}
+
 

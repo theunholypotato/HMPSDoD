@@ -52,40 +52,30 @@
 	#}
 	
 	c:DUA = { #Dual Monarchy
-
-		effect_starting_technology_tier_2_tech = yes
+		effect_starting_technology_tier_1_tech = yes
 		add_technology_researched = atmospheric_engine
 		add_technology_researched = intensive_agriculture
 		add_technology_researched = screw_frigate
 		add_technology_researched = power_of_the_purse
-		add_technology_researched = general_staff
-		add_technology_researched = percussion_cap
 		
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = low
-
 		activate_law = law_type:law_landed_voting
-		activate_law = law_type:law_ethnostate
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_hereditary_bureaucrats
-		activate_law = law_type:law_feudal_armies
+		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_colonial_exploitation
 		activate_law = law_type:law_no_police
 		activate_law = law_type:law_no_schools
 		activate_law = law_type:law_censorship
+		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_legacy_slavery
 		activate_law = law_type:law_tenant_farmers
-		activate_law = law_low_income_tax
-		activate_law = high_consumption_tax
-		activate_law = law_type:law_debtors_prisons
-		activate_law = law_type:law_local_police
 		
 		set_institution_investment_level = {
 			institution = institution_colonial_affairs
-			level = 1
+			level = 2
 		}
 	
 		ig:ig_devout = {
@@ -104,6 +94,8 @@
 		add_taxed_goods = g:tobacco
 		add_taxed_goods = g:liquor
 		add_taxed_goods = g:services
+
+		add_journal_entry = { type = je_dua_bureaucracy }
 		
 		add_modifier = {
 			name = outmoded_bureaucracy
@@ -121,7 +113,7 @@
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_mass_conscription
+		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_colonial_exploitation
@@ -130,14 +122,8 @@
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_migration_controls
 		activate_law = law_type:law_legacy_slavery
-		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_tenant_farmers
-		activate_law = law_low_income_tax
-		activate_law = law_type:law_debtors_prisons
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		set_institution_investment_level = {
 			institution = institution_colonial_affairs
@@ -150,12 +136,18 @@
 		}
 		
 		set_ruling_interest_groups = {
-			ig_armed_forces
-			ig_petty_bourgeoisie
+			ig_landowners
 		}
 		ig:ig_devout = {
 			set_interest_group_name = ig_evangelical_church
 		}
+		add_journal_entry = {
+			type = je_queen_anne
+		}
+		trigger_event = {
+			id = dvg_burgundy.1
+		}
+		
 	}
 	
 	c:SCA = { #Scandinavia
@@ -164,7 +156,7 @@
 		activate_law = law_type:law_landed_voting
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_mass_conscription
+		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_colonial_exploitation
@@ -175,12 +167,6 @@
 		activate_law = law_type:law_migration_controls
 		activate_law = law_type:law_legacy_slavery
 		activate_law = law_type:law_tenant_farmers
-		activate_law = law_low_income_tax
-		activate_law = law_type:law_debtors_prisons
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		add_taxed_goods = g:tobacco
 		add_taxed_goods = g:liquor
@@ -208,7 +194,7 @@
 		effect_starting_technology_tier_1_tech = yes
 		
 		activate_law = law_type:law_national_supremacy
-		activate_law = law_type:law_mass_conscription
+		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_local_police
@@ -218,12 +204,6 @@
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_oligarchy
         activate_law = law_type:law_tenant_farmers
-		activate_law = law_low_income_tax
-		activate_law = law_type:law_debtors_prisons
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -270,11 +250,6 @@
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_legacy_slavery
 		activate_law = law_type:law_tenant_farmers
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -286,6 +261,14 @@
 		trigger_event = {
 			id = dvg_spain.1
 		}
+		set_secret_goal = {
+			country = c:MOR
+			secret_goal = conquer
+		}
+		set_secret_goal = {
+			country = c:SUS
+			secret_goal = conquer
+		}
 	}
 	
 	c:ARN = { #Aragon
@@ -293,8 +276,8 @@
 		effect_starting_politics_conservative = yes
 
 		activate_law = law_type:law_wealth_voting
-		activate_law = law_type:law_national_supremacy
-		activate_law = law_type:law_feudal_armies
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_local_police
@@ -302,12 +285,6 @@
 		activate_law = law_type:law_charitable_health_system
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_migration_controls
-		activate_law = law_low_income_tax
-		activate_law = law_type:law_debtors_prisons
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		set_tax_level = high
 		
@@ -322,6 +299,18 @@
 		ig:ig_devout = {
 			set_interest_group_name = ig_catholic_church
 		}
+		set_secret_goal = {
+			country = c:ALD
+			secret_goal = conquer
+		}
+		set_secret_goal = {
+			country = c:TUG
+			secret_goal = conquer
+		}
+		set_secret_goal = {
+			country = c:TUN
+			secret_goal = conquer
+		}
 	}
 	
 	c:NAV = { #Navarra
@@ -329,7 +318,7 @@
 		effect_starting_politics_conservative = yes
 
 		activate_law = law_type:law_wealth_voting
-		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_cultural_exclusion
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_local_police
@@ -352,18 +341,13 @@
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_elected_bureaucrats
-		activate_law = law_type:law_mass_conscription
+		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_local_police
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_women_own_property
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -387,18 +371,13 @@
 		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_mass_conscription
+		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_local_police
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_women_own_property
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -424,12 +403,8 @@
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
+		activate_law = law_type:law_religious_schools
+		
 		set_institution_investment_level = {
 			institution = institution_schools
 			level = 2
@@ -447,16 +422,11 @@
 		effect_starting_technology_tier_2_tech = yes
 		effect_starting_politics_conservative = yes
 
-		 activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_censorship
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		
 		set_ruling_interest_groups = {
@@ -472,11 +442,7 @@
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -497,11 +463,6 @@
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -517,11 +478,7 @@
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_theocracy
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -541,11 +498,7 @@
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -567,11 +520,6 @@
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_monarchy
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -587,11 +535,6 @@
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_wealth_voting
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -607,11 +550,6 @@
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_wealth_voting
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -626,11 +564,7 @@
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -649,14 +583,10 @@
 		effect_starting_technology_tier_2_tech = yes
 		
 		effect_starting_politics_conservative = yes
-		 activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_landed_voting
 		activate_law = law_type:law_freedom_of_conscience
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -676,11 +606,7 @@
 		
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		#activate_law = law_type:law_religious_schools
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -695,11 +621,7 @@
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -720,11 +642,7 @@
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_theocracy
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -744,11 +662,7 @@
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -768,11 +682,7 @@
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -792,11 +702,7 @@
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -816,11 +722,7 @@
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -840,11 +742,7 @@
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_freedom_of_conscience
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -864,12 +762,8 @@
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_type:law_monarchy
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -877,7 +771,7 @@
 		}
 		
 		set_ruling_interest_groups = {
-			ig_landowners
+			ig_devout
 		}
 		ig:ig_devout = {
 			set_interest_group_name = ig_evangelical_church
@@ -890,11 +784,7 @@
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_theocracy
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -915,11 +805,7 @@
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_theocracy
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -939,12 +825,6 @@
 		
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-		activate_law = law_type:law_debtors_prisons
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -959,13 +839,8 @@
 
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_type:law_autocracy
-		activate_law = law_low_income_tax
-		activate_law = law_type:law_debtors_prisons
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium 
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_religious_schools
 		
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -995,11 +870,6 @@
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_censorship
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -1028,11 +898,6 @@
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_tenant_farmers
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -1061,11 +926,6 @@
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_tenant_farmers
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -1094,11 +954,6 @@
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_tenant_farmers
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -1118,11 +973,6 @@
 		
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -1138,11 +988,6 @@
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_theocracy
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		set_ruling_interest_groups = {
 			ig_devout
@@ -1159,12 +1004,7 @@
 		activate_law = law_type:law_autocracy 
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_state_religion
-		activate_law = law_low_income_tax
-		activate_law = law_type:law_debtors_prisons
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -1181,16 +1021,20 @@
 	
 	c:SAV = { #Savoy
 		effect_starting_technology_tier_2_tech = yes
-		
+		add_technology_researched = central_banking
+		add_technology_researched = dialectics
+		add_technology_researched = general_staff
+
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_national_supremacy
-		activate_law = law_low_income_tax
-		activate_law = law_type:law_debtors_prisons
-				
-		effect_starting_per_capita_tax = yes
+		#activate_law = law_type:law_religious_schools
 
-		set_tax_level = medium
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
 
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -1207,19 +1051,21 @@
 	c:GEN = { #Genoa
 		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = central_banking
+		add_technology_researched = dialectics
 		
-		effect_starting_politics_conservative = yes
-		 activate_law = law_type:law_republic
+		effect_starting_politics_reactionary = yes
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_colonial_exploitation
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
+		#activate_law = law_type:law_religious_schools
 
-		set_tax_level = medium
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 1
+		}
 		
 		set_ruling_interest_groups = {
 			ig_armed_forces
@@ -1243,16 +1089,20 @@
 	
 	c:LOM = { #Milan
 		effect_starting_technology_tier_2_tech = yes
-		
-		effect_starting_politics_conservative = yes
+		add_technology_researched = central_banking
+		add_technology_researched = dialectics
+		add_technology_researched = general_staff
+
+		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_national_supremacy
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		#activate_law = law_type:law_religious_schools
 		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
+
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
@@ -1270,7 +1120,7 @@
 		add_technology_researched = central_banking
 		
 		effect_starting_politics_conservative = yes
-		 activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_slave_trade
@@ -1278,7 +1128,7 @@
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_charitable_health_system
-		activate_law = law_type:law_commercialized_agriculture
+		#activate_law = law_type:law_commercialized_agriculture
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -1312,17 +1162,17 @@
 	}
 	
 	c:PAR = { #Parma
-		effect_starting_technology_tier_3_tech = yes
-		
+		effect_starting_technology_tier_2_tech = yes
+
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_national_supremacy
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
+		#activate_law = law_type:law_religious_schools
 
-		set_tax_level = medium
-
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
@@ -1336,17 +1186,18 @@
 	}
 	
 	c:LUC = { #Lucca
-		effect_starting_technology_tier_3_tech = yes
-		
+		effect_starting_technology_tier_2_tech = yes
+
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_national_supremacy
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
+		#activate_law = law_type:law_religious_schools
 
-		set_tax_level = medium
-
+		set_institution_investment_level = {
+		institution = institution_schools
+		level = 2
+		}
+	
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
@@ -1360,16 +1211,17 @@
 	}
 	
 	c:MOD = { #Modena
-		effect_starting_technology_tier_3_tech = yes
-		
+		effect_starting_technology_tier_2_tech = yes
+
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_national_supremacy
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
+		#activate_law = law_type:law_religious_schools
 
-		set_tax_level = medium
+		set_institution_investment_level = {
+		institution = institution_schools
+		level = 2
+		}
 
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -1389,16 +1241,10 @@
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_theocracy
 		activate_law = law_type:law_oligarchy
-		activate_law = law_type:law_religious_schools
+		#activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_land_based_taxation
-		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_agrarianism
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		set_ruling_interest_groups = {
 			ig_devout
@@ -1428,17 +1274,17 @@
 	#}
 	
 	c:TUS = { #Etruria
-		effect_starting_technology_tier_3_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 
 		effect_starting_politics_liberal = yes
 
 		
-		 activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_census_voting
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_elected_bureaucrats
-		activate_law = law_type:law_mass_conscription
+		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_religious_schools
@@ -1446,11 +1292,6 @@
 		activate_law = law_type:law_migration_controls
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_homesteading
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		set_ruling_interest_groups = {
 			ig_intelligentsia
@@ -1478,11 +1319,7 @@
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_charitable_health_system
 		activate_law = law_type:law_oligarchy
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_no_social_security
 		
 		set_tariffs_import_priority = g:artillery
 		set_tariffs_import_priority = g:small_arms
@@ -1520,6 +1357,7 @@
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_charitable_health_system
 		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_no_social_security
 		
 		set_tariffs_import_priority = g:artillery
 		set_tariffs_import_priority = g:small_arms
@@ -1543,117 +1381,26 @@
 		}
 	}
 
-	c:CRO = { #Illyria
-		effect_starting_technology_tier_3_tech = yes
-		
-		effect_starting_politics_conservative = yes
-		activate_law = law_type:law_national_supremacy
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-		
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = {
-			set_interest_group_name = ig_catholic_church
-		}
-	}
 	
-	c:MON = { #Montenegro
-		effect_starting_technology_tier_3_tech = yes
-		
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_theocracy
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-		
-		set_ruling_interest_groups = {
-			ig_devout
-		}
-		ig:ig_devout = {
-			set_interest_group_name = ig_orthodox_church
-			remove_ideology = ideology_patriarchal
-			add_ideology = ideology_orthodox_patriarch
-		}
-	}
+	#c:MON = { #Montenegro
+	#	effect_starting_technology_tier_3_tech = yes
+	#	
+	#	effect_starting_politics_traditional = yes
+	#	activate_law = law_type:law_theocracy
+	#	
+	#	set_ruling_interest_groups = {
+	#		ig_devout
+	#	}
+	#	ig:ig_devout = {
+	#		set_interest_group_name = ig_orthodox_church
+	#		remove_ideology = ideology_patriarchal
+	#		add_ideology = ideology_orthodox_patriarch
+	#	}
+	#}
 	
-	c:ALB = { #Albania
+
+	c:TUR = { #East Rum
 		effect_starting_technology_tier_3_tech = yes
-		
-		effect_starting_politics_traditional = yes
-
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-		
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = {
-			set_interest_group_name = ig_sunni_madrasahs
-		}
-	}
-	
-	c:MCD = { #Macedonia
-		effect_starting_technology_tier_3_tech = yes
-		
-		effect_starting_politics_conservative = yes
-		activate_law = law_type:law_national_supremacy
-		activate_law = law_type:law_freedom_of_conscience
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
-		add_taxed_goods = g:tobacco
-		add_taxed_goods = g:liquor
-		
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = {
-			set_interest_group_name = ig_orthodox_church
-			remove_ideology = ideology_patriarchal
-			add_ideology = ideology_orthodox_patriarch
-		}
-	}
-
-	c:SER = { #Serbia
-		effect_starting_technology_tier_3_tech = yes
-		
-		effect_starting_politics_conservative = yes
-		activate_law = law_type:law_national_supremacy
-		activate_law = law_type:law_freedom_of_conscience
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
-		add_taxed_goods = g:tobacco
-		add_taxed_goods = g:liquor
-		
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = {
-			set_interest_group_name = ig_orthodox_church
-			remove_ideology = ideology_patriarchal
-			add_ideology = ideology_orthodox_patriarch
-		}	
-	}
-	
-	c:TUR = { #Ottomans
-		effect_starting_technology_tier_4_tech = yes
 		
 		add_technology_researched = academia
 		add_technology_researched = law_enforcement
@@ -1662,19 +1409,12 @@
 		add_technology_researched = line_infantry
 		set_tax_level = medium
 		
-		activate_law = law_type:law_monarchy
-		activate_law = law_type:law_autocracy 
-		activate_law = law_type:law_state_religion
-		activate_law = law_type:law_national_supremacy
+		effect_starting_politics_conservative = yes
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_traditionalism
-		activate_law = law_type:law_censorship
-		activate_law = law_type:law_land_based_taxation	
-		activate_law = law_type:law_slave_trade	
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_no_social_security
+		activate_law = law_type:law_slave_trade
 		
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
@@ -1685,21 +1425,29 @@
 			set_interest_group_name = ig_sunni_madrasahs
 		}
 
-		trigger_event = {
-			id = sick_man.1
+		ig:ig_intelligentsia = {
+			set_interest_group_name = ig_phanariots
 		}
-		add_modifier = {
-			name = sick_man_of_europe
-			months = -1
-		}		
-		add_modifier = {
-			name = outmoded_bureaucracy
-			months = -1
+
+		ig:ig_petty_bourgeoisie = {
+			set_interest_group_name = ig_kadizadeli
 		}
-		add_modifier = {
-			name = cizye_tax
-			months = -1
-		}
+
+		#trigger_event = {
+		#	id = sick_man.1
+		#}
+		#add_modifier = {
+		#	name = sick_man_of_europe
+		#	months = -1
+		#}		
+		#add_modifier = {
+		#	name = outmoded_bureaucracy
+		#	months = -1
+		#}
+		#add_modifier = {
+		#	name = cizye_tax
+		#	months = -1
+		#}
 	}
 	
 	# c:JNR = { #Janissary Revolt
@@ -1713,7 +1461,7 @@
 		# add_taxed_goods = g:tobacco
 		# add_taxed_goods = g:liquor
 		
-		#  activate_law = law_type:law_republic
+		# activate_law = law_type:law_presidential_republic
 		# activate_law = law_type:law_national_supremacy
 		# activate_law = law_type:law_land_based_taxation
 		# activate_law = law_type:law_censorship
@@ -1741,40 +1489,29 @@
 		# }
 	# }
 	
-	c:HUN = { #Hungary
-		effect_starting_technology_tier_3_tech = yes
-		
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_wealth_voting
-		activate_law = law_type:law_censorship
-		activate_law = law_type:law_feudal_armies
-		activate_law = law_low_income_tax
-		activate_law = law_type:law_ethnostate
-				
-		effect_starting_per_capita_tax = yes
 
-		set_tax_level = medium
+	
+	c:NOG = { #Nogay
+		effect_starting_technology_tier_3_tech = yes
+			
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_peasant_levies
 		
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
 		ig:ig_devout = {
-			set_interest_group_name = ig_catholic_church
-		}
-		trigger_event = {
-			id = dvg_hungary.1
+			set_interest_group_name = ig_sunni_madrasahs
 		}
 	}
+
+
 	
-	c:WAL = { #Wallachia
+	c:MOL = { #Moldavia
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -1785,16 +1522,12 @@
 			add_ideology = ideology_orthodox_patriarch
 		}
 	}
-	
-	c:MOL = { #Moldavia
+	c:SER = { #Serbia
 		effect_starting_technology_tier_3_tech = yes
+
+		activate_law = law_type:law_homesteading
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -1816,12 +1549,7 @@
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_migration_controls
-		activate_law = law_type:law_feudal_armies
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_peasant_levies
 
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -1852,6 +1580,10 @@
 			name = modifier_slave_to_liberty
 			months = -1
 		}
+		add_modifier = {
+			name = diplomatic_plays_blocked
+			months = -1
+		}
 	}
 	
 	c:LIT = { #Lithuania
@@ -1864,12 +1596,7 @@
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_migration_controls
-		activate_law = law_type:law_feudal_armies
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_peasant_levies
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -1885,11 +1612,7 @@
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_peasant_levies
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -1908,12 +1631,8 @@
 		effect_starting_technology_tier_2_tech = yes
 		
 		effect_starting_politics_conservative = yes
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
+		activate_law = law_type:law_religious_schools
+		
 		set_institution_investment_level = {
 			institution = institution_schools
 			level = 2
@@ -1931,13 +1650,8 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		 activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_freedom_of_conscience
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -1948,15 +1662,12 @@
 	
 	c:NOV = { #Novgorod
 		effect_starting_technology_tier_3_tech = yes
-		
-		effect_starting_politics_traditional = yes
-		 activate_law = law_type:law_republic
-		activate_law = law_type:law_wealth_voting
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
+		add_technology_researched = colonization
 
-		set_tax_level = medium
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_frontier_colonization
 		
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -1994,11 +1705,6 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -2010,11 +1716,6 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -2028,14 +1729,9 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		 activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_tenant_farmers
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -2051,14 +1747,10 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		 activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_tenant_farmers
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_frontier_colonization
 
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -2074,11 +1766,8 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
 
-		set_tax_level = medium
+		activate_law = law_type:law_professional_army
 		
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
@@ -2087,6 +1776,10 @@
 			add_ideology = ideology_boyar_paternalistic
 		}
 
+		add_modifier = {
+			name = diplomatic_plays_blocked
+			months = -1
+		}
 		add_modifier = {
 			name = dvg_rock_and_hard_place
 			months = -1
@@ -2105,11 +1798,8 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_reactionary = yes
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
 
-		set_tax_level = medium
+		activate_law = law_type:law_professional_army
 		
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
@@ -2118,6 +1808,10 @@
 			add_ideology = ideology_boyar_paternalistic
 		}
 
+		add_modifier = {
+			name = diplomatic_plays_blocked
+			months = -1
+		}
 		add_modifier = {
 			name = dvg_rock_and_hard_place
 			months = -1
@@ -2148,11 +1842,6 @@
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_peasant_levies	
 		activate_law = law_type:law_closed_borders
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
@@ -2161,10 +1850,9 @@
 			add_ideology = ideology_boyar_paternalistic
 		}
 
-		ig:ig_devout = {
-			set_interest_group_name = ig_orthodox_church
-			remove_ideology = ideology_patriarchal
-			add_ideology = ideology_orthodox_patriarch
+		add_modifier = {
+			name = diplomatic_plays_blocked
+			months = -1
 		}
 		add_modifier = {
 			name = dvg_rock_and_hard_place
@@ -2199,11 +1887,6 @@
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_peasant_levies	
 		activate_law = law_type:law_closed_borders
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
@@ -2214,6 +1897,11 @@
 
 		add_journal_entry = {
 			type = je_pol_king_maximilian
+		}
+
+		add_modifier = {
+			name = diplomatic_plays_blocked
+			months = -1
 		}
 		add_modifier = {
 			name = dvg_rock_and_hard_place
@@ -2244,11 +1932,6 @@
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_peasant_levies	
 		activate_law = law_type:law_closed_borders
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
@@ -2260,6 +1943,10 @@
 			add_ruling_interest_group = yes
 		}
 
+		add_modifier = {
+			name = diplomatic_plays_blocked
+			months = -1
+		}
 		add_modifier = {
 			name = dvg_rock_and_hard_place
 			months = -1
@@ -2279,12 +1966,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_slave_trade
-		activate_law = law_type:law_feudal_armies
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_peasant_levies
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -2302,15 +1984,10 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		 activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_national_militia
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -2339,15 +2016,10 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		 activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_national_militia
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -2376,15 +2048,10 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		 activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_national_militia
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -2413,15 +2080,10 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		 activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_national_militia
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -2454,15 +2116,10 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		 activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_landed_voting
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_national_militia
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -2482,15 +2139,10 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		 activate_law = law_type:law_republic
+		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_national_militia
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -2519,39 +2171,5 @@
 		}
 	}
 
-	c:BSG = { #Begluk Bačka
-		effect_starting_technology_tier_4_tech = yes
-		effect_starting_politics_conservative = yes
 
-		add_technology_researched = academia
-		add_technology_researched = law_enforcement
-		add_technology_researched = mandatory_service
-		add_technology_researched = urban_planning
-		
-		activate_law = law_type:law_monarchy
-		activate_law = law_type:law_oligarchy 
-		activate_law = law_type:law_state_religion
-		activate_law = law_type:law_national_supremacy
-		activate_law = law_type:law_traditionalism
-		activate_law = law_type:law_censorship
-		activate_law = law_type:law_land_based_taxation	
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
-		add_taxed_goods = g:tobacco
-		add_taxed_goods = g:liquor
-		
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = {
-			set_interest_group_name = ig_sunni_madrasahs
-		}
-		ig:ig_landowners = {
-			set_interest_group_name = ig_bosniak_beys
-		}
-	}
 }

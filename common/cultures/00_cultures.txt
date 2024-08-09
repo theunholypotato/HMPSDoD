@@ -2,11 +2,6 @@
 	color= rgb{ 62 77 100 }
 	religion = protestant
 	traits = { german_speaking european_heritage }
-
-	obsessions = {
-		liquor
-	}	
-
 	male_common_first_names={
 		Adelbert Adolf Albrecht Alexander Alfred 
 		Bernhard Burkhard Bruno		
@@ -127,11 +122,6 @@ south_german={ #Danubian
 	color= hsv{ 0.50 0.43 0.45 }
 	religion = catholic
 	traits = { german_speaking european_heritage }
-
-	obsessions = {
-		coffee
-	}	
-
 	male_common_first_names={
 		Adolf Albrecht Alexander Alfons Alois Anton Arthur Albert Arnulf
 		Bernhard Benignus
@@ -266,6 +256,7 @@ ashkenazi={
 		Daniel
 		David
 		Franz
+		Francois
 		Gerson
 		Gustav
 		Heinrich
@@ -305,6 +296,7 @@ ashkenazi={
 		von_Neumann
 		Oppenheim
 		Zuckerkandl
+		de_Pinto
 	}
 	common_last_names={
 		Abramovitch
@@ -651,7 +643,7 @@ wallonian={
 #wallonians and flems gone DVG
 boer={
 	color= hsv{ 0.10 0.80 0.86 }
-	religion = protestant
+	religion = catholic
 	traits = { beneluxian_culture_group african_settler european_heritage }
 	male_common_first_names={
 		Abraham
@@ -722,7 +714,6 @@ boer={
 		Retief
 		van_der_Merwe
 		Wessels
-		van_Afrika
 	}
 	common_last_names={
 		Bosman
@@ -864,10 +855,6 @@ swedish={
 	color= hsv{ 0.64 0.57 0.62 }
 	religion = protestant
 	traits = { scandinavian_culture_group european_heritage }
-
-	obsessions = {
-		coffee
-	}
 
 	male_common_first_names={
 		Albrecht Alexander Aron Arnold Anton August Axel Albert Anders Adolf Andreas Abraham Axel_Knut
@@ -1320,11 +1307,6 @@ finnish={
 	color= hsv{ 0 0 0.86 }
 	religion = protestant
 	traits = { finnic european_heritage }
-
-	obsessions = {
-		liquor
-	}	
-
 	# could have scandinavian_culture_group but that would make them ahistorically non-discriminated
 	male_common_first_names={
 		Aatto
@@ -1669,11 +1651,6 @@ irish={
 	religion = catholic
 	traits = { celtic_people european_heritage }
 	# could have anglophone but would make them non-discriminated in Britain
-
-	obsessions = {
-		liquor
-	}	
-
 	male_common_first_names={
 		Alexander
 		Arthur
@@ -1849,7 +1826,7 @@ irish={
 australian={
 	color= hsv{ 0.07 0.49 0.93 }
 	religion = protestant
-	traits = { }
+	traits = {  }
 	male_common_first_names={
 		Abraham
 	}
@@ -2356,11 +2333,6 @@ spanish={
 	color= hsv{ 0.16 0.56 0.86 }
 	religion = catholic
 	traits = { iberian_culture_group hispanophone european_heritage }
-
-	obsessions = {
-		wine
-	}
-
 	male_common_first_names={
 		Agustin
 		Alberto
@@ -2830,6 +2802,7 @@ portuguese={
 		da_Franca
 		da_Silva_Pereira
 		de_Albuquerque
+		de_Albuquerque_Cortes
 		de_Almada
 		de_Braganca
 		de_Braganca-Coburgo
@@ -2887,7 +2860,7 @@ portuguese={
 		Quintanilha
 		Ribeiro
 		Rodrigues
-		Sadino
+		Sandino
 		Salazar
 		Sampaio
 		Silveira
@@ -3119,6 +3092,20 @@ occitan={
 	regal_last_names={
 		de_Valois
 		Forcalquier
+	}
+
+	noble_last_names = {
+		d_Areny-Plandolit
+		de_Llauder_i_Dalmases
+		de_Mas_i_Nadal
+		de_Suelves_i_de_Montagut
+		Ferrer
+		Folc_de_Cardona
+		Guell
+		Janer
+		Junyent
+		Lopez_i_Bru
+		Milans_del_Bosch
 	}
 
 	graphics = european
@@ -4063,7 +4050,7 @@ bosniak={
 	ethnicities = {
 		1 = slavic
 	}
-	graphics = mideast_indian
+	graphics = european
 }
 
 romanian={
@@ -4219,7 +4206,7 @@ romanian={
 
 hungarian={
 	color= hsv{ 0.25 0.22 0.99 }
-	religion = catholic
+	religion = protestant
 	traits = { hungarian_culture_group european_heritage }
 	male_common_first_names={
 		Alajos
@@ -4363,11 +4350,6 @@ polish={
 	color= hsv{ 0 0.22 0.5 }
 	religion = catholic
 	traits = { west_slavic european_heritage }
-
-	obsessions = {
-		liquor
-	}
-	
 	male_common_first_names={
 		Adam
 		Aleksander
@@ -4966,17 +4948,12 @@ russian={
 	color= hsv{ 0.35 0.40 0.37 }
 	religion = orthodox
 	traits = { east_slavic european_heritage }
-
-	obsessions = {
-		liquor
-	}	
-
 	male_common_first_names={
 		Aleksandr Alexei Andrei Anton
 		Boris
 		Dmitry
 		Fyodor
-		Gennady Giorgi Grigoriy
+		Gennady Georgy Grigoriy
 		Igor Ivan
 		Kirill Konstantin
 		Lavr Leonid Lev
@@ -5004,46 +4981,43 @@ russian={
 		Zinaida
 	}	
 	noble_last_names = {
-		Adlerberg
-		Barclay_de_Tolly Bestuzhev-Ryumin Bulatovich Buturlin
-		Dolgorukov Demidov
-		Fikelmon
-		Greig Gruzinsky Golitsyn
-		Ignatiev Ivelich
-		Kamensky Kelch Kern Kushelev-Bezborodko Kutaisov Kurakin
-		Hoyningen-Huene
-		Lopukhin Lobanov-Rostovsky
-		Matveyev von_Mohrenheim Meshchersky
-		Orlov
-		Pistohlkors Putyatin
-		Rostopchin Rumyantsev Romanov Razin
-		Saltykov
-		Stroganov-Romanov
-		Tolstoy
-		Volkonsky
-		Witte
-		Yengalychev Yusupov Yuryevsky
+		Apraxin Alabin
+		Baryatinsky Belkin Bulatovich Buturlin Brazhnikov
+		Chernyshev Chaleyev Cherevin
+		Dolgorukov Derzhavin Deryabin
+		Golovin Goncharov
+		Ignatiev Izvolsky
+		Kamensky Khovrin
+		Lopukhin Lobanov Lvov
+		Matveyev Monomakhov
+		Orlov Odintsov Obolensky
+		Putyatin
+		Rostopchin Rumyantsev 
+		Saltykov Shchetinin
+		Tolstoy Tolkachev
+		Volkonsky Vorontsov Vyazemsky Valuyev
+		Yuriev
 	}
 	common_last_names={
-		Alexseyev Antonov Azarov
-		Badanov Brusilov Budyonny
-		Chibisov
-		Denikin Dragomirov
-		Frolov
-		Golovin Grishin Gurko
-		Ivanov
-		Kasso Kolchak Konev Konstantinov Kornilov Kuropatkin
-		Lazarev
-		Makarov Menshikov 
-		Nakhimov Nebogatov Nikolaevich
-		Ostrovsky
-		Pavlov Putyatin
-		Rozhestvensky
-		Shuvalov Skobelev Surkov Sorokin
-		Tukhachevsky
-		Vorontsov Voroshilov 
-		Yegorov Yudenich
-		Zavoyko
+		Avseyev Antonov Anfimov
+		Badanov Batrakov Bogdanov
+		Chabanov Chashkov Chekhov 
+		Dobromyslov Dragomirov Dubrovin
+		Fandeyev Fedorin Filyaev
+		Golovin Grishin Grechnev
+		Ivanov Ivov Ilyutin
+		Kabakov Kirillov Konstantinov Kozlov Kuropatkin
+		Lazarev Larin
+		Makarov Mitroshin Metelov
+		Nagibin Nedelin Nedorubov
+		Obruchev Ozhegov
+		Pavlov Potapov
+		Razin Romanov
+		Shuvalov Skobelev Surkov
+		Tabakov Tesakov
+		Voronov Vostorgov
+		Yegorov Yulin
+		Zagulyaev Zolotov
 	}
 	male_regal_first_names = {
 		Aleksandr Alexei
@@ -5067,8 +5041,7 @@ russian={
 		Konstantinovich
 		Mikhailovich
 		Nikolaevich
-		Pavlovich Paley
-		Romanov
+		Pavlovich 
 		Vladimirovich
 	}
 
@@ -5081,7 +5054,7 @@ russian={
 ruthenian={
 	color= rgb{ 99 163 206 }
 	religion = catholic
-	traits = { west_slavic east_slavic european_heritage }
+	traits = { central_slavic european_heritage }
 	male_common_first_names={
 		Alexei
 		Andrei
@@ -5191,7 +5164,7 @@ ruthenian={
 byelorussian={
 	color= rgb{ 211 184 207 }
 	religion = catholic
-	traits = { west_slavic east_slavic european_heritage }
+	traits = { central_slavic european_heritage }
 	male_common_first_names={
 		Alaksandr
 		Alexei
@@ -5437,7 +5410,7 @@ ugrian={
 	ethnicities = {
 		1 = circumpolar
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 latvian={
@@ -6232,7 +6205,7 @@ turkish={
 	religion = sunni
 	traits = { turkic middle_eastern_heritage }
 	obsessions = {
-		tobacco
+		tea
 	}
 	male_common_first_names={
 		Abdulhamid
@@ -6378,7 +6351,7 @@ turkish={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 azerbaijani={
@@ -6471,7 +6444,7 @@ azerbaijani={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 north_caucasian={
@@ -6526,11 +6499,6 @@ maghrebi={
 	color= hsv{ 0.32 0.58 0.30 }
 	traits = { arab_speaking middle_eastern_heritage }
 	religion = sunni
-
-	obsessions = {
-		tea
-	}	
-
 	male_common_first_names={
 		Abd_Allah
 		Abd_al-Karim
@@ -6631,7 +6599,7 @@ maghrebi={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 misri={
@@ -6736,7 +6704,7 @@ misri={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 mashriqi={
@@ -6838,7 +6806,7 @@ mashriqi={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 bedouin={
@@ -6934,7 +6902,7 @@ bedouin={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 berber={ # Amazigh
@@ -6978,18 +6946,13 @@ berber={ # Amazigh
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 persian={
 	color= hsv{ 0.1 0.43 0.56 }
-	religion = shiite
+	religion = sunni
 	traits = { iranian_turanian_culture_group middle_eastern_heritage }
-
-	obsessions = {
-		luxury_furniture
-	}	
-
 	male_common_first_names={
 		Abbas Abdolazim Abdolhossein Abdolsamad Abolghasem Ahmad Ali Adil
 		Bahram 
@@ -7058,7 +7021,7 @@ persian={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 uzbek={
@@ -7119,7 +7082,7 @@ uzbek={
 	ethnicities = {
 		1 = central_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 kazak={
@@ -7175,7 +7138,7 @@ kazak={
 	ethnicities = {
 		1 = central_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 kirgiz={
@@ -7222,7 +7185,7 @@ kirgiz={
 	ethnicities = {
 		1 = central_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 tajik={
@@ -7281,7 +7244,7 @@ tajik={
 	ethnicities = {
 		1 = central_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 uighur={
@@ -7332,7 +7295,7 @@ uighur={
 	ethnicities = {
 		1 = central_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 pashtun={
@@ -7405,7 +7368,7 @@ pashtun={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 baluchi={
@@ -7449,7 +7412,7 @@ baluchi={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 hazara={
@@ -7489,7 +7452,7 @@ hazara={
 	ethnicities = {
 		1 = central_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 turkmen={
@@ -7534,7 +7497,7 @@ turkmen={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 kurdish={
@@ -7582,7 +7545,7 @@ kurdish={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 mongol={
@@ -7637,10 +7600,13 @@ mongol={
 		Tserendorj
 		Vanchinbalyn
 	}
+	regal_last_names={
+		Khan
+	}
 	ethnicities = {
 		1 = central_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 kalmyk={
@@ -7695,7 +7661,7 @@ kalmyk={
 	ethnicities = {
 		1 = central_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 siberian={
@@ -7737,7 +7703,7 @@ siberian={
 	ethnicities = {
 		1 = circumpolar
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 yakut={
@@ -7773,7 +7739,7 @@ yakut={
 	ethnicities = {
 		1 = circumpolar
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 tibetan={
@@ -7822,7 +7788,7 @@ tibetan={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 assamese={
@@ -7863,7 +7829,7 @@ assamese={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 bengali={
@@ -7921,9 +7887,9 @@ bengali={
 		Tajuddin
 	}
 	ethnicities = {
-		1 = asian
+		1 = indian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 bihari={
@@ -7963,9 +7929,9 @@ bihari={
 		Valmiki
 	}
 	ethnicities = {
-		1 = asian
+		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 manipuri={
@@ -8010,7 +7976,7 @@ manipuri={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 nepali={
@@ -8069,7 +8035,7 @@ nepali={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 oriya={
@@ -8108,7 +8074,7 @@ oriya={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 sinhala={
@@ -8148,7 +8114,7 @@ sinhala={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 avadhi={
@@ -8188,7 +8154,7 @@ avadhi={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 kanauji={
@@ -8223,7 +8189,7 @@ kanauji={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 panjabi={
@@ -8276,10 +8242,13 @@ panjabi={
 		Nalwa
 		Ramgarhia
 	}
+	regal_last_names={
+		Singh
+	}
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 kashmiri={
@@ -8324,7 +8293,7 @@ kashmiri={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 gujarati={
@@ -8369,7 +8338,7 @@ gujarati={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 marathi={
@@ -8429,7 +8398,7 @@ marathi={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 sindi={
@@ -8482,7 +8451,7 @@ sindi={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 rajput={
@@ -8533,12 +8502,12 @@ rajput={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 kannada={
 	color= hsv{ 0.72 0.51 0.66 }
-	religion = sunni
+	religion = hindu
 	traits = { south_asian_heritage dravidian }
 	male_common_first_names={
 		Abbakka
@@ -8584,7 +8553,7 @@ kannada={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 malayalam={
@@ -8624,7 +8593,7 @@ malayalam={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 tamil={
@@ -8670,7 +8639,7 @@ tamil={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 telegu={
@@ -8713,7 +8682,7 @@ telegu={
 	ethnicities = {
 		1 = indian
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 vietnamese={
@@ -8764,7 +8733,7 @@ vietnamese={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 khmer={
@@ -8807,7 +8776,7 @@ khmer={
 	ethnicities = {
 		1 = south_east_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 batak={
@@ -8857,7 +8826,7 @@ batak={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 dayak={
@@ -8915,7 +8884,7 @@ dayak={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 malagasy={
@@ -8962,7 +8931,7 @@ malagasy={
 	ethnicities = {
 		1 = polynesian
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 filipino={
@@ -9039,7 +9008,7 @@ filipino={
 	ethnicities = {
 		1 = south_east_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 moro={
@@ -9132,7 +9101,7 @@ moro={
 	ethnicities = {
 		1 = south_east_asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 javan={
@@ -9187,33 +9156,58 @@ javan={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 moluccan={
 	color= hsv{ 0.29 0.22 0.51 }
 	religion = sunni
-	traits = { southeast_asian_heritage malay_culture }
+	traits = { southeast_asian_heritage malay_culture  }
 	male_common_first_names={
 		Denny
-		Dominggus
-		Edinho
 		Ellyas
-		Ignacio
 		Jordao
 		Jos
 		Levi
 		Michael
 		Mohammad
 		Sonny
+		Abdullah
+		Al-Mukammal
+		Ali
+		Aziz
+		Idris
+		Isandar
+		Ismail
+		Jaafar
+		Jalil
+		Muabidin
+		Muhammad
+		Riayat
+		Safiuddin
+		Shahabuddin
+		Tuanku
+		Yusuf
 	}
 	female_common_first_names = {
 		Bellaetrix 
 		Fatimah
+		Gabrielle
+		Henriette Hortense
+		Jeanne Julie Juliette Justine
+		LE_ontine Leopoldine Louise Louise-Victorine
+		Marcelle Marguerite Marie Marie-Anne Marie-Felix Marthe Mathilde Melanie
+		Pauline Paule
 	}	
 	noble_last_names = {
 		Kolano
 		Sjah
+		de_Noailles
+		Oudinot
+		Pasquier de_Pourtales de_Polignac de_Persigny
+		de_La_Rochefoucauld de_Rochebouet de_Rohan-Chabot
+		Suchet de_Sabran de_Saulx de_SE_rent
+		de_Talleyrand-PE_rigord
 	}
 	common_last_names={
 		Bouma
@@ -9225,11 +9219,12 @@ moluccan={
 		Pattinama
 		Pelmelay
 		Weisapy
+		
 	}
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 thai={
@@ -9268,7 +9263,7 @@ thai={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 mon={
@@ -9300,7 +9295,7 @@ mon={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 khmu={
@@ -9347,7 +9342,7 @@ khmu={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 lao={
@@ -9394,7 +9389,7 @@ lao={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 shan={
@@ -9447,7 +9442,7 @@ shan={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 burmese={
@@ -9502,7 +9497,7 @@ burmese={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 kachin={
@@ -9543,7 +9538,7 @@ kachin={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 karen={
@@ -9589,14 +9584,13 @@ karen={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 japanese={
 	color= hsv{ 0 0 90 }
 	religion = shinto
 	traits = { yamato east_asian_heritage }
-
 	male_common_first_names={
 		Aritomo
 		Gentaro
@@ -9774,7 +9768,7 @@ japanese={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 manchu={
@@ -9847,15 +9841,18 @@ manchu={
 		Xingde
 		Zhanshan
 	}
+	regal_last_names={
+		Aisin_Gioro
+	}
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 han={
 	color= rgb{ 190 80 48 }
-	religion = mahayana
+	religion = confucian
 	traits = { sinosphere han_chinese east_asian_heritage }
 	# obsessions = { #DVG
 		# opium
@@ -9934,12 +9931,12 @@ han={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 korean={
 	color= hsv{ 0.17 0.41 0.34 }
-	religion = mahayana
+	religion = confucian
 	traits = { korean_language east_asian_heritage }
 	male_common_first_names={
 		Bak Bong-haek
@@ -10017,7 +10014,7 @@ korean={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 ainu={
@@ -10065,12 +10062,12 @@ ainu={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 hakka={
 	color= hsv{ 0.1 0.43 0.34 }
-	religion = mahayana
+	religion = confucian
 	traits = { han_chinese east_asian_heritage }
 	male_common_first_names={
 		Chen
@@ -10137,7 +10134,7 @@ hakka={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 miao={
@@ -10202,12 +10199,12 @@ miao={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 min={
 	color= hsv{ 0.71 0.54 0.78 }
-	religion = mahayana
+	religion = confucian
 	traits = { han_chinese east_asian_heritage }
 	male_common_first_names={
 		Bing
@@ -10265,7 +10262,7 @@ min={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 zhuang={
@@ -10320,7 +10317,7 @@ zhuang={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 yi={
@@ -10398,12 +10395,12 @@ yi={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 yue={
 	color= hsv{ 0.80 0.36 0.39 }
-	religion = mahayana
+	religion = confucian
 	traits = { han_chinese east_asian_heritage}
 	male_common_first_names={
 		Chen
@@ -10476,7 +10473,7 @@ yue={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 polynesian={
@@ -10500,7 +10497,7 @@ polynesian={
 		William
 	}
 	female_common_first_names = {
-		Auli'i
+		Aulii
 		Elizabeth
 		Kina'u
 		Kaliko
@@ -10532,7 +10529,7 @@ polynesian={
 	ethnicities = {
 		1 = polynesian
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 hawaiian={ # 
@@ -10571,7 +10568,7 @@ hawaiian={ #
 		Elizabeth
 		Haupa Hana Haleloke 
 		Inaina
-		Kala Kina'u Kaliko Kamamalu Kamaikui Kekahili Kekelaokalani Kauwahine Kalukuna Kipa Kahiliopua Kauwa Kaha
+		Kala Kinau Kaliko Kamamalu Kamaikui Kekahili Kekelaokalani Kauwahine Kalukuna Kipa Kahiliopua Kauwa Kaha
 		Lucy Laura Lanihau
 		Maria Miriama Mareta Maile Mele
 		Naomi Namahana Namokuelua Na_awa
@@ -10604,7 +10601,7 @@ hawaiian={ #
 	ethnicities = {
 		1 = polynesian
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 melanesian={
@@ -10657,7 +10654,7 @@ melanesian={
 	ethnicities = {
 		1 = polynesian
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 micronesian={
@@ -10711,7 +10708,7 @@ micronesian={
 	ethnicities = {
 		1 = polynesian
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 maori={
@@ -10764,7 +10761,7 @@ maori={
 	ethnicities = {
 		1 = polynesian
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 yuanzhumin={
@@ -10784,10 +10781,10 @@ yuanzhumin={
 	ethnicities = {
 		1 = polynesian
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
-aborigine={ # Aboriginal
+aborigine={ # Aboriginal/Hongshan
 	color= hsv{ 0.08 0.28 0.61 }
 	religion = mahayana #dvg
 	traits = { indigenous_oceanic_heritage sinosphere aboriginal_australian }
@@ -10811,7 +10808,7 @@ aborigine={ # Aboriginal
 		Yagan
 		Yellagonga
 
-		Denny
+		
 		Dominggus
 		Edinho
 		Ellyas
@@ -10855,11 +10852,29 @@ aborigine={ # Aboriginal
 		Windich
 		Wonga
 		Wangkatha
+
+		Dong
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
 	}
 	ethnicities = {
 		1 = polynesian
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 zapotec={
@@ -10945,7 +10960,7 @@ zapotec={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 mayan={
@@ -11041,7 +11056,7 @@ mayan={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 nahua={
@@ -11137,7 +11152,7 @@ nahua={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 tarascan={
@@ -11228,7 +11243,7 @@ tarascan={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 quechua={
@@ -11350,7 +11365,7 @@ quechua={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 #Update to Guarani has been changing vanilla names to more fitting lotharian ones
@@ -11467,7 +11482,7 @@ guarani={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 aimara={ #DVG changed to inti
@@ -11541,54 +11556,115 @@ aimara={ #DVG changed to inti
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 amazonian={
-	color= hsv{ 0.38 0.58 0.59 }
+	color= hsv{ 0.432 0.5 0.44 }
 	religion = animist
 	traits = { indigenous_american_heritage south_american_group }
 	male_common_first_names={
-		Anibal
-		Augusto
-		Bento
-		Bernardo
-		Cesar
-		Daniel
-		David
-		Donato
-		Duarte
-		Ernesto
-		Estevao_2
-		Fernando
-		Francisco
-		Gabriel
-		Graciano
-		Hugo
-		Joao
-		Julio
-		Kananoe
-		Leopoldo
-		Lucas
-		Miguel
-		Nuno
-		Paulinho
-		Raoni
-		Rafael_2
-		Roberto
-		Sebastiao
-		Sergio
-		Simao
-		Vasco
-		Zeferino
-		Oscar_2
+		Atawallpa
+		Wayna
+		Wanka
+		Washkar
+		Rimaq
+		Ruminaki
+		Sapay
+		Sumainka
+		Tupakusi
+		Ukumari
+		Wallpaya
+		Wamay
+		Tupac
+		Anti
+		Anqasmayu
+		Chikan
+		Inti
+		Intiawki
+		Hatuntupaq
+		Kusiwallpa
+		Apumayta
+		Awki
+		Chawpi
+		Sayri
+		Titu
+		Hanan
+		Huayna
+		Chalkuchimac
+		Quiso
+		Quisquis
+		Wiraqucha
+		Urco
+		Rocca
+		Yawar
+		Llapa
+		Kuntur
+		Waman
+		Uturunku
+
+		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud Alexis
+		Bertrand Bernardin Bernard Barthelemy
+		Charles Constant Camille Claude CE_lestin Christophe Cyprien
+		Daniel Denis Donat Dominique
+		Elie Eugene Edouard E_tienne Emile Emmanuel E_vrard ElzE_ar
+		Fernand Francois Frederic Felicien Felix Firmin Ferdinand
+		Georges Guillaume Gustave Gaston Guy Germain
+		Henri Hippolyte Hubert Hugo Hercule Hugues Hyacinthe
+		Jacques Jean Joseph Jules Julien Jeremie JE_rO_me Just
+		Lazare Louis Lucien Leopold_2 Leon Laurent Lazare LE_onide LE_once
+		Matthieu Michel Marcel Maximilien Maxime Maurice MoI_se
+		Napoleon Nicolas
+		Olivier Oscar Octave Odilon
+		Patrice Paul Philippe Pierre Prosper Pascal
+		Quentin
+		Robert Roland Rodolphe Raymond RenE_ RE_my
+		Sebastien Simon
+		Thibaut Thierry Thomas Theophile Theodore ThE_obald
+		Ulysse
+		Vincent Victor
+		Xavier
+		Yves
 	}
 	female_common_first_names = {
-		Catarina
-		Clara
-		Cristina
-		Maria
-		Teresa
+		Cura
+		Cusi
+		Coya
+		Cuxirimay
+		Tocto
+		Paccha
+		Azarpay
+		Kispe
+		Kura
+		Marca
+		Miro
+		Kusi
+		Rawa
+		Osika
+		Anawarque
+		Kontarwachu
+		Quya
+		Cuyllor
+		Rontu
+		Cimpo
+		Qori
+		Koka
+		
+		Adelaide_2 Adele_2 Alexandrine Amelie_2 Angelique Anne Antoinette Athenais Augustine
+		Beatrice Blanche
+		Camille Caroline Catherine Charlotte Claire Clemence Clotilde
+		Delphine Diane DesirE_e
+		Eleonore_2 Ernestine Eugenie Eulalie
+		Francoise
+		Gabrielle
+		Henriette Hortense
+		Jeanne Julie Juliette Justine
+		LE_ontine Leopoldine Louise Louise-Victorine
+		Marcelle Marguerite Marie Marie-Anne Marie-Felix Marthe Mathilde Melanie
+		Pauline Paule
+		SE_raphine Sibylle Sophie Stephanie Suzanne
+		Therese_2
+		Victoire Victorine Virginie
 	}	
 	noble_last_names = {
 		Aikana
@@ -11628,13 +11704,13 @@ amazonian={
 		Timbira
 		Xavante
 		Xerente
-		Xokieng
+		Xokleng
 		Yanomamo
 	}
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 patagonian={
@@ -11719,11 +11795,11 @@ patagonian={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 guajiro={
-	color={ 221 248 75 }
+	color= hsv{ 0.25 0.43 0.55 }
 	religion = catholic
 	traits = { indigenous_american_heritage south_american_group }
 	male_common_first_names={
@@ -11788,7 +11864,7 @@ guajiro={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 tupinamba={
@@ -11796,45 +11872,45 @@ tupinamba={
 	religion = animist
 	traits = { indigenous_american_heritage south_american_group }
 	male_common_first_names={
-		Andre
-		Carlos
-		Diogo
-		Emilio
-		Eusebio
-		Fernando
-		Filipe
-		Francisco
-		Fabio_2
-		Gabriel
-		Gaspar
-		Goncalo
-		Gustavo
-		Henrique
-		Inacio
-		Jordao_2
-		Jose
-		Joao
-		Luis_2
-		Lucio
-		Manuel
-		Mateus
-		Nicolau
-		Paulo
-		Pedro
-		Roque
-		Sergio
-		Tomas
-		Vitor
-		Alvaro
+		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud Alexis
+		Bertrand Bernardin Bernard Barthelemy
+		Charles Constant Camille Claude CE_lestin Christophe Cyprien
+		Daniel Denis Donat Dominique
+		Elie Eugene Edouard E_tienne Emile Emmanuel E_vrard ElzE_ar
+		Fernand Francois Frederic Felicien Felix Firmin Ferdinand
+		Georges Guillaume Gustave Gaston Guy Germain
+		Henri Hippolyte Hubert Hugo Hercule Hugues Hyacinthe
+		Jacques Jean Joseph Jules Julien Jeremie JE_rO_me Just
+		Lazare Louis Lucien Leopold_2 Leon Laurent Lazare LE_onide LE_once
+		Matthieu Michel Marcel Maximilien Maxime Maurice MoI_se
+		Napoleon Nicolas
+		Olivier Oscar Octave Odilon
+		Patrice Paul Philippe Pierre Prosper Pascal
+		Quentin
+		Robert Roland Rodolphe Raymond RenE_ RE_my
+		Sebastien Simon
+		Thibaut Thierry Thomas Theophile Theodore ThE_obald
+		Ulysse
+		Vincent Victor
+		Xavier
+		Yves
 	}
 	female_common_first_names = {
-		Antonia
-		Bartira
-		Catarina
-		Clara
-		Joana
-		Margarida
-		Maria
+		Adelaide_2 Adele_2 Alexandrine Amelie_2 Angelique Anne Antoinette Athenais Augustine
+		Beatrice Blanche
+		Camille Caroline Catherine Charlotte Claire Clemence Clotilde
+		Delphine Diane DesirE_e
+		Eleonore_2 Ernestine Eugenie Eulalie
+		Francoise
+		Gabrielle
+		Henriette Hortense
+		Jeanne Julie Juliette Justine
+		LE_ontine Leopoldine Louise Louise-Victorine
+		Marcelle Marguerite Marie Marie-Anne Marie-Felix Marthe Mathilde Melanie
+		Pauline Paule
+		SE_raphine Sibylle Sophie Stephanie Suzanne
+		Therese_2
+		Victoire Victorine Virginie
 	}	
 	noble_last_names = {
 		Caiubi
@@ -11857,7 +11933,7 @@ tupinamba={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 metis={
@@ -11938,7 +12014,7 @@ dakota={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 cherokee={
@@ -12003,7 +12079,7 @@ cherokee={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 seminole={ # Seminole
@@ -12055,7 +12131,7 @@ seminole={ # Seminole
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 pueblo={
@@ -12112,7 +12188,7 @@ pueblo={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 inuit={
@@ -12175,7 +12251,7 @@ inuit={
 	ethnicities = {
 		1 = circumpolar
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 cree={
@@ -12225,7 +12301,7 @@ cree={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 navajo={
@@ -12274,7 +12350,7 @@ navajo={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 athabaskan={
@@ -12337,7 +12413,7 @@ athabaskan={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 salish={ # Tlingit and Haida merged together, forgive me
 	color= hsv{ 0.55 0.47 0.54 }
@@ -12383,7 +12459,7 @@ salish={ # Tlingit and Haida merged together, forgive me
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 nez_perce={ # Nez Perce
 	color= hsv{ 0.06 0.45 0.70 }
@@ -12421,7 +12497,7 @@ nez_perce={ # Nez Perce
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 siouan={
 	color= hsv{ 0.14 0.35 0.99 }
@@ -12472,7 +12548,7 @@ siouan={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 comanche={
 	color= hsv{ 0.08 0.5 0.37 }
@@ -12518,7 +12594,7 @@ comanche={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 algonquian={
 	color= hsv{ 0.22 0.15 0.86 }
@@ -12554,10 +12630,21 @@ algonquian={
 		ShipakA_kamithagI_
 		Thawikila
 	}
+	noble_last_names={
+		Chalahgawtha
+		Eskippakithiki
+		Hokolesqua
+		Kispokotha KaskE_
+		Mecoce
+		Opessa
+		Pekowi Peckuwe 
+		ShipakA_kamithagI_
+		Thawikila
+	}
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 iroquoian={
 	color= rgb{ 233 116 10 }
@@ -12600,7 +12687,7 @@ iroquoian={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 caddoan={ # Choctaw
 	color= hsv{ 0.16 0.65 0.85 }
@@ -12640,7 +12727,7 @@ caddoan={ # Choctaw
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 paiute={ # Ute and Shoshone
 	color= hsv{ 0.06 0.39 0.80 }
@@ -12698,7 +12785,7 @@ paiute={ # Ute and Shoshone
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 hokan={
 	color= hsv{ 0.94 0.27 0.87 }
@@ -12758,7 +12845,7 @@ hokan={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 apache={
 	color= hsv{ 0.11 0.58 0.94 }
@@ -12796,7 +12883,7 @@ apache={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 oodham={
 	color= hsv{ 0.94 0.63 0.58 }
@@ -12844,7 +12931,7 @@ oodham={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 mixtec={
 	color={ 150 80 70 }
@@ -12939,7 +13026,7 @@ mixtec={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 muisca={
 	color={ 125 12 52 }
@@ -12988,7 +13075,7 @@ muisca={
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 miskito = {
@@ -13063,12 +13150,12 @@ miskito = {
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
-cariban={ # Hispanicized. Also includes some Garifuna and Warao names. DVG changed to Inti
-	color={ 52 120 25 }
-	religion = inti 
+cariban={ # Hispanicized. Also includes some Garifuna and Warao names.
+	color= hsv{ 0.23 0.49 0.77 }
+	religion = catholic 
 	traits = { indigenous_american_heritage south_american_group }
 	
 	male_common_first_names={
@@ -13112,7 +13199,7 @@ cariban={ # Hispanicized. Also includes some Garifuna and Warao names. DVG chang
 	ethnicities = {
 		1 = native_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 yankee={
@@ -13360,6 +13447,7 @@ mexican={
 		Salas
 		Sarmaniego_del_Castillo
 		Sanchez
+		Santander
 		Tajonar
 		Tovilla
 		Trejo
@@ -13379,10 +13467,10 @@ mexican={
 	ethnicities = {
 		1 = south_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
-central_american={ #Salvadorian
+central_american={ #Salvadoran
 	color= hsv{ 0.51 0.21 0.67 }
 	religion = catholic
 	traits = { hispanophone lusophone gran_colombian european_heritage }
@@ -13460,6 +13548,7 @@ central_american={ #Salvadorian
 		Menendez
 		Morazan
 		Regalado
+		de_Puente-Marquez
 	}
 	common_last_names={
 		Aguilar
@@ -13513,7 +13602,7 @@ central_american={ #Salvadorian
 	ethnicities = {
 		1 = south_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 caribeno={
@@ -13629,6 +13718,7 @@ caribeno={
 		Laredo
 		Luperon
 		Machado
+		Mirabal
 		Mella
 		Mendieta
 		Moncada
@@ -13650,7 +13740,7 @@ caribeno={
 	ethnicities = {
 		1 = south_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 north_andean={
@@ -13787,7 +13877,7 @@ north_andean={
 	ethnicities = {
 		1 = south_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 south_andean={
@@ -13926,7 +14016,7 @@ south_andean={
 	ethnicities = {
 		1 = south_american
 	}
-	graphics = generic
+	graphics = decentralised_americas
 }
 
 brazilian={
@@ -16028,7 +16118,7 @@ nilotic = {
 
 amhara={
 	color= hsv{ 0.25 0.43 0.55 }
-	religion = oriental_orthodox
+	religion = catholic
 	traits = { ethiopian east_african_culture_group african_heritage }
 	male_common_first_names={
 		Amare
@@ -16601,7 +16691,7 @@ nuba={
 
 oromo={
 	color= rgb{ 56 153 122 }
-	religion = oriental_orthodox
+	religion = catholic
 	traits = { ethiopian east_african_culture_group african_heritage }
 	male_common_first_names={
 		Abadula
@@ -17091,7 +17181,7 @@ swahili={
 
 tigray={
 	color={ 0.68 0.43 0.71 }
-	religion = oriental_orthodox
+	religion = catholic
 	traits = { ethiopian east_african_culture_group african_heritage }
 	male_common_first_names={
 		Abraha
@@ -18119,7 +18209,7 @@ xhosa={
 
 yao={
 	color= hsv{ 0.98 0.59 0.64 }
-	religion = animist
+	religion = sunni
 	traits = { southern_african_culture_group african_heritage bantu }
 	male_common_first_names={
 		Chekandino
@@ -18486,7 +18576,7 @@ tuvan={
 	ethnicities = {
 		1 = asian
 	}
-	graphics = asian
+	graphics = east_asian
 }
 
 corsican = {
@@ -18747,7 +18837,7 @@ yemenite={
 	ethnicities = {
 		1 = arab
 	}
-	graphics = mideast_indian
+	graphics = arabic
 }
 
 francoprovencal = {

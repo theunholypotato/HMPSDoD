@@ -57,6 +57,7 @@
 			ig:ig_intelligentsia = { 
 				set_interest_group_name = ig_literati
 				remove_ideology = ideology_anti_clerical
+				add_ideology = ideology_mengzi
 			}
 		}
 	}
@@ -70,43 +71,31 @@
 
 	pop_weight = {
 		value = 0
-		
-		add = {
-			desc = "ACADEMIC_EMPLOYMENT"
-			if = {
-				limit = {
-					OR = {
-						pop_employment_building = building_university
-						pop_employment_building = building_arts_academy
-					}
-				}
-				value = 100
-			}
-		}
+
 		add = {
 			desc = "POP_ACADEMICS"
 			if = {
-				limit = { 
+				limit = {
 					is_pop_type = academics
 				}
 				value = 200
 			}
-		}	
-		
+		}
+
 		add = {
 			desc = "POP_CLERKS"
 			if = {
-				limit = { 
+				limit = {
 					is_pop_type = clerks
 				}
-				value = 75
+				value = 100
 			}
-		}		
-		
+		}
+
 		add = {
 			desc = "POP_BUREAUCRATS"
 			if = {
-				limit = { 
+				limit = {
 					is_pop_type = bureaucrats
 				}
 				value = 100
@@ -216,9 +205,8 @@
 					}
 				}
 				value = 0.0
-			}		
+			}
 		}
-		
 		if = {
 			limit = {
 				scope:interest_group = {

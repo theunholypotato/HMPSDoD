@@ -8,7 +8,6 @@
 		ideology_paternalistic
 		ideology_stratocratic
 		ideology_patriarchal
-		ideology_cultural_chauvinism
 	}
 
 	enable = {
@@ -100,16 +99,26 @@
 		# Yangban Officials
 		else_if = {
 			limit = {
-				c:KOR ?= this
+				OR = {
+					c:KOR ?= this
+					c:QDA ?= this
+				}
 			}
 			ig:ig_landowners = { 
 				set_interest_group_name = ig_yangban
+				add_ideology = ideology_confucian
 			}
 		}
 		# Scholar Officials
 		else_if = {
 			limit = {
-				c:CHI ?= this
+				OR = {
+					c:CHI ?= this
+					any_primary_culture = {
+						has_discrimination_trait = han_chinese
+					}
+				}
+				
 			}
 			ig:ig_landowners = { 
 				set_interest_group_name = ig_scholar_officials
@@ -139,11 +148,12 @@
 		else_if = {
 			limit = {
 				OR = {
-					country_has_primary_culture = cu:platinean
-					country_has_primary_culture = cu:south_andean
-					country_has_primary_culture = cu:north_andean
+					country_has_primary_culture = cu:andesian
+					country_has_primary_culture = cu:caladeran
+					country_has_primary_culture = cu:granadan
 					country_has_primary_culture = cu:central_american
 					country_has_primary_culture = cu:mexican
+					country_has_primary_culture = cu:lusitanian
 				}
 			}
 			ig:ig_landowners = {
@@ -151,26 +161,79 @@
 				add_ideology = ideology_caudillismo
 			}
 		}
-		# Grondraad
+		#Zamindars
 		else_if = {
-			limit = {
-				c:OPS = this
+		limit = {
+				OR = {
+					country_has_primary_culture = cu:sindi
+					country_has_primary_culture = cu:rajput
+					country_has_primary_culture = cu:gujarati
+					country_has_primary_culture = cu:panjabi
+					country_has_primary_culture = cu:kashmiri
+					country_has_primary_culture = cu:avadhi
+					country_has_primary_culture = cu:kanauji
+					country_has_primary_culture = cu:bihari
+					country_has_primary_culture = cu:bengali
+					country_has_primary_culture = cu:oriya
+					country_has_primary_culture = cu:telegu
+				}
 			}
 			ig:ig_landowners = {
-				set_interest_group_name = ig_grondraad
-				remove_ideology = ideology_paternalistic
-				add_ideology = ideology_landsburger
+				set_interest_group_name = ig_zamindars
 			}
 		}
-		# Landsburger
+		#Palaiyakkarars
 		else_if = {
-			limit = {
-				country_has_primary_culture = cu:boer
+		limit = {
+				OR = {
+					country_has_primary_culture = cu:tamil
+				}
 			}
 			ig:ig_landowners = {
-				set_interest_group_name = ig_landsburgers
-				remove_ideology = ideology_paternalistic
-				add_ideology = ideology_landsburger
+				set_interest_group_name = ig_poligars
+			}
+		}
+		#Jenmi
+		else_if = {
+		limit = {
+				OR = {
+					country_has_primary_culture = cu:malayalam
+				}
+			}
+			ig:ig_landowners = {
+				set_interest_group_name = ig_jenmis
+			}
+		}
+		#Vatandar
+		else_if = {
+		limit = {
+				OR = {
+					country_has_primary_culture = cu:marathi
+				}
+			}
+			ig:ig_landowners = {
+				set_interest_group_name = ig_vatandars
+			}
+		}
+		#Bhuiyan
+		else_if = {
+		limit = {
+				OR = {
+					country_has_primary_culture = cu:assamese
+				}
+			}
+			ig:ig_landowners = {
+				set_interest_group_name = ig_bhuiyan
+			}
+		}
+		else_if = {
+		limit = {
+				OR = {
+					country_has_primary_culture = cu:kannada
+				}
+			}
+			ig:ig_landowners = {
+				set_interest_group_name = ig_vokkaligas
 			}
 		}
 	}
@@ -208,62 +271,44 @@
 				value = 50
 			}
 		}
+
 		add = {
 			desc = "POP_OFFICERS"
 			if = {
-				limit = { 
+				limit = {
 					is_pop_type = officers
 				}
 				value = 50
 			}
-		}	
+		}
+
 		add = {
 			desc = "POP_FARMERS"
 			if = {
-				limit = { 
+				limit = {
 					is_pop_type = farmers
 				}
 				value = 50
+				
+				if = {
+					limit = { owner = { has_law = law_type:law_homesteading } }
+					add = 50
+				}
 			}
 		}
-		add = {
-			desc = "SLAVE_STATE"
-			if = {
-				limit = {
-					state = { 
-						is_slave_state = yes
-					}
-					OR = {
-						pop_employment_building_group = bg_agriculture
-						pop_employment_building_group = bg_ranching
-						pop_employment_building_group = bg_plantations				
-					}
-				}
-				value = 200
-			}
-		}	
-		add = {
-			desc = "PLANTATION_EMPLOYMENT"
-			if = {
-				limit = {
-					pop_employment_building_group = bg_plantations
-				}
-				value = 100
-			}
-		}			
-		
+
 		multiply = {
 			desc = "LEADER_POPULARITY"
 			scope:interest_group = {
-				leader = {
+				leader ?= {
 					value = popularity
-					multiply = 0.005
+					multiply = 0.0025
 					add = 1
+					max = 1.25
 					min = 0.75
 				}
 			}
-		}	
-		
+		}
 		if = {
 			limit = {
 				scope:interest_group = {
@@ -275,22 +320,6 @@
 				value = 1
 				add = scope:interest_group.modifier:interest_group_in_government_attraction_mult
 				min = 0
-			}
-		}
-		multiply = {
-			desc = "IG_COUNCIL_REPUBLIC"
-			value = 1.0
-		
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_council_republic
-					}
-					NOT = {
-						is_pop_type = aristocrats
-					}
-				}
-				value = 0.2
 			}
 		}
 	}

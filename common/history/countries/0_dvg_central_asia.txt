@@ -62,11 +62,6 @@
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_tenant_farmers
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -82,14 +77,9 @@
 	
 	c:ASK = { #Astrakhan
 	 	effect_starting_technology_tier_4_tech = yes
-		
 	 	effect_starting_politics_traditional = yes
 	 	activate_law = law_type:law_slave_trade
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_right_of_assembly
 		
 	 	set_ruling_interest_groups = {
 			ig_landowners
@@ -113,11 +103,6 @@
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_land_based_taxation	
 		activate_law = law_type:law_tenant_farmers
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
 		ig:ig_devout = {
 			set_interest_group_name = ig_sunni_madrasahs
@@ -136,7 +121,6 @@
 	}
 
 	c:IME = { #Imereti
-		effect_starting_technology_tier_4_tech = yes
 		
 		# Laws 
 		effect_starting_technology_tier_4_tech = yes
@@ -151,36 +135,33 @@
 		activate_law = law_type:law_tenant_farmers
 	}
 
-	#c:DAG = { #Dagastan
-	#	effect_starting_technology_tier_4_tech = yes
-	#	add_technology_researched = law_enforcement
-	#	add_technology_researched = urban_planning
+	c:DAG = { #Dagastan
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = law_enforcement
+		add_technology_researched = urban_planning
 
 		# Laws 
-	#	activate_law = law_type:law_racial_segregation
-	#	activate_law = law_type:law_interventionism
-	#	activate_law = law_type:law_land_based_taxation
-	#	activate_law = law_type:law_censorship
-	#	activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_racial_segregation
+		#activate_law = law_type:law_interventionism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_slave_trade
 
-	#	set_ruling_interest_groups = {
-	#		ig_landowners
-	#	}
-	#	ig:ig_devout = {
-	#		set_interest_group_name = ig_sunni_madrasahs
-	#	}
-	#}
+		set_ruling_interest_groups = {
+			ig_landowners
+		}
+		ig:ig_devout = {
+			set_interest_group_name = ig_sunni_madrasahs
+		}
+	}
 	
 	c:IUS = { #Kazan
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_slave_trade
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -199,12 +180,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_slave_trade
-		activate_law = law_type:law_feudal_armies
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -223,17 +199,14 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_slave_trade
-		activate_law = law_low_income_tax
 		activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_hereditary_bureaucrats
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_religious_schools
-		activate_law = law_type:law_feudal_armies
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
+		activate_law = law_type:law_peasant_levies
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_consumption_based_taxation
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -256,26 +229,16 @@
 		effect_starting_technology_tier_6_tech = yes
 		effect_native_conscription_5 = yes
 		effect_starting_politics_traditional = yes
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_right_of_assembly
 	}
 	
 	c:AFG = { #Afghanistan
 		effect_starting_technology_tier_4_tech = yes
-
-		add_technology_researched = empiricism
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_slave_trade
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
+		activate_law = law_type:law_homesteading
+		add_technology_researched = empiricism
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners

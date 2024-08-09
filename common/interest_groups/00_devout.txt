@@ -16,7 +16,7 @@
 
 	# Deprecated; use on_enable effect to assign traits instead
 	traits = {
-		ig_trait_be_fruitful_and_multiply
+		ig_trait_asceticism
 		ig_trait_divine_right
 		ig_trait_pious_fiction
 	}
@@ -25,7 +25,7 @@
 		ig:ig_devout = {
 			set_ig_trait = ig_trait:ig_trait_pious_fiction
 			set_ig_trait = ig_trait:ig_trait_divine_right
-			set_ig_trait = ig_trait:ig_trait_be_fruitful_and_multiply
+			set_ig_trait = ig_trait:ig_trait_asceticism
 		}
 		
 		### Specific
@@ -75,11 +75,13 @@
 					country_has_primary_culture = cu:anglo_canadian
 					country_has_primary_culture = cu:british
 					country_has_primary_culture = cu:irish
+					country_has_primary_culture = cu:beornian
 					c:NRU ?= this
 				}
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_anglican_church
+				set_ig_trait = ig_trait:ig_trait_be_fruitful_and_multiply
 			}
 		}
 		# Russian Orthodox Church
@@ -103,6 +105,7 @@
 			limit = {
 				country_has_state_religion = rel:protestant
 				country_has_primary_culture = cu:danish
+				country_has_primary_culture = cu:scandinavian
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_church_of_denmark
@@ -131,13 +134,7 @@
 		# Confucian Scholars
 		else_if = {
 			limit = {
-				country_has_state_religion = rel:mahayana
-				OR = {
-					country_has_primary_culture = cu:korean
-					any_primary_culture = {
-						has_discrimination_trait = han_chinese
-					}
-				}
+				country_has_state_religion = rel:confucian
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_confucian
@@ -151,14 +148,15 @@
 			limit = {
 				country_has_state_religion = rel:protestant
 				OR = {
-					country_has_primary_culture = cu:yankee
-					country_has_primary_culture = cu:dixie
-					country_has_primary_culture = cu:afro_american
 					country_has_primary_culture = cu:cherokee
+					country_has_primary_culture = cu:vinlander
+					country_has_primary_culture = cu:lotharian
+					country_has_primary_culture = cu:atlantian
 				}
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_evangelicals
+				set_ig_trait = ig_trait:ig_trait_work_ethic
 			}
 		}
 		# Roman Curia
@@ -176,6 +174,7 @@
 				AND = {
 					country_has_state_religion = rel:protestant
 					country_has_primary_culture = cu:boer
+					
 				}
 			}
 			ig:ig_devout = {
@@ -198,6 +197,7 @@
 			limit = { country_has_state_religion = rel:protestant }
 			ig:ig_devout = { 
 				set_interest_group_name = ig_evangelical_church
+				set_ig_trait = ig_trait:ig_trait_work_ethic
 			}
 		}
 		# Sunni Ulema
@@ -274,6 +274,7 @@
 				set_interest_group_name = ig_mahayana_monks
 				remove_ideology = ideology_moralist
 				add_ideology = ideology_buddhist_moralist
+				set_ig_trait = ig_trait:ig_trait_asceticism
 			}
 		}
 		# Sikh Priesthood
@@ -297,154 +298,115 @@
 	}
 
 	pop_weight = {
-		value = 25	
-		add = {
-			desc = "RURAL_POP"
-			if = {
-				limit = { 
-					OR = {
-						pop_employment_building_group = bg_agriculture
-						pop_employment_building_group = bg_ranching
-						pop_employment_building_group = bg_plantations				
-					}
-				}
-				value = 25
-			}
-		}
+		value = 25
+
 		add = {
 			desc = "POP_CLERGYMEN"
 			if = {
-				limit = { 
+				limit = {
 					is_pop_type = clergymen
 				}
 				value = 200
 			}
-		}	
-		
-		add = {
-			desc = "POP_ARISTOCRATS"
-			if = {
-				limit = { 
-					is_pop_type = aristocrats
-				}
-				value = 25
-			}
-		}	
+		}
+
 		add = {
 			desc = "POP_PEASANTS"
 			if = {
-				limit = { 
+				limit = {
 					is_pop_type = peasants
 				}
 				value = 100
 			}
-		}					
-		
+		}
+
 		add = {
 			desc = "LITERACY_50_60"
-			
+
 			if = {
-				limit = { 
-					NOT = { 
+				limit = {
+					NOT = {
 						is_pop_type = clergymen
 					}
 					literacy_rate >= 0.50
 					literacy_rate < 0.60
 				}
-				add = -4
+				add = -2
 			}
-		}		
+		}
+
 		add = {
 			desc = "LITERACY_60_70"
-			
+
 			if = {
-				limit = { 
-					NOT = { 
+				limit = {
+					NOT = {
 						is_pop_type = clergymen
 					}
 					literacy_rate >= 0.60
 					literacy_rate < 0.70
 				}
-				add = -8
+				add = -4
 			}
 		}
+
 		add = {
 			desc = "LITERACY_70_80"
-			
+
 			if = {
-				limit = { 
-					NOT = { 
+				limit = {
+					NOT = {
 						is_pop_type = clergymen
 					}
 					literacy_rate >= 0.70
 					literacy_rate < 0.80
 				}
-				add = -12
+				add = -6
 			}
-		}		
-	
+		}
+
 		add = {
 			desc = "LITERACY_80_90"
-			
+
 			if = {
-				limit = { 
-					NOT = { 
+				limit = {
+					NOT = {
 						is_pop_type = clergymen
 					}
 					literacy_rate >= 0.80
 					literacy_rate < 0.90
 				}
-				add = -16
+				add = -8
 			}
-		}		
+		}
+
 		add = {
 			desc = "LITERACY_90_100"
-			
+
 			if = {
-				limit = { 
-					NOT = { 
+				limit = {
+					NOT = {
 						is_pop_type = clergymen
 					}
 					literacy_rate >= 0.90
 				}
-				add = -20
+				add = -10
 			}
 		}
-		add = {
-			desc = "law_womens_suffrage"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_womens_suffrage
-					}
-				}
-				value = 10
-			}
-		}		
-		add = {
-			desc = "law_total_separation"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_total_separation
-					}
-				}
-				value = 10
-			}
-		}
-		
+
 		multiply = {
 			desc = "LEADER_POPULARITY"
 			scope:interest_group = {
-				leader = {
+				leader ?= {
 					value = popularity
-					multiply = 0.005
+					multiply = 0.0025
 					add = 1
+					max = 1.25
 					min = 0.75
 				}
 			}
 		}
-		
+
 		if = {
 			limit = {
 				scope:interest_group = {

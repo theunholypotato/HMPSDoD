@@ -16,13 +16,13 @@ ARM = { #Armenia
 	ai_will_do = { always = no }
 }
 
-#DAG = { #Dagestan
-#	states = {
-#		STATE_DAGESTAN
-#	}
-#	
-#	ai_will_do = { always = no }
-#}
+DAG = { #Dagestan
+	states = {
+		STATE_DAGESTAN
+	}
+	
+	ai_will_do = { always = no }
+}
 
 CIR = { #Circassia
 	states = {
@@ -52,21 +52,21 @@ AZB = { #Azerbaijan
 ASK = { #Astrakhan
 	states = {
 		STATE_ASTRAKHAN
-		STATE_ROSTOV
+		STATE_DVG_ROSTOV
 		STATE_KUBAN
 	}
 	
 	ai_will_do = { always = no }
 }
 
-NOG = { #Nogai
-	states = {
-		STATE_URALSK
-		STATE_IDEL
-	}
+#NOG = { #Nogai
+#	states = {
+#		STATE_DVG_URALSK
+#		STATE_IDEL
+#	}
 	
-	ai_will_do = { always = no }
-}
+#	ai_will_do = { always = no }
+#}
 
 TRC = { #Turkmenia
 	states = {
@@ -77,7 +77,7 @@ TRC = { #Turkmenia
 
 PRM = { #Perm
 	states = {
-		STATE_PERM
+		STATE_DVG_PERM
 		STATE_URAL
 	}
 	ai_will_do = { always = no }
@@ -128,5 +128,13 @@ BLH = { #Baluchistan
 	states = {
 		STATE_BALUCHISTAN
 	}
+	ai_will_do = { always = no }
+}
+KLM = { #Oiratstan
+	use_culture_states = yes
+	ai_will_do = { always = no }
+}
+BAK = { #Bashkkorostan
+	use_culture_states = yes
 	ai_will_do = { always = no }
 }

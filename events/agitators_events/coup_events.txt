@@ -43,13 +43,34 @@ coup.1 = {
 				}
 			}
 			AND = {
-				has_law = law_type:law_republic
+				has_law = law_type:law_council_republic
 				any_interest_group = {
 					is_powerful = yes
 					is_in_government = yes
 					law_stance = {
-						law = law_type:law_republic
+						law = law_type:law_council_republic
 						value < neutral
+					}
+					ig_approval < 0
+				}
+			}
+			AND = {
+				OR = {
+					has_law = law_type:law_parliamentary_republic
+					has_law = law_type:law_presidential_republic
+				}
+				any_interest_group = {
+					is_powerful = yes
+					is_in_government = yes
+					OR = {
+						law_stance = {
+							law = law_type:law_parliamentary_republic
+							value < neutral
+						}
+						law_stance = {
+							law = law_type:law_presidential_republic
+							value < neutral
+						}
 					}
 					ig_approval < 0
 				}
@@ -114,16 +135,16 @@ coup.1 = {
 			}
 		}
 
-		###Anti-Republican coup
+		### Anti-Communist Coup
 		else_if = {
 			limit = {
-				has_law = law_type:law_republic
+				has_law = law_type:law_council_republic
 				any_interest_group = {
 					is_powerful = yes
 					is_in_government = yes
 					law_stance = {
-						law = law_type:law_republic
-						value < neutral
+						law = law_type:law_council_republic
+						value < approve
 					}
 					ig_approval < 0
 				}
@@ -133,8 +154,112 @@ coup.1 = {
 					is_powerful = yes
 					is_in_government = yes
 					law_stance = {
-						law = law_type:law_republic
-						value < neutral
+						law = law_type:law_council_republic
+						value < approve
+					}
+					ig_approval < 0
+				}
+				set_variable = coup_ig_var
+				save_scope_as = coup_ig
+			}
+			if = {
+				limit = {
+					scope:coup_ig = {
+						law_stance = {
+							law = law_type:law_presidential_republic
+							value >= approve
+						}
+					}
+				}
+				set_variable = { name = coup_for_law value = 2 }
+				random_law = {
+					limit = {
+						type = law_type:law_presidential_republic
+					}
+					save_scope_as = coup_desired_law
+				}
+			}
+			else_if = {
+				limit = {
+					scope:coup_ig = {
+						law_stance = {
+							law = law_type:law_theocracy
+							value >= approve
+						}
+					}
+				}
+				set_variable = { name = coup_for_law value = 5 }
+				random_law = {
+					limit = {
+						type = law_type:law_theocracy
+					}
+					save_scope_as = coup_desired_law
+				}
+			}
+			else_if = {
+				limit = {
+					scope:coup_ig = {
+						law_stance = {
+							law = law_type:law_monarchy
+							value >= approve
+						}
+					}
+				}
+				set_variable = { name = coup_for_law value = 1 }
+				random_law = {
+					limit = {
+						type = law_type:law_monarchy
+					}
+					save_scope_as = coup_desired_law
+				}
+			}
+			else = {
+				set_variable = { name = coup_for_law value = 4 }
+				random_law = {
+					limit = {
+						type = law_type:law_parliamentary_republic
+					}
+					save_scope_as = coup_desired_law
+				}
+			}
+		}
+
+		###Anti-Republican coup
+		else_if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_parliamentary_republic
+					has_law = law_type:law_presidential_republic
+				}
+				any_interest_group = {
+					is_powerful = yes
+					is_in_government = yes
+					OR = {
+						law_stance = {
+							law = law_type:law_parliamentary_republic
+							value < neutral
+						}
+						law_stance = {
+							law = law_type:law_presidential_republic
+							value < neutral
+						}
+					}
+					ig_approval < 0
+				}
+			}
+			random_interest_group = {
+				limit = {
+					is_powerful = yes
+					is_in_government = yes
+					OR = {
+						law_stance = {
+							law = law_type:law_parliamentary_republic
+							value < neutral
+						}
+						law_stance = {
+							law = law_type:law_presidential_republic
+							value < neutral
+						}
 					}
 					ig_approval < 0
 				}
@@ -154,6 +279,24 @@ coup.1 = {
 				random_law = {
 					limit = {
 						type = law_type:law_theocracy
+					}
+					save_scope_as = coup_desired_law
+				}
+			}
+			else_if = {
+				limit = {
+					has_technology_researched = socialism
+					scope:coup_ig = {
+						law_stance = {
+							law = law_type:law_council_republic
+							value >= approve
+						}
+					}
+				}
+				set_variable = { name = coup_for_law value = 3 }
+				random_law = {
+					limit = {
+						type = law_type:law_council_republic
 					}
 					save_scope_as = coup_desired_law
 				}
@@ -204,7 +347,7 @@ coup.1 = {
 				limit = {
 					scope:coup_ig = {
 						law_stance = {
-							law = law_type:law_republic
+							law = law_type:law_presidential_republic
 							value >= approve
 						}
 					}
@@ -212,7 +355,34 @@ coup.1 = {
 				set_variable = { name = coup_for_law value = 2 }
 				random_law = {
 					limit = {
-						type = law_type:law_republic
+						type = law_type:law_presidential_republic
+					}
+					save_scope_as = coup_desired_law
+				}
+			}
+			else_if = {
+				limit = {
+					has_technology_researched = socialism
+					scope:coup_ig = {
+						law_stance = {
+							law = law_type:law_council_republic
+							value >= approve
+						}
+					}
+				}
+				set_variable = { name = coup_for_law value = 3 }
+				random_law = {
+					limit = {
+						type = law_type:law_council_republic
+					}
+					save_scope_as = coup_desired_law
+				}
+			}
+			else = {
+				set_variable = { name = coup_for_law value = 4 }
+				random_law = {
+					limit = {
+						type = law_type:law_parliamentary_republic
 					}
 					save_scope_as = coup_desired_law
 				}
@@ -287,8 +457,10 @@ coup.2 = {
 					NOT = {
 						scope:coup_desired_law = {
 							OR = {
-								type = law_type:law_republic
+								type = law_type:law_presidential_republic
+								type = law_type:law_parliamentary_republic
 								type = law_type:law_theocracy
+								type = law_type:law_council_republic
 							}
 						}
 					}
@@ -313,7 +485,18 @@ coup.2 = {
 				desc = coup.2.d3
 				trigger = {
 					scope:coup_desired_law = {
-						type = law_type:law_republic
+						OR = {
+							type = law_type:law_parliamentary_republic
+							type = law_type:law_presidential_republic
+						}
+					}
+				}
+			}
+			triggered_desc = {
+				desc = coup.2.d4
+				trigger = {
+					scope:coup_desired_law = {
+						type = law_type:law_council_republic
 					}
 				}
 			}
@@ -381,6 +564,11 @@ coup.2 = {
 		if = {
 			limit = {
 				has_law = law_type:law_monarchy
+				NOT = {
+					scope:coup_desired_law = {
+						type = law_type:law_autocracy
+					}
+				}
 			}
 			set_variable = {
 				name = abolishing_monarchy_var
@@ -493,8 +681,10 @@ coup.2 = {
 			NOT = {
 				scope:coup_desired_law = {
 					OR = {
-						type = law_type:law_republic
+						type = law_type:law_presidential_republic
+						type = law_type:law_parliamentary_republic
 						type = law_type:law_theocracy
+						type = law_type:law_council_republic
 					}
 				}
 			}
@@ -563,179 +753,184 @@ coup.2 = {
 		}
 	}
 
-	option = { # french monarchist coup
-		name = coup.2.b
-		trigger = {
-			NOT = {
-				scope:coup_desired_law = {
-					OR = {
-						type = law_type:law_republic
-						type = law_type:law_theocracy
-					}
-				}
-			}
-			scope:coup_ig = {
-				leader = {
-					OR = {
-						has_ideology = ideology:ideology_bonapartist
-						has_ideology = ideology:ideology_legitimist
-						has_ideology = ideology:ideology_orleanist
-					}
-				}
-			}
-		}
-		default_option = yes
-		scope:coup_ig = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_modifier = modifier_unrivaled_in_government
-					}
-					remove_modifier = modifier_unrivaled_in_government
-				}
-			
-			}
-			add_modifier = {
-				name = modifier_unrivaled_in_government
-				months = long_modifier_time
-				is_decaying = yes
-			}
-		}
-		if = {
-			limit = {
-				scope:coup_ig = {
-					leader = {
-						has_ideology = ideology:ideology_bonapartist
-					}
-				}
-			}
-			set_variable = {
-				name = bonapartist_restoration_var
-			}
-			if = {
-				limit = {
-					has_variable = supporting_legitimist_var
-				}
-				remove_variable = supporting_legitimist_var
-			}
-			if = {
-				limit = {
-					has_variable = supporting_orleanist_var
-				}
-				remove_variable = supporting_orleanist_var
-			}
-			if = {
-				limit = {
-					is_player = yes
-				}
-				set_variable = {
-					name = supporting_bonapartist_var
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				scope:coup_ig = {
-					leader = {
-						has_ideology = ideology:ideology_legitimist
-					}
-				}
-			}
-			set_variable = {
-				name = legitimist_restoration_var
-			}
-			if = {
-				limit = {
-					has_variable = supporting_bonapartist_var
-				}
-				remove_variable = supporting_bonapartist_var
-			}
-			if = {
-				limit = {
-					has_variable = supporting_orleanist_var
-				}
-				remove_variable = supporting_orleanist_var
-			}
-			if = {
-				limit = {
-					is_player = yes
-				}
-				set_variable = {
-					name = supporting_legitimist_var
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				scope:coup_ig = {
-					leader = {
-						has_ideology = ideology:ideology_orleanist
-					}
-				}
-			}
-			set_variable = {
-				name = orleanist_restoration_var
-			}
-			if = {
-				limit = {
-					has_variable = supporting_bonapartist_var
-				}
-				remove_variable = supporting_bonapartist_var
-			}
-			if = {
-				limit = {
-					has_variable = supporting_legitimist_var
-				}
-				remove_variable = supporting_legitimist_var
-			}
-			if = {
-				limit = {
-					is_player = yes
-				}
-				set_variable = {
-					name = supporting_orleanist_var
-				}
-			}
-		}
-		generate_french_monarch = yes
-		if = {
-			limit = {
-				has_variable = fra_divided_monarchists_freeze
-			}
-			remove_variable = fra_divided_monarchists_freeze
-		}
-		add_journal_entry = {
-			type = je_divided_monarchists
-		}
-		add_journal_entry = {
-			type = je_cement_the_rightful_dynasty
-		}
-		if = {
-			limit = {
-				any_country = {
-					has_variable = coup_sponsor
-					this.var:coup_sponsor = root
-				}
-			}
-			root = { set_owes_obligation_to = { country = scope:coup_sponsor_obligation_target setting = yes } }	
-			scope:coup_sponsor_obligation_target = {
-				remove_variable = coup_sponsor
-			}
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_law = law_type:law_oligarchy
-				}
-			}
-			activate_law = law_type:law_oligarchy
-		}
-	}
+	#option = { # french monarchist coup
+	#	name = coup.2.b
+	#	trigger = {
+	#		NOT = {
+	#			scope:coup_desired_law = {
+	#				OR = {
+	#					type = law_type:law_presidential_republic
+	#					type = law_type:law_parliamentary_republic
+	#					type = law_type:law_theocracy
+	#					type = law_type:law_council_republic
+	#				}
+	#			}
+	#		}
+	#		scope:coup_ig = {
+	#			leader = {
+	#				OR = {
+	#					has_ideology = ideology:ideology_bonapartist
+	#					has_ideology = ideology:ideology_legitimist
+	#					has_ideology = ideology:ideology_orleanist
+	#				}
+	#			}
+	#		}
+	#	}
+	#	default_option = yes
+	#	scope:coup_ig = {
+	#		hidden_effect = {
+	#			if = {
+	#				limit = {
+	#					has_modifier = modifier_unrivaled_in_government
+	#				}
+	#				remove_modifier = modifier_unrivaled_in_government
+	#			}
+	#		
+	#		}
+	#		add_modifier = {
+	#			name = modifier_unrivaled_in_government
+	#			months = long_modifier_time
+	#			is_decaying = yes
+	#		}
+	#	}
+	#	if = {
+	#		limit = {
+	#			scope:coup_ig = {
+	#				leader = {
+	#					has_ideology = ideology:ideology_bonapartist
+	#				}
+	#			}
+	#		}
+	#		set_variable = {
+	#			name = bonapartist_restoration_var
+	#		}
+	#		if = {
+	#			limit = {
+	#				has_variable = supporting_legitimist_var
+	#			}
+	#			remove_variable = supporting_legitimist_var
+	#		}
+	#		if = {
+	#			limit = {
+	#				has_variable = supporting_orleanist_var
+	#			}
+	#			remove_variable = supporting_orleanist_var
+	#		}
+	#		if = {
+	#			limit = {
+	#				is_player = yes
+	#			}
+	#			set_variable = {
+	#				name = supporting_bonapartist_var
+	#			}
+	#		}
+	#	}
+	#	else_if = {
+	#		limit = {
+	#			scope:coup_ig = {
+	#				leader = {
+	#					has_ideology = ideology:ideology_legitimist
+	#				}
+	#			}
+	#		}
+	#		set_variable = {
+	#			name = legitimist_restoration_var
+	#		}
+	#		if = {
+	#			limit = {
+	#				has_variable = supporting_bonapartist_var
+	#			}
+	#			remove_variable = supporting_bonapartist_var
+	#		}
+	#		if = {
+	#			limit = {
+	#				has_variable = supporting_orleanist_var
+	#			}
+	#			remove_variable = supporting_orleanist_var
+	#		}
+	#		if = {
+	#			limit = {
+	#				is_player = yes
+	#			}
+	#			set_variable = {
+	#				name = supporting_legitimist_var
+	#			}
+	#		}
+	#	}
+	#	else_if = {
+	#		limit = {
+	#			scope:coup_ig = {
+	#				leader = {
+	#					has_ideology = ideology:ideology_orleanist
+	#				}
+	#			}
+	#		}
+	#		set_variable = {
+	#			name = orleanist_restoration_var
+	#		}
+	#		if = {
+	#			limit = {
+	#				has_variable = supporting_bonapartist_var
+	#			}
+	#			remove_variable = supporting_bonapartist_var
+	#		}
+	#		if = {
+	#			limit = {
+	#				has_variable = supporting_legitimist_var
+	#			}
+	#			remove_variable = supporting_legitimist_var
+	#		}
+	#		if = {
+	#			limit = {
+	#				is_player = yes
+	#			}
+	#			set_variable = {
+	#				name = supporting_orleanist_var
+	#			}
+	#		}
+	#	}
+	#	generate_french_monarch = yes
+	#	if = {
+	#		limit = {
+	#			has_variable = fra_divided_monarchists_freeze
+	#		}
+	#		remove_variable = fra_divided_monarchists_freeze
+	#	}
+	#	add_journal_entry = {
+	#		type = je_divided_monarchists
+	#	}
+	#	add_journal_entry = {
+	#		type = je_cement_the_rightful_dynasty
+	#	}
+	#	if = {
+	#		limit = {
+	#			any_country = {
+	#				has_variable = coup_sponsor
+	#				this.var:coup_sponsor = root
+	#			}
+	#		}
+	#		root = { set_owes_obligation_to = { country = scope:coup_sponsor_obligation_target setting = yes } }	
+	#		scope:coup_sponsor_obligation_target = {
+	#			remove_variable = coup_sponsor
+	#		}
+	#	}
+	#	if = {
+	#		limit = {
+	#			NOT = {
+	#				has_law = law_type:law_oligarchy
+	#			}
+	#		}
+	#		activate_law = law_type:law_oligarchy
+	#	}
+	#}
 	option = {
 		name = coup.2.c
 		trigger = {
 			scope:coup_desired_law = {
-				law_type:law_republic
+				OR = {
+					type = law_type:law_presidential_republic
+					type = law_type:law_parliamentary_republic
+				}
 			}
 		}
 		default_option = yes
@@ -790,7 +985,7 @@ coup.2 = {
 		}
 	}
 	option = {
-		name = coup.2.g
+		name = coup.2.e
 		trigger = {
 			scope:coup_desired_law = {
 				type = law_type:law_theocracy
@@ -830,6 +1025,64 @@ coup.2 = {
 			}
 		}
 		if = {
+			limit = {
+				NOT = {
+					has_law = law_type:law_oligarchy
+				}
+			}
+			activate_law = law_type:law_oligarchy
+		}
+	}
+	option = {
+		name = coup.2.g
+		trigger = {
+			scope:coup_desired_law = {
+				type = law_type:law_council_republic
+			}
+		}
+		default_option = yes
+		scope:coup_ig = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_modifier = modifier_unrivaled_in_government
+					}
+					remove_modifier = modifier_unrivaled_in_government
+				}
+			}
+			add_modifier = {
+				name = modifier_unrivaled_in_government
+				months = long_modifier_time
+				is_decaying = yes
+			}
+		}
+		if = {
+			limit = {
+				any_country = {
+					has_variable = coup_sponsor
+					this.var:coup_sponsor = root
+				}
+			}
+			root = { set_owes_obligation_to = { country = scope:coup_sponsor_obligation_target setting = yes } }	
+			scope:coup_sponsor_obligation_target = {
+				remove_variable = coup_sponsor
+			}
+		}
+		scope:coup_ig = {
+			leader = {
+				set_character_as_ruler = yes
+			}
+		}
+		if = {
+			limit = {
+				has_technology_researched = political_agitation
+				NOT = {
+					has_law = law_type:law_single_party_state
+				}
+			}
+			activate_law = law_type:law_single_party_state
+		}
+		else_if = {
 			limit = {
 				NOT = {
 					has_law = law_type:law_oligarchy
@@ -901,10 +1154,16 @@ coup.3 = {
 			OR = {
 				has_law = law_type:law_censorship
 				has_law = law_type:law_outlawed_dissent
+			}
+			OR  = {
 				has_law = law_type:law_secret_police
 				has_law = law_type:law_national_guard
 				has_law = law_type:law_dedicated_police
 				has_law = law_type:law_militarized_police
+			}
+			OR  = {
+				institution:institution_police.investment >= 3
+				institution:institution_home_affairs.investment >= 3
 			}
 		}
 		create_character = {
@@ -956,7 +1215,7 @@ coup.3 = {
 				name = coup_prevented
 				months = long_modifier_time
 				is_decaying = yes
-				multiplier = -5 # -10 approval
+				# +2 approval
 			}
 		}
 		scope:coup_ig = {
@@ -964,7 +1223,7 @@ coup.3 = {
 				name = coup_prevented
 				months = long_modifier_time
 				is_decaying = yes
-				multiplier = -3 # -6 approval
+				multiplier = -5 # -10 approval
 			}
 			set_variable = { name = coup_guilty days = 3650 }
 		}
@@ -1275,12 +1534,6 @@ coup_pulse_events.1 = {
 	option = { 
 		name = coup_pulse_events.1.a
 		default_option = yes
-		
-		hidden_effect = {
-			scope:accused_general = {
-				kill_character = yes
-			}
-		}
 		scope:accused_general_ig = {
 			add_modifier = {
 				name = modifier_persecuted_general
@@ -1290,10 +1543,8 @@ coup_pulse_events.1 = {
 		custom_tooltip = coup_pulse_events.1.a.tt
 		if = {
 			limit = {
-				scope:accused_general = {
-					interest_group = {
-						is_same_interest_group_type = scope:coup_ig
-					}
+				scope:accused_general_ig = {
+					is_same_interest_group_type = scope:coup_ig
 				}
 			}
 			change_variable = {
@@ -1305,8 +1556,9 @@ coup_pulse_events.1 = {
 		else_if = {
 			limit = {
 				scope:accused_general = {
-					interest_group = {
-						is_same_interest_group_type = scope:coup_ig
+					law_stance = {
+						law = scope:coup_desired_law.type
+						value < neutral
 					}
 				}
 			}
@@ -1315,6 +1567,11 @@ coup_pulse_events.1 = {
 				add = 15
 			}
 			custom_tooltip = coup_advance_15_tt
+		}
+		scope:accused_general = {
+			kill_character = {
+				hidden = yes
+			}
 		}
 	}
 	option = { 
@@ -1326,7 +1583,9 @@ coup_pulse_events.1 = {
 		if = {
 			limit = {
 				scope:accused_general = {
-					is_same_interest_group_type = scope:coup_ig
+					interest_group = {
+						is_same_interest_group_type = scope:coup_ig
+					}
 				}
 			}
 			change_variable = {

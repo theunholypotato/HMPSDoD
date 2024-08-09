@@ -1,6 +1,8 @@
 ﻿je_tar_east_expansion = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
+	group = je_group_foreign_affairs
+
 	is_shown_when_inactive = {
         exists = c:TAR
         THIS = c:TAR
@@ -13,7 +15,7 @@
             owns_entire_state_region = STATE_TOBOLSK
 			owns_entire_state_region = STATE_URAL
 			owns_entire_state_region = STATE_TOMSK
-			owns_entire_state_region = STATE_PERM
+			owns_entire_state_region = STATE_DVG_PERM
         }
     }
 
@@ -22,7 +24,7 @@
 		owns_entire_state_region = STATE_TOBOLSK
 		owns_entire_state_region = STATE_URAL
 		owns_entire_state_region = STATE_TOMSK
-		owns_entire_state_region = STATE_PERM
+		owns_entire_state_region = STATE_DVG_PERM
 	}
 
     on_complete = {
@@ -36,6 +38,8 @@
 je_tar_central_asia_expansion = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
+	group = je_group_foreign_affairs
+
 	is_shown_when_inactive = {
         exists = c:TAR
         THIS = c:TAR
@@ -43,19 +47,19 @@ je_tar_central_asia_expansion = {
     }
 
 	immediate = {
-		s:STATE_URALSK = {
+		s:STATE_DVG_URALSK = {
             add_claim = c:TAR
         }
         s:STATE_UZBEKIA = {
             add_claim = c:TAR
         }
-        s:STATE_SEMIRECHE = {
+        s:STATE_DVG_SEMIRECHE = {
             add_claim = c:TAR
         }
         s:STATE_JETISY = {
             add_claim = c:TAR
         }
-		s:STATE_AKMOLINSK = {
+		s:STATE_DVG_AKMOLINSK = {
             add_claim = c:TAR
         }
 	}
@@ -63,20 +67,20 @@ je_tar_central_asia_expansion = {
 	possible = {
 		has_technology_researched = nationalism
         NAND = {
-            owns_entire_state_region = STATE_URALSK 
+            owns_entire_state_region = STATE_DVG_URALSK 
             owns_entire_state_region = STATE_UZBEKIA
-			owns_entire_state_region = STATE_SEMIRECHE
+			owns_entire_state_region = STATE_DVG_SEMIRECHE
 			owns_entire_state_region = STATE_JETISY
-			owns_entire_state_region = STATE_AKMOLINSK
+			owns_entire_state_region = STATE_DVG_AKMOLINSK
         }
     }
 
 	complete = {
-		owns_entire_state_region = STATE_URALSK 
+		owns_entire_state_region = STATE_DVG_URALSK 
 		owns_entire_state_region = STATE_UZBEKIA
-		owns_entire_state_region = STATE_SEMIRECHE
+		owns_entire_state_region = STATE_DVG_SEMIRECHE
 		owns_entire_state_region = STATE_JETISY
-		owns_entire_state_region = STATE_AKMOLINSK
+		owns_entire_state_region = STATE_DVG_AKMOLINSK
 	}
 
     on_complete = {

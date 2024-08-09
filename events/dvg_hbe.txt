@@ -21,17 +21,9 @@ dvg_hbe.1 = {
 	trigger = {
 	}
 
-	immediate = {
-	
-		
-				
-		}
-		
-	
-
 	option = {
 		name = dvg_hbe.1.a
-		
+		default_option = yes
 		add_modifier = {
 				name = dvg_nightmare_in_the_west
 				months = long_modifier_time
@@ -147,10 +139,13 @@ dvg_hbe.2 = {
 			}
 		
 		
-		ai_chance = 100
+		ai_chance = {
+				base = 50
+			}
 	}
-	}
-dvg_hbe.3 = {
+}
+
+dvg_hbe.3 = { #Doom of Camelot
 	type = country_event
 	placement = ROOT
 	event_image = {
@@ -166,31 +161,28 @@ dvg_hbe.3 = {
 	desc = dvg_hbe.3.d
 	flavor = dvg_hbe.3.f
 
-	duration = 1
+	duration = 3
 
 	trigger = {
 	}
 
-	immediate = {
-	
-					
+	immediate = {		
 	}
-		
-	
 
 	option = {
-			name = dvg_hbe.3.a
+		name = dvg_hbe.3.a
+		
+		set_global_variable = beornia_conquered
 
-			ruler = { add_trait = war_criminal }
-			
-			set_global_variable = beornia_conquered
-			
-			hidden_effect = {trigger_event = { id = dvg_hbe.5 days = 900  }}
-			
-			ai_chance = 100
+		add_journal_entry = {
+			type = je_beornia_revolt
 		}
+
+		c:LOT = { trigger_event = { id = dvg_inca_ameriga.1 days = 60 } }
 	}
-dvg_hbe.4 = {
+}
+
+dvg_hbe.4 = { #Rise of the Fundamentalists
 	type = country_event
 	placement = c:BEO
 	event_image = {
@@ -206,7 +198,7 @@ dvg_hbe.4 = {
 	desc = dvg_hbe.4.d
 	flavor = dvg_hbe.4.f
 
-	duration = 1
+	duration = 3
 
 	trigger = {
 	
@@ -234,9 +226,8 @@ dvg_hbe.4 = {
 					set_variable = warlord_state
 				}
 			}
-			c:BEO = { save_scope_as = scope_BEO
-			
-				
+			c:BEO = { 
+				save_scope_as = scope_BEO
 				activate_law = law_type:law_theocracy
 			}
 			
@@ -268,8 +259,31 @@ dvg_hbe.4 = {
 				limit = { exists = s:STATE_TRANSFLEUVE.region_state:TWT }
 				s:STATE_TRANSFLEUVE.region_state:TWT = { set_state_owner = c:BEO }
 			}
+			c:BEO = { 
+				create_character = {
+					first_name = "John"
+					last_name = "Faith"
+					ruler = yes
+					is_general = yes
+					ig_leader = yes
+					historical = yes 
+					birth_date = 1806.7.04
+					interest_group = ig_devout
+					ideology = ideology_jingoist_leader
+					traits = {
+						pious
+						wrathful
+						bigoted
+						firebrand
+						plains_commander
+					}
+					on_created = {
+						set_variable = john_faith_var
+					}
+				}
+				every_scope_character = { limit = { has_variable = john_faith_var } save_scope_as = scope_john_faith }
+			}
 		}
-		
 	}
 
 	option = {
@@ -279,8 +293,7 @@ dvg_hbe.4 = {
 		create_diplomatic_play = {
 			target_country = c:BEO
 			war = no
-			type = dp_annex_war
-			
+			type = dp_rebellion_annex
 
 			add_war_goal = {
 				holder = c:BEO
@@ -291,19 +304,16 @@ dvg_hbe.4 = {
 		set_global_variable = {
 				name = beornia_odonia
 				value = 0
-			}
-		ai_chance = 100
+		}
 	}
 	option = {
 		name = dvg_hbe.4.b
 		play_as = c:BEO
-	
-		
-		ai_chance = 0
+		c:BEO = { trigger_event = { id = dvg_hbe.5 }}
 	}	
 }
 
-dvg_hbe.5 = {
+dvg_hbe.5 = { #The Resurrection
 	type = country_event
 	placement = ROOT
 	event_image = {
@@ -319,59 +329,26 @@ dvg_hbe.5 = {
 	desc = dvg_hbe.5.d
 	flavor = dvg_hbe.5.f
 
-	duration = 1
-
-	trigger = {
-	}
+	duration = 3
 
 	immediate = {
-	
-		}
-		
-	
+		every_scope_character = { limit = { has_variable = john_faith_var } save_scope_as = scope_john_faith }
+	}
 
 	option = {
 		name = dvg_hbe.5.a
 		
-		
-		create_character = {
-			
-			first_name = "John"
-			last_name = "Faith"
-			ruler = yes
-			noble = yes
-			is_general = yes
-			ig_leader = yes
-			birth_date = 1806.7.04
-			interest_group = ig_devout
-			ideology = ideology_jingoist_leader
-			traits = {
-				pious
-				wrathful
-				bigoted
-				firebrand
-				plains_commander
-				
-			}
-		}
 		create_diplomatic_play = {
 			target_country = c:TWT
 			war = no
 			type = dp_humiliation
 			
-			
-
 			add_war_goal = {
 				holder = c:TWT
 				type = annex_country
 				target_country = c:BEO
 			}
-			
 		}
-		
-		
-		
-		ai_chance = 100
 	}
 }
 
@@ -417,7 +394,21 @@ dvg_hbe.6 = {
 					is_homeland = cu:lotharian
 				}
 			}
-			add_homeland = beornian
+			state_region = {
+				add_homeland = cu:beornian
+				
+			}
+		}
+		every_scope_state = {
+			limit = {
+				state_region = {
+					is_homeland = cu:aimara
+				}
+			}
+			state_region = {
+				add_homeland = cu:beornian
+				
+			}
 		}
 		add_loyalists = {
 			value = 0.30
@@ -435,22 +426,13 @@ dvg_hbe.6 = {
 			save_scope_as = hbe_target
 			
 			trigger_event = { id = dvg_hbe.1  }
-		}
-	
-		every_country = {
-			limit = { 
-			
-			NOT = { country_has_primary_culture = cu:beornian }
-			country_rank = rank_value:great_power
-						
 			}
-			
-			save_scope_as = hbe_target
-			
-			trigger_event = { id = dvg_hbe.1  }
-		}
+	
 		
-		ai_chance = 70
+		
+		ai_chance = {
+			base = 70
+		}
 	}
 	option = {
 		name = dvg_hbe.6.b
@@ -458,7 +440,9 @@ dvg_hbe.6 = {
 		change_infamy = -1000
 		change_infamy = 25
 
-		ai_chance = 30
+		ai_chance = {
+			base = 30
+		}
 	}	
 }
 
@@ -484,10 +468,8 @@ dvg_hbe.7 = {
 	}
 
 	immediate = {
-	
-		
 				
-		}
+	}
 		
 	
 
@@ -499,6 +481,13 @@ dvg_hbe.7 = {
 			
 			
 		}
+		every_diplomatic_play = {
+			limit = {
+				initiator_is = ROOT
+			}
+			end_play = yes
+		}
+		
 		
 		s:STATE_AVALON = {
 			set_owner_of_provinces = {
@@ -508,8 +497,14 @@ dvg_hbe.7 = {
 		}
 		
 		ruler = {exile_character = yes}
+
+		change_infamy = -1000
+
 		
 		change_tag = BEO
+		
+
+		
 		
 		every_country = {
 					limit = {
@@ -522,36 +517,32 @@ dvg_hbe.7 = {
 					country_rank = rank_value:great_power
 					
 					
-			}
+				}
 			change_relations = {
 					country = root
 					value = 30
 			 }
 		}
 
-		every_scope_state = {
+		every_state_region = {
 			limit = {
-				state_region = {
-					is_homeland = cu:lotharian
-				}
+				is_homeland = cu:lotharian
 			}
-			remove_homeland = beornian
+			remove_homeland = cu:beornian
 		}
 		
-		every_scope_state = {
+		every_state_region = {
 			limit = {
-				state_region = {
-					is_homeland = cu:aimara
-				}
+				is_homeland = cu:aimara
 			}
-			remove_homeland = beornian
+			remove_homeland = cu:beornian
 		}
-		
-		change_infamy = -1000
-		
+				
 		remove_modifier = dvg_geass
 		
-		ai_chance = 100
+		ai_chance = {
+			base = 50
+		}
 	}
 	option = {
 		name = dvg_hbe.7.b
@@ -560,12 +551,20 @@ dvg_hbe.7 = {
 			has_technology_researched = pan-nationalism
 			
 		}
+		every_diplomatic_play = {
+			limit = {
+				initiator_is = ROOT
+			}
+			end_play = yes
+		}
+		
+		
 		remove_modifier = dvg_geass
                     
                 
 		ruler = {kill_character = yes}
 		ai_chance = {
-			factor = 50
+			base = 50
 		}
 		
 		activate_law = law_type:law_cultural_exclusion
@@ -613,7 +612,6 @@ dvg_hbe.8 = {
 			}
 		
 		create_character = {
-			historical = yes
 			first_name = Weiss
 			last_name = Heisenberg
 			is_agitator = yes
@@ -630,10 +628,7 @@ dvg_hbe.8 = {
 				meticulous
 				erudite
 			}
-			on_created = {
-					
-					
-				}
+			
 		}
 		
 		ruler = { add_trait = cocaine_addiction }
@@ -645,7 +640,9 @@ dvg_hbe.8 = {
 			}
 		
 		
-		ai_chance = 100
+			ai_chance = {
+				base = 50
+			}
 	}
 	option = {
 		name = dvg_hbe.8.b
@@ -678,6 +675,8 @@ dvg_hbe.8 = {
 		
 		
 		
-		ai_chance = 100
+		ai_chance = {
+				base = 50
+			}
 	}
 }

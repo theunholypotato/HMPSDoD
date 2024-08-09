@@ -62,13 +62,13 @@ social_democrat_party = {
 					THIS = c:FIN
 				}
 			}
-			triggered_desc = {
-				desc = party_belgian_workers_party
-				trigger = {
-					exists = c:BEL
-					THIS = c:BEL
-				}
-			}
+			# triggered_desc = {
+			# 	desc = party_belgian_workers_party
+			# 	trigger = {
+			# 		exists = c:BEL
+			# 		THIS = c:BEL
+			# 	}
+			# }
 			triggered_desc = {
 				desc = party_sdapo
 				trigger = {
@@ -125,13 +125,13 @@ social_democrat_party = {
 					THIS = c:MEX
 				}
 			}
-			triggered_desc = {
-				desc = party_confederate_socialist_party
-				trigger = {
-					exists = c:CSA
-					THIS = c:CSA
-				}
-			}
+			# triggered_desc = {
+			# 	desc = party_confederate_socialist_party
+			# 	trigger = {
+			# 		exists = c:CSA
+			# 		THIS = c:CSA
+			# 	}
+			# }
 			triggered_desc = {
 				desc = party_seke
 				trigger = {
@@ -169,6 +169,7 @@ social_democrat_party = {
 					OR = {
 						country_has_primary_culture = cu:north_german
 						country_has_primary_culture = cu:south_german
+						country_has_primary_culture = cu:rheinish #DVG
 					}
 				}
 			}
@@ -186,6 +187,9 @@ social_democrat_party = {
 					OR = {
 						country_has_primary_culture = cu:north_italian
 						country_has_primary_culture = cu:south_italian
+						country_has_primary_culture = cu:central_italian #DVG
+						country_has_primary_culture = cu:sardinian #DVG
+						country_has_primary_culture = cu:venetian #DVG
 					}
 				}
 			}
@@ -193,6 +197,12 @@ social_democrat_party = {
 				desc = party_socialist_party_of_america
 				trigger = {
 					country_has_primary_culture = cu:yankee
+				}
+			}
+			triggered_desc = {
+				desc = party_intipa_hununakuy
+				trigger = {
+					country_has_state_religion = rel:inti
 				}
 			}
 			triggered_desc = {
@@ -243,6 +253,7 @@ social_democrat_party = {
 				has_ideology = ideology:ideology_bonapartist
 				has_ideology = ideology:ideology_legitimist
 				has_ideology = ideology:ideology_theocrat
+				has_ideology = ideology:ideology_anglois
 			}
 		}
 		OR = {
@@ -442,11 +453,7 @@ social_democrat_party = {
 			limit = {
 				has_ideology = ideology:ideology_loyalist
 				owner = {
-					OR = {
-						has_law = law_type:law_low_consumption_tax
-						has_law = law_type:law_moderate_consumption_tax
-						has_law = law_type:law_high_consumption_tax
-					}
+					has_law = law_type:law_consumption_based_taxation
 				}
 			}
 			add = {
@@ -552,15 +559,15 @@ social_democrat_party = {
 						has_ideology = ideology:ideology_loyalist
 						owner = {
 							NOR = {
-								has_law = law_type:law_moderate_corporation_tax
-								has_law = law_type:law_high_corporation_tax
+								has_law = law_type:law_proportional_taxation
+								has_law = law_type:law_per_capita_based_taxation
 							}
 						}
 					}
 				}
 				owner = {
 					NOT = {
-						has_law = law_type:law_high_corporation_tax
+						has_law = law_type:law_graduated_taxation
 					}
 				}
 			}
@@ -665,7 +672,7 @@ social_democrat_party = {
 					has_law = law_type:law_free_trade
 				}
 				OR = {
-					#has_ideology = ideology:ideology_socialist
+					has_ideology = ideology:ideology_socialist
 					has_ideology = ideology:ideology_isolationist
 					has_ideology = ideology:ideology_isolationist_expansionism
 				}
@@ -682,7 +689,7 @@ social_democrat_party = {
 				}
 				OR = {
 					has_ideology = ideology:ideology_agrarian
-					#has_ideology = ideology:ideology_socialist
+					has_ideology = ideology:ideology_socialist
 					leader = {
 						OR = {
 							has_ideology = ideology:ideology_vanguardist

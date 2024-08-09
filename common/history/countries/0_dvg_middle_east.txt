@@ -55,13 +55,9 @@
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
-
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 		
+		activate_law = law_type:law_right_of_assembly
+
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
@@ -74,14 +70,8 @@
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
-
-		activate_law = law_low_income_tax
-		activate_law = law_type:law_no_migration_controls
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
+		activate_law = law_type:law_right_of_assembly
+		#activate_law = law_type:law_no_migration_controls
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -93,20 +83,10 @@
 	
 	c:OMA = { #Oman
 		effect_starting_technology_tier_4_tech = yes
-		add_technology_researched = currency_standards
-		
-		activate_law = law_type:law_national_supremacy
-		activate_law = law_type:law_freedom_of_conscience
-		activate_law = law_type:law_interventionism
-		activate_law = law_type:law_land_based_taxation	
-		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_slave_trade
-		activate_law = law_type:law_tenant_farmers
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
+		effect_starting_politics_traditional = yes
 
-		set_tax_level = medium
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -122,11 +102,8 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_slave_trade
-		activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+		activate_law = law_type:law_right_of_assembly
+		
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -136,18 +113,39 @@
 		}
 	}
 	
-	c:YEM = { #Yemen
+	#c:YEM = { #Yemen
+	#	effect_starting_technology_tier_4_tech = yes
+	#	
+	#	effect_starting_politics_traditional = yes
+	#	activate_law = law_type:law_slave_trade
+	#	activate_law = law_type:law_migration_controls
+	#	
+	#	set_ruling_interest_groups = {
+	#		ig_landowners
+	#	}
+	#	ig:ig_devout = {
+	#		set_interest_group_name = ig_sunni_madrasahs
+	#	}
+	#}
+
+	c:ZAI = { #Zaida
 		effect_starting_technology_tier_4_tech = yes
-		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_slave_trade
-		activate_law = law_low_income_tax
-		activate_law = law_type:law_migration_controls
-				
-		effect_starting_per_capita_tax = yes
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_right_of_assembly
 
-		set_tax_level = medium
-
+		ig:ig_devout = {
+			set_interest_group_name = ig_shia_madrasahs
+		}
+		
+	}
+	
+	c:MAH = { #Mahra
+		effect_starting_technology_tier_4_tech = yes
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -156,7 +154,7 @@
 			set_interest_group_name = ig_sunni_madrasahs
 		}
 	}
-	
+
 	c:HDJ = { #Hedjaz
 		effect_starting_technology_tier_4_tech = yes
 		add_technology_researched = academia
@@ -166,14 +164,7 @@
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_oligarchy
 
-		activate_law = law_type:law_religious_schools
-		activate_law = law_low_income_tax
-		activate_law = law_type:law_migration_controls
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
+		activate_law = law_type:law_right_of_assembly
 		
 		set_ruling_interest_groups = {
 			ig_devout
@@ -192,13 +183,7 @@
 		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_slave_trade
-		activate_law = law_low_income_tax
 		activate_law = law_type:law_migration_controls
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -214,18 +199,12 @@
 		add_technology_researched = urban_planning
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_cultural_exclusion
+		#activate_law = law_type:law_cultural_exclusion
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_censorship
-		activate_law = law_type:law_slave_trade
-		activate_law = law_low_income_tax
+		#activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_homesteading
 		activate_law = law_type:law_migration_controls
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -259,15 +238,10 @@
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_slave_trade
-		activate_law = law_low_income_tax
 		activate_law = law_type:law_religious_schools
-		activate_law = law_type:law_feudal_armies
+		activate_law = law_type:law_peasant_levies
+		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_no_migration_controls
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -279,7 +253,6 @@
 		}
 		ig:ig_landowners = {
 			set_interest_group_name = ig_zaydi
-			remove_ideology = ideology_stratocratic
 			add_ideology = ideology_pious
 		}
 		ig:ig_intelligentsia = {
@@ -336,14 +309,9 @@
 	
 	effect_starting_politics_traditional = yes
 	activate_law = law_type:law_land_based_taxation
-	activate_law = law_low_income_tax
 	activate_law = law_type:law_slavery_banned
 	activate_law = law_type:law_cultural_exclusion
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
-
+	activate_law = law_type:law_right_of_assembly
 	
 	set_ruling_interest_groups = {
 		ig_landowners
@@ -359,11 +327,7 @@
 	effect_starting_politics_traditional = yes
 	activate_law = law_type:law_land_based_taxation
 	activate_law = law_type:law_slave_trade
-	activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+	activate_law = law_type:law_right_of_assembly
 	
 	set_ruling_interest_groups = {
 		ig_landowners
@@ -374,26 +338,16 @@
 
 	}
 
-	c:AAL = { #Alrube Alkhali
+	c:AAL = { #Rub' al Khali 
 	effect_starting_technology_tier_6_tech = yes
 	effect_native_conscription_1 = yes
 	effect_starting_politics_traditional = yes
-	activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 	}
 
 	c:RUW = { #Ruwallah
 	effect_starting_technology_tier_6_tech = yes
 	effect_native_conscription_1 = yes
 	effect_starting_politics_traditional = yes
-	activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
 	}
 
 
@@ -403,11 +357,7 @@
 	effect_starting_politics_traditional = yes
 	activate_law = law_type:law_land_based_taxation
 	activate_law = law_type:law_slave_trade
-	activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+	activate_law = law_type:law_right_of_assembly
 
 	set_ruling_interest_groups = {
 		ig_landowners
@@ -424,11 +374,7 @@
 	effect_starting_politics_traditional = yes
 	activate_law = law_type:law_land_based_taxation
 	activate_law = law_type:law_slave_trade
-	activate_law = law_low_income_tax
-				
-		effect_starting_per_capita_tax = yes
-
-		set_tax_level = medium
+	activate_law = law_type:law_right_of_assembly
 
 	set_ruling_interest_groups = {
 		ig_landowners

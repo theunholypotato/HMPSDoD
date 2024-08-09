@@ -125,8 +125,10 @@ gov_tsardom = {
 	
 	possible = {
 		has_law = law_type:law_monarchy
-		exists = c:RUS
-		c:RUS = ROOT
+		or = {
+			AND = { exists = c:RUS c:RUS = ROOT }
+			AND = { exists = c:BUL c:BUL = ROOT } #dvg
+		}
 	}
 
 	on_government_type_change = {
@@ -150,6 +152,10 @@ gov_sultanate = {
 		has_law = law_type:law_monarchy
 		or = {
 			AND = { exists = c:TUR c:TUR = ROOT }
+			AND = { exists = c:WRE c:WRE = ROOT } #dvg
+			AND = { exists = c:ERE c:ERE = ROOT } #dvg
+			AND = { exists = c:RUM c:RUM = ROOT } #dvg
+			AND = { exists = c:BSG c:BSG = ROOT } #dvg
 			AND = { exists = c:MOR c:MOR = ROOT }
 			AND = { exists = c:OMA c:OMA = ROOT }
 			AND = { exists = c:JOH c:JOH = ROOT }
@@ -180,8 +186,8 @@ gov_sultanate = {
 			# AND = { exists = c:WSG c:WSG = ROOT }
 			# AND = { exists = c:ISQ c:ISQ = ROOT }
 			AND = { exists = c:DFR c:DFR = ROOT }
-			AND = { exists = c:YLN c:YLN = ROOT } #dvg
-			AND = { exists = c:NGL c:NGL = ROOT } #dvg
+			#AND = { exists = c:YLN c:YLN = ROOT } #dvg
+			#AND = { exists = c:NGL c:NGL = ROOT } #dvg
 			AND = {
 				exists = c:GNS 
 				c:GNS = ROOT
@@ -253,8 +259,8 @@ gov_kongolese_kingdom = {
 	
 	possible = {
 		has_law = law_type:law_monarchy
-		exists = c:KON 
-		c:KON = ROOT
+		exists = c:LNG 
+		c:LNG = ROOT
 	}
 
 	on_government_type_change = {
@@ -389,28 +395,28 @@ gov_mughal_empire = {
 	# }
 # }
 
-gov_khedive = {
-	transfer_of_power = hereditary
+# gov_khedive = {
+	# transfer_of_power = hereditary
 	
-	male_ruler = "RULER_TITLE_KHEDIVE"
-	female_ruler = "" # Empty on purpose
+	# male_ruler = "RULER_TITLE_KHEDIVE"
+	# female_ruler = "" # Empty on purpose
 
-	male_heir = "RULER_TITLE_PRINCE"
-	female_heir = "" # Empty on purpose
+	# male_heir = "RULER_TITLE_PRINCE"
+	# female_heir = "" # Empty on purpose
 	
-	possible = {
-		has_law = law_type:law_monarchy
-		exists = c:EGY
-		c:EGY = ROOT
-	}
+	# possible = {
+		# has_law = law_type:law_monarchy
+		# exists = c:EGY
+		# c:EGY = ROOT
+	# }
 
-	on_government_type_change = {
-		change_to_hereditary = yes
-	}
-	on_post_government_type_change = {
-		post_change_to_hereditary = yes
-	}
-}
+	# on_government_type_change = {
+		# change_to_hereditary = yes
+	# }
+	# on_post_government_type_change = {
+		# post_change_to_hereditary = yes
+	# }
+# }
 
 
 gov_vilayet = {								
@@ -500,6 +506,7 @@ gov_bey = {
 		has_law = law_type:law_monarchy
 		exists = c:TUN
 		c:TUN = ROOT
+		is_subject_of = c:TUR
 	}
 
 	on_government_type_change = {

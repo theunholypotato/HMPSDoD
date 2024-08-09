@@ -24,9 +24,9 @@
 	}
 
 	lawgroup_army_model = {
+		law_peasant_levies = approve
 		law_mass_conscription = neutral
 		law_professional_army = approve
-		law_limited_conscription = strongly_approve
 		law_national_militia = disapprove
 		law_peasant_levies = approve
 	}

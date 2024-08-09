@@ -124,9 +124,9 @@ dua_weekly_pulse_anglois_progress = {
 
 	if = {
 		limit = {
-			has_law = law_type:law_ethnostate
+			has_law = law_type:law_national_supremacy
 		}
-		change_variable = { name = anglois_progress_from_laws add = 0.5 }
+		change_variable = { name = anglois_progress_from_laws add = 0.25 }
 	}
 	else = {
 		change_variable = { name = anglois_progress_from_laws add = -0.5 }

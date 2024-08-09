@@ -1,12 +1,13 @@
 ﻿je_yaluo_reform = {
 	icon = "gfx/interface/icons/event_icons/event_fireball.dds"
 
+	group = je_group_internal_affairs
+
 	complete = {
-		OR = {
-		
 		custom_tooltip = {
 			text =  dvg_yaluo_reform_tt
 			OR = {
+			scope:journal_entry = { is_goal_complete = yes }
 			has_variable = dvg_among_kongsus
 			has_war_with = c:MJN
 			any_country = {
@@ -16,22 +17,38 @@
 			}
 			}
 		}
-		}
+		
 	}
 
 	fail = {
+		
 	}
 	
 	on_monthly_pulse = {
-		dvg_zhourao.6 # The Northern Hui Defect!
-		dvg_zhourao.8 # good tidings
+		
 	}
 
 	on_complete = {
 		set_global_variable = hui_defected
+		trigger_event = {
+			id = dvg_zhourao.6 # The Northern Hui Defect!
+		}
+		every_country = {
+			limit = {
+			is_revolutionary = yes
+			country_definition = root.country_definition
+			owns_entire_state_region = STATE_XINXIANG
+			country_has_primary_culture = cu:zhourao
+			}
+			c:MJN = { annex = prev }
+		}
+
 	}
 
 	on_fail = {
+		trigger_event = {
+			id = dvg_zhourao.8 #Good Tidings
+		}
 	}
 
 	current_value = {
@@ -40,6 +57,11 @@
 
 	goal_add_value = {
 		add = 8
+	}
+	invalid = {
+		NOT = {
+			exists = c:MJN
+		}
 	}
 
 	progressbar = yes
@@ -50,6 +72,9 @@
 
 je_one_kongsi = {
 	icon = "gfx/interface/icons/event_icons/event_zhourao.dds"
+	
+	group = je_group_foreign_affairs
+	
 	complete = {
 		owns_entire_state_region = STATE_QINGSHUI
 		owns_entire_state_region = STATE_GUANSHAN
@@ -77,6 +102,8 @@ je_one_kongsi = {
 je_invade_zhusha = {
 	icon = "gfx/interface/icons/event_icons/event_zhusha.dds"
 
+	group = je_group_foreign_affairs
+
 	complete = {
 		owns_entire_state_region = STATE_WEIZHOU
 		owns_entire_state_region = STATE_JINZHOU
@@ -99,6 +126,9 @@ je_invade_zhusha = {
 
 je_one_kongsi_zsa = {
 	icon = "gfx/interface/icons/event_icons/event_zhourao.dds"
+	
+	group = je_group_foreign_affairs
+	
 	complete = {
 		owns_entire_state_region = STATE_QINGSHUI
 		owns_entire_state_region = STATE_GUANSHAN
@@ -125,76 +155,183 @@ je_one_kongsi_zsa = {
 
 je_red_sultan = {
 	icon = "gfx/interface/icons/event_icons/event_sultan.dds"
+	
+	group = je_group_internal_affairs
 
 	 complete = {
 		custom_tooltip = {
 			text = dvg_red_sultan_died_comp_tt
 			OR = {
+			has_variable = dvg_sultan_can_die
+			ruler = {
+				age >= 70
+			}
+			
+			}
+			OR = {
+				this = { var:dvg_zhusha_stability_of_succession_variable_var >= 4 }
+				this = { var:dvg_zhusha_stability_of_succession_variable_var <= 2 }
+			}
+			
+			OR = {
+				
 				this = { var:dvg_zhusha_stability_of_succession_variable_var = 6 }
 				this = { var:dvg_zhusha_stability_of_succession_variable_var = 0 }
-			}
-			c:ZSA = {
-				is_player = yes
-			}
-			has_variable = dvg_sultan_can_die
-			OR = {
-				ruler = {
-					age > 70
-				}
-				ruler = {
-					has_trait = cancer
-				}
 			}
 		}
 		
 		
 	 }	
 	
-	  fail = {
+	fail = {
 		
 		custom_tooltip = {
 			text = dvg_red_sultan_died_fail_tt
-			OR = {
-				has_variable = dvg_sultan_can_die
-				
-				AND = {
-					c:ZSA = {
-						is_player = no
-					}
-					
-				}
-				NOT = {
-					OR = {
-						this = { var:dvg_zhusha_stability_of_succession_variable_var = 6 }
-						this = { var:dvg_zhusha_stability_of_succession_variable_var = 0 }
-					}
-				}
-			AND = {
-				OR = {
-					
-					ig:ig_landowners = {
-						ig_approval <= angry
-					}
-					ig:ig_landowners = {
-						is_marginal = yes
-					}
-					popularity <= -50
-					has_trait = psychological_affliction
-					age >= 75
-				}
-			var:dvg_zhusha_stability_of_succession_variable_var < 4
+						
+		OR = {
+		
+		c:ZSA = {
+			ruler = {
+				NOT = { has_variable = is_red_sultan }
 			}
+		} 
+		}
+
+		OR = {
+			this = { var:dvg_zhusha_stability_of_succession_variable_var < 4 }
+			this = { var:dvg_zhusha_stability_of_succession_variable_var > 2 }
+		}
+		}
+	}
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					ig:ig_armed_forces = {
+						is_powerful = yes	
+					}
+					NOT = {has_variable = zsa_armed_forces
+					
+				}
+				}
+				change_variable = {
+					name = dvg_zhusha_stability_of_succession_variable_var
+					add = 1
+				}
+				set_variable = zsa_armed_forces
+			}
+			if = {
+				limit = {
+					ig:ig_landowners = {
+						is_powerful = yes
+					}
+					NOT = {has_variable = zsa_landowners
+					
+				}
+				}
+				change_variable = {
+					name = dvg_zhusha_stability_of_succession_variable_var
+					subtract = 1
+				}
+				set_variable = zsa_landowners
+			}
+			if = {
+				limit = {
+					OR = {
+					is_subject_of = c:JAP
+					owner = {
+						
+						market = {
+							owner = c:JAP
+						}
+					}
+					}
+					NOT = {has_variable = zsa_jap_subject
+					
+				}
+				}
+				change_variable = {
+					name = dvg_zhusha_stability_of_succession_variable_var
+					subtract = 3
+				}
+				set_variable = zsa_dua_subject
+			}
+			if = {
+				limit = {
+					OR = {
+					is_subject_of = c:JAP
+					owner = {
+						
+						market = {
+							owner = c:JAP
+						}
+					}
+					}
+					NOT = {has_variable = zsa_jap_subject
+					
+				}
+				}
+				change_variable = {
+					name = dvg_zhusha_stability_of_succession_variable_var
+					add = 3
+				}
+				set_variable = zsa_jap_subject
+			}
+			if = {
+				limit = {
+					ruler = {
+						age >= 65
+						has_trait = immortal
+					}
+				}
+				ruler = {
+					remove_trait = immortal
+				}
 			}
 			
 		}
-	
 	}
 	on_complete = {
-		trigger_event = { id = dvg_zhourao.704 popup = yes days = 10 }
+		trigger_event = { id = dvg_zhourao.704 popup = yes }
+		every_scope_character = {
+			limit = {
+				has_trait = immortal
+			}
+			remove_trait = immortal
+		}
 	}
 	
     on_fail = {
 		trigger_event = { id = dvg_zhourao.705 popup = yes }
+		every_scope_character = {
+			limit = {
+				has_trait = immortal
+			}
+			remove_trait = immortal
+		}
+	}
+
+	invalid = {
+		NOT = {  has_law = law_type:law_monarchy  }
+	}
+	on_invalid = {
+		every_scope_character = {
+			limit = {
+				has_trait = immortal
+			}
+			remove_trait = immortal
+		}
+	}
+	timeout = 7300
+
+	on_timeout = {
+		trigger_event = { id = dvg_zhourao.705 popup = yes }
+		every_scope_character = {
+			limit = {
+				has_trait = immortal
+			}
+			remove_trait = immortal
+		}
 	}
 
 	current_value = {
@@ -211,117 +348,12 @@ je_red_sultan = {
 	should_be_pinned_by_default = yes
 }
 
-je_red_prince = {
-	icon = "gfx/interface/icons/event_icons/event_red_prince.dds"
-
-	complete = {
-		custom_tooltip = {
-			text = dvg_a_prince_has_won_tt
-			ruler = {
-				NOT = { has_variable = is_red_sultan }
-			}
-			OR = {
-				this = { var:dvg_zhusha_princely_power_variable_var = 8 }
-				this = { var:dvg_zhusha_princely_power_variable_var = 0 }
-				has_variable = dvg_songyaned
-			}
-		}
-	}	
-
-	fail = {
-		custom_tooltip = {
-			text = dvg_songyan_tt
-			has_variable = dvg_songyan_society_zsa
-		}
-	}	
-	
-	on_monthly_pulse = {
-		effect = {
-			change_variable = {
-				name = dvg_zhusha_red_prince_events_var
-				add = 1
-			}
-		}
-		events = {
-			dvg_zhourao.719 # Songyan society overthrows government!
-			dvg_zhourao.714 # Siege of Capital
-			dvg_zhourao.711 # Princes openly war!
-			dvg_zhourao.710 # Hongshan Side with Lushou!
-			dvg_zhourao.709 # Skirmish Over Capital
-		}
-	}
-	
-	on_complete = {
-		hidden_effect = {
-			if = {
-				limit = {
-					this = { var:dvg_zhusha_princely_power_variable_var = 8 }
-				}
-				set_variable = lushou_won_red_prince_war
-			}
-			if = {
-				limit = {
-					this = { var:dvg_zhusha_princely_power_variable_var = 0 }
-				}
-				set_variable = luoxi_won_red_prince_war
-			}
-		}
-		trigger_event = { id = dvg_zhourao.713 popup = yes days = 10 }
-	}
-
-	current_value = {
-		value = root.var:dvg_zhusha_princely_power_variable_var
-	}
-
-	goal_add_value = {
-		add = 8
-	}
-
-	progressbar = yes
-
-	weight = 1000
-	should_be_pinned_by_default = yes
-}
-
-je_zhr_press_west = {
-	icon = "gfx/interface/icons/event_icons/event_zhourao_ink.dds"
-
-	complete = {
-		owns_entire_state_region = STATE_NOONGAR
-		owns_entire_state_region = STATE_COOMALONG
-		owns_entire_state_region = STATE_PITJANTJAJARA
-		owns_entire_state_region = STATE_OODNATTA
-		owns_entire_state_region = STATE_YONGJIA
-		owns_entire_state_region = STATE_YOLNGU
-		owns_entire_state_region = STATE_YONGLING
-		owns_entire_state_region = STATE_QINGSHUI
-		owns_entire_state_region = STATE_GUANSHAN
-		owns_entire_state_region = STATE_XINXIANG
-		owns_entire_state_region = STATE_ZHENG_HE
-		owns_entire_state_region = STATE_WEIHUAI
-		owns_entire_state_region = STATE_TAITUNG
-		owns_entire_state_region = STATE_WEIZHOU
-		owns_entire_state_region = STATE_JINZHOU
-		owns_entire_state_region = STATE_WENCHENG
-		#owns_entire_state_region = STATE_PARLEVAR
-	}
-	
-	fail = {
-	}
-
-    on_complete = {
-		trigger_event = { id = dvg_zhourao.14 popup = yes }
-	}
-	
-    on_fail = {
-	}
-	
-	weight = 100
-	should_be_pinned_by_default = yes
-}
 
 je_zhrzsa_luoxi_will = {
 	icon = "gfx/interface/icons/event_icons/event_zhourao_ink.dds"
+	
+	group = je_group_internal_affairs
+	
 	complete = {
 		has_law = law_type:law_hereditary_bureaucrats
 		has_law = law_type:law_agrarianism
@@ -345,6 +377,9 @@ je_zhrzsa_luoxi_will = {
 
 je_zhr_reconsolidate_control = {
 	icon = "gfx/interface/icons/event_icons/event_zhourao_ink.dds"
+	
+	group = je_group_internal_affairs
+	
 	complete = {
 		owns_entire_state_region = STATE_NOONGAR
 		owns_entire_state_region = STATE_COOMALONG
@@ -380,8 +415,10 @@ je_zhr_reconsolidate_control = {
 
 je_zhr_papua = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_foreign_affairs
+	
 	complete = {
-		owns_entire_state_region = STATE_WESTERN_NEW_GUINEA
 		owns_entire_state_region = STATE_EASTERN_NEW_GUINEA
 	}
 	
@@ -401,6 +438,9 @@ je_zhr_papua = {
 
 je_zhrzsa_indonesia_first_step = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_foreign_affairs
+	
 	complete = {
 		owns_entire_state_region = STATE_MOLUCCAS
 		owns_entire_state_region = STATE_SUNDA_ISLANDS
@@ -423,6 +463,9 @@ je_zhrzsa_indonesia_first_step = {
 
 je_zhrzsa_indonesia_java = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_foreign_affairs
+	
 	complete = {
 		owns_entire_state_region = STATE_CENTRAL_JAVA
 		owns_entire_state_region = STATE_WEST_JAVA
@@ -445,6 +488,9 @@ je_zhrzsa_indonesia_java = {
 
 je_zhrzsa_indonesia_borneo = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_foreign_affairs
+	
 	complete = {
 		owns_entire_state_region = STATE_EAST_BORNEO
 		owns_entire_state_region = STATE_WEST_BORNEO
@@ -467,6 +513,9 @@ je_zhrzsa_indonesia_borneo = {
 
 je_zhrzsa_indonesia_sumatra = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_foreign_affairs
+	
 	complete = {
 		owns_entire_state_region = STATE_SOUTH_SUMATRA
 		owns_entire_state_region = STATE_NORTH_SUMATRA
@@ -489,6 +538,9 @@ je_zhrzsa_indonesia_sumatra = {
 
 je_zhrzsa_indonesia_final_step = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_foreign_affairs
+	
 	complete = {
 		owns_entire_state_region = STATE_MALAYA
 		owns_entire_state_region = STATE_MINDANAO
@@ -510,6 +562,9 @@ je_zhrzsa_indonesia_final_step = {
 
 je_one_kongsi_zsa = {
 	icon = "gfx/interface/icons/event_icons/event_zhourao.dds"
+	
+	group = je_group_foreign_affairs
+	
 	complete = {
 		owns_entire_state_region = STATE_QINGSHUI
 		owns_entire_state_region = STATE_GUANSHAN
@@ -538,6 +593,8 @@ je_one_kongsi_zsa = {
 
 je_red_prince = {
 	icon = "gfx/interface/icons/event_icons/event_red_prince.dds"
+	
+	group = je_group_internal_affairs
 
 	complete = {
 		custom_tooltip = {
@@ -566,7 +623,50 @@ je_red_prince = {
 				name = dvg_zhusha_red_prince_events_var
 				add = 1
 			}
+			if = {
+				limit = {
+					OR = {
+					is_subject_of = c:DUA
+					owner = {
+						
+						market = {
+							owner = c:DUA
+						}
+					}
+					}
+					NOT = {has_variable = zsa_dua_subject
+					
+				}
+				}
+				change_variable = {
+					name = dvg_zhusha_stability_of_succession_variable_var
+					subtract = 3
+				}
+				set_variable = zsa_dua_subject
+			}
+			if = {
+				limit = {
+					OR = {
+					is_subject_of = c:JAP
+					owner = {
+						
+						market = {
+							owner = c:JAP
+						}
+					}
+					}
+					NOT = {has_variable = zsa_jap_subject
+					
+				}
+				}
+				change_variable = {
+					name = dvg_zhusha_stability_of_succession_variable_var
+					add = 3
+				}
+				set_variable = zsa_jap_subject
+			}
 		}
+		
 		events = {
 			dvg_zhourao.719  #Songyan society overthrows government!
 			dvg_zhourao.714  #Siege of Capital
@@ -610,6 +710,9 @@ je_red_prince = {
 
 je_zhr_press_west = {
 	icon = "gfx/interface/icons/event_icons/event_zhourao_ink.dds"
+	
+	group = je_group_foreign_affairs
+	
 	complete = {
 		owns_entire_state_region = STATE_NOONGAR
 		owns_entire_state_region = STATE_COOMALONG
@@ -646,6 +749,9 @@ je_zhr_press_west = {
 
 je_zhrzsa_luoxi_will = {
 	icon = "gfx/interface/icons/event_icons/event_zhourao_ink.dds"
+	
+	group = je_group_internal_affairs
+	
 	complete = {
 		has_law = law_type:law_hereditary_bureaucrats
 		has_law = law_type:law_agrarianism
@@ -657,10 +763,7 @@ je_zhrzsa_luoxi_will = {
 	}
 
     on_complete = {
-		trigger_event = { id = dvg_zhourao.1000 popup = yes } chnge
-	}
-	
-    on_fail = {
+		trigger_event = { id = dvg_zhourao.1000 popup = yes }
 	}
 	
 	weight = 100
@@ -669,6 +772,9 @@ je_zhrzsa_luoxi_will = {
 
 je_zhr_reconsolidate_control = {
 	icon = "gfx/interface/icons/event_icons/event_zhourao_ink.dds"
+	
+	group = je_group_foreign_affairs
+	
 	complete = {
 		owns_entire_state_region = STATE_NOONGAR
 		owns_entire_state_region = STATE_COOMALONG
@@ -704,8 +810,18 @@ je_zhr_reconsolidate_control = {
 
 je_zhr_papua = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_foreign_affairs
+
+	is_shown_when_inactive = {
+		owns_entire_state_region = STATE_JINZHOU
+		
+	}
+	possible = {
+		NOT = {  has_law = law_type:law_no_colonial_affairs }
+	}
+	
 	complete = {
-		owns_entire_state_region = STATE_WESTERN_NEW_GUINEA
 		owns_entire_state_region = STATE_EASTERN_NEW_GUINEA
 	}
 	
@@ -713,7 +829,7 @@ je_zhr_papua = {
 	}
 
     on_complete = {
-		trigger_event = { id = dvg_zhourao.14 popup = yes }
+		
 	}
 	
     on_fail = {
@@ -725,6 +841,11 @@ je_zhr_papua = {
 
 je_zhrzsa_indonesia_first_step = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_foreign_affairs	
+
+	
+	
 	complete = {
 		owns_entire_state_region = STATE_MOLUCCAS
 		owns_entire_state_region = STATE_SUNDA_ISLANDS
@@ -735,7 +856,12 @@ je_zhrzsa_indonesia_first_step = {
 	}
 
     on_complete = {
-		trigger_event = { id = dvg_zhourao.14 popup = yes }
+		add_journal_entry = {
+			type = je_zhrzsa_indonesia_java
+		}
+		add_journal_entry = {
+			type = je_zhrzsa_indonesia_borneo
+		}
 	}
 	
     on_fail = {
@@ -747,6 +873,9 @@ je_zhrzsa_indonesia_first_step = {
 
 je_zhrzsa_indonesia_java = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_foreign_affairs	
+	
 	complete = {
 		owns_entire_state_region = STATE_CENTRAL_JAVA
 		owns_entire_state_region = STATE_WEST_JAVA
@@ -757,7 +886,9 @@ je_zhrzsa_indonesia_java = {
 	}
 
     on_complete = {
-		trigger_event = { id = dvg_zhourao.14 popup = yes }
+		add_journal_entry = {
+			type = je_zhrzsa_indonesia_sumatra
+		}
 	}
 	
     on_fail = {
@@ -769,6 +900,9 @@ je_zhrzsa_indonesia_java = {
 
 je_zhrzsa_indonesia_borneo = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_foreign_affairs	
+	
 	complete = {
 		owns_entire_state_region = STATE_EAST_BORNEO
 		owns_entire_state_region = STATE_WEST_BORNEO
@@ -779,7 +913,7 @@ je_zhrzsa_indonesia_borneo = {
 	}
 
     on_complete = {
-		trigger_event = { id = dvg_zhourao.14 popup = yes }
+		
 	}
 	
     on_fail = {
@@ -791,6 +925,9 @@ je_zhrzsa_indonesia_borneo = {
 
 je_zhrzsa_indonesia_sumatra = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_foreign_affairs	
+	
 	complete = {
 		owns_entire_state_region = STATE_SOUTH_SUMATRA
 		owns_entire_state_region = STATE_NORTH_SUMATRA
@@ -801,7 +938,9 @@ je_zhrzsa_indonesia_sumatra = {
 	}
 
     on_complete = {
-		trigger_event = { id = dvg_zhourao.14 popup = yes }
+		add_journal_entry = {
+			type = je_zhrzsa_indonesia_final_step
+		}
 	}
 	
     on_fail = {
@@ -813,6 +952,9 @@ je_zhrzsa_indonesia_sumatra = {
 
 je_zhrzsa_indonesia_final_step = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_foreign_affairs	
+	
 	complete = {
 		owns_entire_state_region = STATE_MALAYA
 		owns_entire_state_region = STATE_MINDANAO
@@ -822,12 +964,104 @@ je_zhrzsa_indonesia_final_step = {
 	}
 
     on_complete = {
-		trigger_event = { id = dvg_zhourao.14 popup = yes }
+		change_tag = NUS
 	}
 	
     on_fail = {
 	}
 	
 	weight = 100
+	should_be_pinned_by_default = yes
+}
+
+
+je_pillager_prince_zhourao = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_internal_affairs
+
+	scripted_button = dvg_pillger_prince_button
+
+	is_shown_when_inactive = {
+		any_character = {
+			has_variable = pillager_prince
+		}
+		country_has_primary_culture = cu:zhourao
+	}
+	possible = {
+		any_scope_character = {
+			has_variable = pillager_prince
+		}
+	}
+
+	immediate = {
+
+		if = {
+			limit = {
+				NOT = {
+					any_scope_character = {
+						has_variable = pillager_prince
+					}
+				}
+			}
+			random_character = {
+				limit = {
+					has_variable = pillager_prince
+				}
+				transfer_character = ROOT
+			}
+		}
+		
+	}
+	
+
+
+	on_monthly_pulse = {
+
+		random_events = {
+
+			
+			25 =  dvg_zhourao.1201
+
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = pillager_prince_zhourao_tt
+			NOT = {
+				any_character = {
+					has_variable = pillager_prince
+				}
+			}
+		}
+		
+		
+	}
+	on_complete = {
+		trigger_event = {
+			id = dvg_zhourao.1202
+		}
+	}
+
+	fail = {
+		any_scope_state = {
+			is_capital = yes
+			turmoil >= 0.75  
+		}
+		revolution_progress_high = yes
+		
+	}
+
+	on_fail = {
+		trigger_event = {
+			id = dvg_zhourao.1203
+		}
+	}
+
+
+	#inheritable = no
+
+	weight = 5000
 	should_be_pinned_by_default = yes
 }

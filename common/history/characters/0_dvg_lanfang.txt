@@ -1,4 +1,4 @@
-CHARACTERS = {
+﻿CHARACTERS = {
 	c:LAN = {
 		create_character = {
 			ruler = yes
@@ -27,8 +27,9 @@ CHARACTERS = {
 			heir = yes
 			historical = yes
 			birth_date = 1825.04.12
+			is_general = yes
 			interest_group = ig_petty_bourgeoisie
-			ideology = ideology_reformer
+			ideology = ideology_adventurer
 			traits = {
 				charismatic
 
