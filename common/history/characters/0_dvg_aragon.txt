@@ -8,9 +8,10 @@
 			noble = yes
 			birth_date = 1790.2.25
 			interest_group = ig_landowners
-			ideology = ideology_royalist
+			ideology = ideology_jingoist
 			traits = {
 				imperious
+				popular_commander
 			}
 			on_created = {
 				set_variable = is_married

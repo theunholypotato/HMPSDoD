@@ -253,7 +253,7 @@ ARN = { #Aragon
 
 	tier = kingdom
 	
-	cultures = { catalan }
+	cultures = { catalan south_italian }
 	capital = STATE_CATALONIA
 }
 
