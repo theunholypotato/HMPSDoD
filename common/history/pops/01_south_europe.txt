@@ -220,7 +220,7 @@
 				size = 132990
 			}
 			create_pop = {
-				culture = navarragon
+				culture = spanish
 				size = 108810
 			}
 		}
@@ -259,13 +259,13 @@
 	}
 	s:STATE_ARAGON = {
 		region_state:ARN = {
-			create_pop = {
-				culture = navarragon
-				size = 1008803
-			}
 			 create_pop = {
 				culture = catalan
-				size = 144115
+				size = 944115
+			}
+			create_pop = {
+				culture = basque
+				size = 200000
 			}
 		}
 	}
