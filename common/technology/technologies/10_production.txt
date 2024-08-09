@@ -79,6 +79,10 @@ lathe = {
 	texture = "gfx/interface/icons/invention_icons/lathe.dds"
 	category = production
 	
+	modifier = {
+		building_economy_of_scale_level_cap_add = 20
+	}
+	
 	unlocking_technologies = {
 		cotton_gin
 	}
@@ -289,6 +293,11 @@ railways = {
 		atmospheric_engine
 	}
 	
+	modifier = {
+		state_market_access_price_impact = 0.05
+		market_land_trade_capacity_add = 500
+	}
+	
 	ai_weight = {
 		value = 2 # Important tech for everyone
 		
@@ -389,7 +398,7 @@ mechanized_workshops = {
 	category = production
 	
 	modifier = {
-		building_economy_of_scale_level_cap_add = 10
+		building_economy_of_scale_level_cap_add = 20
 	}
 	
 	unlocking_technologies = {
@@ -656,6 +665,7 @@ vacuum_canning = {
 	
 	unlocking_technologies = {	
 		mechanized_workshops
+		electrical_generation
 	}
 	
 	ai_weight = {
@@ -669,11 +679,29 @@ shift_work = {
 	category = production
 	
 	modifier = {
-		building_economy_of_scale_level_cap_add = 20
+		building_economy_of_scale_level_cap_add = 40
 	}
 	
 	unlocking_technologies = {	
 		mechanized_workshops
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+alternators = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/alternator.dds"
+	category = production
+	
+	modifier = {
+		# Unlocks AC PM
+	}
+	
+	unlocking_technologies = {	
+		electrical_generation
 	}
 	
 	ai_weight = {
@@ -687,7 +715,11 @@ steel_railway_cars = {
 	# Increases Railway max level by 1
 	era = era_3
 	texture = "gfx/interface/icons/invention_icons/steel_railway_cars.dds"
-	category = production	
+	category = production
+
+	modifier = {
+		market_land_trade_capacity_add = 300
+	}
 	
 	unlocking_technologies = {	
 		railways
@@ -730,6 +762,24 @@ electrical_generation = {
 }
 
 ### ERA 4
+
+synfuel = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/synth_oil.dds"
+	category = production
+	
+	modifier = {
+		# Unlocks Synth Oil
+	}
+	
+	unlocking_technologies = {	
+		plastics
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
 
 mechanized_farming = {
 	# Unlocks Tractors PM in Rye Farms, Wheat Farms, Millet Farms
@@ -805,7 +855,6 @@ conveyors = {
 }
 
 pasteurization = {
-	# #todo! Does nothing at the moment, should probably do something at Livestock Ranches or Food Industries
 	era = era_4
 	texture = "gfx/interface/icons/invention_icons/pasteurization.dds"
 	category = production
@@ -827,7 +876,11 @@ electric_railway = {
 	# Increases Railway max level by 1
 	era = era_4
 	texture = "gfx/interface/icons/invention_icons/electric_railway.dds"
-	category = production		
+	category = production	
+
+	modifier = {
+		market_land_trade_capacity_add = 300
+	}
 	
 	unlocking_technologies = {
 		electrical_capacitors
@@ -861,6 +914,10 @@ combustion_engine = {
 	
 	unlocking_technologies = {	
 		rotary_valve_engine
+	}
+	
+	modifier = {
+		market_land_trade_capacity_add = 400
 	}
 	
 	ai_weight = {
@@ -998,7 +1055,7 @@ radio = {
 	unlocking_technologies = {
 		telephone
 	}
-
+	
 	modifier = {
 		country_max_declared_interests_add = 1
 	}
@@ -1018,9 +1075,26 @@ telephone = {
 		shift_work
 		electrical_generation
 	}
-
+	
+	
 	modifier = {
 		country_max_declared_interests_add = 1
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+oil_turbine = {
+	# Unlocks Oil-Fired Plant PM in Power Plants
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/oil_turbines.dds"
+	category = production
+	
+	unlocking_technologies = {	
+		steam_turbine
+		pneumatic_tools
 	}
 	
 	ai_weight = {
@@ -1061,21 +1135,6 @@ flash_freezing = {
 	}
 }
 
-oil_turbine = {
-	# Unlocks Oil-Fired Plant PM in Power Plants
-	era = era_5
-	texture = "gfx/interface/icons/invention_icons/oil_turbines.dds"
-	category = production
-	
-	unlocking_technologies = {	
-		steam_turbine
-	}
-	
-	ai_weight = {
-		value = 1
-	}
-}
-
 arc_welding = {
 	# Unlocks Arc Welding Shipbuilding PM in Shipyards
 	# Unlocks Very Fast PM in Construction Camps
@@ -1099,6 +1158,10 @@ compression_ignition = {
 	era = era_5
 	texture = "gfx/interface/icons/invention_icons/compression_ignition.dds"
 	category = production
+	
+	modifier = {
+		market_land_trade_capacity_add = 500
+	}
 	
 	unlocking_technologies = {
 		combustion_engine

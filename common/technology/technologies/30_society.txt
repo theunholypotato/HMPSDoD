@@ -1,5 +1,18 @@
 ﻿### ERA 1
 
+sahara_colonisation = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/quinine.dds"
+	category = society
+	can_research = no
+	
+	modifier = {}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
 urbanization = {
 	# Unlocks Urban Centers building
 	era = era_1
@@ -11,7 +24,7 @@ urbanization = {
 		state_infrastructure_from_population_max_add = 40	
 		state_building_construction_sector_max_level_add = 10
 		country_max_weekly_construction_progress_add = 10
-		market_land_trade_capacity_add = 50
+		market_land_trade_capacity_add = 300
 	}
 	
 	ai_weight = {
@@ -29,7 +42,6 @@ urban_planning = {
 		state_infrastructure_from_population_max_add = 20
 		state_building_construction_sector_max_level_add = 5
 		country_max_weekly_construction_progress_add = 5
-		market_land_trade_capacity_add = 10
 	}
 	
 	unlocking_technologies = {
@@ -147,6 +159,10 @@ international_trade = {
 		tech_bureaucracy
 	}
 	
+	modifier = {
+		market_land_trade_capacity_add = 100
+	}
+	
 	ai_weight = {
 		value = 3 # Very important in general
 	}
@@ -159,6 +175,7 @@ centralization = {
 	
 	modifier = {
 		state_tax_capacity_add = 25
+		state_tax_capacity_mult = 0.01
 		country_institution_home_affairs_max_investment_add = 1
 	}
 	
@@ -170,6 +187,7 @@ centralization = {
 		value = 1.5 # Important in general
 	}
 }
+
 
 corporate_charters = {
 	era = era_2
@@ -216,6 +234,7 @@ academia = {
 	
 	modifier = {
 		state_education_access_wealth_add = 0.005
+		state_building_university_max_level_add = 3
 	}
 	
 	unlocking_technologies = {
@@ -238,6 +257,7 @@ colonization = {
 	modifier = {
 		country_institution_colonial_affairs_max_investment_add = 2
 		country_max_declared_interests_add = 1
+		country_diplomatic_play_maneuvers_add = 10
 		country_infamy_generation_against_unrecognized_mult = -0.1
 	}	
 	
@@ -249,6 +269,7 @@ colonization = {
 		value = 1
 	}
 }
+
 
 international_relations = {
 	# Unlocks Defensive Pact and Rivalry
@@ -266,7 +287,7 @@ international_relations = {
 
 law_enforcement = {
 	# Unlocks Local Police, Dedicated Police - Policing Laws
-	era = era_1
+	era = era_2
 	texture = "gfx/interface/icons/invention_icons/law_enforcement.dds"
 	category = society
 	
@@ -291,7 +312,8 @@ stock_exchange = {
 	
 	modifier = {
 		country_trade_route_cost_mult = -0.25
-		state_market_access_price_impact = 0.1
+		state_market_access_price_impact = 0.05
+		country_max_companies_add = 1
 	}
 	
 	unlocking_technologies = {
@@ -348,9 +370,9 @@ empiricism = {
 	
 	modifier = {
 		country_influence_mult = 0.1
-		country_diplomatic_play_maneuvers_add = 10
 		country_institution_schools_max_investment_add = 1
 		state_education_access_wealth_add = 0.005
+		state_building_university_max_level_add = 3
 	}
 	
 	unlocking_technologies = {
@@ -434,7 +456,6 @@ modern_sewerage = {
 		state_infrastructure_from_population_max_add = 20
 		state_building_construction_sector_max_level_add = 5
 		country_max_weekly_construction_progress_add = 5
-		market_land_trade_capacity_add = 10
 		state_pollution_reduction_health_mult = -0.1
 	}
 	
@@ -509,17 +530,20 @@ central_archives = {
 	
 	modifier = {
 		state_tax_capacity_add = 25
+		state_tax_capacity_mult = 0.01
 		country_institution_home_affairs_max_investment_add = 1
 	}
 	
 	unlocking_technologies = {
 		centralization
+		law_enforcement
 	}
 	
 	ai_weight = {
 		value = 1.5 # Important in general
 	}
 }
+
 
 central_banking = {
 	era = era_2
@@ -529,6 +553,7 @@ central_banking = {
 	modifier = {
 		country_minting_mult = 0.1
 		country_loan_interest_rate_add = -0.02
+		state_market_access_price_impact = 0.025
 	}	
 	
 	unlocking_technologies = {
@@ -541,7 +566,7 @@ central_banking = {
 }
 
 joint_stock_companies = {
-	era = era_2
+	era = era_3
 	texture = "gfx/interface/icons/invention_icons/joint_stock_companies.dds"
 	category = society
 	
@@ -569,6 +594,7 @@ dialectics = {
 	
 	modifier = {
 		country_institution_schools_max_investment_add = 1
+		state_building_university_max_level_add = 4
 	}
 	
 	unlocking_technologies = {
@@ -587,7 +613,6 @@ psychiatry = {
 	
 	modifier = {
 		country_influence_mult = 0.1
-		country_diplomatic_play_maneuvers_add = 10
 		state_bureaucracy_population_base_cost_factor_mult = -0.05
 	}
 	
@@ -628,6 +653,8 @@ nationalism = {
 	
 	modifier = {
 		country_authority_mult = 0.1
+		country_diplomatic_play_maneuvers_add = 20
+		country_infamy_decay_mult = 0.10
 	}
 	
 	unlocking_technologies = {
@@ -661,7 +688,19 @@ nationalism = {
 			}
 			add = 2
 		}	
-	
+		
+		if = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:north_italian
+					country_has_primary_culture = cu:south_italian
+				}
+				any_country = {
+					has_journal_entry = je_risorgimento
+				}
+			}
+			multiply = 2
+		}
 	}
 }
 
@@ -684,7 +723,7 @@ labor_movement = {
 		mass_communication
 		egalitarianism
 	}
-
+	
 	on_researched = {
 		set_global_variable = labour_movement_researched
 	}
@@ -745,6 +784,7 @@ human_rights = {
 	
 	modifier = {
 		country_institution_social_security_max_investment_add = 1
+		country_institution_health_system_max_investment_add = 1
 	}
 	
 	unlocking_technologies = {
@@ -791,26 +831,17 @@ feminism = {
 				NOT = { has_variable = feminism_researched }
 			}
 			set_variable = feminism_researched
-			custom_tooltip = {
-				text = liberal_and_egalitarian_amended_tt
-				every_interest_group = {
-					limit = {
-						has_ideology = ideology:ideology_liberal
-					}
-					remove_ideology = ideology_liberal
-					add_ideology = ideology_liberal_modern
-				}
-				every_interest_group = {
-					limit = {
-						has_ideology = ideology:ideology_egalitarian
-					}
-					remove_ideology = ideology_egalitarian
-					add_ideology = ideology_egalitarian_modern
-				}
+			ig:ig_intelligentsia = {
+				remove_ideology = ideology_liberal
+				add_ideology = ideology_liberal_modern
+			}
+			ig:ig_trade_unions = {
+				remove_ideology = ideology_egalitarian
+				add_ideology = ideology_egalitarian_modern
 			}
 		}
 	}
-
+	
 	unlocking_technologies = {
 		human_rights
 	}
@@ -847,7 +878,6 @@ steel_frame_buildings = {
 		state_infrastructure_from_population_max_add = 20
 		state_building_construction_sector_max_level_add = 5
 		country_max_weekly_construction_progress_add = 5
-		market_land_trade_capacity_add = 10
 	}
 	
 	unlocking_technologies = {
@@ -870,12 +900,14 @@ civilizing_mission = {
 	modifier = {
 		country_institution_colonial_affairs_max_investment_add = 1
 		country_max_declared_interests_add = 1
+		country_diplomatic_play_maneuvers_add = 30
+		country_infamy_decay_mult = 0.10
 		country_infamy_generation_against_unrecognized_mult = -0.25
 	}
 	
 	unlocking_technologies = {
-		quinine
 		nationalism
+		pharmaceuticals
 	}
 	
 	ai_weight = {
@@ -950,9 +982,9 @@ socialism = {
 				NOT = { has_variable = socialism_researched }
 			}
 			set_variable = socialism_researched
-			ig:ig_trade_unions = {
-				add_ideology = ideology_socialist
-			}
+			#ig:ig_trade_unions = {
+			#	add_ideology = ideology_socialist
+			#}
 		}
 	}
 	
@@ -991,6 +1023,9 @@ corporatism = {
 		if = {
 			limit = {
 				NOT = { has_variable = corporatism_researched }
+				ig:ig_devout = {
+					has_ideology = ideology:ideology_pious
+				}
 			}
 			set_variable = corporatism_researched
 			ig:ig_devout = {
@@ -1039,6 +1074,8 @@ pan-nationalism = {
 	
 	modifier = {
 		country_authority_mult = 0.1
+		country_infamy_generation_mult = -0.15
+		country_infamy_decay_mult = 0.20
 	}
 	
 	unlocking_technologies = {
@@ -1091,6 +1128,7 @@ investment_banks = {
 	modifier = {
 		country_max_companies_add = 1
 		state_urbanization_per_level_mult = -0.15
+		state_market_access_price_impact = 0.025
 	}	
 	
 	unlocking_technologies = {
@@ -1129,7 +1167,6 @@ philosophical_pragmatism = {
 	
 	modifier = {
 		country_influence_mult = 0.1
-		country_diplomatic_play_maneuvers_add = 10
 		state_bureaucracy_population_base_cost_factor_mult = -0.05
 	}
 	
@@ -1151,6 +1188,7 @@ identification_documents = {
 
 	modifier = {
 		state_tax_capacity_add = 25
+		state_tax_capacity_mult = 0.02
 		country_institution_home_affairs_max_investment_add = 1
 	}
 	
@@ -1160,6 +1198,28 @@ identification_documents = {
 	
 	ai_weight = {
 		value = 1
+	}
+}
+
+central_planning = {
+	# Unlocks Command Economy - Economic System Law
+	# Unlocks Vertical Filing Cabinets PM in Government Administrations
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/central_planning.dds"
+	category = society
+	
+	modifier = {
+		state_tax_capacity_add = 25
+		state_tax_capacity_mult = 0.03
+		country_government_dividends_efficiency_add = 0.05
+	}
+	
+	unlocking_technologies = {
+		identification_documents
+	}
+	
+	ai_weight = {
+		value = 1.5 # Important in general
 	}
 }
 
@@ -1175,7 +1235,6 @@ elevator = {
 		state_infrastructure_from_population_max_add = 20
 		state_building_construction_sector_max_level_add = 5
 		country_max_weekly_construction_progress_add = 5
-		market_land_trade_capacity_add = 10
 	}	
 	
 	unlocking_technologies = {
@@ -1187,24 +1246,23 @@ elevator = {
 	}
 }
 
-zeppelins = {
-	# #todo#! Does nothing at the moment
-	era = era_4
-	texture = "gfx/interface/icons/invention_icons/zeppelins.dds"
-	category = society
-	
-	modifier = {
-		state_market_access_price_impact = 0.05
-	}
-	
-	unlocking_technologies = {
-		steel_frame_buildings
-	}
-	
-	ai_weight = {
-		value = 1
-	}
-}
+#zeppelins = {
+#	era = era_4
+#	texture = "gfx/interface/icons/invention_icons/zeppelins.dds"
+#	category = society
+#	
+#	modifier = {
+#		state_market_access_price_impact = 0.05
+#	}
+#	
+#	unlocking_technologies = {
+#		steel_frame_buildings
+#	}
+#	
+#	ai_weight = {
+#		value = 1
+#	}
+#}
 
 malaria_prevention = {
 	# Should permit for colonization of state regions with severe malaria
@@ -1214,6 +1272,8 @@ malaria_prevention = {
 
 	modifier = {
 		country_institution_colonial_affairs_max_investment_add = 1
+		country_institution_health_system_max_investment_add = 1
+		country_infamy_decay_mult = 0.20
 	}
 	
 	unlocking_technologies = {
@@ -1237,27 +1297,6 @@ malaria_prevention = {
 			}
 			add = 1
 		}			
-	}
-}
-
-central_planning = {
-	# Unlocks Command Economy - Economic System Law
-	# Unlocks Vertical Filing Cabinets PM in Government Administrations
-	era = era_4
-	texture = "gfx/interface/icons/invention_icons/central_planning.dds"
-	category = society
-	
-	modifier = {
-		state_tax_capacity_add = 25
-		country_government_dividends_efficiency_add = 0.05
-	}
-	
-	unlocking_technologies = {
-		identification_documents
-	}
-	
-	ai_weight = {
-		value = 1.5 # Important in general
 	}
 }
 
@@ -1303,7 +1342,6 @@ political_agitation = {
 }
 
 international_exchange_standards = {
-	# #todo#! Does nothing at the moment
 	# Should increase trade power maybe
 	era = era_4
 	texture = "gfx/interface/icons/invention_icons/international_exchange_standards.dds"
@@ -1312,6 +1350,7 @@ international_exchange_standards = {
 	modifier = {
 		country_minting_mult = 0.1
 		country_loan_interest_rate_add = -0.02
+		state_market_access_price_impact = 0.025
 	}
 	
 	unlocking_technologies = {
@@ -1343,7 +1382,6 @@ corporate_management = {
 }
 
 psychoanalysis = {
-	# #todo#! Does nothing at the moment
 	# Should provide additional methods for dealing with negative psychological character traits
 	era = era_4
 	texture = "gfx/interface/icons/invention_icons/psychoanalysis.dds"
@@ -1351,7 +1389,6 @@ psychoanalysis = {
 	
 	modifier = {
 		country_influence_mult = 0.1
-		country_diplomatic_play_maneuvers_add = 10
 		state_bureaucracy_population_base_cost_factor_mult = -0.05
 	}
 	
@@ -1389,8 +1426,10 @@ multilateral_alliances = {
 	category = society
 	
 	modifier = {
-		country_infamy_generation_mult = -0.25
+		country_diplomatic_play_maneuvers_add = 40
 		country_allow_multiple_alliances_bool = yes
+		country_infamy_generation_mult = -0.30
+		country_infamy_decay_mult = 0.40
 	}
 	
 	unlocking_technologies = {	
@@ -1407,6 +1446,20 @@ multilateral_alliances = {
 	}
 }
 
+analytical_philosophy = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/analytical_philosophy.dds"
+	category = society
+	
+	unlocking_technologies = {
+		philosophical_pragmatism
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
 ### ERA 5
 
 mass_surveillance = {
@@ -1418,6 +1471,7 @@ mass_surveillance = {
 	
 	modifier = {
 		state_tax_capacity_add = 25
+		state_tax_capacity_mult = 0.01
 	}
 	
 	unlocking_technologies = {
@@ -1429,8 +1483,8 @@ mass_surveillance = {
 	}
 }
 
+
 antibiotics = {
-	# #todo#! Reduces state mortality by -10% (same as Vitamins)
 	era = era_5
 	texture = "gfx/interface/icons/invention_icons/antibiotics.dds"
 	category = society
@@ -1447,21 +1501,6 @@ antibiotics = {
 		value = 1
 	}
 }
-
-#vitamins = {
-#	# #todo#! Reduces state mortality by -10% (same as Antibiotics)
-#	era = era_5
-#	texture = "gfx/interface/icons/invention_icons/vitamins.dds"
-#	category = society
-#	
-#	modifier = {
-#		state_mortality_mult = -0.10
-#	}
-#	
-#	unlocking_technologies = {
-#		malaria_prevention
-#	}
-#}
 
 mass_propaganda = {
 	# Unlocks Better Radios PM in Electrics Industries
@@ -1492,8 +1531,9 @@ modern_financial_instruments = {
 	category = society
 	modifier = {
 		country_minting_mult = 0.1
-		country_loan_interest_rate_add = -0.02	
+		country_loan_interest_rate_add = -0.02
 		country_government_dividends_efficiency_add = 0.05
+		state_market_access_price_impact = 0.025
 	}
 	unlocking_technologies = {
 		international_exchange_standards
@@ -1511,7 +1551,7 @@ macroeconomics = {
 	
 	modifier = {
 		country_max_companies_add = 1
-		state_market_access_price_impact = 0.05
+		state_market_access_price_impact = 0.025
 	}
 	
 	unlocking_technologies = {
@@ -1525,31 +1565,14 @@ macroeconomics = {
 }
 
 behaviorism = {
-	# #todo#! Does nothing at the moment
 	era = era_5
 	texture = "gfx/interface/icons/invention_icons/behaviorism.dds"
 	category = society
 	
 	modifier = {
 		country_influence_mult = 0.1
-		country_diplomatic_play_maneuvers_add = 10
 		state_bureaucracy_population_base_cost_factor_mult = -0.05
 	}
-	
-	unlocking_technologies = {
-		psychoanalysis
-	}
-	
-	ai_weight = {
-		value = 1
-	}
-}
-
-analytical_philosophy = {
-	# #todo#! Does nothing at the moment
-	era = era_5
-	texture = "gfx/interface/icons/invention_icons/analytical_philosophy.dds"
-	category = society
 	
 	unlocking_technologies = {
 		psychoanalysis
@@ -1567,7 +1590,7 @@ paved_roads = {
 	
 	modifier = {
 		state_infrastructure_from_automobiles_consumption_add = 0.25
-		market_land_trade_capacity_add = 20
+		market_land_trade_capacity_add = 600
 	}
 	
 	unlocking_technologies = {	
@@ -1576,5 +1599,42 @@ paved_roads = {
 	
 	ai_weight = {
 		value = 2 # Important for those nice-looking roads!
+	}
+}
+
+civil_rights = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/civil_rights.dds"
+	category = society
+	
+	modifier = {
+	}
+	
+	unlocking_technologies = {
+		human_rights
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+### ERA 6
+
+multiculturalism = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/civil_rights_2.dds"
+	category = society
+	
+	modifier = {
+	}
+	
+	unlocking_technologies = {
+		human_rights
+		anarchism
+	}
+	
+	ai_weight = {
+		value = 1
 	}
 }

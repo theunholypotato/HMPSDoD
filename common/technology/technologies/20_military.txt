@@ -5,6 +5,10 @@ standing_army = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/standing_army.dds"
 	category = military
+    
+    modifier = {
+		state_fae_building_forts_max_level_add = 1
+	}
 	
 	ai_weight = {
 		value = 3 # Very important tech in general
@@ -61,6 +65,7 @@ mandatory_service = {
 	
 	modifier = {
 		state_conscription_rate_mult = 0.2
+		country_institution_army_model_max_investment_add = 1
 	}
 	
 	unlocking_technologies = {
@@ -133,9 +138,17 @@ napoleonic_warfare = {
 		artillery
 	}
 	
+	modifier = {
+		state_fae_building_forts_max_level_add = 1
+	}
+	
 	ai_weight = {
 		value = 1.5 # Important tech in general
-
+		
+		if = {
+			limit = { has_journal_entry = je_sick_man_army }
+			add = 5
+		}
 	}
 }
 
@@ -146,7 +159,7 @@ admiralty = {
 	category = military
 	
 	modifier = {
-		state_building_naval_base_max_level_add = 20
+		#state_building_naval_base_max_level_add = 20
     }
 	
 	unlocking_technologies = {
@@ -229,6 +242,8 @@ field_works = {
 		# defensive bonus, either directly to army or (ideally) a fortifications bonus, if we get forts
 		# Lower kill rate?
 		unit_army_defense_mult = 0.1
+		
+		state_fae_building_forts_max_level_add = 1
 	}
 	
 	unlocking_technologies = {
@@ -306,20 +321,21 @@ percussion_cap = {
 	}
 }
 
-rifling = {
-	# Unlocks Rifles PM in Arms Industry
-	era = era_2
-	texture = "gfx/interface/icons/invention_icons/rifling.dds"
-	category = military
-	
-	unlocking_technologies = {	
-		percussion_cap
-	}
-	
-	ai_weight = {
-		value = 2 # Important tech in general
-	}
-}
+# HMPS change - tech is dead
+#rifling = {
+#	# Unlocks Rifles PM in Arms Industry
+#	era = era_2
+#	texture = "gfx/interface/icons/invention_icons/rifling.dds"
+#	category = military
+#	
+#	unlocking_technologies = {	
+#		percussion_cap
+#	}
+#	
+#	ai_weight = {
+#		value = 2 # Important tech in general
+#	}
+#}
 
 general_staff = {
 	# Unlocks Skirmish Infantry PM in Barracks / Conscription Centers
@@ -368,7 +384,7 @@ power_of_the_purse = {
 	category = military
 	
 	modifier = {
-		state_building_naval_base_max_level_add = 10
+		#state_building_naval_base_max_level_add = 20
 	}
 	
 	unlocking_technologies = {	
@@ -388,6 +404,7 @@ hydraulic_cranes = {
 	
 	modifier = {
 		state_building_port_max_level_add = 3
+		state_market_access_price_impact = 0.025
 	}
 	
 	unlocking_technologies = {	
@@ -466,6 +483,7 @@ military_statistics = {
 	
 	modifier = {
 		military_formation_organization_gain_mult = 0.2
+		country_institution_army_model_max_investment_add = 1
 	}
 	
 	unlocking_technologies = {	
@@ -478,22 +496,6 @@ military_statistics = {
 	}
 }
 
-repeaters = {
-	# Unlocks Repeaters PM in Arms Industry
-	# Global Unlock for Repeaters PM in Barracks
-	era = era_3
-	texture = "gfx/interface/icons/invention_icons/repeaters.dds"
-	category = military
-	
-	unlocking_technologies = {	
-		rifling
-	}
-	
-	ai_weight = {
-		value = 1.5 # Important tech in general
-	}
-}
-
 breech_loading_artillery = {
 	# Unlocks Breech Loading Artillery Production PM in Arms Industries
 	# Unlocks Breech Loading Artillery PM in Barracks
@@ -503,8 +505,12 @@ breech_loading_artillery = {
 	category = military
 	
 	unlocking_technologies = {	
-		rifling
+		percussion_cap
 		shell_gun
+	}
+	
+	modifier = {
+		state_fae_building_forts_max_level_add = 2
 	}
 	
 	ai_weight = {
@@ -523,7 +529,6 @@ handcranked_machine_gun = {
 	}
 	
 	unlocking_technologies = {	
-		repeaters
 		breech_loading_artillery
 	}
 	
@@ -603,7 +608,7 @@ jeune_ecole = {
 	category = military
 	
 	modifier = {
-		state_building_naval_base_max_level_add = 10
+		#state_building_naval_base_max_level_add = 20
 	}
 	
 	unlocking_technologies = {	
@@ -624,6 +629,7 @@ floating_harbor = {
 	
 	modifier = {
 		state_building_port_max_level_add = 4
+		state_market_access_price_impact = 0.025
 	}
 	
 	unlocking_technologies = {	
@@ -688,13 +694,20 @@ trench_works = {
 }
 
 war_propaganda = {
-	era = era_4
+	era = era_3
 	texture = "gfx/interface/icons/invention_icons/war_propaganda.dds"
 	category = military
 
 	modifier = {
 		unit_morale_loss_mult = -0.05
 		state_conscription_rate_mult = 0.2
+		country_institution_army_model_max_investment_add = 1
+	}
+	
+	on_researched = {
+		custom_tooltip = {
+			text = boost_war_support_button
+		}
 	}
 	
 	unlocking_technologies = {	
@@ -719,6 +732,7 @@ wargaming = {
 	
 	unlocking_technologies = {
 		military_statistics
+		breech_loading_artillery
 	}
 	
 	ai_weight = {
@@ -734,8 +748,11 @@ defense_in_depth = {
 	category = military
 	
 	modifier = {
+		unit_morale_loss_mult = -0.05
 		# defensive bonus, either to the army or ideally to fortifications
 		unit_army_defense_mult = 0.1
+		
+		state_fae_building_forts_max_level_add = 2
 	}
 	
 	unlocking_technologies = {	
@@ -748,22 +765,6 @@ defense_in_depth = {
 	}
 }
 
-bolt_action_rifles = {
-	# Unlocks Bolt Action Rifles PM in Arms Industry
-	# Global Unlock for Bolt Action Rifles PM in Barracks
-	era = era_4
-	texture = "gfx/interface/icons/invention_icons/bolt_action_rifles.dds"
-	category = military
-	
-	unlocking_technologies = {	
-		repeaters
-	}
-	
-	ai_weight = {
-		value = 2 # important for everyone
-	}
-}
-
 automatic_machine_guns = {
 	# Unlocks Recoil Mechaniscm PM in Arms Factory
 	# Unlocks Machine Gunners PMs in Barracks and Conscription Centers
@@ -773,7 +774,6 @@ automatic_machine_guns = {
 	
 	unlocking_technologies = {	
 		handcranked_machine_gun
-		bolt_action_rifles
 	}
 	
 	ai_weight = {
@@ -829,8 +829,7 @@ dreadnought = {
 	}
 	
 	unlocking_technologies = {
-		ironclad_tech
-		sea_lane_strategies
+		destroyer
 	}
 	
 	ai_weight = {
@@ -851,11 +850,12 @@ sea_lane_strategies = {
 	category = military
 	
 	modifier = {
-		state_building_naval_base_max_level_add = 10
+		#state_building_naval_base_max_level_add = 20
 	}
 	
 	unlocking_technologies = {	
 		jeune_ecole
+		destroyer
 	}
 	
 	ai_weight = {
@@ -897,6 +897,7 @@ concrete_dockyards = {
 	
 	modifier = {
 		state_building_port_max_level_add = 4
+		state_market_access_price_impact = 0.025
 	}
 	
 	unlocking_technologies = {	
@@ -940,6 +941,7 @@ chemical_warfare = {
 	
 	unlocking_technologies = {	
 		automatic_machine_guns
+		flamethrowers
 	}
 	
 	ai_weight = {
@@ -976,9 +978,12 @@ concrete_fortifications = {
 	category = military
 	
 	modifier = {
+		unit_morale_loss_mult = -0.05
 		# build the maginot line and be completely unstoppable, forever, especially if you're France
 		# bonus to general defensiveness or specifically to forts if they become a thing
 		unit_army_defense_mult = 0.1
+		
+		state_fae_building_forts_max_level_add = 3
 	}
 	
 	unlocking_technologies = {	
@@ -1018,6 +1023,7 @@ military_aviation = {
 	modifier = {
 		# increased oil consumption
 		# increased recon/scouting/go fast
+		unit_army_defense_mult = 0.1
 	}
 	
 	unlocking_technologies = {	
@@ -1097,7 +1103,7 @@ battlefleet_tactics = {
 	category = military
 	
 	modifier = {
-		state_building_naval_base_max_level_add = 10
+		#state_building_naval_base_max_level_add = 20
 	}
 	
 	unlocking_technologies = {	
