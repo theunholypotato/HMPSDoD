@@ -171,7 +171,7 @@ SCA = { #Scandinavia
 
 	tier = empire
 	
-	cultures = { scandinavian }
+	cultures = { scandinavian scottish }
 	capital = STATE_ZEALAND
 }
 
