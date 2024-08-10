@@ -2008,7 +2008,7 @@ CPT = { #Carpathia
 
 	tier = empire
 	
-	cultures = { hungarian slovak romanian}
+	cultures = { hungarian romanian}
 	capital = STATE_NORTHERN_TRANSYLVANIA
 }
 
