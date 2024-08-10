@@ -134,39 +134,6 @@ MGB = { #Maghreb
 }
 
 
-WDY = { #Wadiya
-
-	states = {
-		STATE_ERITREA
-	}
-
-
-	required_states_fraction = 1.00
-	
-	ai_will_do = { always = no }
-
-	possible = {
-
-		NOT = { has_game_rule = plausible_formable_nations }
-
-		AND = {
-		has_law = law_type:law_presidential_republic
-		has_law = law_type:law_hereditary_bureaucrats
-		has_law = law_type:law_autocracy
-		
-		}
-		any_primary_culture = {
-				OR = {
-					has_discrimination_trait = middle_eastern_heritage
-					has_discrimination_trait = jewish_group
-					has_discrimination_trait = east_african_culture_group
-				}
-		} 
-					
-			
-		
-	}
-}
 AZW = { #Azawad
 	use_culture_states = yes
 
