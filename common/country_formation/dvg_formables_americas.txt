@@ -10,23 +10,10 @@
 			OR = {
 				country_has_primary_culture = cu:septiman
 				country_has_primary_culture = cu:cadien
+				country_has_primary_culture = cu:vinlander
 			}			
 			has_technology_researched = pan-nationalism
 		}
-	}
-}
-
-AMZ = { #Greater Amazonie
-	use_culture_states = yes
-
-	required_states_fraction = 0.55
-
-	ai_will_do = { always = yes }
-
-	possible = {
-		country_has_primary_culture = cu:amazonien
-		has_technology_researched = pan-nationalism
-
 	}
 }
 
@@ -194,21 +181,6 @@ AYL = { #Abya Yala
 	required_states_fraction = 0.51
 	
 	ai_will_do = { always = yes }
-}
-
-IPM = { #Intipmarka
-	use_culture_states = yes
-	
-	possible = {
-		any_country = {
-			has_technology_researched = pan-nationalism
-			NOT = { country_has_primary_culture = cu:runasimi }
-		}
-	}
-	
-	required_states_fraction = 1
-	
-	ai_will_do = { always = no }
 }
 
 TWT = { #Tawantinsuyu
