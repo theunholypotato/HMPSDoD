@@ -327,6 +327,7 @@ STATE_CAJAMARCA = {
         bg_logging = 6
         bg_whaling = 3
         bg_fishing = 7
+        bg_guano_mining = 10
     }
     resource = {
         type = bg_gold_fields
@@ -359,6 +360,7 @@ STATE_LIMA = {
         bg_logging = 7
         bg_whaling = 5
         bg_fishing = 7
+        bg_guano_mining = 20
     }
     naval_exit_id = 3024
 }

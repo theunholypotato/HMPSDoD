@@ -476,6 +476,7 @@ STATE_WEST_MICRONESIA = {
         bg_logging = 2
         bg_fishing = 3
         bg_whaling = 3
+        bg_guano_mining = 6
     }
     naval_exit_id = 3140
 }
@@ -496,6 +497,7 @@ STATE_EAST_MICRONESIA = {
         bg_logging = 2
         bg_fishing = 3
         bg_whaling = 3
+        bg_guano_mining = 5
     }
     naval_exit_id = 3140
 }
@@ -516,6 +518,7 @@ STATE_SOLOMON_ISLANDS = {
         bg_logging = 3
         bg_fishing = 3
         bg_whaling = 2
+        bg_guano_mining = 7
     }
     naval_exit_id = 3129
 }
@@ -532,6 +535,7 @@ STATE_NAURU = {
         bg_logging = 2
         bg_fishing = 3
         bg_whaling = 3
+        bg_guano_mining = 5
     }
     naval_exit_id = 3156
 }
@@ -549,6 +553,7 @@ STATE_FIJI = {
         bg_logging = 3
         bg_fishing = 4
         bg_whaling = 4
+        bg_guano_mining = 6
     }
     naval_exit_id = 3124
 }
@@ -566,6 +571,7 @@ STATE_VANUATU = {
     capped_resources = {
         bg_logging = 2
         bg_fishing = 3
+        bg_guano_mining = 3
     }
     naval_exit_id = 3124
 }
