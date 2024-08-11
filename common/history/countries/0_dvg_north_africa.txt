@@ -57,6 +57,8 @@
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -72,6 +74,8 @@
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -86,6 +90,8 @@
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -100,6 +106,8 @@
 		effect_starting_politics_traditional  = yes
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -114,12 +122,15 @@
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_national_guard
+		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
-		activate_law = law_type:law_national_guard
-		activate_law = law_type:law_national_militia
+
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 		}
@@ -136,6 +147,8 @@
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -152,6 +165,8 @@
 		activate_law = law_type:law_isolationism
 		activate_law = law_type:law_debt_slavery
 		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -165,6 +180,10 @@
 		effect_starting_technology_tier_6_tech = yes
 		effect_native_conscription_5 = yes
 		effect_starting_politics_traditional = yes
+
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
+
 	}
 	
 	c:AHG = { #Ahaggar
@@ -172,6 +191,8 @@
 		effect_starting_politics_traditional = yes
 		effect_native_conscription_5 = yes
 		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 	}
 	
 	c:TUA = { #Tuat
@@ -179,6 +200,8 @@
 		effect_native_conscription_8 = yes
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 	}
 	
 	c:OUA = { #Oualata
@@ -186,6 +209,8 @@
 		effect_native_conscription_6 = yes
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 	}
 	
 	c:ADG = { #Adagh
@@ -193,6 +218,8 @@
 		effect_starting_politics_traditional = yes
 		effect_native_conscription_5 = yes
 		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 	}
 	
 	c:AIR = { #Air
@@ -200,6 +227,8 @@
 		effect_starting_politics_traditional = yes
 		effect_native_conscription_4 = yes
 		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 	}
 	
 	c:SAH = { #Sahrawi
@@ -207,12 +236,18 @@
 		effect_native_conscription_8 = yes
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 	}
 	
 	c:FRF = { #Al-Farafra
 		effect_starting_technology_tier_6_tech = yes
 		effect_starting_politics_traditional = yes
 		effect_native_conscription_5 = yes
+
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
+
 	}
 	
 	c:MOR = { #Morocco
@@ -221,6 +256,8 @@
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_ruling_interest_groups = {
 			ig_landowners
