@@ -73,7 +73,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
@@ -91,7 +91,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
@@ -108,7 +108,7 @@
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -128,7 +128,7 @@
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -148,7 +148,7 @@
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -168,7 +168,7 @@
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -188,7 +188,7 @@
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -208,7 +208,7 @@
 		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -229,7 +229,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -248,7 +248,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_low_income_tax	
@@ -284,7 +284,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -304,7 +304,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -325,7 +325,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -346,7 +346,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -366,7 +366,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -386,7 +386,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -406,7 +406,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -426,7 +426,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_slave_trade
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -446,7 +446,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
@@ -465,7 +465,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_homesteading
 		#activate_law = law_type:law_national_militia
 		activate_law = law_type:law_right_of_assembly
@@ -486,7 +486,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -504,7 +504,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -524,7 +524,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -545,7 +545,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
@@ -625,7 +625,7 @@
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_isolationism
 		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_religious_autonomy
+		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	

@@ -507,7 +507,7 @@ ideology_scholar_stratocratic = {
 	}
 
 	lawgroup_church_and_state = {
-		law_religious_autonomy = approve
+		law_total_separation = approve
 		law_state_religion = approve
 		law_freedom_of_conscience = neutral
 		law_total_separation = disapprove

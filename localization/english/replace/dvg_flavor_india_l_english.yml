@@ -53,6 +53,6 @@ ig_nayak:0 "Nayaks"
 ig_raiyat:0 "Raiyats"
 
 #Laws
-law_religious_autonomy:0 "Religious Autonomy"
-law_religious_autonomy_desc:0 "Individuals and religious institutions possess the right to manage their religious affairs independently without assistance or interference from the state."
+law_total_separation:0 "Religious Autonomy"
+law_total_separation_desc:0 "Individuals and religious institutions possess the right to manage their religious affairs independently without assistance or interference from the state."
 
