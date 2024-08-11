@@ -285,6 +285,7 @@
 		effect_starting_politics_conservative = yes
 
 		add_technology_researched = empiricism
+		add_technology_researched = intensive_agriculture
 
 		activate_law = law_type:law_landed_voting
 		activate_law = law_type:law_cultural_exclusion
@@ -384,6 +385,8 @@
 		effect_starting_technology_tier_2_tech = yes
 		effect_starting_politics_conservative = yes
 
+		add_technology_researched = intensive_agriculture
+
 		activate_law = law_type:law_landed_voting
 		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_freedom_of_conscience
@@ -441,6 +444,8 @@
 		effect_starting_technology_tier_2_tech = yes
 		effect_starting_politics_conservative = yes
 
+		add_technology_researched = intensive_agriculture
+
 		activate_law = law_type:law_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_state_religion
@@ -483,6 +488,8 @@
 	c:BRA = { #Brunswick
 		effect_starting_technology_tier_2_tech = yes
 		
+		add_technology_researched = intensive_agriculture
+
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_state_religion
@@ -707,7 +714,7 @@
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_type:law_religious_school
+		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
 
@@ -883,6 +890,8 @@
 
 	c:WUR = { #Wurttemberg
 		effect_starting_technology_tier_2_tech = yes
+
+		add_technology_researched = intensive_agriculture
 		
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_state_religion
@@ -899,6 +908,8 @@
 	
 	c:BAV = { #Bavaria
 		effect_starting_technology_tier_2_tech = yes
+
+		add_technology_researched = intensive_agriculture
 
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
@@ -925,6 +936,7 @@
 		effect_starting_politics_conservative = yes
 		
 		add_technology_researched = dialectics
+		add_technology_researched = intensive_agriculture
 		
 		activate_law = law_type:law_republic
 		activate_law = law_type:law_wealth_voting
@@ -1110,6 +1122,7 @@
 		add_technology_researched = central_banking
 		add_technology_researched = dialectics
 		add_technology_researched = general_staff
+		add_technology_researched = intensive_agriculture
 
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_women_own_property
@@ -1140,6 +1153,7 @@
 		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = central_banking
 		add_technology_researched = dialectics
+		add_technology_researched = intensive_agriculture
 		
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_republic
@@ -1182,6 +1196,7 @@
 		add_technology_researched = central_banking
 		add_technology_researched = dialectics
 		add_technology_researched = general_staff
+		add_technology_researched = intensive_agriculture
 
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_women_own_property
@@ -1210,6 +1225,7 @@
 	c:VEN = { #Venice
 		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = central_banking
+		add_technology_researched = intensive_agriculture
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_republic
@@ -1257,6 +1273,8 @@
 	
 	c:PAR = { #Parma
 		effect_starting_technology_tier_2_tech = yes
+
+		add_technology_researched = intensive_agriculture
 
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_women_own_property
@@ -1380,6 +1398,7 @@
 
 		effect_starting_politics_liberal = yes
 
+		add_technology_researched = intensive_agriculture
 		
 		activate_law = law_type:law_republic
 		activate_law = law_type:law_census_voting
@@ -1412,6 +1431,8 @@
 	c:PAP = { #Papal States
 		effect_starting_technology_tier_3_tech = yes
 		effect_starting_politics_conservative = yes
+
+		add_technology_researched = intensive_agriculture
 
 		activate_law = law_type:law_theocracy
 		activate_law = law_type:law_state_religion
@@ -1515,6 +1536,7 @@
 		add_technology_researched = mandatory_service
 		add_technology_researched = urban_planning
 		add_technology_researched = line_infantry
+		add_technology_researched = intensive_agriculture
 		set_tax_level = medium
 		
 		effect_starting_politics_conservative = yes
@@ -1655,6 +1677,8 @@
 	
 	c:POL = { #Poland
 		effect_starting_technology_tier_3_tech = yes
+
+		add_technology_researched = intensive_agriculture
 		
 		activate_law = law_type:law_landed_voting
 		activate_law = law_type:law_national_supremacy
@@ -1704,6 +1728,8 @@
 	
 	c:LIT = { #Lithuania
 		effect_starting_technology_tier_3_tech = yes
+
+		add_technology_researched = intensive_agriculture
 		
 		activate_law = law_type:law_landed_voting
 		activate_law = law_type:law_national_supremacy
@@ -1770,6 +1796,8 @@
 	
 	c:PSK = { #Pskov
 		effect_starting_technology_tier_3_tech = yes
+
+		add_technology_researched = intensive_agriculture
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_republic
@@ -1787,6 +1815,7 @@
 	c:NOV = { #Novgorod
 		effect_starting_technology_tier_3_tech = yes
 		add_technology_researched = colonization
+		add_technology_researched = intensive_agriculture
 
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_republic
@@ -1873,6 +1902,8 @@
 
 	c:PRM = { #Yugra
 		effect_starting_technology_tier_3_tech = yes
+
+		add_technology_researched = intensive_agriculture
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_republic
@@ -1896,6 +1927,8 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
+
+		add_technology_researched = intensive_agriculture
 
 		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_low_income_tax	
@@ -1964,6 +1997,8 @@
 		effect_starting_technology_tier_3_tech = yes
 		effect_starting_politics_traditional = yes
 
+		add_technology_researched = intensive_agriculture
+
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_wealth_voting
@@ -2010,6 +2045,8 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
+
+		add_technology_researched = intensive_agriculture
 		
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_state_religion
