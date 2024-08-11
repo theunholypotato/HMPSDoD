@@ -130,6 +130,11 @@
 		activate_law = law_type:law_legacy_slavery
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_tenant_farmers
+		activate_law = law_low_income_tax
+		activate_law = high_consumption_tax
+		activate_law = law_type:law_debtors_prisons
+
+		effect_starting_per_capita_tax = yes
 
 		set_institution_investment_level = {
 			institution = institution_colonial_affairs
