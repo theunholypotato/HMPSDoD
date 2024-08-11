@@ -127,8 +127,6 @@
 		activate_law = law_type:law_moderate_consumption_tax
 		activate_law = law_type:law_debtors_prisons
 
-		effect_starting_per_capita_tax = yes
-
 		set_institution_investment_level = {
 			institution = institution_colonial_affairs
 			level = 2
