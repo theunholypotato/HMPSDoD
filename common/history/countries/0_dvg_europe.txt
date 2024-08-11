@@ -58,8 +58,6 @@
 		add_technology_researched = screw_frigate
 		add_technology_researched = power_of_the_purse
 
-		effect_starting_per_capita_tax = yes
-
 		set_tax_level = low
 		
 		activate_law = law_type:law_landed_voting
@@ -75,8 +73,8 @@
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_legacy_slavery
 		activate_law = law_type:law_tenant_farmers
-		activate_law = law_low_income_tax
-		activate_law = high_consumption_tax
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_high_consumption_tax
 		activate_law = law_type:law_debtors_prisons
 		
 		set_institution_investment_level = {
@@ -119,7 +117,7 @@
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_ethnostate
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_colonial_exploitation
@@ -130,8 +128,8 @@
 		activate_law = law_type:law_legacy_slavery
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_tenant_farmers
-		activate_law = law_low_income_tax
-		activate_law = high_consumption_tax
+		activate_law = law_type:law_moderate_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		activate_law = law_type:law_debtors_prisons
 
 		effect_starting_per_capita_tax = yes
@@ -167,7 +165,7 @@
 		activate_law = law_type:law_landed_voting
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_colonial_exploitation
@@ -178,6 +176,8 @@
 		activate_law = law_type:law_migration_controls
 		activate_law = law_type:law_legacy_slavery
 		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_moderate_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		add_taxed_goods = g:tobacco
 		add_taxed_goods = g:liquor
@@ -205,7 +205,7 @@
 		effect_starting_technology_tier_1_tech = yes
 		
 		activate_law = law_type:law_ethnostate
-		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_local_police
@@ -215,6 +215,8 @@
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_oligarchy
         activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_moderate_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -342,6 +344,8 @@
 		activate_law = law_type:law_local_police
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax		
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -389,13 +393,15 @@
 		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_local_police
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -445,6 +451,8 @@
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_censorship
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		
 		set_ruling_interest_groups = {
@@ -461,6 +469,8 @@
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -481,6 +491,8 @@
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -497,6 +509,8 @@
 		activate_law = law_type:law_theocracy
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -517,6 +531,8 @@
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -538,6 +554,8 @@
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -553,6 +571,8 @@
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -568,6 +588,8 @@
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -583,6 +605,8 @@
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -605,6 +629,8 @@
 		activate_law = law_type:law_landed_voting
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -624,6 +650,8 @@
 		
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		#activate_law = law_type:law_religious_schools
 		
 		set_ruling_interest_groups = {
@@ -640,6 +668,8 @@
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -661,6 +691,8 @@
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_theocracy
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -680,7 +712,9 @@
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_religious_school
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -701,6 +735,8 @@
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -721,6 +757,8 @@
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -741,6 +779,8 @@
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -761,6 +801,8 @@
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -782,6 +824,8 @@
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_theocracy
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -803,6 +847,8 @@
 		activate_law = law_type:law_theocracy
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -824,6 +870,8 @@
 		activate_law = law_type:law_theocracy
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -843,6 +891,8 @@
 		
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -859,6 +909,8 @@
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_autocracy 
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -879,7 +931,7 @@
 		
 		add_technology_researched = dialectics
 		
-		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_freedom_of_conscience
@@ -888,6 +940,11 @@
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_censorship
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
+		activate_law = law_type:law_parliamentary_system
+		activate_law = law_type:law_symmetric_bicameralism
+		activate_law = law_type:law_plurality
 		
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -906,7 +963,7 @@
 		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = dialectics
 		
-		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_freedom_of_conscience
@@ -916,6 +973,11 @@
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
+		activate_law = law_type:law_parliamentary_system
+		activate_law = law_type:law_symmetric_bicameralism
+		activate_law = law_type:law_plurality
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -944,6 +1006,8 @@
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -962,7 +1026,7 @@
 		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = dialectics
 		
-		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_freedom_of_conscience
@@ -972,6 +1036,11 @@
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
+		activate_law = law_type:law_parliamentary_system
+		activate_law = law_type:law_symmetric_bicameralism
+		activate_law = law_type:law_plurality
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -1006,6 +1075,8 @@
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_theocracy
 		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_ruling_interest_groups = {
 			ig_devout
@@ -1023,6 +1094,8 @@
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -1046,6 +1119,8 @@
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		#activate_law = law_type:law_religious_schools
 
 
@@ -1072,12 +1147,14 @@
 		add_technology_researched = dialectics
 		
 		effect_starting_politics_reactionary = yes
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_colonial_exploitation
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		#activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
@@ -1114,6 +1191,8 @@
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		#activate_law = law_type:law_religious_schools
 		
 		set_institution_investment_level = {
@@ -1138,7 +1217,7 @@
 		add_technology_researched = central_banking
 		
 		effect_starting_politics_conservative = yes
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_slave_trade
@@ -1146,6 +1225,8 @@
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_charitable_health_system
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		#activate_law = law_type:law_commercialized_agriculture
 		
 		set_ruling_interest_groups = {
@@ -1185,6 +1266,8 @@
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		#activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
@@ -1209,6 +1292,8 @@
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		#activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
@@ -1234,6 +1319,8 @@
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		#activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
@@ -1263,6 +1350,8 @@
 		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_agrarianism
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_ruling_interest_groups = {
 			ig_devout
@@ -1297,12 +1386,12 @@
 		effect_starting_politics_liberal = yes
 
 		
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_census_voting
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_elected_bureaucrats
-		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_religious_schools
@@ -1310,6 +1399,8 @@
 		activate_law = law_type:law_migration_controls
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_homesteading
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_ruling_interest_groups = {
 			ig_intelligentsia
@@ -1338,6 +1429,8 @@
 		activate_law = law_type:law_charitable_health_system
 		activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_no_social_security
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_tariffs_import_priority = g:artillery
 		set_tariffs_import_priority = g:small_arms
@@ -1376,6 +1469,8 @@
 		activate_law = law_type:law_charitable_health_system
 		activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_no_social_security
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_tariffs_import_priority = g:artillery
 		set_tariffs_import_priority = g:small_arms
@@ -1433,6 +1528,8 @@
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_no_social_security
 		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
@@ -1515,6 +1612,8 @@
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_peasant_levies
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -1530,6 +1629,8 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -1568,6 +1669,8 @@
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_migration_controls
 		activate_law = law_type:law_peasant_levies
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_high_consumption_tax
 
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -1615,6 +1718,8 @@
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_migration_controls
 		activate_law = law_type:law_peasant_levies
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -1631,6 +1736,8 @@
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -1650,6 +1757,8 @@
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -1668,8 +1777,10 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -1683,9 +1794,11 @@
 		add_technology_researched = colonization
 
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_frontier_colonization
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -1747,9 +1860,11 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -1765,10 +1880,12 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_frontier_colonization
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -1785,7 +1902,9 @@
 		
 		effect_starting_politics_traditional = yes
 
-		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_mass_conscription
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
@@ -1817,7 +1936,9 @@
 		
 		effect_starting_politics_reactionary = yes
 
-		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_mass_conscription
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
@@ -1860,6 +1981,8 @@
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_peasant_levies	
 		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
@@ -1905,6 +2028,8 @@
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_peasant_levies	
 		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
@@ -1950,6 +2075,8 @@
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_peasant_levies	
 		activate_law = law_type:law_closed_borders
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
@@ -2002,10 +2129,12 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -2034,10 +2163,12 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -2066,10 +2197,12 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -2098,10 +2231,12 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -2134,10 +2269,12 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_landed_voting
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
@@ -2157,10 +2294,12 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_moderate_consumption_tax
 
 		ig:ig_landowners = { 
 			remove_ideology = ideology_paternalistic
