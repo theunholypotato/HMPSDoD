@@ -29,14 +29,14 @@
 		}
 		
 		# Squattocracy
-		if = {
-			limit = {
-				country_has_primary_culture = cu:australian
-			}
-			ig:ig_landowners = {
-				set_interest_group_name = ig_squattocracy
-			}
-		}
+		# if = {
+		# 	limit = {
+		# 		country_has_primary_culture = cu:australian
+		# 	}
+		# 	ig:ig_landowners = {
+		# 		set_interest_group_name = ig_squattocracy
+		# 	}
+		# }
 		# Local Governors
 		else_if = {
 			limit = {
