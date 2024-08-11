@@ -93,7 +93,7 @@
 scottish={
 	color= { 210 200 40 }
 	religion = protestant
-	traits = { anglophone european_heritage }
+	traits = { celtic_people european_heritage }
 	
 	male_common_first_names = {
 		Alexander Alasdair Archibald Andrew Angus Asher Auckland Arthur Aeneas Adam Alan
