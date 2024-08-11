@@ -8,7 +8,7 @@
 # 	}
 
 # 	potential = {
-# 
+# 		has_dlc_feature = ep1_content
 # 		has_interest_marker_in_region = region_persia
 # 	}
 
@@ -93,7 +93,7 @@ company_iranian_state_railway = {
 # 	}
 
 # 	potential = {
-# 
+# 		has_dlc_feature = ep1_content
 # 		has_interest_marker_in_region = region_central_asia
 # 	}
 
@@ -135,7 +135,7 @@ company_iranian_state_railway = {
 # 	}
 
 # 	potential = {
-# 
+# 		has_dlc_feature = ep1_content
 # 		has_interest_marker_in_region = region_central_asia
 # 	}
 
@@ -264,7 +264,7 @@ company_opium_export_monopoly = {
 # 	}
 
 # 	potential = {
-# 
+# 		has_dlc_feature = ep1_content
 # 		has_interest_marker_in_region = region_persia
 # 	}
 
@@ -306,7 +306,7 @@ company_nicolas_portalis = {
 	}
 
 	potential = {
-
+		has_dlc_feature = ep1_content
 		has_interest_marker_in_region = region_arabic
 	}
 
@@ -349,7 +349,7 @@ company_hanseong_jeongi_hoesa = {
 	}
 
 	potential = {
-
+		has_dlc_feature = ep1_content
 		has_interest_marker_in_region = region_manchuria
 	}
 
@@ -394,7 +394,7 @@ company_hanseong_jeongi_hoesa = {
 # 	}
 
 # 	potential = {
-# 
+# 		has_dlc_feature = ep1_content
 # 		has_interest_marker_in_region = region_central_asia
 # 	}
 
@@ -438,7 +438,7 @@ company_persshelk = {
 	}
 
 	potential = {
-
+		has_dlc_feature = ep1_content
 		has_interest_marker_in_region = region_persia
 	}
 
@@ -490,7 +490,7 @@ company_perskhlopok = {
 	}
 
 	potential = {
-
+		has_dlc_feature = ep1_content
 		has_interest_marker_in_region = region_persia
 	}
 
@@ -543,7 +543,7 @@ company_perskhlopok = {
 # 	}
 
 # 	potential = {
-# 
+# 		has_dlc_feature = ep1_content
 # 		has_interest_marker_in_region = region_persia
 # 	}
 
@@ -757,7 +757,7 @@ company_anglo_persian_oil = {
 	}
 
 	potential = {
-
+		has_dlc_feature = ep1_content
 		has_interest_marker_in_region = region_persia
 		OR = {
 			country_has_primary_culture = cu:british
@@ -812,6 +812,7 @@ company_national_iranian_oil = {
 	}
 
 	potential = {
+		has_dlc_feature = ep1_content
 		has_interest_marker_in_region = region_persia
 		country_has_primary_culture = cu:persian
 	}
