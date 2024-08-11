@@ -69,15 +69,15 @@ religious_party = {
 					THIS = c:RUS
 				}
 			}
-			triggered_desc = {
-				desc = party_know_nothing_party
-				trigger = {
-					OR = {
-						country_has_primary_culture = cu:yankee
-						country_has_primary_culture = cu:dixie
-					}
-				}
-			}
+			# triggered_desc = {
+			# 	desc = party_know_nothing_party
+			# 	trigger = {
+			# 		OR = {
+			# 			country_has_primary_culture = cu:yankee
+			# 			country_has_primary_culture = cu:dixie
+			# 		}
+			# 	}
+			# }
 			triggered_desc = {
 				desc = party_zentrum
 				trigger = {

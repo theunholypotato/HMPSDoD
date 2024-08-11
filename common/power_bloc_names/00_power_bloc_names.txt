@@ -918,6 +918,23 @@ pact_of_the_straits = {
 	}
 }
 
+# amazon_pact = {
+# 	trigger = {
+# 	    OR = {
+# 	    	any_scope_state = { state_region = s:STATE_PARA }
+# 	    	any_scope_ally = {
+# 	    		any_scope_state = { state_region = s:STATE_PARA }
+# 	    	}
+# 	    	any_scope_state = { state_region = s:STATE_AMAZONAS }
+
+# 	    	any_scope_state = { state_region = s:STATE_GUAYANA }
+# 	    	any_scope_ally = {
+# 	    		any_scope_state = { state_region = s:STATE_GUAYANA }
+# 	    	}
+# 	    }
+# 	}
+# }
+
 latin_bloc = {
 	trigger = {
 		OR = {
@@ -939,33 +956,33 @@ latin_bloc = {
 	}
 }
 
-maritime_union = {
-	trigger = {
-		OR = {
-			c:NEN ?= this
-			c:NBS ?= this
-			c:NVS ?= this
-			c:NEW ?= this
-		}
-	}
-}
+# maritime_union = {
+# 	trigger = {
+# 		OR = {
+# 			c:NEN ?= this
+# 			c:NBS ?= this
+# 			c:NVS ?= this
+# 			c:NEW ?= this
+# 		}
+# 	}
+# }
 
-league_of_bolivar = {
-	trigger = {
-		NOT = { scope:selected_identity = identity:identity_religious }
-		any_primary_culture = {
-			OR = {
-				this = cu:north_andean
-				this = cu:south_andean
-				this = cu:peruvian
-				this = cu:ecuadorian
-				this = cu:bolivian
-				this = cu:venezuelan
-				this = cu:colombian
-			}
-		}
-	}
-}
+# league_of_bolivar = {
+# 	trigger = {
+# 		NOT = { scope:selected_identity = identity:identity_religious }
+# 		any_primary_culture = {
+# 			OR = {
+# 				this = cu:north_andean
+# 				this = cu:south_andean
+# 				this = cu:peruvian
+# 				this = cu:ecuadorian
+# 				this = cu:bolivian
+# 				this = cu:venezuelan
+# 				this = cu:colombian
+# 			}
+# 		}
+# 	}
+# }
 
 non_aligned_conference = {
 	trigger = {

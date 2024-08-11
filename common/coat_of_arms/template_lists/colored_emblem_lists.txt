@@ -276,34 +276,34 @@ colored_emblem_texture_lists = {
 			30 = "ce_sun_face_gwalior.dds"			
 		}		
 	
-		special_selection = {
-			trigger = { 
-				OR = {
-					country_definition_has_culture = cu:brazilian
-					country_definition_has_culture = cu:platinean
-					country_definition_has_culture = cu:south_andean
-				}
-			}
-			12 = "ce_sun_of_may.dds"
-			25 = "ce_inti.dds"		
-			# a specific random may work better (bc can be randomly picked w dark colour)
+		# special_selection = {
+		# 	trigger = { 
+		# 		OR = {
+		# 			country_definition_has_culture = cu:brazilian
+		# 			country_definition_has_culture = cu:platinean
+		# 			country_definition_has_culture = cu:south_andean
+		# 		}
+		# 	}
+		# 	12 = "ce_sun_of_may.dds"
+		# 	25 = "ce_inti.dds"		
+		# 	# a specific random may work better (bc can be randomly picked w dark colour)
 			
-			10 = "ce_southern_cross_brazil.dds"			
-			25 = "ce_star_05.dds"
+		# 	10 = "ce_southern_cross_brazil.dds"			
+		# 	25 = "ce_star_05.dds"
 			
 
-		}
+		# }
 		
 
-		special_selection = {
-			trigger = { 
-					country_definition_has_culture = cu:brazilian
-			}
-			25 = "ce_southern_cross_brazil.dds"
-			50 = "ce_southern_cross_brazil_tilted.dds"
-			50 = "ce_cross_order_christ.dds"
-			50 = "ce_armillary_sphere.dds"			
-		}		
+		# special_selection = {
+		# 	trigger = { 
+		# 			country_definition_has_culture = cu:brazilian
+		# 	}
+		# 	25 = "ce_southern_cross_brazil.dds"
+		# 	50 = "ce_southern_cross_brazil_tilted.dds"
+		# 	50 = "ce_cross_order_christ.dds"
+		# 	50 = "ce_armillary_sphere.dds"			
+		# }		
 
 		special_selection = {
 			trigger = { 
