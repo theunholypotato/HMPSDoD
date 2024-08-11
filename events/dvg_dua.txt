@@ -250,7 +250,7 @@ dvg_dua.2 = {
 			limit = {
 				NOT = { has_law = law_type:law_cultural_exclusion }
 			}
-			activate_law = law_type:law_cultural_exclusion
+			activate_law = law_type:law_national_supremacy
 		}
 
 		custom_tooltip = {
@@ -280,6 +280,19 @@ dvg_dua.2 = {
 				state_region = {
 					add_homeland = cu:anglois
 					remove_homeland = cu:british
+				}
+			}
+			every_scope_state = {
+				limit = {
+					owner = ROOT
+					state_region = {
+						is_homeland = cu:occitan
+					}
+				}
+
+				state_region = {
+					add_homeland = cu:anglois
+					remove_homeland = cu:occitan
 				}
 			}
 		}
