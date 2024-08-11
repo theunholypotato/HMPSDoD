@@ -70,9 +70,9 @@
 			limit = {
 				country_has_state_religion = rel:protestant
 				OR = {
-					country_has_primary_culture = cu:maori
-					country_has_primary_culture = cu:australian
-					country_has_primary_culture = cu:anglo_canadian
+					# country_has_primary_culture = cu:maori
+					# country_has_primary_culture = cu:australian
+					# country_has_primary_culture = cu:anglo_canadian
 					country_has_primary_culture = cu:british
 					country_has_primary_culture = cu:irish
 					country_has_primary_culture = cu:beornian

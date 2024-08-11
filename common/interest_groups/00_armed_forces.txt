@@ -31,10 +31,10 @@
 		if = {
 			limit = {
 				OR = {
-					country_has_primary_culture = cu:platinean
-					country_has_primary_culture = cu:south_andean
-					country_has_primary_culture = cu:north_andean
-					country_has_primary_culture = cu:central_american
+					# country_has_primary_culture = cu:platinean
+					# country_has_primary_culture = cu:south_andean
+					# country_has_primary_culture = cu:north_andean
+					# country_has_primary_culture = cu:central_american
 					country_has_primary_culture = cu:mexican
 				}
 			}
