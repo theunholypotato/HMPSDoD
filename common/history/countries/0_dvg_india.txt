@@ -249,7 +249,7 @@
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
 		activate_law = law_type:law_religious_autonomy
-		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
