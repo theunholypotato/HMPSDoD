@@ -31,7 +31,7 @@ BRG = { #Burgundy
 
 	tier = kingdom
 	
-	cultures = { burgundian }
+	cultures = { burgundian dutch}
 	capital = STATE_FLANDERS
 }
 
