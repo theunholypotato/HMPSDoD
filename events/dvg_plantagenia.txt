@@ -545,7 +545,7 @@ dvg_plantagenia.8 = {
 		name = dvg_plantagenia.8.a
 		default_option = yes 
 
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		
 
 		if = {
@@ -1949,7 +1949,7 @@ dvg_plantagenia.26 = {
 
 	
 	trigger = {
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		OR = {
 			AND = {
 				exists = c:OUM
@@ -2318,7 +2318,7 @@ dvg_plantagenia.31 = {
 			save_scope_as = saint_georges_scope
 		}
 		c:LIB = {
-			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_republic
 			create_character = {
 				first_name = Jean-Jacques
 				last_name = de_Rochambeau

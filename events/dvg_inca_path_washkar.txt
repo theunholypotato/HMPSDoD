@@ -1961,7 +1961,7 @@ dvg_inca_path_washkar.22 = { #Romantic Coup
 
 		change_tag = QUI
 		c:QUI = {
-			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_republic
 			activate_law = law_type:law_universal_suffrage
 			activate_law = law_type:law_interventionism
 			remove_primary_culture = cu:quechua
@@ -1977,7 +1977,7 @@ dvg_inca_path_washkar.22 = { #Romantic Coup
 			state = s:STATE_ANTIOQUIA.region_state:QUI
 		}
 
-		c:SAN = { activate_law = law_type:law_presidential_republic }
+		c:SAN = { activate_law = law_type:law_republic }
 
 		create_country = {
 			tag = CST
@@ -1989,7 +1989,7 @@ dvg_inca_path_washkar.22 = { #Romantic Coup
 			state = s:STATE_ANGOSTURA.region_state:QUI
 		}
 
-		c:CST = { activate_law = law_type:law_presidential_republic }
+		c:CST = { activate_law = law_type:law_republic }
 
 		create_country = {
 			tag = ESQ
@@ -1998,7 +1998,7 @@ dvg_inca_path_washkar.22 = { #Romantic Coup
 			state = s:STATE_PARA.region_state:ASY
 		}
 
-		c:ESQ = { activate_law = law_type:law_presidential_republic }
+		c:ESQ = { activate_law = law_type:law_republic }
 
 		}
 	}

@@ -48,7 +48,7 @@ je_qingqiu_reform_into_unitary_state = {
 	has_technology_researched = central_archives
 	OR = {
 		has_law = law_type:law_monarchy
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		has_law = law_type:law_theocracy
 		has_law = law_type:law_single_party_state
 		}

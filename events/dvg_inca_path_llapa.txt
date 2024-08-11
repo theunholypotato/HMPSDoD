@@ -532,7 +532,7 @@ dvg_inca_path_llapa.11 = { #Republican Uprising
 	option = {
 		name = dvg_inca_path_llapa.11.a
 		scope:sayri_rimaq_scope = { set_character_as_ruler = yes }
-		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_universal_suffrage
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_collectivized_agriculture

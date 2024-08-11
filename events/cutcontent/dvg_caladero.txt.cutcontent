@@ -36,9 +36,9 @@ dvg_caladero.1 = {
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = { has_law = law_type:law_presidential_republic }
+					NOT = { has_law = law_type:law_republic }
 				}
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 			}
 		}
 		ai_chance = {
@@ -576,9 +576,9 @@ dvg_caladero.11 = {
 			text = dvg_caladero_keep_manuel
 			if = {
 				limit = {
-					NOT = { has_law = law_type:law_presidential_republic }
+					NOT = { has_law = law_type:law_republic }
 				}
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 			}
 			if = {
 				limit = {
@@ -719,9 +719,9 @@ dvg_caladero.12 = {
 			}
 			if = {
 				limit = {
-					NOT = { has_law = law_type:law_parliamentary_republic }
+					NOT = { has_law = law_type:law_republic }
 				}
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 			}
 			if = {
 				limit = {

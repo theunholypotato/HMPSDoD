@@ -1647,7 +1647,7 @@ dvg_lotharingia.14 = {
 			
 			c:LOT = { save_scope_as = scope_LOT
 			
-			activate_law = law_type:law_parliamentary_republic
+			activate_law = law_type:law_republic
 			
 				
 			}

@@ -2034,7 +2034,7 @@ CHI = { # ChinaDVG
 		trigger = { 
 			scope:actor = {
 				was_formed_from = NAN
-				has_law = law_type:law_parliamentary_republic
+				has_law = law_type:law_republic
 			}
 		}
 	}

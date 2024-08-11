@@ -766,7 +766,7 @@ dvg_japan.8 = {
 			text = colonial_administration_events.1_tt_1
 			c:SDK = {
 				set_variable = african_chartered_company_var
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 				activate_law = law_type:law_oligarchy
 				activate_law = law_type:law_national_supremacy
 				activate_law = law_type:law_laissez_faire
@@ -833,7 +833,7 @@ dvg_japan.8 = {
 
 			c:SDK = {
 				
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 				activate_law = law_type:law_oligarchy
 				activate_law = law_type:law_national_supremacy
 				activate_law = law_type:law_agrarianism
@@ -879,7 +879,7 @@ dvg_japan.8 = {
 			text = colonial_administration_events.1_tt_1
 			c:SDK = {
 				set_variable = african_chartered_company_var
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 				activate_law = law_type:law_oligarchy
 				activate_law = law_type:law_national_supremacy
 				activate_law = law_type:law_laissez_faire
@@ -2222,7 +2222,7 @@ dvg_japan.20 = {
 			}
 			c:EJP = { 
 			save_scope_as = scope_EJP 
-			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_republic
 			add_journal_entry = {
 				type = je_edo_commune
 			}
@@ -2502,7 +2502,7 @@ dvg_japan.21 = {
 			c:WJP = { save_scope_as = scope_WJP }
 
 			c:WJP = {
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 
 				create_character = {
 					historical = yes
@@ -2624,7 +2624,7 @@ dvg_japan.22 = {
             }
             triggered_desc = {
                 trigger = {
-					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_republic
                 }
                 desc = dvg_japan.22.f3
             }

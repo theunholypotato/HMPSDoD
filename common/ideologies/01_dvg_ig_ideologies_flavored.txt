@@ -4,8 +4,8 @@
 	lawgroup_governance_principles = {
 		law_theocracy = strongly_approve	
 		law_monarchy = approve
-		law_presidential_republic = disapprove
-		law_parliamentary_republic = disapprove
+		law_republic = disapprove
+		law_republic = disapprove
 		law_council_republic = strongly_disapprove
 	}
 

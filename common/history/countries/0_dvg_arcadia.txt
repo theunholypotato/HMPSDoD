@@ -613,7 +613,7 @@
 	#c:KKN = { #Kita Kaigan
 	#	effect_starting_technology_tier_3_tech = yes
 	#	
-	#	activate_law = law_type:law_presidential_republic
+	#	activate_law = law_type:law_republic
 	#	activate_law = law_type:law_landed_voting
 	#	activate_law = law_type:law_national_supremacy
 	#	activate_law = law_type:law_interventionism

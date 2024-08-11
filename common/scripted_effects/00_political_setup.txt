@@ -1,6 +1,6 @@
 ﻿effect_starting_politics_liberal = {
 	#Power Structure
-	activate_law = law_type:law_presidential_republic
+	activate_law = law_type:law_republic
 	activate_law = law_type:law_census_voting
 	activate_law = law_type:law_racial_segregation
 	activate_law = law_type:law_freedom_of_conscience

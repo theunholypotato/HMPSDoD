@@ -441,7 +441,7 @@
 		effect_starting_technology_tier_2_tech = yes
 		effect_starting_politics_conservative = yes
 
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_national_supremacy
@@ -620,7 +620,7 @@
 		effect_starting_technology_tier_2_tech = yes
 		
 		effect_starting_politics_conservative = yes
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_landed_voting
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_religious_schools
@@ -1571,7 +1571,7 @@
 		# add_taxed_goods = g:tobacco
 		# add_taxed_goods = g:liquor
 		
-		# activate_law = law_type:law_presidential_republic
+		# activate_law = law_type:law_republic
 		# activate_law = law_type:law_national_supremacy
 		# activate_law = law_type:law_land_based_taxation
 		# activate_law = law_type:law_censorship

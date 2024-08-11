@@ -2155,23 +2155,23 @@ enact_preferred_governance_principle = {
 		limit = {
 			scope:ruling_ig ?= {
 				law_stance = {
-					law = law_type:law_parliamentary_republic
+					law = law_type:law_republic
 					value = strongly_approve
 				}
 			}
 		}
-		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_republic
 	}
 	else_if = {
 		limit = {
 			scope:ruling_ig ?= {
 				law_stance = {
-					law = law_type:law_presidential_republic
+					law = law_type:law_republic
 					value = strongly_approve
 				}
 			}
 		}
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 	}
 	else_if = {
 		limit = {
@@ -2210,23 +2210,23 @@ enact_preferred_governance_principle = {
 		limit = {
 			scope:ruling_ig ?= {
 				law_stance = {
-					law = law_type:law_parliamentary_republic
+					law = law_type:law_republic
 					value = approve
 				}
 			}
 		}
-		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_republic
 	}
 	else_if = {
 		limit = {
 			scope:ruling_ig ?= {
 				law_stance = {
-					law = law_type:law_presidential_republic
+					law = law_type:law_republic
 					value = approve
 				}
 			}
 		}
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 	}
 	else_if = {
 		limit = {
@@ -2240,7 +2240,7 @@ enact_preferred_governance_principle = {
 		activate_law = law_type:law_theocracy
 	}
 	else = {
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		if = {
 			limit = {
 				civil_war_origin_country ?= {
@@ -2282,8 +2282,8 @@ enact_preferred_governance_principle_new = {
 			OR = {
 				type = law_type:law_chiefdom
 				type = law_type:law_monarchy
-				type = law_type:law_presidential_republic
-				type = law_type:law_parliamentary_republic
+				type = law_type:law_republic
+				type = law_type:law_republic
 				type = law_type:law_theocracy
 				type = law_type:law_council_republic
 			}
@@ -2310,8 +2310,8 @@ enact_preferred_governance_principle_new = {
 				OR = {
 					type = law_type:law_chiefdom
 					type = law_type:law_monarchy
-					type = law_type:law_presidential_republic
-					type = law_type:law_parliamentary_republic
+					type = law_type:law_republic
+					type = law_type:law_republic
 					type = law_type:law_theocracy
 					type = law_type:law_council_republic
 				}
@@ -2339,8 +2339,8 @@ enact_preferred_governance_principle_new = {
 				OR = {
 					type = law_type:law_chiefdom
 					type = law_type:law_monarchy
-					type = law_type:law_presidential_republic
-					type = law_type:law_parliamentary_republic
+					type = law_type:law_republic
+					type = law_type:law_republic
 					type = law_type:law_theocracy
 					type = law_type:law_council_republic
 				}	
@@ -2749,10 +2749,10 @@ restore_peruvian_constitution = {
 	if = {
 		limit = {
 			NOT = {
-				has_law = law_type:law_presidential_republic
+				has_law = law_type:law_republic
 			}
 		}
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 	}
 	if = {
 		limit = {

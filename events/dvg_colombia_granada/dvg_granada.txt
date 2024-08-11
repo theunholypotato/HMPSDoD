@@ -140,7 +140,7 @@ dvg_granada.3 = {
 				limit = {
 					has_law = law_type:law_monarchy
 				}
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 			}
 		}
 		ai_chance = {
@@ -277,10 +277,10 @@ dvg_granada.5 = {
 					if = {
 						limit = {
 							NOT = {
-								has_law = law_type:law_presidential_republic
+								has_law = law_type:law_republic
 							}
 						}
-						activate_law = law_type:law_presidential_republic
+						activate_law = law_type:law_republic
 					}
 				}
 			}
@@ -497,10 +497,10 @@ dvg_granada.6 = {
 				if = {
 					limit = {
 						NOT = {
-							has_law = law_type:law_presidential_republic
+							has_law = law_type:law_republic
 						}
 					}
-					activate_law = law_type:law_presidential_republic
+					activate_law = law_type:law_republic
 				}
 				if = {
 					limit = {
@@ -544,10 +544,10 @@ dvg_granada.6 = {
 		if = {
 			limit = {
 				NOT = {
-					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_republic
 				}
 			}
-			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_republic
 		}
 		c:CST = {
 			create_bidirectional_truce = {
@@ -603,10 +603,10 @@ dvg_granada.6 = {
 				if = {
 					limit = {
 						NOT = {
-							has_law = law_type:law_presidential_republic
+							has_law = law_type:law_republic
 						}
 					}
-					activate_law = law_type:law_presidential_republic
+					activate_law = law_type:law_republic
 				}
 			}
 		}
@@ -642,10 +642,10 @@ dvg_granada.6 = {
 		if = {
 			limit = {
 				NOT = {
-					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_republic
 				}
 			}
-			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_republic
 		}
 		if = {
 			limit = {
@@ -805,10 +805,10 @@ dvg_granada.9 = {
 					if = {
 						limit = {
 							NOT = {
-								has_law = law_type:law_presidential_republic
+								has_law = law_type:law_republic
 							}
 						}
-						activate_law = law_type:law_presidential_republic
+						activate_law = law_type:law_republic
 					}
 					if = {
 						limit = {
@@ -899,7 +899,7 @@ dvg_granada.10 = {
 				limit = {
 					has_law = law_type:law_monarchy
 				}
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 			}
 		}
 	}
@@ -1347,10 +1347,10 @@ dvg_granada.17 = {
 		if = {
 			limit = {
 				NOT = {
-					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_republic
 				}
 			}
-			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_republic
 		}
 		if = {
 			limit = {
@@ -1419,10 +1419,10 @@ dvg_granada.18 = {
 		if = {
 			limit = {
 				NOT = {
-					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_republic
 				}
 			}
-			activate_law = law_type:law_presidential_republic
+			activate_law = law_type:law_republic
 		}
 		if = {
 			limit = {
@@ -1819,10 +1819,10 @@ dvg_granada.28 = {
 					if = {
 						limit = {
 							NOT = {
-								has_law = law_type:law_presidential_republic
+								has_law = law_type:law_republic
 							}
 						}
-						activate_law = law_type:law_presidential_republic
+						activate_law = law_type:law_republic
 					}
 				}
 			}
@@ -2074,10 +2074,10 @@ dvg_granada.33 = {
 					if = {
 						limit = {
 							NOT = {
-								has_law = law_type:law_presidential_republic
+								has_law = law_type:law_republic
 							}
 						}
-						activate_law = law_type:law_presidential_republic
+						activate_law = law_type:law_republic
 					}
 				}
 			}

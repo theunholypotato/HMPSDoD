@@ -152,8 +152,8 @@ ideology_xijiao_leader = {
 	lawgroup_governance_principles = {
 		law_theocracy = strongly_approve	
 		law_monarchy = disapprove
-		law_presidential_republic = disapprove
-		law_parliamentary_republic = disapprove
+		law_republic = disapprove
+		law_republic = disapprove
 		law_council_republic = strongly_disapprove
 	}
 
@@ -200,8 +200,8 @@ ideology_jeanist_leader = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_caudillismo.dds"
 	
 	lawgroup_governance_principles = {
-		law_presidential_republic = disapprove
-		law_parliamentary_republic = disapprove
+		law_republic = disapprove
+		law_republic = disapprove
 		law_council_republic = strongly_disapprove
 		law_monarchy = strongly_approve
 		law_theocracy = neutral

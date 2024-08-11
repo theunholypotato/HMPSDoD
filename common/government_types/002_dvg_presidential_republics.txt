@@ -6,7 +6,7 @@
 	female_ruler = "RULER_TITLE_HETMAN"
 
     possible = {
-        has_law = law_type:law_presidential_republic
+        has_law = law_type:law_republic
         OR = {
             has_law = law_type:law_peasant_levies
             has_law = law_type:law_national_militia
@@ -54,7 +54,7 @@ gov_guli_confederation = {
 	female_ruler = "RULER_TITLE_ELDER" 
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 			
 		exists = c:KOO
 		c:KOO = ROOT
@@ -68,7 +68,7 @@ gov_noongar_confederation = {
 	female_ruler = "RULER_TITLE_ELDER" 
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 			
 		exists = c:NNG
 		c:NNG = ROOT
@@ -104,7 +104,7 @@ gov_vrystaat = {
         	}
         }
         AND = {
-        	has_law = law_type:law_presidential_republic
+        	has_law = law_type:law_republic
      		OR = {
         		has_law = law_type:law_autocracy
         		has_law = law_type:law_oligarchy
@@ -132,7 +132,7 @@ gov_winkelier_republiek = {
         	c:NFL = ROOT 
         }
         AND = {
-        	has_law = law_type:law_presidential_republic
+        	has_law = law_type:law_republic
 			has_law = law_type:law_elected_bureaucrats
      		OR = {
         		has_law = law_type:law_wealth_voting

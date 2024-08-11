@@ -2404,7 +2404,7 @@ dvg_burgundy.32 = {
 			months = 120
 			is_decaying = yes
 		}
-		activate_law = law_type:law_parliamentary_republic
+		activate_law = law_type:law_republic
 
 		ai_chance = {
 			base = 99
@@ -2760,7 +2760,7 @@ dvg_burgundy.37 = {
 		c:PBG = {
 			save_scope_as = scope_PBG
 			activate_law = law_type:law_wealth_voting
-			activate_law = law_type:law_parliamentary_republic
+			activate_law = law_type:law_republic
 
 		}
 	}

@@ -170,7 +170,7 @@
 				year >= 1846 
 			}
 			
-			NOT = { has_law = law_type:law_presidential_republic
+			NOT = { has_law = law_type:law_republic
 			        has_law = law_type:law_monarchy
 			}
 			NOT = { has_law = law_type:law_autocracy

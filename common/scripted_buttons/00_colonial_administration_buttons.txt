@@ -82,7 +82,7 @@
 					remove_variable = state_to_cede
 				}
 				activate_law = law_type:law_frontier_colonization
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 			}
 		}
 		hidden_effect = {
@@ -181,7 +181,7 @@ je_colonial_administration_button_niger = {
 					remove_variable = state_to_cede
 				}
 				activate_law = law_type:law_frontier_colonization
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 			}
 		}
 		hidden_effect = {
@@ -280,7 +280,7 @@ je_colonial_administration_button_ethiopia = {
 					remove_variable = state_to_cede
 				}
 				activate_law = law_type:law_frontier_colonization
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 			}
 		}
 		hidden_effect = {
@@ -379,7 +379,7 @@ je_colonial_administration_button_zanj = {
 					remove_variable = state_to_cede
 				}
 				activate_law = law_type:law_frontier_colonization
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 			}
 		}
 		hidden_effect = {
@@ -478,7 +478,7 @@ je_colonial_administration_button_southern_africa = {
 					remove_variable = state_to_cede
 				}
 				activate_law = law_type:law_frontier_colonization
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 			}
 		}
 		hidden_effect = {
@@ -577,7 +577,7 @@ je_colonial_administration_button_congo = {
 					remove_variable = state_to_cede
 				}
 				activate_law = law_type:law_frontier_colonization
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 			}
 		}
 		hidden_effect = {
@@ -676,7 +676,7 @@ je_colonial_administration_button_indonesia = {
 					remove_variable = state_to_cede
 				}
 				activate_law = law_type:law_frontier_colonization
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 			}
 		}
 		hidden_effect = {
@@ -780,7 +780,7 @@ je_colonial_administration_button_indochina = {
 					remove_variable = state_to_cede
 				}
 				activate_law = law_type:law_frontier_colonization
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 			}
 		}
 		hidden_effect = {
@@ -879,7 +879,7 @@ je_colonial_administration_button_oceania = {
 					remove_variable = state_to_cede
 				}
 				activate_law = law_type:law_frontier_colonization
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 			}
 		}
 		hidden_effect = {
