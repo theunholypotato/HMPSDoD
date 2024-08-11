@@ -32,8 +32,7 @@
 		scope:target_country = {
 			is_revolutionary = no
 			OR = {	# don't appoint colonial governor monarchies
-				has_law = law_type:law_presidential_republic
-				has_law = law_type:law_parliamentary_republic
+				has_law = law_type:law_republic
 			}
 		}
 		OR = {
