@@ -4651,7 +4651,7 @@ lithuanian={
 czech={
 	color= hsv{ 0.66 0.32 0.99 }
 	religion = catholic #DVG
-	traits = { west_slavic european_heritage }
+	traits = { german_speaking european_heritage }
 	male_common_first_names={
 		Abraham
 		Alexander
