@@ -294,7 +294,6 @@
 				size = 42898
 			}
 		}
-	}
 	s:STATE_BRYANSK = {
 		region_state:MSO = {
 			create_pop = {
@@ -333,7 +332,7 @@
 		}
 	}
 	s:STATE_DVG_TVER = {
-		region_state:TVE = {
+		region_state:MSO = {
 			create_pop = {
 				culture = russian
 				size = 2879915

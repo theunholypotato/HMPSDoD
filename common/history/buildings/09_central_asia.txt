@@ -586,12 +586,12 @@
 		}
 	}
 	s:STATE_OKA={
-		region_state:RYA={
+		region_state:MSO={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:RYA"
+						country="c:MSO"
 						levels=2
 					}
 				}
@@ -603,8 +603,8 @@
 				add_ownership={
 					building={
 						type="building_paper_mills"
-						country="c:RYA"
-						levels=1
+						country="c:MSO"
+						levels=3
 						region="STATE_OKA"
 					}
 				}
@@ -615,8 +615,8 @@
 				building="building_arms_industry"
 				add_ownership={
 					country={
-						country="c:RYA"
-						levels=1
+						country="c:MSO"
+						levels=2
 					}
 				}
 				reserves=1
@@ -627,7 +627,7 @@
 				add_ownership={
 					building={
 						type="building_tooling_workshops"
-						country="c:RYA"
+						country="c:MSO"
 						levels=1
 						region="STATE_OKA"
 					}
@@ -640,7 +640,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:RYA"
+						country="c:MSO"
 						levels=5
 						region="STATE_OKA"
 					}
@@ -653,7 +653,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:RYA"
+						country="c:MSO"
 						levels=10
 						region="STATE_OKA"
 					}
@@ -666,8 +666,8 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:RYA"
-						levels=5
+						country="c:MSO"
+						levels=8
 						region="STATE_OKA"
 					}
 				}
@@ -678,75 +678,12 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:RYA"
-						levels=20
+						country="c:MSO"
+						levels=25
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_no_organization" } 
-			}
-		}
-		region_state:NZH={
-			create_building={
-				building="building_arms_industry"
-				add_ownership={
-					country={
-						country="c:NZH"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_muskets" }
-			}
-			create_building={
-				building="building_paper_mills"
-				add_ownership={
-					building={
-						type="building_paper_mills"
-						country="c:NZH"
-						levels=2
-						region="STATE_OKA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled" }
-			}
-			create_building={
-				building="building_rye_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:NZH"
-						levels=5
-						region="STATE_OKA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled"  }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:NZH"
-						levels=5
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_organization" } 
-			}
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_logging_camp"
-						country="c:NZH"
-						levels=3
-						region="STATE_OKA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
 		}
 	}

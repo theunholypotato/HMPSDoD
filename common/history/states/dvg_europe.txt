@@ -1713,7 +1713,7 @@
 			owned_provinces = { "x3374D9" "x1A9007" "xF5419E" "x2198C8" "xF57AA5" "x69B611" "xA79E4A" "x20C1C2" "x47C81B" "x4EB8EA" "x4CD7AF" "x40DFDF" "xC0E0E0" }
 		}
 		create_state = {
-			country = c:VOR
+			country = c:MSO
 			owned_provinces = { "x030048" "x05E237" "x0CA133" "x172A98" "x1A7021" "x1C692E" "x21A0A0" "x331CB3" "x45FA32" "x4A6AE0" "x4C0018" "x607311" "x6161A0" "x669560" "x6A8F2C" "x6BEE31" "x738BEC" "x743EA5" "x828B91" "x8BEB3F" "x91942B" "x9E14B9" "x9E5DCB" "xA0A0A0" "xA6F3BC" "xA87FC3" "xAD54E9" "xBA2909" "xBEE23A" "xC761A3" "xCE6B77" "xCF35AA" "xE458EF" "xEABB0F" "xF50161" "xF553F9" "xFE56AF" }
 		}
 
@@ -1878,7 +1878,7 @@
 	}
 	s:STATE_DVG_TVER = { #Yaroslavl
 		create_state = {
-			country = c:TVE
+			country = c:MSO
 			owned_provinces = { "x1053DD" "x118DB1" "x130A3E" "x1A0823" "x2FB453" "x30386A" "x40FEDE" "x41FF83"  "x513224" "x5289B3" "x53C6EC" "x53CD52" "x5C950C"   "x6D9FEE" "x6DD07A" "x704EB0" "x74EDD1" "x80AA34" "x824587" "x89264F" "x8F478B" "x93BCE7" "x99879C" "x9A12DD" "x9AA8A6" "x9B8556" "xA7B6EF" "xB0A39B" "xB1EE74" "xB24923" "xB9892E" "xBDF81C" "xC37BBA" "xCC840C" "xCD34E8" "xD17876" "xD19951" "xDA1620" "xDF20A0" "xE02020" "xE33B67" "xE78F94" "xF7AA04" "xFA15E7" "xFB5C50" "x04FF4D" "x1CD991" "x4786C3" "x50AF51" "x6B02CC" "x712640" "x74E5E0" "xDFBF60" }
 		}
 		

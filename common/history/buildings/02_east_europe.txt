@@ -816,12 +816,12 @@
 		}
 	}
 	s:STATE_DVG_TVER={
-		region_state:TVE={
+		region_state:MSO={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:TVE"
+						country="c:MSO"
 						levels=1
 					}
 				}
@@ -832,7 +832,7 @@
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:TVE"
+						country="c:MSO"
 						levels=1
 					}
 				}
@@ -844,7 +844,7 @@
 				add_ownership={
 					building={
 						type="building_tooling_workshops"
-						country="c:TVE"
+						country="c:MSO"
 						levels=1
 						region="STATE_DVG_TVER"
 					}
@@ -857,13 +857,9 @@
 				add_ownership={
 					building={
 						type="building_arms_industry"
-						country="c:TVE"
+						country="c:MSO"
 						levels=1
 						region="STATE_DVG_TVER"
-					}
-					country={
-						country="c:TVE"
-						levels=1
 					}
 				}
 				reserves=1
@@ -874,7 +870,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:TVE"
+						country="c:MSO"
 						levels=6
 						region="STATE_DVG_TVER"
 					}
@@ -887,7 +883,7 @@
 				add_ownership={
 					building={
 						type="building_iron_mine"
-						country="c:TVE"
+						country="c:MSO"
 						levels=2
 						region="STATE_DVG_TVER"
 					}
@@ -899,25 +895,12 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:TVE"
+						country="c:MSO"
 						levels=40
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_no_organization" } 
-			}
-			create_building={
-				building="building_rye_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:TVE"
-						levels=10
-						region="STATE_DVG_TVER"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 		}
 	}
@@ -2844,13 +2827,13 @@
 				activate_production_methods={ "pm_no_organization" } 
 			}
 		}
-		region_state:VOR={
+		region_state:MSO={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:VOR"
+						country="c:MSO"
 						levels=13
 						region="STATE_SLOBOZ"
 					}
@@ -2863,7 +2846,7 @@
 				add_ownership={
 					building={
 						type="building_food_industry"
-						country="c:VOR"
+						country="c:MSO"
 						levels=1
 						region="STATE_SLOBOZ"
 					}
@@ -2876,7 +2859,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:VOR"
+						country="c:MSO"
 						levels=2
 						region="STATE_SLOBOZ"
 					}
@@ -2889,7 +2872,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:VOR"
+						country="c:MSO"
 						levels=3
 						region="STATE_SLOBOZ"
 					}
@@ -2902,7 +2885,7 @@
 				add_ownership={
 					building={
 						type="building_textile_mills"
-						country="c:VOR"
+						country="c:MSO"
 						levels=1
 						region="STATE_SLOBOZ"
 					}
@@ -2915,7 +2898,7 @@
 				add_ownership={
 					building={
 						type="building_arms_industry"
-						country="c:VOR"
+						country="c:MSO"
 						levels=1
 						region="STATE_SLOBOZ"
 					}
@@ -2927,7 +2910,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:VOR"
+						country="c:MSO"
 						levels=5
 					}
 				}
