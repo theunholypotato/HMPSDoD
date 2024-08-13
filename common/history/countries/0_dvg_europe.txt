@@ -1924,32 +1924,7 @@
 		add_taxed_goods = g:liquor
 
 	}
-
-	c:TVE = { #Tver
-		effect_starting_technology_tier_3_tech = yes
-		
-		effect_starting_politics_reactionary = yes
-
-		activate_law = law_type:law_mass_conscription
-		activate_law = law_type:law_low_income_tax	
-		activate_law = law_type:law_moderate_consumption_tax
-		
-		ig:ig_landowners = {
-			add_ruling_interest_group = yes
-			set_interest_group_name = ig_boyars
-			remove_ideology = ideology_paternalistic
-			add_ideology = ideology_boyar_paternalistic
-		}
-
-
-		add_taxed_goods = g:liquor
-
-		trigger_event = {
-			id = dvg_central_rus.1
-		}
-
-	}
-
+	
 	c:RYA = { #Ryazan
 		effect_starting_technology_tier_3_tech = yes
 		effect_starting_politics_traditional = yes
