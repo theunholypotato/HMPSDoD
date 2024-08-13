@@ -538,8 +538,6 @@
 				culture = romanian
 				size = 1000000
 			}
-		}
-		region_state:NOG = {
 			create_pop = {
 				culture = romanian
 				size = 229200
@@ -574,8 +572,6 @@
 				culture = ashkenazi
 				size = 22064
 			}
-		}
-		region_state:NOG = {
 			create_pop = {
 				culture = romanian
 				size = 25000
@@ -583,7 +579,7 @@
 		}
 	}
 	s:STATE_BESSARABIA = {
-		region_state:NOG = {
+		region_state:MOL = {
 			create_pop = {
 				culture = romanian
 				size = 633545
@@ -605,8 +601,6 @@
 				culture = ashkenazi
 				size = 95436
 			}
-		}
-		region_state:MOL = {
 			create_pop = {
 				culture = romanian
 				size = 200000
@@ -670,7 +664,7 @@
 				size = 24334
 			}
 		}
-		region_state:NOG = {
+		region_state:CRI = {
 			create_pop = {
 				culture = kirim
 				size = 388545
