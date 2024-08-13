@@ -790,10 +790,10 @@
 		}
 	}
 	s:STATE_ATTICA = {
-		region_state:WRE = {
+		region_state:VEN = {
 			create_pop = {
 				culture = greek
-				size = 151530
+				size = 651530
 			}
 			create_pop = {
 				culture = albanian
@@ -816,7 +816,7 @@
 		}
 	}
 	s:STATE_THESSALIA = {
-		region_state:WRE = {
+		region_state:VEN = {
 			create_pop = {
 				culture = albanian
 				size = 3595
@@ -848,7 +848,7 @@
 	
 	#Greece
 	s:STATE_PELOPONNESE = {
-		region_state:GRE = {
+		region_state:VEN = {
 			create_pop = {
 				culture = greek
 				size = 234619 
@@ -884,8 +884,6 @@
 				culture = sephardic
 				size = 4844
 			}
-		}
-		region_state:GRE = { 
 			create_pop = {
 				culture = greek
 				size = 581604
@@ -1561,8 +1559,6 @@
 				culture = sephardic
 				size = 1946
 			}
-		}
-		region_state:TUR = {
 			create_pop = {
 				culture = turkish
 				size = 26809
@@ -1575,8 +1571,6 @@
 				culture = sephardic
 				size = 1936
 			}
-		}
-		region_state:WRE = {
 			create_pop = {
 				culture = greek
 				size = 44965
