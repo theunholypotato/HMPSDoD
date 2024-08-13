@@ -106,7 +106,7 @@
 		add_homeland = cu:algonquian
 
 		add_claim = c:CHE
-		add_claim = c:SKR
+		add_claim = c:VIN
 	}
 	s:STATE_BERMUDA = {
 		create_state = {
@@ -125,6 +125,7 @@
 		}
 		
 		add_homeland = cu:siouan
+		add_homeland = cu:cadien
 	}
 	
 	#Belgian Confederation, Seven Sister Republics
@@ -244,11 +245,11 @@
 		add_homeland = cu:algonquian
 	}
 	
-	#Skraelingland
+	#Masgirland
 	
 	s:STATE_NUREMBORG = {
 		create_state = {
-			country = c:MSG
+			country = c:VIN
 			owned_provinces = { "xBD7C03" "x082153" "x1E33E8" "x20CF66" "x326F36" "x441473" "x484A09" "x493CD4" "x4D9EEE" "x54816B" "x5806F4" "x59DEDF" "x5A0CA8" "x62FC6A" "x66DFE7" "x6AE419" "x6B3A42" "x6E757B" "x7040C0" "x70A0CE" "x7182E8" "x71A015" "x740012" "x8243C0" "x8E553E" "x8ED253" "x8F9450" "x990681" "xBB0F05" "xC2B02B" "xC91FD7" "xD090A6" "xD64964" "xD68A28" "xDE0FD5" "xEE2FFF" "xEFC355" "xF01C37" "xF080C0" "xF2502E" "xFB9715" "xFBEDD6" }
 		}
 		
@@ -256,7 +257,7 @@
 	}
 	s:STATE_MASGIRLAND = {
 		create_state = {
-			country = c:MSG
+			country = c:VIN
 			owned_provinces = { "x085C83" "x087678" "x0C0CCC" "x0DB516" "x10A000" "x1FA5AC" "x23500D" "x24AD62" "x2D3204" "x326D52" "x37D0BC" "x380F20" "x406FBA" "x48F357" "x563A89" "x63E1C4" "x68F55E" "x6B5822" "x70C040" "x74E14D" "x798C8E" "x79AB95" "x7C0D56" "x7FA89F" "x8060C0" "x80AA26" "x818D9D" "x8588BF" "x8C6B34" "x8CFA32" "x8D790B" "x905458" "x99CA75" "xA148A8" "xA82803" "xB95DB3" "xBACEF7" "xC060C0" "xC6E552" "xCA0399" "xCB412F" "xD1D79F" "xD6143F" "xDE7BE8" "xDE7D17" "xE4892F" "xEAFA99" "xEB2540" "xEC5B4B" "xEE4F4F" "xF04040" "xF7CF7E" "xF95D47" }
 		}
 		
@@ -267,7 +268,7 @@
 	
 	s:STATE_SKRAELINGMARK = {
 		create_state = {
-			country = c:SKR
+			country = c:VIN
 			owned_provinces = { "x0137A1" "x0B249E" "x0D2971" "x123762" "x1C432A" "x1E31A0" "x206622" "x24691A" "x2BCBC7" "x308040" "x3344F6" "x337ECF" "x343E89" "x515254" "x6AEBC5" "x729349" "x744A7A" "x9A44C7" "x9B27B9" "xA4CD73" "xB00040" "xB08040" "xB080C0" "xB1A86D" "xC0110A" "xC1233A" "xD5B4A4" "xE6C706" }
 		}
 		
@@ -276,7 +277,7 @@
 	}
 	s:STATE_GANIGIALAND = {
 		create_state = {
-			country = c:SKR
+			country = c:VIN
 			owned_provinces = { "x01D042" "x195B49" "x2CA754" "x308000" "x42D496" "x70C080" "x8C059D" "x8C787A" "xA6BED5" "xA7B5FE" "xB00080" "xB343E6" "xC4DED4" "xE217B5" "xE7BE2D" "xEDC7DA" "xFCF1BE" "xE4C01C" "xA8C954" "xAD9F9F" }
 		}
 		
@@ -290,44 +291,44 @@
 	}
 	s:STATE_POTOMIMARK = {
 		create_state = {
-			country = c:SKR
+			country = c:VIN
 			owned_provinces = { "x055AA0" "x0B0C98" "x11C5A2" "x1BA1F4" "x2455A8" "x28FA31" "x319D44" "x40E080" "x42E736" "x43FD92" "x4FD630" "x50412A" "x53CE7E" "x569D0A" "x5F7EE0" "x6486DD" "x649AB4" "x69C402" "x7F1133" "x83AA0C" "x87E8D4" "x8E8D40" "x94D7BA" "xB41FE2" "xC1AE21" "xE24063" "xE51181" "xE65320" "xE76A88" "xECE19B" "xF01A7B" "xF0C000" "xF62CC4" }
 		}
 		
 		add_homeland = cu:algonquian
+		add_homeland = cu:vinlander
 	}
 	s:STATE_ERIESLAND = {
 		create_state = {
-			country = c:SKR
+			country = c:VIN
 			owned_provinces = { "x000090" "x02EC28" "x131587" "x214D38" "x2158FB" "x255558" "x4A3037" "x638C4B" "x6CD2A5" "x704000" "x70C000" "x74A939" "x8B892B" "x95E27E" "xA73D1F" "xA92D73" "xB0C080" "xB61C8A" "xBF2D59" "xC08BCD" "xC31F42" "xC8B64B" "xD043D4" "xD0C0C0" "xE39685" "xEDCEDA" "xF04000" "xFC90A5" }
 		}
 		
 		add_homeland = cu:iroquoian
+		add_homeland = cu:vinlander
 	}
 	s:STATE_COSKAQUIAS = {
 		create_state = {
-			country = c:SKR
+			country = c:VIN
 			owned_provinces = { "x005339" "x00A080" "x0212BC" "x1B1B01" "x22BBD7" "x26B0DF" "x26D283" "x27EF03" "x2938A5" "x2A554C" "x2B0E33" "x4A94CA" "x4BAF24" "x5DA55B" "x6D1F7A" "x6D8AAA" "x708040" "x73BE17" "x746E6F" "x806000" "x89D198" "x908040" "xA53D3B" "xBD8B8B" "xC9A306" "xD998BB" "xE36812" "xF04080" "xF13865" "xF82338" }
 		}
 		
 		add_homeland = cu:algonquian
+		add_homeland = cu:vinlander
 	}
 	s:STATE_ILLNIMARK = {
 		create_state = {
-			country = c:SKR
+			country = c:VIN
 			owned_provinces = { "x0F38D4" "x108040" "x285A9A" "x286086" "x2FBF72" "x30D889" "x33B258" "x34036E" "x397AA3" "x3FEEB5" "x445F91" "x4E0162" "x50C040" "x543986" "x585A65" "x67EB18" "x6B3BE8" "x6F02DA" "x71AF12" "x7514E0" "x7A2E59" "x886CA2" "x900040" "x977A71" "x9977A5" "x999D9F" "x9CE5F6" "x9EA280" "xA36021" "xAA87FB" "xAD5337" "xB90E0D" "xBCB645" "xC02000" "xC72917" "xCD3BFC" "xD0C040" "xE12B89" "xE236DD" "xE2E68F" "xEB7340" "xED4D2B" "xEF4297" "xF68D89" }
 		}
 		
 		add_homeland = cu:algonquian
+		add_homeland = cu:vinlander
 	}
 	s:STATE_ODAWAMARK = {
 		create_state = {
 			country = c:VIN
-			owned_provinces = { "x011713" "x020DF9" "x04633F" "x06B1FE" "x08335D" "x0B7201" "x0DB925" "x101204" "x11DEB9" "x13F9FA" "x1E2884" "x1F0D15" "x24171D" "x256309" "x26EF2A" "x271949" "x29BE41" "x2AD0E3" "x2E016E" "x2F2C82" "x3927F5" "x398E4C" "x3C2A27" "x3CB77D" "x3EBFED" "x4020C0" "x41A233" "x42DDAE" "x42F312" "x466A98" "x4C056C" "x4CF9F7" "x4D3033" "x503D32" "x507BF4" "x51A9EA" "x520BF5" "x527017" "x54F237" "x569E74" "x56A6FD" "x5B310A" "x5D7155" "x5D9B41" "x5FD282" "x64970E" "x64AD7D" "x676E1E" "x6B2093" "x6B64F8" "x7388CD" "x7505F0" "x780AAA" "x7B1AE4" "x866C8A" "x88147F" "x8E20D9" "x8EE117" "x8F87B9" "x90A5C2" "x90FAEA" "x92D783" "x9552A3" "x9577B0" "x993ABF" "x99AB17" "x99F3C4" "x9C3F51" "x9CC0D0" "x9DBFA5" "x9E7CAD" "x9F77E9" "xA07380" "xA1D195" "xA1E55B" "xA22F7E" "xA794C1" "xA7B9EE" "xA83989" "xA92847" "xABA06F" "xAE2D58" "xAFBE4E" "xB0CB2A" "xB27FD6" "xB2D5DC" "xBA1406" "xBAB329" "xBCF90D" "xC134A4" "xC33C7E" "xC5041F" "xC75F8C" "xCE6D4A" "xD29273" "xD2B39A" "xD2CE4C" "xD319EB" "xD849E6" "xDA3337" "xDC58AB" "xDE7B99" "xE0DA0B" "xE2FA8E" "xE50D46" "xE58C05" "xE99D1D" "xE9F39B" "xEA4FC0" "xED34E6" "xF6A5A4" "xF738D5" "xF7E3F8" "xFC4326" "xFC9A0A" "xFF5559" }
-		}
-		create_state = {
-			country = c:SKR
-			owned_provinces = { "x8D6CB1" "x4D24AC" "xC95021" "x480B4B" "x263F77" "x724F63"  "xCA480F" "x65F177" "x0538F5" "x7A5E12" "x82492B" "xF03811" "x2B36A1" "xEAEBD8" "x313BB2" "x5E776D" "x93ACBB" "x48E362" "x6AD1DD" "x658093" "xE7EF56" "x4FFFFC" "x373F2F" "x45FBF5" "x36ECCB" "x929D22" "x5CFCFE" "x59C9CA" "x5D35AB" "x865EB8" "x827B75" "xDE887C" "x9D934A" "x5F5F99" "xD389DE" }			
+			owned_provinces = { "x8D6CB1" "x4D24AC" "xC95021" "x480B4B" "x263F77" "x724F63"  "xCA480F" "x65F177" "x0538F5" "x7A5E12" "x82492B" "xF03811" "x2B36A1" "xEAEBD8" "x313BB2" "x5E776D" "x93ACBB" "x48E362" "x6AD1DD" "x658093" "xE7EF56" "x4FFFFC" "x373F2F" "x45FBF5" "x36ECCB" "x929D22" "x5CFCFE" "x59C9CA" "x5D35AB" "x865EB8" "x827B75" "xDE887C" "x9D934A" "x5F5F99" "xD389DE" "x011713" "x020DF9" "x04633F" "x06B1FE" "x08335D" "x0B7201" "x0DB925" "x101204" "x11DEB9" "x13F9FA" "x1E2884" "x1F0D15" "x24171D" "x256309" "x26EF2A" "x271949" "x29BE41" "x2AD0E3" "x2E016E" "x2F2C82" "x3927F5" "x398E4C" "x3C2A27" "x3CB77D" "x3EBFED" "x4020C0" "x41A233" "x42DDAE" "x42F312" "x466A98" "x4C056C" "x4CF9F7" "x4D3033" "x503D32" "x507BF4" "x51A9EA" "x520BF5" "x527017" "x54F237" "x569E74" "x56A6FD" "x5B310A" "x5D7155" "x5D9B41" "x5FD282" "x64970E" "x64AD7D" "x676E1E" "x6B2093" "x6B64F8" "x7388CD" "x7505F0" "x780AAA" "x7B1AE4" "x866C8A" "x88147F" "x8E20D9" "x8EE117" "x8F87B9" "x90A5C2" "x90FAEA" "x92D783" "x9552A3" "x9577B0" "x993ABF" "x99AB17" "x99F3C4" "x9C3F51" "x9CC0D0" "x9DBFA5" "x9E7CAD" "x9F77E9" "xA07380" "xA1D195" "xA1E55B" "xA22F7E" "xA794C1" "xA7B9EE" "xA83989" "xA92847" "xABA06F" "xAE2D58" "xAFBE4E" "xB0CB2A" "xB27FD6" "xB2D5DC" "xBA1406" "xBAB329" "xBCF90D" "xC134A4" "xC33C7E" "xC5041F" "xC75F8C" "xCE6D4A" "xD29273" "xD2B39A" "xD2CE4C" "xD319EB" "xD849E6" "xDA3337" "xDC58AB" "xDE7B99" "xE0DA0B" "xE2FA8E" "xE50D46" "xE58C05" "xE99D1D" "xE9F39B" "xEA4FC0" "xED34E6" "xF6A5A4" "xF738D5" "xF7E3F8" "xFC4326" "xFC9A0A" "xFF5559" }
 		}
 		
 		add_homeland = cu:vinlander
@@ -341,7 +342,7 @@
 			state_type = unincorporated
 		}
 		create_state = {
-			country = c:SKR
+			country = c:VIN
 			owned_provinces = { "xA8B1F6" "x00A0C0" "x1B5B1A" "x1E5DFD" "x71C380" "x0FAD27" "xEE7CFB" "x46F177" "x84B824" "xF09A2C" "x096804" "x54C77A" "x21D67D" "x108E46" "xBE054B" "x28022C" }
 		}
 		
@@ -352,11 +353,12 @@
 	}
 	s:STATE_MENEMENE = {
 		create_state = {
-			country = c:SKR
+			country = c:VIN
 			owned_provinces = { "x049BAB" "x092B18" "x16E7BF" "x24883A" "x289431" "x35EAD6" "x39FC40" "x3C47F9" "x3E0D88" "x3E86B7" "x4017DC" "x49B5A8" "x4A71CA" "x4B51EB" "x4D1908" "x520EFD" "x52A5FD" "x5816B1" "x5E05A9" "x5FE739" "x618762" "x657999" "x68A47D" "x700040" "x70957E" "x779B77" "x781E75" "x794B5B" "x7B3020" "x80A0C0" "x887276" "x89F507" "x8BD355" "x9293C6" "x941A5A" "x96E11B" "x9C97B2" "x9F4495" "xA5C179" "xA6AF2F" "xAE4DDC" "xAFF4FA" "xB34192" "xBFF7BC" "xC44B48" "xCB7277" "xCDECF0" "xD04040" "xD0C080" "xD49785" "xD5A704" "xE2A342" "xE3903C" "xE49CB0" "xE6D0B8" "xEB502A" "xF54CF0" "xF57B6E" "xF6BC89" "xFDA0D8" }
 		}
 		add_homeland = cu:algonquian
 		add_homeland = cu:dakota
+		add_homeland = cu:vinlander
 	}
 	#Kita Kaigan
 	s:STATE_KITA_KAIGAN = {
@@ -1073,7 +1075,7 @@
 
 		add_homeland = cu:dakota
 		add_claim = c:PLA
-		add_claim = c:SKR
+		add_claim = c:VIN
 		add_claim = c:RHN
 	}
 	s:STATE_TERRES_ROUGES = { #Dongouest
@@ -1122,6 +1124,7 @@
 		}
 		
 		add_homeland = cu:dakota
+		add_homeland = cu:cadien
 	}
 	s:STATE_OUISKONSIN = {
 		create_state = {
@@ -1131,7 +1134,7 @@
 		
 		add_homeland = cu:dakota
 		add_claim = c:PLA
-		add_claim = c:SKR
+		add_claim = c:VIN
 	}
 
 }
