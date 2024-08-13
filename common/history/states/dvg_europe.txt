@@ -1214,11 +1214,7 @@
 	s:STATE_IONIAN_ISLANDS = {
 		create_state = {
 			country = c:VEN
-			owned_provinces = { "x405060" "x4B79CA" }
-		}
-		create_state = {
-			country = c:GRE
-			owned_provinces = { "x18C9AD" "x8050E0" "x01D0E0" "x518791" }
+			owned_provinces = { "x405060" "x4B79CA" "x18C9AD" "x8050E0" "x01D0E0" "x518791" }
 		}
 		
 		add_homeland = cu:greek
@@ -1226,7 +1222,7 @@
 	}
 	s:STATE_PELOPONNESE = {
 		create_state = {
-			country = c:GRE
+			country = c:VEN
 			owned_provinces = { "x0055D7" "x43409D" "x61E57E" "xBA3449" "xC0D060" }
 		}
 		
@@ -1234,7 +1230,7 @@
 	}
 	s:STATE_ATTICA = {
 		create_state = {
-			country = c:WRE
+			country = c:VEN
 			owned_provinces = { "x465F8D" "x8D7F62" "xA010A0"  "xC72C61" "xCA246A" }
 		}
 		
@@ -1242,7 +1238,7 @@
 	}
 	s:STATE_THESSALIA = {
 		create_state = {
-			country = c:WRE
+			country = c:VEN
 			owned_provinces = { "x0A645C" "xBF5160" "x80D060" "xACFFA7" "xE6E868" }
 		}
 		
@@ -1406,16 +1402,8 @@
 	
 	s:STATE_CRETE = {
 		create_state = {
-			country = c:TUR
-			owned_provinces = { "x702020" "x2190A0" "xC56452" "xE011A0" }
-		}
-		create_state = {
 			country = c:VEN
-			owned_provinces = { "x0B9BBE" "x6010A0" }
-		}
-		create_state = {
-			country = c:WRE
-			owned_provinces = { "x6090A0" "x6960A0"  }
+			owned_provinces = { "x0B9BBE" "x6010A0" "x702020" "x2190A0" "xC56452" "xE011A0" "x6090A0" "x6960A0" }
 		}
 		
 		add_homeland = cu:greek
