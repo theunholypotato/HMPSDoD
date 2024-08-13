@@ -294,7 +294,6 @@
 				size = 42898
 			}
 		}
-	}
 	s:STATE_BRYANSK = {
 		region_state:MSO = {
 			create_pop = {
