@@ -1531,23 +1531,15 @@
 	s:STATE_MOLDAVIA = {
 		create_state = { 
 			country = c:MOL
-			owned_provinces = { "x00A7F4" "x067DF0" "x0D8A56" "x30E0A0"  "x3CE97E" "x556DE7" "x80D8F3" "x946A66" "xB0A0E0" "xEF2060" "xFF2F40"  }
-		}
-		create_state = {
-			country = c:NOG
-			owned_provinces = { "x734EFF" "xF40045" "x0983EE" }
+			owned_provinces = { "x00A7F4" "x067DF0" "x0D8A56" "x30E0A0"  "x3CE97E" "x556DE7" "x80D8F3" "x946A66" "xB0A0E0" "xEF2060" "xFF2F40" "x734EFF" "xF40045" "x0983EE" }
 		}
 		
 		add_homeland = cu:romanian
 	}
 	s:STATE_BESSARABIA = {
 		create_state = {
-			country = c:NOG
-			owned_provinces = { "x1E1DEF" "x23621B"  "x5F2259" "x6BF7B8" "x712161" "x8955DF" "x8ACA9B" "xB0E0A0" "xFC9EFE" "xFDE796" }
-		}
-		create_state = {
 			country = c:MOL
-			owned_provinces = { "x622837" "xE7274A" "x53D7E0" }
+			owned_provinces = { "x622837" "xE7274A" "x53D7E0" "x1E1DEF" "x23621B"  "x5F2259" "x6BF7B8" "x712161" "x8955DF" "x8ACA9B" "xB0E0A0" "xFC9EFE" "xFDE796" }
 		}
 		
 		add_homeland = cu:romanian
