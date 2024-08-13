@@ -1311,7 +1311,7 @@
 	}
 	s:STATE_BOSNIA = {
 		create_state = {
-			country = c:BSG
+			country = c:CRO
 			owned_provinces = { "x106020"  "x1121E0" "x19AF6A" "x23D67C" "x3B7D2B" "x3F67BA" "x50209F" "x51A0A0" "x5F13FD" "x7C904A" "x9021E0" "xA40356" "xAC2DD3" "xD021A0" "xD0A0A0" "xDA817B" "xF06101" }
 		}
 		
@@ -1433,12 +1433,8 @@
 	#Hungary
 	s:STATE_CENTRAL_HUNGARY = {
 		create_state = {
-			country = c:BSG
-			owned_provinces = { "x5060DF" "x542689" "x629512" "x715A29" "x846165" "x90A0A0" }
-		}
-		create_state = {
 			country = c:HUN
-			owned_provinces = { "xC97829" "xD061E0" "x764B36" "xB1D348" "x51E0E0" "x99AEF4" "x5C685C" "xAB6CAC"}
+			owned_provinces = { "x5060DF" "x542689" "x629512" "x715A29" "x846165" "x90A0A0" "xC97829" "xD061E0" "x764B36" "xB1D348" "x51E0E0" "x99AEF4" "x5C685C" "xAB6CAC"}
 		}
 		create_state = {
 			country = c:TRS
