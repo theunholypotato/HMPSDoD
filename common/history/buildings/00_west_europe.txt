@@ -4207,7 +4207,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:DUA"
-						levels=2
+						levels=3
 						region="STATE_AQUITAINE"
 					}
 				}
@@ -4220,7 +4220,7 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:DUA"
-						levels=1
+						levels=2
 						region="STATE_AQUITAINE"
 					}
 				}
@@ -4233,7 +4233,7 @@
 					building={
 						type="building_manor_house"
 						country="c:DUA"
-						levels=9
+						levels=10
 						region="STATE_AQUITAINE"
 					}
 				}
@@ -4256,7 +4256,7 @@
 				add_ownership={
 					country={
 						country="c:DUA"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
@@ -4274,59 +4274,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts" }
-			}
-		}
-		
-		region_state:NAV={
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_logging_camp"
-						country="c:NAV"
-						levels=1
-						region="STATE_AQUITAINE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
-			}
-			create_building={
-				building="building_fishing_wharf"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:NAV"
-						levels=1
-						region="STATE_AQUITAINE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated" }
-			}
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:NAV"
-						levels=1
-						region="STATE_AQUITAINE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" }
-			}
-			create_building={
-				building="building_port"
-				add_ownership={
-					country={
-						country="c:NAV"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_basic_port" }
 			}
 		}
 	}
@@ -4539,21 +4486,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts" }
-			}
-		}
-		region_state:AVN={
-			create_building={
-				building="building_wheat_farm"
-					add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:AVN"
-						levels=2
-						region="STATE_PROVENCE"
-					}
-				}
-				reserves=1
-				activate_production_methods={  "pm_tools_disabled" "pm_simple_farming" }
 			}
 		}
 	}
