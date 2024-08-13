@@ -1000,7 +1000,7 @@
 		
 	}
 	s:STATE_BOSNIA = {
-		region_state:BSG = {
+		region_state:CRO = {
 			create_pop = {
 				culture = croat
 				size = 246765
@@ -1108,7 +1108,7 @@
 		}
 	}
 	s:STATE_NORTHERN_SERBIA = {
-		region_state:WRE = {
+		region_state:TUR = {
 			create_pop = {
 				culture = turkish
 				size = 25405 
@@ -1151,8 +1151,6 @@
 			#	size = 55975
 			#	religion = orthodox
 			#}
-		}
-		region_state:BSG = {
 			create_pop = {
 				culture = turkish
 				size = 42748 

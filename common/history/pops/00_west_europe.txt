@@ -710,8 +710,6 @@
 				culture = ashkenazi
 				size = 2216
 			}
-		}
-		region_state:HUN = {
 			create_pop = {
 				culture = hungarian
 				size = 118023
