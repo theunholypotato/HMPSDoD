@@ -239,7 +239,7 @@
 	
 	#Ottomans
 	s:STATE_WESTERN_THRACE = {
-		region_state:WRE = {
+		region_state:TUR = {
 			create_pop = {
 				culture = turkish
 				size = 261098
@@ -306,8 +306,6 @@
 		#	size = 1560
 		#	religion = orthodox
 		#}
-		}
-		region_state:TUR = {
 			create_pop = {
 				culture = turkish
 				size = 340224

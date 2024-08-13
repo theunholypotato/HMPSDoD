@@ -5265,13 +5265,13 @@
 	
 	#Ottoman Empire
 	s:STATE_EASTERN_THRACE={ #Thrace in-game
-		region_state:WRE={
+		region_state:TUR={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:WRE"
+						country="c:TUR"
 						levels=1
 						region="STATE_EASTERN_THRACE"
 					}
@@ -5284,7 +5284,7 @@
 				add_ownership={
 					building={
 						type="building_tooling_workshops"
-						country="c:WRE"
+						country="c:TUR"
 						levels=1
 						region="STATE_EASTERN_THRACE"
 					}
@@ -5297,7 +5297,7 @@
 				add_ownership={
 					building={
 						type="building_textile_mills"
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 						region="STATE_EASTERN_THRACE"
 					}
@@ -5310,7 +5310,7 @@
 				add_ownership={
 					building={
 						type="building_furniture_manufacturies"
-						country="c:WRE"
+						country="c:TUR"
 						levels=1
 						region="STATE_EASTERN_THRACE"
 					}
@@ -5323,7 +5323,7 @@
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:WRE"
+						country="c:TUR"
 						levels=1
 						region="STATE_EASTERN_THRACE"
 					}
@@ -5336,7 +5336,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 						region="STATE_EASTERN_THRACE"
 					}
@@ -5349,7 +5349,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 						region="STATE_EASTERN_THRACE"
 					}
@@ -5362,7 +5362,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:WRE"
+						country="c:TUR"
 						levels=3
 						region="STATE_EASTERN_THRACE"
 					}
@@ -5374,7 +5374,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=10
 					}
 				}
@@ -5385,7 +5385,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=1
 					}
 				}
@@ -5395,13 +5395,13 @@
 		}
 	}
 	s:STATE_NORTHERN_THRACE={ #Northern Thrace in-game
-		region_state:WRE={
+		region_state:TUR={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 						region="STATE_NORTHERN_THRACE"
 					}
@@ -5414,7 +5414,7 @@
 				add_ownership={
 					building={
 						type="building_textile_mills"
-						country="c:WRE"
+						country="c:TUR"
 						levels=1
 						region="STATE_NORTHERN_THRACE"
 					}
@@ -5427,7 +5427,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 						region="STATE_NORTHERN_THRACE"
 					}
@@ -5440,7 +5440,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:WRE"
+						country="c:TUR"
 						levels=3
 						region="STATE_NORTHERN_THRACE"
 					}
@@ -5453,7 +5453,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:WRE"
+						country="c:TUR"
 						levels=3
 						region="STATE_NORTHERN_THRACE"
 					}
@@ -5465,7 +5465,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=5
 					}
 				}
@@ -5475,13 +5475,13 @@
 		}
 	}
 	s:STATE_BULGARIA={
-		region_state:WRE={
+		region_state:TUR={
 			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
 					building={
 						type="building_furniture_manufacturies"
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 						region="STATE_BULGARIA"
 					}
@@ -5494,7 +5494,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 						region="STATE_BULGARIA"
 					}
@@ -5507,7 +5507,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:WRE"
+						country="c:TUR"
 						levels=4
 						region="STATE_BULGARIA"
 					}
@@ -5519,7 +5519,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=10
 					}
 				}
@@ -5530,7 +5530,7 @@
 				building="building_artillery_foundries"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=1
 					}
 				}
@@ -5540,13 +5540,13 @@
 		}
 	}
 	s:STATE_DOBRUDJA={
-		region_state:WRE={
+		region_state:TUR={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 						region="STATE_DOBRUDJA"
 					}
@@ -5559,7 +5559,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:WRE"
+						country="c:TUR"
 						levels=1
 						region="STATE_DOBRUDJA"
 					}
@@ -5703,13 +5703,13 @@
 				activate_production_methods={ "pm_basic_port" }
 			}
 		}
-		region_state:WRE={ 
+		region_state:TUR={ 
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:WRE"
+						country="c:TUR"
 						levels=10
 						region="STATE_WESTERN_THRACE"
 					}
@@ -5721,7 +5721,7 @@
 				building="building_construction_sector"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 					}
 				}
@@ -5733,7 +5733,7 @@
 				add_ownership={
 					building={
 						type="building_shipyards"
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 						region="STATE_WESTERN_THRACE"
 					}
@@ -5746,7 +5746,7 @@
 				add_ownership={
 					building={
 						type="building_textile_mills"
-						country="c:WRE"
+						country="c:TUR"
 						levels=4
 						region="STATE_WESTERN_THRACE"
 					}
@@ -5759,7 +5759,7 @@
 				add_ownership={
 					building={
 						type="building_arms_industry"
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 						region="STATE_WESTERN_THRACE"
 					}
@@ -5772,7 +5772,7 @@
 				add_ownership={
 					building={
 						type="building_glassworks"
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 						region="STATE_WESTERN_THRACE"
 					}
@@ -5785,7 +5785,7 @@
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 						region="STATE_WESTERN_THRACE"
 					}
@@ -5798,7 +5798,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:WRE"
+						country="c:TUR"
 						levels=2
 						region="STATE_WESTERN_THRACE"
 					}
@@ -5811,7 +5811,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:WRE"
+						country="c:TUR"
 						levels=3
 						region="STATE_WESTERN_THRACE"
 					}
@@ -5823,7 +5823,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=15
 					}
 				}
@@ -5834,7 +5834,7 @@
 				building="building_naval_base"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=15
 					}
 				}
@@ -5845,7 +5845,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:WRE"
+						country="c:TUR"
 						levels=4
 					}
 				}

@@ -1257,7 +1257,7 @@
 			owned_provinces = { "x01D060" "x021374" "x506020" "x70A0E0" "x75CAD1" "x90E0A0" "xBA7B5B" "xD2619E" "xE48F39" }
 		}
 		create_state = {
-			country = c:WRE
+			country = c:TUR
 			owned_provinces = { "xEDECFB" "xB2249C" }
 		}
 
@@ -1322,7 +1322,7 @@
 	#Ottomans
 	s:STATE_EASTERN_THRACE = {
 		create_state = {
-			country = c:WRE
+			country = c:TUR
 			owned_provinces = { "x115006" "x194E90" "x2073F0" "x608BB0" "xF02082" "xFCF160" }
 		}
 		
@@ -1337,7 +1337,7 @@
 			owned_provinces = { "x50F5CB" "x7763F3" "x7F25CD" "xB06121" "xD9E021" }
 		}
 		create_state = {
-			country = c:WRE
+			country = c:TUR
 			owned_provinces = { "x316021" "xA3D7CE" "x940C8D" }
 		}
 		
@@ -1349,7 +1349,7 @@
 	}
 	s:STATE_NORTHERN_THRACE = {
 		create_state = {
-			country = c:WRE
+			country = c:TUR
 			owned_provinces = {  "x0261AB" "x6181D2" "xBE51B7" "xF02020" "xF0A0E0" "x0DE556" "x15CDCD" "x455522" "x6E7192" "x7121A0" "x95BCE8" "x9D0D6C" "xAF56D0" "xC7D441" "xF021A0" }
 		}
 		
@@ -1360,7 +1360,7 @@
 	}
 	s:STATE_BULGARIA = {
 		create_state = {
-			country = c:WRE
+			country = c:TUR
 			owned_provinces = { "x2038F6" "x52BF3E" "x64275F" "x6768DB" "x71A0A0" "xB4F1D6" "xB55757" "xC2E2B9" "xC59A98" "xC866AF" "xCDD237" "xD06121" "xE8D59C" "xEC96F3" "xEFEAA0" "xF0A0A0" }
 		}
 		
@@ -1381,7 +1381,7 @@
 	}
 	#s:STATE_SOUTHERN_SERBIA = {
 	#	create_state = {
-	#		country = c:WRE
+	#		country = c:TUR
 	#		owned_provinces = {  }
 	#	}
 	#	
