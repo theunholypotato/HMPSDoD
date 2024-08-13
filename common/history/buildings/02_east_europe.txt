@@ -1099,25 +1099,12 @@
 	s:STATE_BRYANSK={
 		region_state:MSO={
 			create_building={
-				building="building_rye_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:MSO"
-						levels=8
-						region="STATE_BRYANSK"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_potatoes" }
-			}
-			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
 						type="building_manor_house"
 						country="c:MSO"
-						levels=5
+						levels=7
 						region="STATE_BRYANSK"
 					}
 				}
@@ -1138,14 +1125,12 @@
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
 			
-		}
-		region_state:SMO={
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
 					building={
 						type="building_textile_mills"
-						country="c:SMO"
+						country="c:MSO"
 						levels=1
 						region="STATE_BRYANSK"
 					}
@@ -1158,7 +1143,7 @@
 				add_ownership={
 					building={
 						type="building_food_industry"
-						country="c:SMO"
+						country="c:MSO"
 						levels=1
 						region="STATE_BRYANSK"
 					}
@@ -1167,36 +1152,10 @@
 				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing" }
 			}
 			create_building={
-				building="building_rye_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:SMO"
-						levels=7
-						region="STATE_BRYANSK"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_potatoes" }
-			}
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:SMO"
-						levels=2
-						region="STATE_BRYANSK"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
-			}
-			create_building={
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:SMO"
+						country="c:MSO"
 						levels=15
 					}
 				}

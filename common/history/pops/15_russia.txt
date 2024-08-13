@@ -302,8 +302,6 @@
 				culture = russian
 				size = 400000
 			}
-		}
-		region_state:SMO = {
 			create_pop = {
 				culture = russian
 				size = 1038531
