@@ -1748,7 +1748,7 @@
 			owned_provinces = { "x13997A" "x29EE58" "x3DA304" "x5BE6ED" "x652CE8" "x71E061" "x73216A" "x924D7E" "xB285AE" "xE315A3" "xF0E0A0" "xF60A93" "xFD6659" }
 		}
 		create_state = {
-			country = c:NOG
+			country = c:CRI
 			owned_provinces = { "xCC0D93" "x0E1864" "x305004" "x3E5AF0" "x3E66A1" "x421B54" "x716121" "x71E021" "x89CE7C" "xA669E7" "xA81C77" "xB02161" "xB5123B" "xD7E3C1" "xE4AA78" "xF9066A" "xFDD2CF" }
 		}	
 

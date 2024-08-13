@@ -670,7 +670,7 @@
 				size = 24334
 			}
 		}
-		region_state:NOG = {
+		region_state:CRI = {
 			create_pop = {
 				culture = kirim
 				size = 388545

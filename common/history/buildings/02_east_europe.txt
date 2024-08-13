@@ -1281,7 +1281,7 @@
 				activate_production_methods={ "pm_no_organization" }
 			}
 		}
-		region_state:NOG={
+		region_state:CRI={
 			create_building={
 				building="building_barracks"
 				add_ownership={
