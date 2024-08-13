@@ -5947,12 +5947,12 @@
 	
 	#Macedonia
 	s:STATE_SKOPIA={
-		region_state:ALB={
+		region_state:MCD={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:ALB"
+						country="c:MCD"
 						levels=1
 					}
 				}
@@ -5964,7 +5964,7 @@
 				add_ownership={
 					building={
 						type="building_iron_mine"
-						country="c:ALB"
+						country="c:MCD"
 						levels=2
 						region="STATE_SKOPIA"
 					}
@@ -5977,7 +5977,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ALB"
+						country="c:MCD"
 						levels=4
 						region="STATE_SKOPIA"
 					}
@@ -5990,7 +5990,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ALB"
+						country="c:MCD"
 						levels=1
 						region="STATE_SKOPIA"
 					}
@@ -6002,7 +6002,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:ALB"
+						country="c:MCD"
 						levels=10
 					}
 				}
@@ -6012,12 +6012,12 @@
 		}
 	}
 	s:STATE_MACEDONIA={
-		region_state:ALB={
+		region_state:MCD={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:ALB"
+						country="c:MCD"
 						levels=4
 					}
 				}
@@ -6029,7 +6029,7 @@
 				add_ownership={
 					building={
 						type="building_tooling_workshops"
-						country="c:ALB"
+						country="c:MCD"
 						levels=1
 						region="STATE_MACEDONIA"
 					}
@@ -6042,7 +6042,7 @@
 				add_ownership={
 					building={
 						type="building_food_industry"
-						country="c:ALB"
+						country="c:MCD"
 						levels=1
 						region="STATE_MACEDONIA"
 					}
@@ -6055,7 +6055,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ALB"
+						country="c:MCD"
 						levels=1
 						region="STATE_MACEDONIA"
 					}
@@ -6068,7 +6068,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ALB"
+						country="c:MCD"
 						levels=2
 						region="STATE_MACEDONIA"
 					}
@@ -6081,7 +6081,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ALB"
+						country="c:MCD"
 						levels=1
 						region="STATE_MACEDONIA"
 					}
@@ -6093,7 +6093,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:ALB"
+						country="c:MCD"
 						levels=10
 					}
 				}
@@ -6105,7 +6105,7 @@
 				add_ownership={
 					building={
 						type="building_shipyards"
-						country="c:ALB"
+						country="c:MCD"
 						levels=1
 						region="STATE_MACEDONIA"
 					}
@@ -6117,7 +6117,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:ALB"
+						country="c:MCD"
 						levels=1
 					}
 				}
