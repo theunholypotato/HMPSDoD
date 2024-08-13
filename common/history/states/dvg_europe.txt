@@ -1521,12 +1521,7 @@
 	s:STATE_WALLACHIA = {
 		create_state = {
 			country = c:WAL
-			owned_provinces = { "x016C07" "x019D5F" "x2613E8"  "x51E021" "x582A74" "x743F1C" "x9E90C5" "xAB774D" "xD28965" "xE02121" "xE0A321" "xECC1DC" "xEF53AF" "xF6E6E3" "xF76B20" }
-		}
-
-		create_state = {
-			country = c:NOG
-			owned_provinces = { "xF9AA0F" "x690E91" "x31E021" "x020F11" "x2164E0" "x81C7F3" "xD11E19" "xB0E020" "xC6AC43" }
+			owned_provinces = { "x016C07" "x019D5F" "x2613E8"  "x51E021" "x582A74" "x743F1C" "x9E90C5" "xAB774D" "xD28965" "xE02121" "xE0A321" "xECC1DC" "xEF53AF" "xF6E6E3" "xF76B20" "xF9AA0F" "x690E91" "x31E021" "x020F11" "x2164E0" "x81C7F3" "xD11E19" "xB0E020" "xC6AC43"}
 		}
 		
 		add_homeland = cu:romanian
