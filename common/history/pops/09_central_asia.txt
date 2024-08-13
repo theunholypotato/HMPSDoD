@@ -1,6 +1,6 @@
 ﻿POPS = {
 	s:STATE_OKA = {
-		region_state:RYA = {
+		region_state:MSO = {
 			create_pop = {
 				culture = russian
 				size = 2149551
@@ -19,8 +19,6 @@
 				culture = kazani
 				size = 179609
 			}
-		}
-		region_state:NZH = {
 			create_pop = {
 				culture = russian
 				size = 847244
