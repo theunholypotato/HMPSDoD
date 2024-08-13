@@ -348,8 +348,6 @@
 				culture = basque
 				size = 173027
 			}
-		}
-		region_state:NAV = {
 			create_pop = {
 				culture = occitan
 				size = 24172
@@ -393,8 +391,6 @@
 				culture = occitan
 				size = 1731717
 			}
-		}
-		region_state:AVN = {
 			create_pop = {
 				culture = occitan
 				size = 73780
@@ -710,8 +706,6 @@
 				culture = ashkenazi
 				size = 2216
 			}
-		}
-		region_state:HUN = {
 			create_pop = {
 				culture = hungarian
 				size = 118023

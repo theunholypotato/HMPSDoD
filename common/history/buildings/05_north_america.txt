@@ -375,13 +375,13 @@
 	
 	#Masgirland
 	s:STATE_NUREMBORG={
-		region_state:MSG={
+		region_state:VIN={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:MSG"
+						country="c:VIN"
 						levels=2
 						region="STATE_NUREMBORG"
 					}
@@ -393,7 +393,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:MSG"
+						country="c:VIN"
 						levels=3
 					}
 				}
@@ -404,7 +404,7 @@
 				building="building_naval_base"
 				add_ownership={
 					country={
-						country="c:MSG"
+						country="c:VIN"
 						levels=2
 					}
 				}
@@ -415,7 +415,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:MSG"
+						country="c:VIN"
 						levels=5
 					}
 				}
@@ -426,7 +426,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:MSG"
+						country="c:VIN"
 						levels=1
 					}
 				}
@@ -438,7 +438,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:MSG"
+						country="c:VIN"
 						levels=2
 						region="STATE_NUREMBORG"
 					}
@@ -451,7 +451,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MSG"
+						country="c:VIN"
 						levels=2
 						region="STATE_NUREMBORG"
 					}
@@ -464,7 +464,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MSG"
+						country="c:VIN"
 						levels=3
 						region="STATE_NUREMBORG"
 					}
@@ -477,7 +477,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:MSG"
+						country="c:VIN"
 						levels=4
 						region="STATE_NUREMBORG"
 					}
@@ -490,7 +490,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:MSG"
+						country="c:VIN"
 						levels=2
 						region="STATE_NUREMBORG"
 					}
@@ -501,13 +501,13 @@
 		}
 	}
 	s:STATE_MASGIRLAND={
-		region_state:MSG={
+		region_state:VIN={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:MSG"
+						country="c:VIN"
 						levels=2
 						region="STATE_MASGIRLAND"
 					}
@@ -519,7 +519,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:MSG"
+						country="c:VIN"
 						levels=1
 					}
 				}
@@ -530,7 +530,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:MSG"
+						country="c:VIN"
 						levels=1
 					}
 				}
@@ -542,7 +542,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MSG"
+						country="c:VIN"
 						levels=3
 						region="STATE_MASGIRLAND"
 					}
@@ -555,13 +555,13 @@
 	
 	#Skraelingland
 	s:STATE_SKRAELINGMARK={
-		region_state:SKR={
+		region_state:VIN={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SKR"
+						country="c:VIN"
 						levels=1
 						region="STATE_SKRAELINGMARK"
 					}
@@ -574,7 +574,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SKR"
+						country="c:VIN"
 						levels=2
 						region="STATE_SKRAELINGMARK"
 					}
@@ -585,13 +585,13 @@
 		}
 	}
 	s:STATE_GANIGIALAND={
-		region_state:SKR={
+		region_state:VIN={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SKR"
+						country="c:VIN"
 						levels=1
 						region="STATE_GANIGIALAND"
 					}
@@ -604,7 +604,7 @@
 				add_ownership={
 					building={
 						type="building_iron_mine"
-						country="c:SKR"
+						country="c:VIN"
 						levels=1
 						region="STATE_GANIGIALAND"
 					}
@@ -615,13 +615,13 @@
 		}
 	}
 	s:STATE_ILLNIMARK = {
-		region_state:SKR={
+		region_state:VIN={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SKR"
+						country="c:VIN"
 						levels=1
 						region="STATE_ILLNIMARK"
 					}
@@ -633,7 +633,7 @@
 				building= "building_artillery_foundries"
 				add_ownership={
 					country={
-						country="c:SKR"
+						country="c:VIN"
 						levels=1
 					}
 				}
@@ -644,7 +644,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:SKR"
+						country="c:VIN"
 						levels=1
 					}
 				}
@@ -656,13 +656,13 @@
 		
 	}
 	s:STATE_POTOMIMARK={
-		region_state:SKR={
+		region_state:VIN={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SKR"
+						country="c:VIN"
 						levels=1
 						region="STATE_POTOMIMARK"
 					}
@@ -674,7 +674,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:SKR"
+						country="c:VIN"
 						levels=1
 					}
 				}
@@ -685,7 +685,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:SKR"
+						country="c:VIN"
 						levels=2
 					}
 				}
@@ -695,13 +695,13 @@
 		}
 	}
 	s:STATE_ERIESLAND = {
-		region_state:SKR={
+		region_state:VIN={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SKR"
+						country="c:VIN"
 						levels=1
 						region="STATE_ERIESLAND"
 					}
@@ -713,7 +713,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:SKR"
+						country="c:VIN"
 						levels=1
 					}
 				}
@@ -726,7 +726,7 @@
 				add_ownership={
 					building={
 						type="building_coal_mine"
-						country="c:SKR"
+						country="c:VIN"
 						levels=1
 						region="STATE_ERIESLAND"
 					}
@@ -739,7 +739,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SKR"
+						country="c:VIN"
 						levels=2
 						region="STATE_ERIESLAND"
 					}
@@ -750,13 +750,13 @@
 		}
 	}
 	s:STATE_COSKAQUIAS = {
-		region_state:SKR={
+		region_state:VIN={
 			create_building={
 				building="building_maize_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SKR"
+						country="c:VIN"
 						levels=1
 						region="STATE_COSKAQUIAS"
 					}
@@ -768,7 +768,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:SKR"
+						country="c:VIN"
 						levels=1
 					}
 				}
@@ -781,7 +781,7 @@
 				add_ownership={
 					building={
 						type="building_coal_mine"
-						country="c:SKR"
+						country="c:VIN"
 						levels=1
 						region="STATE_COSKAQUIAS"
 					}
@@ -794,7 +794,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SKR"
+						country="c:VIN"
 						levels=2
 						region="STATE_COSKAQUIAS"
 					}
@@ -807,7 +807,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:SKR"
+						country="c:VIN"
 						levels=2
 						region="STATE_COSKAQUIAS"
 					}

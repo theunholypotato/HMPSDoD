@@ -194,11 +194,7 @@
 	s:STATE_AQUITAINE = {
 		create_state = {
 			country = c:DUA
-			owned_provinces = { "x086618" "x3784B2" "x5F7F2D" "x606DEC" "x70A080" "x76BA85" "xA220D0" "xBBF036" "xCD8E77" "xF02080" "xF0A080" }
-		}
-		create_state = {
-			country = c:NAV
-			owned_provinces = { "x073FC4" "x6E16BB" }
+			owned_provinces = { "x086618" "x3784B2" "x5F7F2D" "x606DEC" "x70A080" "x76BA85" "xA220D0" "xBBF036" "xCD8E77" "xF02080" "xF0A080" "x073FC4" "x6E16BB" }
 		}
 		
 		add_homeland = cu:anglois
@@ -218,11 +214,7 @@
 	s:STATE_PROVENCE = {
 		create_state = {
 			country = c:PRO
-			owned_provinces = { "x1727F7" "x3040E0" "x31C0DF" "x6D5E3F" "xB040E0" "xB0C060" "xB8E48D" "xBBB6AD" "xC03918" "xCB9C34" }
-		}
-		create_state = {
-			country = c:AVN
-			owned_provinces = { "xB0C0E0" }
+			owned_provinces = { "x1727F7" "x3040E0" "x31C0DF" "x6D5E3F" "xB040E0" "xB0C060" "xB8E48D" "xBBB6AD" "xC03918" "xCB9C34" "xB0C0E0"}
 		}
 		
 		add_homeland = cu:occitan
@@ -385,11 +377,7 @@
 	s:STATE_AUSTRIA = {
 		create_state = {
 			country = c:AUS
-			owned_provinces = { "x30A020" "x0CBB8F" "x1180A0" "x20CF50" "x316141" "x62F70E" "x7F2E4E" "x84C7C3" "x9001A0" "xA40093" "xA9793B" "xFDA6CB" }
-		}
-		create_state = {
-			country = c:HUN
-			owned_provinces = { "x6F8D2A" xF0E001 }
+			owned_provinces = { "x6F8D2A" "xF0E001" "x30A020" "x0CBB8F" "x1180A0" "x20CF50" "x316141" "x62F70E" "x7F2E4E" "x84C7C3" "x9001A0" "xA40093" "xA9793B" "xFDA6CB" }
 		}
 		
 		add_homeland = cu:south_german
@@ -1218,11 +1206,7 @@
 	s:STATE_IONIAN_ISLANDS = {
 		create_state = {
 			country = c:VEN
-			owned_provinces = { "x405060" "x4B79CA" }
-		}
-		create_state = {
-			country = c:GRE
-			owned_provinces = { "x18C9AD" "x8050E0" "x01D0E0" "x518791" }
+			owned_provinces = { "x405060" "x4B79CA" "x18C9AD" "x8050E0" "x01D0E0" "x518791" }
 		}
 		
 		add_homeland = cu:greek
@@ -1230,7 +1214,7 @@
 	}
 	s:STATE_PELOPONNESE = {
 		create_state = {
-			country = c:GRE
+			country = c:VEN
 			owned_provinces = { "x0055D7" "x43409D" "x61E57E" "xBA3449" "xC0D060" }
 		}
 		
@@ -1238,7 +1222,7 @@
 	}
 	s:STATE_ATTICA = {
 		create_state = {
-			country = c:WRE
+			country = c:VEN
 			owned_provinces = { "x465F8D" "x8D7F62" "xA010A0"  "xC72C61" "xCA246A" }
 		}
 		
@@ -1246,7 +1230,7 @@
 	}
 	s:STATE_THESSALIA = {
 		create_state = {
-			country = c:WRE
+			country = c:VEN
 			owned_provinces = { "x0A645C" "xBF5160" "x80D060" "xACFFA7" "xE6E868" }
 		}
 		
@@ -1311,7 +1295,7 @@
 	}
 	s:STATE_BOSNIA = {
 		create_state = {
-			country = c:BSG
+			country = c:CRO
 			owned_provinces = { "x106020"  "x1121E0" "x19AF6A" "x23D67C" "x3B7D2B" "x3F67BA" "x50209F" "x51A0A0" "x5F13FD" "x7C904A" "x9021E0" "xA40356" "xAC2DD3" "xD021A0" "xD0A0A0" "xDA817B" "xF06101" }
 		}
 		
@@ -1323,7 +1307,7 @@
 	#Montenegro
 	s:STATE_MONTENEGRO = {
 		create_state = {
-			country = c:SER
+			country = c:CRO
 			owned_provinces = { "x9DFFAF" "xB852BB" "x45E06A" "xA5D3A9" "xD02161" "x446E84" "x8C6292" "xA12F82" "xF5F6C2" }
 		}
 		create_state = {
@@ -1387,12 +1371,8 @@
 	}
 	s:STATE_NORTHERN_SERBIA = {
 		create_state = {
-			country = c:WRE
-			owned_provinces = { "x18B761" "x334B53" "x62A730"  "xAC083C" "xD021E0" "x3B6092" "x40AF95" "x74F1F4" "x9061A0" }
-		}
-		create_state = {
-			country = c:BSG
-			owned_provinces = { "xF9E78E" "x90A061" "x4773E6" "x4B1F45" "xEDBA20" "x10A060" "x4D115A" }
+			country = c:CRO
+			owned_provinces = { "xF9E78E" "x90A061" "x4773E6" "x4B1F45" "xEDBA20" "x10A060" "x4D115A" "x18B761" "x334B53" "x62A730"  "xAC083C" "xD021E0" "x3B6092" "x40AF95" "x74F1F4" "x9061A0" }
 		}
 		
 		add_homeland = cu:serb
@@ -1414,16 +1394,8 @@
 	
 	s:STATE_CRETE = {
 		create_state = {
-			country = c:TUR
-			owned_provinces = { "x702020" "x2190A0" "xC56452" "xE011A0" }
-		}
-		create_state = {
 			country = c:VEN
-			owned_provinces = { "x0B9BBE" "x6010A0" }
-		}
-		create_state = {
-			country = c:WRE
-			owned_provinces = { "x6090A0" "x6960A0"  }
+			owned_provinces = { "x0B9BBE" "x6010A0" "x702020" "x2190A0" "xC56452" "xE011A0" "x6090A0" "x6960A0" }
 		}
 		
 		add_homeland = cu:greek
@@ -1433,16 +1405,8 @@
 	#Hungary
 	s:STATE_CENTRAL_HUNGARY = {
 		create_state = {
-			country = c:BSG
-			owned_provinces = { "x5060DF" "x542689" "x629512" "x715A29" "x846165" "x90A0A0" }
-		}
-		create_state = {
 			country = c:HUN
-			owned_provinces = { "xC97829" "xD061E0" "x764B36" "xB1D348" "x51E0E0" "x99AEF4" "x5C685C" "xAB6CAC"}
-		}
-		create_state = {
-			country = c:TRS
-			owned_provinces = { "x109F9F" "x93A8CA" "x063C9D" "x920D5A" "xCA364D" }
+			owned_provinces = { "x109F9F" "x93A8CA" "x063C9D" "x920D5A" "xCA364D" "x5060DF" "x542689" "x629512" "x715A29" "x846165" "x90A0A0" "xC97829" "xD061E0" "x764B36" "xB1D348" "x51E0E0" "x99AEF4" "x5C685C" "xAB6CAC"}
 		}
 		
 		add_homeland = cu:hungarian
@@ -1458,19 +1422,16 @@
 	s:STATE_WEST_SLOVAKIA = {
 		create_state = {
 			country = c:HUN
-			owned_provinces = { "x082416" "x1F3F2B" "x51306A" "x516161" "x695F42" "x6B444C" "x853117" "x90E0E0" "xB386BA" "xCA932B" "xD06161" "xFC6F14" "x02CE3A" "x20C000"  "x51E061" "x7DE5D3" "xB23DA0" "xC54074" }
+			owned_provinces = { "xC85CD0" "xA0531B" "x082416" "x1F3F2B" "x51306A" "x516161" "x695F42" "x6B444C" "x853117" "x90E0E0" "xB386BA" "xCA932B" "xD06161" "xFC6F14" "x02CE3A" "x20C000"  "x51E061" "x7DE5D3" "xB23DA0" "xC54074" }
 		}
-		create_state = {
-			country = c:TRS
-			owned_provinces = { "xC85CD0" "xA0531B"  }
-		}
+		
 		
 		add_homeland = cu:slovak
 		add_homeland = cu:hungarian
 	}
 	s:STATE_EAST_SLOVAKIA = { 
 		create_state = {
-			country = c:TRS
+			country = c:HUN
 			owned_provinces = { "xD0E061" "x69BAC7" "x359378"  }
 		}
 		create_state = {
@@ -1488,7 +1449,7 @@
 	}
 	s:STATE_VOJVODINA = {
 		create_state = {
-			country = c:BSG
+			country = c:HUN
 			owned_provinces = { "x11E021" "x13318D" "x1A4DF9" "x626998" "x77143D" "x80CF00" "x901B70" "x902161" "x906121" "x9E1AD1" "xC347D8" }
 		}
 		
@@ -1499,7 +1460,7 @@
 	}
 	s:STATE_BANAT = {
 		create_state = {
-			country = c:BSG
+			country = c:HUN
 			owned_provinces = { "x078D13" "x1161A0" "x15C7D1" "x2C0A00" "x4D9139" "x90E021" "xC381B6" "xD1FEBD" "xF56517" }
 		}
 		
@@ -1510,12 +1471,8 @@
 	}
 	s:STATE_BEKES = {
 		create_state = {
-			country = c:BSG
-			owned_provinces = { "x5161A0" "xAF5C60" "xEAAEFA" }
-		}
-		create_state = {
-			country = c:TRS
-			owned_provinces = { "xEAAEFA" "x9021A0" "x134D95" "x5D1E04" }
+			country = c:HUN
+			owned_provinces = { "xEAAEFA" "x9021A0" "x134D95" "x5D1E04" "x5161A0" "xAF5C60" "xEAAEFA" }
 		}
 		
 		add_homeland = cu:hungarian
@@ -1523,7 +1480,7 @@
 	}
 	s:STATE_SOUTHERN_TRANSYLVANIA = {
 		create_state = {
-			country = c:TRS
+			country = c:HUN
 			owned_provinces = { "x90E5C8" "xD0E021" "x10E29E" "x306060" "x457B5F" "x51E0A0" "x7686F7" "xC17759" "xD061A0" }
 		}
 		
@@ -1532,7 +1489,7 @@
 	}
 	s:STATE_NORTHERN_TRANSYLVANIA = {
 		create_state = {
-			country = c:TRS
+			country = c:HUN
 			owned_provinces = { "x3161A0" "x4884E0" "x6E6896" "x73F00B" "x896455" "x897F3D" "xA08763" "xA77BCB" "xAF609F" "xB06161" "xC63C51" "xD0E0A0" }
 		}
 		
@@ -1544,12 +1501,7 @@
 	s:STATE_WALLACHIA = {
 		create_state = {
 			country = c:WAL
-			owned_provinces = { "x016C07" "x019D5F" "x2613E8"  "x51E021" "x582A74" "x743F1C" "x9E90C5" "xAB774D" "xD28965" "xE02121" "xE0A321" "xECC1DC" "xEF53AF" "xF6E6E3" "xF76B20" }
-		}
-
-		create_state = {
-			country = c:NOG
-			owned_provinces = { "xF9AA0F" "x690E91" "x31E021" "x020F11" "x2164E0" "x81C7F3" "xD11E19" "xB0E020" "xC6AC43" }
+			owned_provinces = { "x016C07" "x019D5F" "x2613E8"  "x51E021" "x582A74" "x743F1C" "x9E90C5" "xAB774D" "xD28965" "xE02121" "xE0A321" "xECC1DC" "xEF53AF" "xF6E6E3" "xF76B20" "xF9AA0F" "x690E91" "x31E021" "x020F11" "x2164E0" "x81C7F3" "xD11E19" "xB0E020" "xC6AC43"}
 		}
 		
 		add_homeland = cu:romanian
@@ -1559,23 +1511,15 @@
 	s:STATE_MOLDAVIA = {
 		create_state = { 
 			country = c:MOL
-			owned_provinces = { "x00A7F4" "x067DF0" "x0D8A56" "x30E0A0"  "x3CE97E" "x556DE7" "x80D8F3" "x946A66" "xB0A0E0" "xEF2060" "xFF2F40"  }
-		}
-		create_state = {
-			country = c:NOG
-			owned_provinces = { "x734EFF" "xF40045" "x0983EE" }
+			owned_provinces = { "x00A7F4" "x067DF0" "x0D8A56" "x30E0A0"  "x3CE97E" "x556DE7" "x80D8F3" "x946A66" "xB0A0E0" "xEF2060" "xFF2F40" "x734EFF" "xF40045" "x0983EE" }
 		}
 		
 		add_homeland = cu:romanian
 	}
 	s:STATE_BESSARABIA = {
 		create_state = {
-			country = c:NOG
-			owned_provinces = { "x1E1DEF" "x23621B"  "x5F2259" "x6BF7B8" "x712161" "x8955DF" "x8ACA9B" "xB0E0A0" "xFC9EFE" "xFDE796" }
-		}
-		create_state = {
 			country = c:MOL
-			owned_provinces = { "x622837" "xE7274A" "x53D7E0" }
+			owned_provinces = { "x622837" "xE7274A" "x53D7E0" "x1E1DEF" "x23621B"  "x5F2259" "x6BF7B8" "x712161" "x8955DF" "x8ACA9B" "xB0E0A0" "xFC9EFE" "xFDE796" }
 		}
 		
 		add_homeland = cu:romanian
@@ -1748,7 +1692,7 @@
 			owned_provinces = { "x3374D9" "x1A9007" "xF5419E" "x2198C8" "xF57AA5" "x69B611" "xA79E4A" "x20C1C2" "x47C81B" "x4EB8EA" "x4CD7AF" "x40DFDF" "xC0E0E0" }
 		}
 		create_state = {
-			country = c:VOR
+			country = c:MSO
 			owned_provinces = { "x030048" "x05E237" "x0CA133" "x172A98" "x1A7021" "x1C692E" "x21A0A0" "x331CB3" "x45FA32" "x4A6AE0" "x4C0018" "x607311" "x6161A0" "x669560" "x6A8F2C" "x6BEE31" "x738BEC" "x743EA5" "x828B91" "x8BEB3F" "x91942B" "x9E14B9" "x9E5DCB" "xA0A0A0" "xA6F3BC" "xA87FC3" "xAD54E9" "xBA2909" "xBEE23A" "xC761A3" "xCE6B77" "xCF35AA" "xE458EF" "xEABB0F" "xF50161" "xF553F9" "xFE56AF" }
 		}
 
@@ -1771,7 +1715,7 @@
 			owned_provinces = { "x13997A" "x29EE58" "x3DA304" "x5BE6ED" "x652CE8" "x71E061" "x73216A" "x924D7E" "xB285AE" "xE315A3" "xF0E0A0" "xF60A93" "xFD6659" }
 		}
 		create_state = {
-			country = c:NOG
+			country = c:CRI
 			owned_provinces = { "xCC0D93" "x0E1864" "x305004" "x3E5AF0" "x3E66A1" "x421B54" "x716121" "x71E021" "x89CE7C" "xA669E7" "xA81C77" "xB02161" "xB5123B" "xD7E3C1" "xE4AA78" "xF9066A" "xFDD2CF" }
 		}	
 
@@ -1802,14 +1746,10 @@
 	#Pskov
 	s:STATE_DVG_INGRIA = {
 		create_state = {
-			country = c:PSK
-			owned_provinces = { "x0020E0" "x01A0E0" "x042A4F" "x0FEA4B" "x1AE461" "x246095" "x3266DE" "x57DF51" "x6F9858" "x80A0E0" "x86F5A3" "x87C547" "x89D566" "x8F79E9" "x93FBC9" "x9A8A71" "xA577B1" "xA981B3" "xAEBDCB" "xB6C9C3" "xBB73A3" "xCD164E" "xD0DA34" "xD14E99" "xD1CBDD" "xD7689F" "xDED975" "xDF3F5C" "xE7438E" "xE97616" "xF06F29" }
+			country = c:NOV
+			owned_provinces = { "x0020E0" "x01A0E0" "x042A4F" "x0FEA4B" "x1AE461" "x246095" "x3266DE" "x57DF51" "x6F9858" "x80A0E0" "x86F5A3" "x87C547" "x89D566" "x8F79E9" "x93FBC9" "x9A8A71" "xA577B1" "xA981B3" "xAEBDCB" "xB6C9C3" "xBB73A3" "xCD164E" "xD0DA34" "xD14E99" "xD1CBDD" "xD7689F" "xDED975" "xDF3F5C" "xE7438E" "xE97616" "xF06F29" "x607A9E" "xB64167"}
 		}
-		create_state = {
-			country = c:SCA
-			owned_provinces = { "x607A9E" "xB64167" }
-		}
-
+		
 		add_homeland = cu:north_russian
 	}
 	
@@ -1842,12 +1782,8 @@
 	}
 	s:STATE_DVG_GALICH = { #Povolzhye in-game
         create_state = {
-            country = c:BLO
-            owned_provinces = { "xB69A40" "xF42F56" "x04598A" "x4394A5" "x7EFD2D" "xE2021A" x20B928 x68E99E x5357F0 xAE2050 x89E2E6 x16B74D xBF07AC x2FA786 x4706A4 x42C9C5 x05F14E x4BA77A xE35415 xF2F837 xC7ABED x7B7621 xC1B0C9 xD34803 xC617F1 x6C6E7A x57940A xE7DAD6 x3CBDA1 x4020DF x3988B7 }
-        }
-        create_state = {
-            country = c:UGG
-            owned_provinces = { xD0936B x25E8A6 x6ED279 xE0C080 xCD5677 xCF3ACB x604180 x0D15CC xF42CBB x64C8B4 xF28110 x03F85A xC4D5AC xAB60B3 x868EF5 x69648C x309392 xFA767B x6221DB x826AF1 xA3D7FA xF155D1 x3CFD3C xBC7BF9 x13128B x6579D2 x1B14F9 "x000181" "x560151" "x221D59" "x4D1D44" "xEE2E88" "x028EC5" "x726FCF" "x8D7901" "xCC8451" "x64B6B7" "x60C080" "xF39D33" "xC0C040" "x23F3C4" "xCADAA7" "x920EE6" "x6E239F" "xEA0D0B" "x2A61E0" "x975454" "xF04BD2" "xA080A0" "x3F9FBA" "x02BE2C" "x40B6D6" "x05F5DA" "xADD34A" "xFEF0CB" "xD9ACBE" "x823348" "x298ED1" "xA99531" "x7DA8A0" "x5D97AC" "x635E09" x7C85D2 xE1A4D3 x221C4C }
+            country = c:NOV
+            owned_provinces = { "xB69A40" "xF42F56" "x04598A" "x4394A5" "x7EFD2D" "xE2021A" x20B928 x68E99E x5357F0 xAE2050 x89E2E6 x16B74D xBF07AC x2FA786 x4706A4 x42C9C5 x05F14E x4BA77A xE35415 xF2F837 xC7ABED x7B7621 xC1B0C9 xD34803 xC617F1 x6C6E7A x57940A xE7DAD6 x3CBDA1 x4020DF x3988B7 xD0936B x25E8A6 x6ED279 xE0C080 xCD5677 xCF3ACB x604180 x0D15CC xF42CBB x64C8B4 xF28110 x03F85A xC4D5AC xAB60B3 x868EF5 x69648C x309392 xFA767B x6221DB x826AF1 xA3D7FA xF155D1 x3CFD3C xBC7BF9 x13128B x6579D2 x1B14F9 "x000181" "x560151" "x221D59" "x4D1D44" "xEE2E88" "x028EC5" "x726FCF" "x8D7901" "xCC8451" "x64B6B7" "x60C080" "xF39D33" "xC0C040" "x23F3C4" "xCADAA7" "x920EE6" "x6E239F" "xEA0D0B" "x2A61E0" "x975454" "xF04BD2" "xA080A0" "x3F9FBA" "x02BE2C" "x40B6D6" "x05F5DA" "xADD34A" "xFEF0CB" "xD9ACBE" "x823348" "x298ED1" "xA99531" "x7DA8A0" "x5D97AC" "x635E09" x7C85D2 xE1A4D3 x221C4C}
         }
 
 		add_homeland = cu:north_russian
@@ -1870,11 +1806,7 @@
 	s:STATE_DVG_PERM = {
 		create_state = {
 			country = c:NOV
-			owned_provinces = { "x02E29B" "x0B6ACE" "x0DA3D2" "x0E298C" "x0E4CF4" "x10A63E" "x142D30" "x14F3BE" "x174C41" "x187498" "x18DCB2" "x1C0487" "x1EE258" "x1F4BCA" "x1F52FF" "x1FF9D6" "x2011E6" "x220EEC" "x23C05A" "x23C551" "x24FF58" "x25A538" "x26655D" "x285C9C" "x2C862B" "x30A266" "x3126AE" "x32BF4F" "x36909F" "x3AFDA2" "x3F1955" "x42BDA1" "x42E39F" "x45F663" "x47EF65" "x484022" "x494FA9" "x4C706B" "x5B9F7D" "x5C62C9" "x5EE2D0" "x607492" "x62891E" "x641F7E" "x645039" "x668C3E" "x6AC96D" "x6D0027" "x70CD14" "x754209" "x76163E" "x767714" "x77E69D" "x77EAD9" "x7BAA6C" "x7BB468" "x7DC634" "x7EBF8B" "x7F09CE" "x8321FB" "x84D03C" "x867A31" "x8803EC" "x8B3F77" "x8CBFA4" "x8E236E" "x8F3172" "x94ABD3" "x98BB20" "x996E51" "x9B186A" "x9E18CC" "x9F906D" "xA4A9DF" "xA6C752" "xA72B2D" "xA84E61" "xAEDDCA" "xB4143D" "xBA90EF" "xBC57C3" "xBCB931" "xBD0CFC" "xC34006" "xC51FD3" "xC885A4" "xCE4010" "xCE6448" "xCF44D5" "xD1A0DF" "xD1FF20" "xD3852F" "xDC5A1F" "xDC812E" "xDD6EE6" "xDDC1A4" "xDFC070" "xE0D0F0" "xE3FDAE" "xE6DBB0" "xEA30EA" "xED80DE" "xF5FD47" "xF96FC5" "xFF20F2" "xFF7CF8" }
-		}
-		create_state = {
-			country = c:PRM
-			owned_provinces = { "x014042" "x031756" "x081DE7" "x094CC5" "x0A0D9C" "x0DA6DB" "x0DC008" "x1389A5" "x146D55" "x149A38" "x1503E7" "x15D25C" "x19DA88" "x206020" "x2070D2" "x26FB73" "x27D9A3" "x2BA46E" "x2C8976" "x3094DC" "x3217FC" "x32C845" "x39A857" "x3A921A" "x3D9F1E" "x3E6E33" "x41B5D5" "x4624B5" "x46DC5A" "x472E11" "x494BAD" "x494CD7" "x4E936E" "x4FC198" "x501FAB" "x5106B9" "x56C499" "x5A83AD" "x5E5BAD" "x624DC2" "x626750" "x65EE9B" "x679157" "x6BC20A" "x6F37B1" "x75D7E5" "x75E539" "x76E214" "x7738DD" "x77CB43" "x78C443" "x7C3CC4" "x7D601C" "x7F8CDA" "x7FCAB3" "x88305D" "x8D1320" "x929A7E" "x974F8C" "x9BA9EF" "x9D18DE" "xA08040" "xA11DD7" "xA3F309" "xA49D63" "xA5F8BE" "xA9655B" "xABE7CB" "xB530B9" "xB56FB9" "xB66D1D" "xBB4EAE" "xBE68A3" "xC249F9" "xC36A65" "xC3CE60" "xC4199A" "xC44B2B" "xC7D292" "xC92EEE" "xCA4466" "xCC45E3" "xCD1012" "xCEF2EA" "xD00DDF" "xD23AE0" "xD29308" "xD30253" "xDB9616" "xDE4A09" "xDFFE19" "xE0557D" "xE0632D" "xE0812B" "xE365BE" "xE53D48" "xEB5380" "xF1472B" "xF8422A" "xFB3B8C" "xFBBA97" "xFF1174" "x1DFAE3" }
+			owned_provinces = { "x02E29B" "x0B6ACE" "x0DA3D2" "x0E298C" "x0E4CF4" "x10A63E" "x142D30" "x14F3BE" "x174C41" "x187498" "x18DCB2" "x1C0487" "x1EE258" "x1F4BCA" "x1F52FF" "x1FF9D6" "x2011E6" "x220EEC" "x23C05A" "x23C551" "x24FF58" "x25A538" "x26655D" "x285C9C" "x2C862B" "x30A266" "x3126AE" "x32BF4F" "x36909F" "x3AFDA2" "x3F1955" "x42BDA1" "x42E39F" "x45F663" "x47EF65" "x484022" "x494FA9" "x4C706B" "x5B9F7D" "x5C62C9" "x5EE2D0" "x607492" "x62891E" "x641F7E" "x645039" "x668C3E" "x6AC96D" "x6D0027" "x70CD14" "x754209" "x76163E" "x767714" "x77E69D" "x77EAD9" "x7BAA6C" "x7BB468" "x7DC634" "x7EBF8B" "x7F09CE" "x8321FB" "x84D03C" "x867A31" "x8803EC" "x8B3F77" "x8CBFA4" "x8E236E" "x8F3172" "x94ABD3" "x98BB20" "x996E51" "x9B186A" "x9E18CC" "x9F906D" "xA4A9DF" "xA6C752" "xA72B2D" "xA84E61" "xAEDDCA" "xB4143D" "xBA90EF" "xBC57C3" "xBCB931" "xBD0CFC" "xC34006" "xC51FD3" "xC885A4" "xCE4010" "xCE6448" "xCF44D5" "xD1A0DF" "xD1FF20" "xD3852F" "xDC5A1F" "xDC812E" "xDD6EE6" "xDDC1A4" "xDFC070" "xE0D0F0" "xE3FDAE" "xE6DBB0" "xEA30EA" "xED80DE" "xF5FD47" "xF96FC5" "xFF20F2" "xFF7CF8" "x014042" "x031756" "x081DE7" "x094CC5" "x0A0D9C" "x0DA6DB" "x0DC008" "x1389A5" "x146D55" "x149A38" "x1503E7" "x15D25C" "x19DA88" "x206020" "x2070D2" "x26FB73" "x27D9A3" "x2BA46E" "x2C8976" "x3094DC" "x3217FC" "x32C845" "x39A857" "x3A921A" "x3D9F1E" "x3E6E33" "x41B5D5" "x4624B5" "x46DC5A" "x472E11" "x494BAD" "x494CD7" "x4E936E" "x4FC198" "x501FAB" "x5106B9" "x56C499" "x5A83AD" "x5E5BAD" "x624DC2" "x626750" "x65EE9B" "x679157" "x6BC20A" "x6F37B1" "x75D7E5" "x75E539" "x76E214" "x7738DD" "x77CB43" "x78C443" "x7C3CC4" "x7D601C" "x7F8CDA" "x7FCAB3" "x88305D" "x8D1320" "x929A7E" "x974F8C" "x9BA9EF" "x9D18DE" "xA08040" "xA11DD7" "xA3F309" "xA49D63" "xA5F8BE" "xA9655B" "xABE7CB" "xB530B9" "xB56FB9" "xB66D1D" "xBB4EAE" "xBE68A3" "xC249F9" "xC36A65" "xC3CE60" "xC4199A" "xC44B2B" "xC7D292" "xC92EEE" "xCA4466" "xCC45E3" "xCD1012" "xCEF2EA" "xD00DDF" "xD23AE0" "xD29308" "xD30253" "xDB9616" "xDE4A09" "xDFFE19" "xE0557D" "xE0632D" "xE0812B" "xE365BE" "xE53D48" "xEB5380" "xF1472B" "xF8422A" "xFB3B8C" "xFBBA97" "xFF1174" "x1DFAE3"}
 		}
 		
 		add_homeland = cu:north_russian
@@ -1883,7 +1815,7 @@
 	}
 	s:STATE_DVG_VYATKA = {
 		create_state = {
-			country = c:VYA
+			country = c:NOV
 			owned_provinces = { x6C039E x61562C xD53291 x5E8636 x80F7CE x0D7D00 x67980D xA000C0 x2101B3 x643CDB xCE626F xF62997 xE82CFC xAF5831 x6C1B87 x67657B x9E8C5F x132F3A x062B1B x1910A8 xCB3697 x948973 x0E6979 x199917 x8BAC4A x336835 xD754F9 x7CFCC5 x568002 x5D5433 x1C24B7 x3BB87B x4401F4 xFD9F1D xC29095 xAB7912 x003051 x34999F x40D3F3 x41DF7D x2D9E21 "x0A78C3" "x31E881" "x342573" "x454C45" "x4CB925" "x78F48B" "xB5DD9A" "xB6C701" "xB7D465" "xB9522D" "xDCF9AE" "xEFA1B1" xA7F595 x730769 xC410CF x8C2EE8 x7D0DB0 x49C31C xDBB080 xF4A935 x4344A1 xD80177 x29245A x6578DF xEF2B33 x5B57D5 "x2080C0" "x1FD22C" "x4E1217" "xADCD83" }
 		}
 		
@@ -1893,11 +1825,7 @@
 	s:STATE_DVG_MOSCOW = {
 		create_state = {
 			country = c:MSO
-			owned_provinces = { "x089C80" "x0D1821" "x0F54C0" "x9DFD09" "x13D91C" "x2FC308" "x400383" "x43F336" "x4DBAEC" "x54C962" "x6121A0" "x617404" "x632D29" "x729CED" "x756F52" "x77D1E9" "x8B324E" "x912892" "x9767C3" "xA36510" "xABAE9B" "xC05614" "xC20515" "xC6A70B" "xE03FE3" "xE0A021" "xE19E7E" "xE32FD0" "xF4F224" "xFFEC80" }
-		}
-		create_state = {
-			country = c:RYA
-			owned_provinces = { xD7163E xC492A0 xE0FF4A x8BC0CA x301EC1 x8FB5BF x089C80 xF4F224 xB0B91E xA020A0 xC7194D }
+			owned_provinces = { "x089C80" "x0D1821" "x0F54C0" "x9DFD09" "x13D91C" "x2FC308" "x400383" "x43F336" "x4DBAEC" "x54C962" "x6121A0" "x617404" "x632D29" "x729CED" "x756F52" "x77D1E9" "x8B324E" "x912892" "x9767C3" "xA36510" "xABAE9B" "xC05614" "xC20515" "xC6A70B" "xE03FE3" "xE0A021" "xE19E7E" "xE32FD0" "xF4F224" "xFFEC80" xD7163E xC492A0 xE0FF4A x8BC0CA x301EC1 x8FB5BF x089C80 xF4F224 xB0B91E xA020A0 xC7194D}
 		}
 		
 		add_homeland = cu:russian
@@ -1905,11 +1833,7 @@
 	s:STATE_BRYANSK = {
 		create_state = {
 			country = c:MSO
-			owned_provinces = { "x1D9534" "x1E5225" "x20A020" "x2EB40F" "x36FFFE" "x5699C6" "x6BE684" "x71473A" "x752A3E" "x87264D" "x8D6462" "x95A3EA" "x9692BD" "x96E229" "x9D8B55" "xA02120" "xB56E0D" "xB98492" "xBCF6EB" "xC020E0" "xC7D77B" "xD04FB9" "xD3CC3C" "xEC68C6" "xF75BCA" "xFCDD8C" }
-		}
-		create_state = {
-			country = c:SMO
-			owned_provinces = { "x032751" "x925213" "xBC0441" "x44E2F9" "xB020C6" "x12AB15" "xFEFF16" "x93157C" "x244D15" "x92C7C8" "x0B9BAA" }
+			owned_provinces = { "x1D9534" "x1E5225" "x20A020" "x2EB40F" "x36FFFE" "x5699C6" "x6BE684" "x71473A" "x752A3E" "x87264D" "x8D6462" "x95A3EA" "x9692BD" "x96E229" "x9D8B55" "xA02120" "xB56E0D" "xB98492" "xBCF6EB" "xC020E0" "xC7D77B" "xD04FB9" "xD3CC3C" "xEC68C6" "xF75BCA" "xFCDD8C" "x032751" "x925213" "xBC0441" "x44E2F9" "xB020C6" "x12AB15" "xFEFF16" "x93157C" "x244D15" "x92C7C8" "x0B9BAA"}
 		}
 		
 		add_claim = c:SMO
@@ -1925,7 +1849,7 @@
 	}
 	s:STATE_DVG_TVER = { #Yaroslavl
 		create_state = {
-			country = c:TVE
+			country = c:MSO
 			owned_provinces = { "x1053DD" "x118DB1" "x130A3E" "x1A0823" "x2FB453" "x30386A" "x40FEDE" "x41FF83"  "x513224" "x5289B3" "x53C6EC" "x53CD52" "x5C950C"   "x6D9FEE" "x6DD07A" "x704EB0" "x74EDD1" "x80AA34" "x824587" "x89264F" "x8F478B" "x93BCE7" "x99879C" "x9A12DD" "x9AA8A6" "x9B8556" "xA7B6EF" "xB0A39B" "xB1EE74" "xB24923" "xB9892E" "xBDF81C" "xC37BBA" "xCC840C" "xCD34E8" "xD17876" "xD19951" "xDA1620" "xDF20A0" "xE02020" "xE33B67" "xE78F94" "xF7AA04" "xFA15E7" "xFB5C50" "x04FF4D" "x1CD991" "x4786C3" "x50AF51" "x6B02CC" "x712640" "x74E5E0" "xDFBF60" }
 		}
 		

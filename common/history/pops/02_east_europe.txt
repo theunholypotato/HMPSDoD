@@ -107,8 +107,6 @@
 				culture = slovak
 				size = 32203
 			}
-		}
-		region_state:BSG = {
 			create_pop = {
 				culture = hungarian
 				size = 342339
@@ -135,8 +133,6 @@
 				culture = bosniak
 				size = 29903
 			}
-		}
-		region_state:TRS = {
 			create_pop = {
 				culture = hungarian
 				size = 342339
@@ -234,8 +230,6 @@
 				culture = ruthenian
 				size = 53315
 			}
-		}
-		region_state:TRS = {
 			create_pop = {
 				culture = hungarian
 				size = 42914
@@ -264,7 +258,7 @@
 		}
 	}
 	s:STATE_EAST_SLOVAKIA = {
-		region_state:TRS = {
+		region_state:HUN = {
 			create_pop = {
 				culture = hungarian
 				size = 13752
@@ -347,7 +341,7 @@
 		}
 	}
 	s:STATE_VOJVODINA = {
-		region_state:BSG = {
+		region_state:HUN = {
 			create_pop = {
 				culture = hungarian
 				size = 171816
@@ -389,7 +383,7 @@
 		}
 	}
 	s:STATE_BANAT = {
-		region_state:BSG = {
+		region_state:HUN = {
 			create_pop = {
 				culture = hungarian
 				size = 57211
@@ -427,7 +421,7 @@
 		}
 	}
 	s:STATE_BEKES = {
-		region_state:BSG = {
+		region_state:HUN = {
 			create_pop = {
 				culture = hungarian
 				size = 95993
@@ -453,8 +447,6 @@
 				culture = bosniak
 				size = 1297
 			}
-		}
-		region_state:TRS = {
 			create_pop = {
 				culture = hungarian
 				size = 95993
@@ -479,7 +471,7 @@
 		}
 	}
 	s:STATE_SOUTHERN_TRANSYLVANIA = {
-		region_state:TRS = {
+		region_state:HUN = {
 			create_pop = {
 				culture = hungarian
 				size = 48691
@@ -509,7 +501,7 @@
 		}
 	}
 	s:STATE_NORTHERN_TRANSYLVANIA = {
-		region_state:TRS = {
+		region_state:HUN = {
 			create_pop = {
 				culture = hungarian
 				size = 165886
@@ -546,8 +538,6 @@
 				culture = romanian
 				size = 1000000
 			}
-		}
-		region_state:NOG = {
 			create_pop = {
 				culture = romanian
 				size = 229200
@@ -582,8 +572,6 @@
 				culture = ashkenazi
 				size = 22064
 			}
-		}
-		region_state:NOG = {
 			create_pop = {
 				culture = romanian
 				size = 25000
@@ -591,7 +579,7 @@
 		}
 	}
 	s:STATE_BESSARABIA = {
-		region_state:NOG = {
+		region_state:MOL = {
 			create_pop = {
 				culture = romanian
 				size = 633545
@@ -613,8 +601,6 @@
 				culture = ashkenazi
 				size = 95436
 			}
-		}
-		region_state:MOL = {
 			create_pop = {
 				culture = romanian
 				size = 200000
@@ -678,7 +664,7 @@
 				size = 24334
 			}
 		}
-		region_state:NOG = {
+		region_state:CRI = {
 			create_pop = {
 				culture = kirim
 				size = 388545
@@ -1113,7 +1099,7 @@
 				size = 12521
 			}
 		}
-		region_state:VOR = {
+		region_state:MSO = {
 			create_pop = {
 				culture = cossack
 				size = 817980

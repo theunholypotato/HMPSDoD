@@ -413,7 +413,7 @@
 		}
 	}
 	s:STATE_MASGIRLAND = {
-		region_state:MSG = {
+		region_state:VIN = {
 			create_pop = {
 				culture = vinlander
 				size = 378600
@@ -425,7 +425,7 @@
 		}
 	}
 	s:STATE_NUREMBORG = {
-		region_state:MSG = {
+		region_state:VIN = {
 			create_pop = {
 				culture = vinlander
 				size = 178600
@@ -496,7 +496,7 @@
 	#Skraelingland
 	
 	s:STATE_SKRAELINGMARK = {
-		region_state:SKR = {
+		region_state:VIN = {
 			create_pop = {
 				culture = vinlander
 				size = 5459
@@ -516,7 +516,7 @@
 		}
 	}
 	s:STATE_POTOMIMARK = {
-		region_state:SKR = {	
+		region_state:VIN = {	
 			create_pop = {
 				culture = iroquoian
 				size = 54031
@@ -532,7 +532,7 @@
 		}
 	}
 	s:STATE_ERIESLAND = {
-		region_state:SKR = {
+		region_state:VIN = {
 			create_pop = {
 				culture = iroquoian
 				size = 30239
@@ -544,13 +544,11 @@
 	}
 	}
 	s:STATE_ODAWAMARK = {
-		region_state:SKR = {
+		region_state:VIN = {
 			create_pop = {
 				culture = algonquian
 				size = 30282
 			}	
-		}
-		region_state:VIN = {
 			create_pop = {
 				culture = vinlander
 				size = 12209
@@ -574,7 +572,7 @@
 		}
 	}
 	s:STATE_GANIGIALAND = {
-		region_state:SKR = {
+		region_state:VIN = {
 			create_pop = {
 				culture = iroquoian
 				size = 104312
@@ -582,7 +580,7 @@
 		}
 	}
 	s:STATE_WINEPI = {
-		region_state:SKR = {
+		region_state:VIN = {
 			create_pop = {
 				culture = cree
 				size = 1920
@@ -608,7 +606,7 @@
 		}
 	}
 	s:STATE_MENEMENE = {
-		region_state:SKR = {
+		region_state:VIN = {
 			create_pop = {
 				culture = dakota
 				size = 22183
@@ -620,7 +618,7 @@
 		}
 	}
 	s:STATE_ILLNIMARK = {
-		region_state:SKR = {
+		region_state:VIN = {
 			create_pop = {
 				culture = algonquian
 				size = 101239
@@ -628,7 +626,7 @@
 		}
 	}
 	s:STATE_COSKAQUIAS = {
-		region_state:SKR = {
+		region_state:VIN = {
 			create_pop = {
 				culture = algonquian
 				size = 53103

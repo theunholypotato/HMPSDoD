@@ -215,7 +215,7 @@ ARC = { #Arcadia
 
 	tier = empire
 	
-	cultures = { septiman cadien }
+	cultures = { septiman cadien vinlander }
 	capital = STATE_NOUVELLE_FLANDRE
 }
 

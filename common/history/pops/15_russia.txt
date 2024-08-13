@@ -28,7 +28,7 @@
 		}
 	}
 	s:STATE_DVG_INGRIA = {
-		region_state:PSK = {
+		region_state:NOV  = {
 			create_pop = {
 				culture = north_russian
 				size = 457000
@@ -68,8 +68,6 @@
 				size = 28100
 				religion = protestant
 			}
-		}
-		region_state:SCA = {
 			create_pop = {
 				culture = north_russian
 				size = 31824
@@ -152,7 +150,7 @@
 		}
 	}
 	s:STATE_DVG_GALICH = {
-		region_state:BLO = {
+		region_state:NOV = {
 			create_pop = {
 				culture = north_russian
 				size = 964668
@@ -165,8 +163,6 @@
 				culture = ashkenazi
 				size = 16000
 			}
-		}
-		region_state:UGG = {
 			create_pop = {
 				culture = north_russian
 				size = 683800
@@ -227,8 +223,6 @@
 				size = 56140
 				religion = orthodox
 			}
-		}
-		region_state:PRM = {
 			create_pop = {
 				culture = north_russian
 				size = 243078
@@ -250,7 +244,7 @@
 		}
 	}
 	s:STATE_DVG_VYATKA = {
-		region_state:VYA = {
+		region_state:NOV = {
 			create_pop = {
 				culture = north_russian
 				size = 971208
@@ -287,7 +281,6 @@
 				size = 2168
 			}
 		}
-		region_state:RYA = {
 			create_pop = {
 				culture = russian
 				size = 806483
@@ -297,15 +290,12 @@
 				size = 42898
 			}
 		}
-	}
 	s:STATE_BRYANSK = {
 		region_state:MSO = {
 			create_pop = {
 				culture = russian
 				size = 400000
 			}
-		}
-		region_state:SMO = {
 			create_pop = {
 				culture = russian
 				size = 1038531
@@ -338,7 +328,7 @@
 		}
 	}
 	s:STATE_DVG_TVER = {
-		region_state:TVE = {
+		region_state:MSO = {
 			create_pop = {
 				culture = russian
 				size = 2879915
