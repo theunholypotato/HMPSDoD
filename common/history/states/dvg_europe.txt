@@ -1725,7 +1725,7 @@
 			owned_provinces = { "x3374D9" "x1A9007" "xF5419E" "x2198C8" "xF57AA5" "x69B611" "xA79E4A" "x20C1C2" "x47C81B" "x4EB8EA" "x4CD7AF" "x40DFDF" "xC0E0E0" }
 		}
 		create_state = {
-			country = c:VOR
+			country = c:MSO
 			owned_provinces = { "x030048" "x05E237" "x0CA133" "x172A98" "x1A7021" "x1C692E" "x21A0A0" "x331CB3" "x45FA32" "x4A6AE0" "x4C0018" "x607311" "x6161A0" "x669560" "x6A8F2C" "x6BEE31" "x738BEC" "x743EA5" "x828B91" "x8BEB3F" "x91942B" "x9E14B9" "x9E5DCB" "xA0A0A0" "xA6F3BC" "xA87FC3" "xAD54E9" "xBA2909" "xBEE23A" "xC761A3" "xCE6B77" "xCF35AA" "xE458EF" "xEABB0F" "xF50161" "xF553F9" "xFE56AF" }
 		}
 

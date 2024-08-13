@@ -2827,13 +2827,13 @@
 				activate_production_methods={ "pm_no_organization" } 
 			}
 		}
-		region_state:VOR={
+		region_state:MSO={
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:VOR"
+						country="c:MSO"
 						levels=13
 						region="STATE_SLOBOZ"
 					}
@@ -2846,7 +2846,7 @@
 				add_ownership={
 					building={
 						type="building_food_industry"
-						country="c:VOR"
+						country="c:MSO"
 						levels=1
 						region="STATE_SLOBOZ"
 					}
@@ -2859,7 +2859,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:VOR"
+						country="c:MSO"
 						levels=2
 						region="STATE_SLOBOZ"
 					}
@@ -2872,7 +2872,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:VOR"
+						country="c:MSO"
 						levels=3
 						region="STATE_SLOBOZ"
 					}
@@ -2885,7 +2885,7 @@
 				add_ownership={
 					building={
 						type="building_textile_mills"
-						country="c:VOR"
+						country="c:MSO"
 						levels=1
 						region="STATE_SLOBOZ"
 					}
@@ -2898,7 +2898,7 @@
 				add_ownership={
 					building={
 						type="building_arms_industry"
-						country="c:VOR"
+						country="c:MSO"
 						levels=1
 						region="STATE_SLOBOZ"
 					}
@@ -2910,7 +2910,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:VOR"
+						country="c:MSO"
 						levels=5
 					}
 				}
