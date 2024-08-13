@@ -150,7 +150,7 @@
 		}
 	}
 	s:STATE_DVG_GALICH = {
-		region_state:BLO = {
+		region_state:NOV = {
 			create_pop = {
 				culture = north_russian
 				size = 964668
@@ -163,8 +163,6 @@
 				culture = ashkenazi
 				size = 16000
 			}
-		}
-		region_state:UGG = {
 			create_pop = {
 				culture = north_russian
 				size = 683800
@@ -225,8 +223,6 @@
 				size = 56140
 				religion = orthodox
 			}
-		}
-		region_state:PRM = {
 			create_pop = {
 				culture = north_russian
 				size = 243078
@@ -248,7 +244,7 @@
 		}
 	}
 	s:STATE_DVG_VYATKA = {
-		region_state:VYA = {
+		region_state:NOV = {
 			create_pop = {
 				culture = north_russian
 				size = 971208
