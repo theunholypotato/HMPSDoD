@@ -1,12 +1,12 @@
 ﻿BUILDINGS={
 	s:STATE_DVG_INGRIA={
-		region_state:PSK={
+		region_state:NOV={
 			create_building={
 				building="building_glassworks"
 				add_ownership={
 					building={
 						type="building_glassworks"
-						country="c:PSK"
+						country="c:NOV"
 						levels=1
 						region="STATE_DVG_INGRIA"
 					}
@@ -19,8 +19,8 @@
 				add_ownership={
 					building={
 						type="building_textile_mills"
-						country="c:PSK"
-						levels=2
+						country="c:NOV"
+						levels=3
 						region="STATE_DVG_INGRIA"
 					}
 				}
@@ -32,8 +32,8 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:PSK"
-						levels=1
+						country="c:NOV"
+						levels=2
 						region="STATE_DVG_INGRIA"
 					}
 				}
@@ -45,8 +45,8 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:PSK"
-						levels=1
+						country="c:NOV"
+						levels=2
 						region="STATE_DVG_INGRIA"
 					}
 				}
@@ -57,7 +57,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:PSK"
+						country="c:NOV"
 						levels=1
 					}
 				}
@@ -68,62 +68,21 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:PSK"
+						country="c:NOV"
 						levels=10
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_no_organization" } 
 			}
-		}
-		region_state:SCA={
-			create_building={
-				building="building_rye_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:SCA"
-						levels=1
-						region="STATE_DVG_INGRIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_potatoes" }
-			}
-			create_building={
-				building="building_textile_mills"
-				add_ownership={
-					building={
-						type="building_textile_mills"
-						country="c:SCA"
-						levels=2
-						region="STATE_DVG_INGRIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms" }
-			}
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_logging_camp"
-						country="c:SCA"
-						levels=1
-						region="STATE_DVG_INGRIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
-			}
 			create_building={
 				building="building_shipyards"
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:SCA"
+						country="c:NOV"
 						levels=1
-						region="STATE_SVEALAND"
+						region="STATE_DVG_NOVGOROD"
 					}
 				}
 				reserves=1

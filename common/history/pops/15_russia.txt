@@ -28,7 +28,7 @@
 		}
 	}
 	s:STATE_DVG_INGRIA = {
-		region_state:PSK = {
+		region_state:NOV  = {
 			create_pop = {
 				culture = north_russian
 				size = 457000
@@ -68,8 +68,6 @@
 				size = 28100
 				religion = protestant
 			}
-		}
-		region_state:SCA = {
 			create_pop = {
 				culture = north_russian
 				size = 31824
