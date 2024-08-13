@@ -194,11 +194,7 @@
 	s:STATE_AQUITAINE = {
 		create_state = {
 			country = c:DUA
-			owned_provinces = { "x086618" "x3784B2" "x5F7F2D" "x606DEC" "x70A080" "x76BA85" "xA220D0" "xBBF036" "xCD8E77" "xF02080" "xF0A080" }
-		}
-		create_state = {
-			country = c:NAV
-			owned_provinces = { "x073FC4" "x6E16BB" }
+			owned_provinces = { "x086618" "x3784B2" "x5F7F2D" "x606DEC" "x70A080" "x76BA85" "xA220D0" "xBBF036" "xCD8E77" "xF02080" "xF0A080" "x073FC4" "x6E16BB" }
 		}
 		
 		add_homeland = cu:anglois
@@ -218,11 +214,7 @@
 	s:STATE_PROVENCE = {
 		create_state = {
 			country = c:PRO
-			owned_provinces = { "x1727F7" "x3040E0" "x31C0DF" "x6D5E3F" "xB040E0" "xB0C060" "xB8E48D" "xBBB6AD" "xC03918" "xCB9C34" }
-		}
-		create_state = {
-			country = c:AVN
-			owned_provinces = { "xB0C0E0" }
+			owned_provinces = { "x1727F7" "x3040E0" "x31C0DF" "x6D5E3F" "xB040E0" "xB0C060" "xB8E48D" "xBBB6AD" "xC03918" "xCB9C34" "xB0C0E0"}
 		}
 		
 		add_homeland = cu:occitan
