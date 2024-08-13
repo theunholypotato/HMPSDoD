@@ -5596,13 +5596,13 @@
 		}
 	}
 	s:STATE_NORTHERN_SERBIA={
-		region_state:TUR={
+		region_state:CRO={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:TUR"
+						country="c:CRO"
 						levels=4
 						region="STATE_NORTHERN_SERBIA"
 					}
@@ -5615,7 +5615,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:TUR"
+						country="c:CRO"
 						levels=3
 						region="STATE_NORTHERN_SERBIA"
 					}
@@ -5628,7 +5628,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:TUR"
+						country="c:CRO"
 						levels=1
 						region="STATE_NORTHERN_SERBIA"
 					}
@@ -5640,7 +5640,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:TUR"
+						country="c:CRO"
 						levels=20
 					}
 				}
@@ -5652,7 +5652,7 @@
 				add_ownership={
 					building={
 						type="building_tooling_workshops"
-						country="c:TUR"
+						country="c:CRO"
 						levels=2
 						region="STATE_NORTHERN_SERBIA"
 					}
@@ -5665,7 +5665,7 @@
 				add_ownership={
 					building={
 						type="building_tooling_workshops"
-						country="c:TUR"
+						country="c:CRO"
 						levels=1
 						region="STATE_NORTHERN_SERBIA"
 					}
@@ -5917,13 +5917,13 @@
 	
 	#Montenegro
 	s:STATE_MONTENEGRO={
-		region_state:SER={
+		region_state:CRO={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SER"
+						country="c:CRO"
 						levels=2
 						region="STATE_MONTENEGRO"
 					}
@@ -5935,7 +5935,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:AUS"
+						country="c:CRO"
 						levels=3
 					}
 				}

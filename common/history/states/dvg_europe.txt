@@ -1315,7 +1315,7 @@
 	#Montenegro
 	s:STATE_MONTENEGRO = {
 		create_state = {
-			country = c:SER
+			country = c:CRO
 			owned_provinces = { "x9DFFAF" "xB852BB" "x45E06A" "xA5D3A9" "xD02161" "x446E84" "x8C6292" "xA12F82" "xF5F6C2" }
 		}
 		create_state = {
@@ -1379,7 +1379,7 @@
 	}
 	s:STATE_NORTHERN_SERBIA = {
 		create_state = {
-			country = c:TUR
+			country = c:CRO
 			owned_provinces = { "xF9E78E" "x90A061" "x4773E6" "x4B1F45" "xEDBA20" "x10A060" "x4D115A" "x18B761" "x334B53" "x62A730"  "xAC083C" "xD021E0" "x3B6092" "x40AF95" "x74F1F4" "x9061A0" }
 		}
 		

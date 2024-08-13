@@ -1048,7 +1048,7 @@
 	
 	#Serbia
 	s:STATE_MONTENEGRO = {
-		region_state:SER = {
+		region_state:CRO = {
 			create_pop = {
 				culture = serb
 				size = 584229
@@ -1106,7 +1106,7 @@
 		}
 	}
 	s:STATE_NORTHERN_SERBIA = {
-		region_state:TUR = {
+		region_state:CRO = {
 			create_pop = {
 				culture = turkish
 				size = 25405 
