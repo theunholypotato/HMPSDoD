@@ -9,7 +9,7 @@
 			is_country_type = recognized
 			NOT = { has_law = law_type:law_autocracy }
 			NOT = { has_law = law_type:law_oligarchy }
-			NOT = { has_law = law_type:corporatism }
+			NOT = { has_law = law_type:corporateism }
 			has_technology_researched = mass_communication
 	}
 

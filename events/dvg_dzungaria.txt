@@ -692,6 +692,8 @@ dvg_dzungaria.3 = {  #Dzungar Holds on
 			add_claim = c:DZU
 		}
 		add_primary_culture = cu:kazak
+		add_primary_culture = cu:uighur
+		add_primary_culture = cu:uzbek
 		
 		
 		

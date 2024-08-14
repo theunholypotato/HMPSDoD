@@ -48,7 +48,7 @@
  
  dvg_dzungaria.3.t: "The Khanate stands tall!"
  dvg_dzungaria.3.d: "After the death of Galdan Kahn worries that the new heir would not control the empire have turned out to be mostly false. "
- dvg_dzungaria.3.f: "The enfranchisement of the peoples of the western steppe have shown that [ROOT.GetCountry.GetName]'s hopes of becoming a great empire have not faded away."
+ dvg_dzungaria.3.f: "The enfranchisement of the peoples of the steppe have shown that the [ROOT.GetCountry.GetName]'s hopes of becoming a great empire have not faded away."
  dvg_dzungaria.3.a: "Let us continue our push west!"
 
 
