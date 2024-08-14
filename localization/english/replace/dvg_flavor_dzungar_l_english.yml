@@ -40,9 +40,9 @@
  dvg_dzungaria.2.t: "The collapse of the Kahnate"
  dvg_dzungaria.2.d: "After the death of Galdan Kahn tension in the royal court has come to an boiling point."
  dvg_dzungaria.2.f: "The size of the Kahnate combined with the ambitions of his sons has seen the Empire already divided each army pledging an oath to a different son. The heir Tushiyetu has seized the crown lands of Dzungaria but he now must choose: will he try to stop his brothers’ ambition or will he completely let the Empire disrupt?"
- dvg_dzungaria.2.a: "[ROOT.GetCountry.GetName] Must Stay Together."
+ dvg_dzungaria.2.a: "[ROOT.GetCountry.GetName] must rise again as a new empire from the ashes!"
  dvg_dzungaria.2.b: "[ROOT.GetCountry.GetName] should only be ruled by people from [SCOPE.sCountry('scope_MGL').GetName]"
- dvg_dzungaria.2.c: "[SCOPE.sCountry('scope_UZB').GetName] shall rule its rightful steppes once more!"
+ dvg_dzungaria.2.c: "[SCOPE.sCountry('scope_UZB').GetName] for the Uzbeks!"
  dvg_dzungaria.2.ab: "[SCOPE.sCountry('scope_KAZ').GetName] can only be rule by Kazakhs!"
  dvg_dzungaria.2.ac: "[SCOPE.sCountry('scope_XIN').GetName] will finally achieve independence!"
  

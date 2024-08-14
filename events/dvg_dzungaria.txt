@@ -305,22 +305,7 @@ dvg_dzungaria.2 = { #Split Dzungaria up into warlord states
 				type = war_reparations
 				target_country = c:DZU
 			}
-		}
-		create_diplomatic_play = {
-		
-		
-			target_country = c:MGL
-			
-			war = yes
-			
-			type = dp_rebellion_annex
-			
-			add_war_goal = {
-				holder = c:MGL
-				type = annex_country
-				target_country = c:DZU
-			}
-		}			
+		}		
 	}
 		play_as = scope:scope_random_warlord_one
 	}
@@ -382,22 +367,7 @@ dvg_dzungaria.2 = { #Split Dzungaria up into warlord states
 				type = war_reparations
 				target_country = c:DZU
 			}
-		}
-		create_diplomatic_play = {
-			
-		
-			target_country = c:MGL
-			
-			war = yes
-			
-			type = dp_rebellion_annex
-			
-			add_war_goal = {
-				holder = c:MGL
-				type = annex_country
-				target_country = c:DZU
-			}
-		}			
+		}		
 	}
 		play_as = scope:scope_random_warlord_two
 	}
@@ -461,21 +431,6 @@ dvg_dzungaria.2 = { #Split Dzungaria up into warlord states
 				target_country = c:DZU
 			}
 		}
-		create_diplomatic_play = {
-			
-		
-			target_country = c:MGL
-			
-			war = yes
-			
-			type = dp_rebellion_annex
-			
-			add_war_goal = {
-				holder = c:MGL
-				type = annex_country
-				target_country = c:DZU
-			}
-		}			
 	}
 		play_as = scope:scope_random_warlord_three
 	}
@@ -484,6 +439,9 @@ dvg_dzungaria.2 = { #Split Dzungaria up into warlord states
 		name = dvg_dzungaria.2.a
 		default_option = yes
 		c:DZU = {
+			add_primary_culture = cu:uzbek
+			add_primary_culture = cu:uighur
+			add_primary_culture = cu:kazak
 		create_diplomatic_play = {
 			
 		
@@ -535,22 +493,7 @@ dvg_dzungaria.2 = { #Split Dzungaria up into warlord states
 				type = war_reparations
 				target_country = c:DZU
 			}
-		}
-		create_diplomatic_play = {
-			
-		
-			target_country = c:MGL
-			
-			war = no
-			
-			type = dp_rebellion_annex
-			
-			add_war_goal = {
-				holder = c:MGL
-				type = annex_country
-				target_country = c:DZU
-			}
-		}			
+		}	
 	 }
 	}
 	option = {
@@ -609,23 +552,7 @@ dvg_dzungaria.2 = { #Split Dzungaria up into warlord states
 				type = war_reparations
 				target_country = c:DZU
 			}
-		}
-		create_diplomatic_play = {
-			
-		
-			target_country = c:MGL
-			
-			war = no
-			
-			type = dp_rebellion_annex
-			
-			add_war_goal = {
-				holder = c:MGL
-				type = annex_country
-				target_country = c:DZU
-			}
-		}
-			
+		}	
 	}
 	play_as = c:XIN	
 	}
