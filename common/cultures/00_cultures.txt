@@ -7088,7 +7088,7 @@ uzbek={
 kazak={
 	color={ 83 102 46 }
 	religion = sunni
-	traits = { turkic kipchak central_asian_heritage }
+	traits = { kipchak central_asian_heritage }
 	male_common_first_names={
 		Ablai
 		Abu_al-Khayr

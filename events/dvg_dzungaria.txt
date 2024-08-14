@@ -23,26 +23,8 @@ dvg_dzungaria.1 = {  #Dzungar intro
 	    
 	}
 	immediate = {
-		set_variable = {
-			name = dzungar_var
-			value = 0
-		}
-		set_variable = {
-			name = dzungar_separatist_var
-			value = 0
-		}
-		set_variable = {
-			name = dzungar_legitimacy_var
-			value = 0
-		}
 		add_journal_entry = {
 			type = je_galdan_khan
-		}
-		add_journal_entry = {
-			type = je_dzungar_legitimacy
-		}
-		add_journal_entry = {
-			type = je_dzungar_separatism
 		}
 	}
 	
@@ -52,20 +34,11 @@ dvg_dzungaria.1 = {  #Dzungar intro
 		name = dvg_dzungaria.1.a
 		default_option = yes
 		
-		add_journal_entry = {
-			type = je_dzungar_china
-		}
-		add_journal_entry = {
-			type = je_dzungar_europe
-		}
-		
 		add_modifier = {
 			name = realpolitik
 			days = 5475
 			is_decaying = yes
-		}
-
-		trigger_event = { id = dvg_dzungaria.4 popup = yes }		
+		}	
 	}
 }
 
@@ -691,6 +664,34 @@ dvg_dzungaria.3 = {  #Dzungar Holds on
 		add_loyalists = {
 			value = 0.25
 		}
+		s:STATE_BASHKORTOSTAN = {
+			add_claim = c:DZU
+		}
+		s:STATE_IDEL = {
+			add_claim = c:DZU
+		}
+		s:STATE_TARTARIA = {
+			add_claim = c:DZU
+		}
+		s:STATE_QOBAN = {
+			add_claim = c:DZU
+		}
+		s:STATE_YEDISAN = {
+			add_claim = c:DZU
+		}
+		s:STATE_DVG_ROSTOV = {
+			add_claim = c:DZU
+		}
+		s:STATE_ASTRAKHAN = {
+			add_claim = c:DZU
+		}
+		s:STATE_DVG_URALSK = {
+			add_claim = c:DZU
+		}
+		s:STATE_DVG_CRIMEA = {
+			add_claim = c:DZU
+		}
+		add_primary_culture = cu:kazak
 		
 		
 		
