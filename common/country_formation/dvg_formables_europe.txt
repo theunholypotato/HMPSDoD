@@ -571,37 +571,33 @@ ENG = { #England
 	}
 }
 
-NET = { #Netherlands
-	states = {
-		STATE_FRIESLAND
-		STATE_HOLLAND
-		STATE_GELRE
-		STATE_FLANDERS
-	}
-	
-	is_major_formation = yes
-	
-	unification_play = dp_unify_dutch
-	leadership_play = dp_leadership_dutch
-
-	required_states_fraction = 0.50	
-
-	ai_will_do = { always = yes }
-
-	possible = {
-		OR = {
-			country_has_primary_culture = cu:boer
-			country_has_primary_culture = cu:dutch
-		}	
-		any_country = {
-			OR = {
-				country_has_primary_culture = cu:boer
-				country_has_primary_culture = cu:dutch
-			}		
-			has_technology_researched = nationalism
-		}
-	}
-}
+#NET = { #Netherlands
+#	states = {
+#		STATE_FRIESLAND
+#		STATE_HOLLAND
+#		STATE_GELRE
+#		STATE_FLANDERS
+#	}
+#	
+#	is_major_formation = yes
+#	
+#	unification_play = dp_unify_dutch
+#	leadership_play = dp_leadership_dutch
+#
+#	required_states_fraction = 0.50	
+#
+#	ai_will_do = { always = yes }
+#
+#	possible = {
+#		any_country = {
+#			OR = {
+#				country_has_primary_culture = cu:boer
+#				country_has_primary_culture = cu:dutch
+#				NOT = {country_has_primary_culture = cu:burgundian}		
+#				has_technology_researched = nationalism
+#		}
+#	}
+#}
 
 ITC = { #Italian Confederation
 	states = {
@@ -703,6 +699,7 @@ DIE = { #Dietsland
 	possible = {
 		has_technology_researched = pan-nationalism
 		NOT = { has_game_rule = plausible_formable_nations }
+		NOT = {country_has_primary_culture = cu:burgundian}		
 	}
 
 	ai_will_do = { always = yes }
