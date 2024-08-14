@@ -571,33 +571,32 @@ ENG = { #England
 	}
 }
 
-#NET = { #Netherlands
-#	states = {
-#		STATE_FRIESLAND
-#		STATE_HOLLAND
-#		STATE_GELRE
-#		STATE_FLANDERS
-#	}
-#	
-#	is_major_formation = yes
-#	
-#	unification_play = dp_unify_dutch
-#	leadership_play = dp_leadership_dutch
-#
-#	required_states_fraction = 0.50	
-#
-#	ai_will_do = { always = yes }
-#
-#	possible = {
-#		any_country = {
-#			OR = {
-#				country_has_primary_culture = cu:boer
-#				country_has_primary_culture = cu:dutch
-#				NOT = {country_has_primary_culture = cu:burgundian}		
-#				has_technology_researched = nationalism
-#		}
-#	}
-#}
+NET = { #Netherlands
+	states = {
+		STATE_FRIESLAND
+		STATE_HOLLAND
+		STATE_GELRE
+		STATE_FLANDERS
+	}
+	
+	is_major_formation = yes
+	
+	unification_play = dp_unify_dutch
+	leadership_play = dp_leadership_dutch
+
+	required_states_fraction = 0.50	
+
+	ai_will_do = { always = no }
+
+	possible = {
+		any_country = {
+				country_has_primary_culture = cu:boer
+				country_has_primary_culture = cu:dutch
+				NOT = {country_has_primary_culture = cu:burgundian}		
+				has_technology_researched = nationalism
+		}
+	}
+}
 
 ITC = { #Italian Confederation
 	states = {
@@ -702,7 +701,7 @@ DIE = { #Dietsland
 		NOT = {country_has_primary_culture = cu:burgundian}		
 	}
 
-	ai_will_do = { always = yes }
+	ai_will_do = { always = no }
 }
 
 CPT = { #Carpathia
