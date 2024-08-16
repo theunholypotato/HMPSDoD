@@ -43,3 +43,6 @@
 
  HRE_success_tt: "On completion of this [Concept('concept_journal_entry', '$concept_journal_entries$')], the ability to form the nation of the Holy Roman Empire will unlock."
  hre_variable_tt: "Has completed 'Centralizing Bohemia' [Concept('concept_journal_entry', '$concept_journal_entries$')] successfully"
+
+
+BOH_BLOC: "The Breslau Compact"
