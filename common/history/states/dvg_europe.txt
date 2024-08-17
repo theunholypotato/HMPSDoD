@@ -1202,6 +1202,8 @@
 		add_homeland = cu:venetian
 		add_homeland = cu:croat
 		add_homeland = cu:serb
+
+		add_claim = c:CRO
 	}
 	s:STATE_IONIAN_ISLANDS = {
 		create_state = {
