@@ -33,9 +33,10 @@ dvg_qing.1 = {
 	option = {
 		name = dvg_qing.1.a
 
-		add_journal_entry = {
-			type = je_conquer_beijing_manchus
-		}
+
+		#add_journal_entry = {
+		#	type = je_conquer_beijing_manchus
+		#}
 		
 	}
 }
@@ -64,7 +65,7 @@ dvg_qing.2 = {
 
 	}
 	immediate = {
-		c:SHU = { save_scope_as = scope_SHU}
+		#c:SHU = { save_scope_as = scope_SHU}
 		c:DZU = { save_scope_as = scope_DZU}
 		c:KOR = { save_scope_as = scope_KOR}
 	}
@@ -129,9 +130,9 @@ dvg_qing.3 = {
 	option = {
 		name = dvg_qing.3.a
 
-		s:STATE_SHENGJING = {
-			remove_claim = c:SHU
-		}
+		#s:STATE_SHENGJING = {
+		#	remove_claim = c:SHU
+		#}
 		s:STATE_BEIJING = {
 			remove_claim = c:CHI
 		}
