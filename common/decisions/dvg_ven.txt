@@ -74,6 +74,7 @@ dvg_ven_acceptgreeks = {
 		root = {
 			is_at_war = no
 		}
+		has_technology_researched = nationalism
 	}
 	
     when_taken = {
