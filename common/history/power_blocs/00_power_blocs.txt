@@ -41,7 +41,7 @@
 				has_dlc_feature = power_bloc_features
 			}
 			power_bloc = {
-				add_principle = principle_internal_trade_1
+				add_principle = principle_group_food_standardization 
 			}
 		}
 	}
@@ -114,7 +114,7 @@
 
 			founding_date = 1804.4.4
 			identity = identity_sovereign_empire
-			principle = principle_exploit_members_2
+			principle = principle_vassalization_3
 
 			member = c:FRE
 			member = c:FRW
@@ -128,11 +128,6 @@
 			member = c:OLD
 			member = c:BRA
 			member = c:THU
-
-
-
-
-
 		}
 		if = {
 			limit = {
