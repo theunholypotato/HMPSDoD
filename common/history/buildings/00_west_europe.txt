@@ -2189,6 +2189,12 @@
 						country="c:DUA"
 						levels=3
 						region="STATE_WALES"
+					}	
+					building = {
+						type="building_paper_mills"
+						country="c:DUA"
+						levels=4
+						region="STATE_HOME_COUNTIES"
 					}
 				}
 				reserves=1
@@ -2739,6 +2745,62 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled" }
+			}
+			create_building={
+				building="building_lead_mine"
+				add_ownership={
+					building={
+						type="building_lead_mine"
+						country="c:DUA"
+						levels=3
+						region="STATE_WEST_COUNTRY"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_lead_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}
+			create_building={
+				building="building_sulfur_mine"
+				add_ownership={
+					building={
+						type="building_sulfur_mine"
+						country="c:DUA"
+						levels=5
+						region="STATE_WEST_COUNTRY"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_sulfur_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}
+			create_building={
+				building="building_explosives_factory"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:DUA"
+						levels=1
+						region="STATE_WEST_COUNTRY"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_leblanc_process" }
+			}
+			create_building={
+				building="building_munition_plants"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:DUA"
+						levels=2
+						region="STATE_WEST_COUNTRY"
+					}
+					country={
+						country="c:DUA"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_percussion_caps" }
 			}
 			create_building={
 				building="building_textile_mills"
@@ -3306,13 +3368,13 @@
 					building={
 						type="building_financial_district"
 						country="c:DUA"
-						levels=1
+						levels=6
 						region="STATE_ILE_DE_FRANCE"
 					}
 					building={
 						type="building_furniture_manufacturies"
 						country="c:DUA"
-						levels=2
+						levels=4
 						region="STATE_NORMANDY"
 					}
 				}	
@@ -4174,6 +4236,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_forest_glass" "pm_manual_glassblowing" "pm_ceramics" }
+			}
+			create_building={
+				building="building_coal_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:DUA"
+						levels=10
+						region="STATE_AQUITAINE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
 			create_building={
 				building="building_textile_mills"
