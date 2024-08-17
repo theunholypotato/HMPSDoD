@@ -3189,6 +3189,15 @@
 				reserves=1
 				activate_production_methods={ "pm_no_naval_theory" }
 			}
+			create_building = {
+				building = "building_guano_mine"
+				add_ownership{
+					country={
+						country="c:VEN"
+						levels=15
+					}
+				}
+			}
 			create_building={
 				building="building_port"
 				add_ownership={
@@ -3240,6 +3249,15 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_banana_plantation" "pm_road_carts" }
+			}
+			create_building = {
+				building = "building_guano_mine"
+				add_ownership{
+					country={
+						country="c:VEN"
+						levels=5
+					}
+				}
 			}
 			create_building={
 				building="building_coffee_plantation"

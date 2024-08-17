@@ -157,6 +157,7 @@ STATE_WEST_COUNTRY = {
     arable_resources = { bg_vineyard_plantations bg_wheat_farms bg_livestock_ranches }
     capped_resources = {
         bg_sulfur_mining = 60
+        bg_lead_mining = 15
         bg_logging = 6
         bg_fishing = 9
     }
