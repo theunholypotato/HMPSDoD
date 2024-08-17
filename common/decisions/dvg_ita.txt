@@ -1,0 +1,29 @@
+dvg_ita_acceptgreeks = {
+	is_shown = {
+		exists = c:ITA
+		root = c:ITA
+		NOT = {
+			c:ITA = {
+				country_has_primary_culture = cu:greek
+			}
+		}
+				was_formed_from = VEN
+	}
+
+	possible = {
+		root = {
+			is_at_war = no
+		}
+		has_technology_researched = nationalism
+	}
+	
+    when_taken = {
+		c:ITA = {
+			add_primary_culture = cu:greek
+		}
+    }
+
+	ai_chance = {
+		base = 50
+	}
+}

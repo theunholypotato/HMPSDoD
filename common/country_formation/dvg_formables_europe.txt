@@ -254,12 +254,15 @@ ITA = { #Italy
 
 	possible = {
 		NOT = { country_has_primary_culture = cu:catalan }
+		OR = {
+			country_has_primary_culture = cu:north_italian
+			country_has_primary_culture = cu:south_italian
+			country_has_primary_culture = cu:central_italian
+			country_has_primary_culture = cu:maltese
+			country_has_primary_culture = cu:corsican
+			country_has_primary_culture = cu:venetian	
+		}
 
-		country_has_primary_culture = cu:north_italian
-		country_has_primary_culture = cu:south_italian
-		country_has_primary_culture = cu:central_italian
-		country_has_primary_culture = cu:maltese
-		country_has_primary_culture = cu:corsican
 		
 		has_technology_researched = nationalism
 		}
