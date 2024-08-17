@@ -1247,7 +1247,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:NOG"
+						country="c:CRI"
 						levels=10
 					}
 				}
@@ -1259,7 +1259,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NOG"
+						country="c:CRI"
 						levels=1
 						region="STATE_YEDISAN"
 					}
@@ -1272,7 +1272,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NOG"
+						country="c:CRI"
 						levels=1
 						region="STATE_YEDISAN"
 					}
@@ -1285,7 +1285,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NOG"
+						country="c:CRI"
 						levels=1
 						region="STATE_YEDISAN"
 					}
@@ -2983,7 +2983,7 @@
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:NOG"
+						country="c:MOL"
 						levels=1
 						region="STATE_BESSARABIA"
 					}
@@ -2996,7 +2996,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:NOG"
+						country="c:MOL"
 						levels=1
 						region="STATE_BESSARABIA"
 					}
@@ -3008,7 +3008,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:NOG"
+						country="c:MOL"
 						levels=1
 					}
 				}

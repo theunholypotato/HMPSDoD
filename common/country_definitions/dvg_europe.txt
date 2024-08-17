@@ -393,7 +393,7 @@ MON = { #Montenegro
 }
 
 TUR = { # Rum Empire
-	color = { 30 160 203 }
+	color = { 173 201 179 }
 	
 	country_type = recognized
 

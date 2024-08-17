@@ -586,19 +586,14 @@ NET = { #Netherlands
 
 	required_states_fraction = 0.50	
 
-	ai_will_do = { always = yes }
+	ai_will_do = { always = no }
 
 	possible = {
-		OR = {
-			country_has_primary_culture = cu:boer
-			country_has_primary_culture = cu:dutch
-		}	
 		any_country = {
-			OR = {
 				country_has_primary_culture = cu:boer
 				country_has_primary_culture = cu:dutch
-			}		
-			has_technology_researched = nationalism
+				NOT = {country_has_primary_culture = cu:burgundian}		
+				has_technology_researched = nationalism
 		}
 	}
 }
@@ -703,9 +698,10 @@ DIE = { #Dietsland
 	possible = {
 		has_technology_researched = pan-nationalism
 		NOT = { has_game_rule = plausible_formable_nations }
+		NOT = {country_has_primary_culture = cu:burgundian}		
 	}
 
-	ai_will_do = { always = yes }
+	ai_will_do = { always = no }
 }
 
 CPT = { #Carpathia

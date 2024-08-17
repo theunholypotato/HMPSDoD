@@ -1184,7 +1184,7 @@
 
 	#Macedonia
 	s:STATE_MACEDONIA = {
-		region_state:ALB = {
+		region_state:MCD = {
 			create_pop = {
 				culture = greek
 				size = 541941
@@ -1232,7 +1232,7 @@
 			#	religion = orthodox
 			#}
 		}
-		region_state:WRE = {
+		region_state:TUR = {
 			create_pop = {
 				culture = greek
 				size = 181670
@@ -1263,7 +1263,7 @@
 		
 	}
 	s:STATE_SKOPIA = {
-		region_state:ALB = {
+		region_state:MCD = {
 			create_pop = {
 				culture = greek
 				size = 60730
@@ -1322,7 +1322,7 @@
 	
 	#East Rum
 	s:STATE_EASTERN_THRACE = {
-		region_state:WRE = {
+		region_state:TUR = {
 			create_pop = {
 				culture = turkish
 				size = 485237
@@ -1351,7 +1351,7 @@
 		}
 	}
 	s:STATE_NORTHERN_THRACE = {
-		region_state:WRE = {
+		region_state:TUR = {
 			create_pop = {
 				culture = turkish
 				size = 451904
@@ -1390,7 +1390,7 @@
 		}
 	}
 	s:STATE_BULGARIA = {
-		region_state:WRE = {
+		region_state:TUR = {
 			create_pop = {
 				culture = turkish
 				size = 259821
@@ -1435,7 +1435,7 @@
 	}
 
 	s:STATE_DOBRUDJA = {
-		region_state:WRE = {
+		region_state:TUR = {
 			create_pop = {
 				culture = turkish
 				size = 22003
@@ -1463,8 +1463,6 @@
 			#	size = 1658
 			#	religion = orthodox
 			#}
-		}
-		region_state:NOG = {
 			create_pop = {
 				culture = turkish
 				size = 30232

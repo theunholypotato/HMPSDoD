@@ -204,24 +204,6 @@
 			type = puppet
 		}
 	}
-	c:NOV = {
-		create_diplomatic_pact = {
-			country = c:BLO
-			type = puppet
-		}
-		create_diplomatic_pact = {
-			country = c:UGG
-			type = puppet
-		}
-		create_diplomatic_pact = {
-			country = c:VYA
-			type = puppet
-		}
-		create_diplomatic_pact = {
-			country = c:PRM
-			type = puppet
-		}
-	}
 	c:MJN = {
 		create_diplomatic_pact = {
 			country = c:QQQ
@@ -238,12 +220,7 @@
 			type = vassal
 		}
 	}
-	c:RYA = {
-		create_diplomatic_pact = {
-			country = c:VOR
-			type = puppet
-		}
-	}
+
 	c:AZB = {
 		create_diplomatic_pact = {
 			country = c:IME
@@ -254,12 +231,7 @@
 			type = tributary
 		}
 	}
-	c:VIN = {
-		create_diplomatic_pact = {
-			country = c:SKR
-			type = dominion
-		}
-	}
+
 	c:PLA = {
 		create_diplomatic_pact = {
 			country = c:CHE
@@ -362,18 +334,7 @@
 			type = vassal
 		}
 	}
-	c:SHU = {
-		create_diplomatic_pact = {
-			country = c:XIB
-			type = tributary
-		}
-		create_diplomatic_pact = {
-			country = c:HBI
-			type = tributary
-		}
-		
-		
-	}
+
 	
 	c:CAM = {
 		create_diplomatic_pact = {

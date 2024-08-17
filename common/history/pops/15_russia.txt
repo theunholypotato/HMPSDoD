@@ -280,7 +280,6 @@
 				culture = ashkenazi
 				size = 2168
 			}
-		}
 			create_pop = {
 				culture = russian
 				size = 806483
@@ -290,6 +289,7 @@
 				size = 42898
 			}
 		}
+	}
 	s:STATE_BRYANSK = {
 		region_state:MSO = {
 			create_pop = {
