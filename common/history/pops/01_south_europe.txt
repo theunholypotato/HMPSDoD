@@ -1463,8 +1463,6 @@
 			#	size = 1658
 			#	religion = orthodox
 			#}
-		}
-		region_state:NOG = {
 			create_pop = {
 				culture = turkish
 				size = 30232

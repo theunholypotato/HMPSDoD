@@ -5567,14 +5567,12 @@
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_no_equipment" "pm_road_carts" "pm_no_hardwood" }
 			}
-		}
-		region_state:NOG ={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:NOG"
+						country="c:TUR"
 						levels=2
 						region="STATE_DOBRUDJA"
 					}
@@ -5586,7 +5584,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:NOG"
+						country="c:TUR"
 						levels=1
 					}
 				}
