@@ -25,7 +25,7 @@ dvg_qing.1 = {
 
 	}
 	immediate = {
-		c:SHU = { save_scope_as = scope_SHU}
+		#c:SHU = { save_scope_as = scope_SHU}
 		c:DZU = { save_scope_as = scope_DZU}
 		c:KOR = { save_scope_as = scope_KOR}
 	}

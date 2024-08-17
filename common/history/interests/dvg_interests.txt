@@ -92,9 +92,6 @@
 	c:EGY = {
 		add_declared_interest = region_arabic
 	}
-	c:NOV = {
-		add_declared_interest = region_baltic
-	}
 	c:MSO = {
 		add_declared_interest = region_dnieper
 	}

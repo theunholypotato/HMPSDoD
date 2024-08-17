@@ -66,7 +66,7 @@
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
-		activate_law = law_frontier_colonization
+		activate_law = law_type:law_frontier_colonization
 		activate_law = law_type:law_appointed_bureaucrats
 		
 		
@@ -106,87 +106,87 @@
 		}
 	}
 	
-	c:SHU = {
-		effect_starting_technology_tier_4_tech = yes
-		add_technology_researched = urban_planning
-		add_technology_researched = sericulture
-		add_technology_researched = academia
-		add_technology_researched = law_enforcement
-		add_technology_researched = currency_standards
-		add_technology_researched = mass_communication
-
-		
-		set_market_capital = STATE_BEIJING
-
-		effect_starting_politics_traditional = yes	
-		activate_law = law_type:law_oligarchy
-		#activate_law = law_type:law_national_militia
-		#activate_law = law_type:law_protectionism
-		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_total_separation
-		activate_law = law_type:law_no_migration_controls
-		activate_law = law_type:law_slavery_banned
-		activate_law = law_type:law_low_income_tax	
-		activate_law = law_type:law_moderate_consumption_tax
-
-		ig:ig_landowners = {
-			add_ideology = ideology_scholar_stratocratic
-		}
-		
-		ig:ig_intelligentsia = {
-			set_interest_group_name = ig_literati
-			remove_ideology = ideology_anti_clerical
-		}
-		
-		ig:ig_armed_forces = {
-			remove_ideology = ideology_patriotic
-			add_ideology = ideology_meritocratic
-		}
-		
-		trigger_event = {
-			id = dvg_shun.1
-		}
-	#	add_modifier = {
-	#		name = outmoded_bureaucracy
-	#		months = -1
+	#c:SHU = {
+	#	effect_starting_technology_tier_4_tech = yes
+	#	add_technology_researched = urban_planning
+	#	add_technology_researched = sericulture
+	#	add_technology_researched = academia
+	#	add_technology_researched = law_enforcement
+	#	add_technology_researched = currency_standards
+	#	add_technology_researched = mass_communication
+#
+	#	
+	#	set_market_capital = STATE_BEIJING
+#
+	#	effect_starting_politics_traditional = yes	
+	#	activate_law = law_type:law_oligarchy
+	#	#activate_law = law_type:law_national_militia
+	#	#activate_law = law_type:law_protectionism
+	#	activate_law = law_type:law_appointed_bureaucrats
+	#	activate_law = law_type:law_right_of_assembly
+	#	activate_law = law_type:law_total_separation
+	#	activate_law = law_type:law_no_migration_controls
+	#	activate_law = law_type:law_slavery_banned
+	#	activate_law = law_type:law_low_income_tax	
+	#	activate_law = law_type:law_moderate_consumption_tax
+#
+	#	ig:ig_landowners = {
+	#		add_ideology = ideology_scholar_stratocratic
 	#	}
-		add_journal_entry = {
-			type = je_china_reunification
-		}
-	}
+	#	
+	#	ig:ig_intelligentsia = {
+	#		set_interest_group_name = ig_literati
+	#		remove_ideology = ideology_anti_clerical
+	#	}
+	#	
+	#	ig:ig_armed_forces = {
+	#		remove_ideology = ideology_patriotic
+	#		add_ideology = ideology_meritocratic
+	#	}
+	#	
+	#	trigger_event = {
+	#		id = dvg_shun.1
+	#	}
+	##	add_modifier = {
+	##		name = outmoded_bureaucracy
+	##		months = -1
+	##	}
+	#	add_journal_entry = {
+	#		type = je_china_reunification
+	#	}
+	#}
 	
-	c:XIB = {
-		effect_starting_technology_tier_4_tech = yes
-		add_technology_researched = urban_planning
-		add_technology_researched = sericulture
-		add_technology_researched = academia
-		add_technology_researched = law_enforcement
-		add_technology_researched = currency_standards
-
-		
-		set_market_capital = STATE_NINGXIA
-		
-		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_monarchy
-		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_cultural_exclusion
-		activate_law = law_type:law_total_separation
-		activate_law = law_type:law_traditionalism
-		activate_law = law_type:law_debt_slavery
-		activate_law = law_type:law_low_income_tax	
-		activate_law = law_type:law_moderate_consumption_tax
-		
-		
-		ig:ig_intelligentsia = {
-			set_interest_group_name = ig_literati
-			remove_ideology = ideology_anti_clerical
-		}
-		
-		ig:ig_devout = {
-			set_interest_group_name = ig_sunni_madrasahs
-		}
-	}
+	#c:XIB = {
+	#	effect_starting_technology_tier_4_tech = yes
+	#	add_technology_researched = urban_planning
+	#	add_technology_researched = sericulture
+	#	add_technology_researched = academia
+	#	add_technology_researched = law_enforcement
+	#	add_technology_researched = currency_standards
+#
+	#	
+	#	set_market_capital = STATE_NINGXIA
+	#	
+	#	effect_starting_politics_traditional = yes
+	#	activate_law = law_type:law_monarchy
+	#	activate_law = law_type:law_appointed_bureaucrats
+	#	activate_law = law_type:law_cultural_exclusion
+	#	activate_law = law_type:law_total_separation
+	#	activate_law = law_type:law_traditionalism
+	#	activate_law = law_type:law_debt_slavery
+	#	activate_law = law_type:law_low_income_tax	
+	#	activate_law = law_type:law_moderate_consumption_tax
+	#	
+	#	
+	#	ig:ig_intelligentsia = {
+	#		set_interest_group_name = ig_literati
+	#		remove_ideology = ideology_anti_clerical
+	#	}
+	#	
+	#	ig:ig_devout = {
+	#		set_interest_group_name = ig_sunni_madrasahs
+	#	}
+	#}
 	
 	c:SIH = {
 		effect_starting_technology_tier_4_tech = yes

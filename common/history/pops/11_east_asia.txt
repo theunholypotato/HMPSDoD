@@ -103,7 +103,7 @@
 				religion = sunni
 			}
 		}
-		region_state:XIB = {
+		region_state:MCH = {
 			create_pop = {
 				culture = mongol
 				size = 680152
@@ -322,7 +322,7 @@
 	
 	#SHUN
 	s:STATE_BEIJING = {
-		region_state:SHU = {
+		region_state:MCH = {
 			create_pop = {
 				culture = han # nanfaren
 				size = 14597600
@@ -352,7 +352,7 @@
 		}
 	}
 	s:STATE_ZHILI = {
-		region_state:SHU = {
+		region_state:MCH = {
 			create_pop = {
 				culture = han # nanfaren
 				size = 8446940
@@ -378,7 +378,7 @@
 		}
 	}
 	s:STATE_SHANDONG = {
-		region_state:SHU = {
+		region_state:MCH = {
 			create_pop = {
 				culture = han # nanfaren
 				size = 15088000
@@ -399,7 +399,7 @@
 		}
 	}
 	s:STATE_HENAN = {
-		region_state:SHU = {
+		region_state:MCH = {
 			create_pop = {
 				culture = han
 				size = 3170107
@@ -417,7 +417,7 @@
 		}
 	}
 	s:STATE_NORTHERN_ANHUI = {
-		region_state:SHU = {
+		region_state:MCH = {
 			create_pop = {
 				culture = han
 				size = 10727143
@@ -430,7 +430,7 @@
 		}
 	}
 	s:STATE_JIANGSU = {
-		region_state:SHU = {
+		region_state:MCH = {
 			create_pop = {
 				culture = han
 				size = 8482000
@@ -438,7 +438,7 @@
 		}
 	}
 	s:STATE_SHANXI = {
-		region_state:SHU = {
+		region_state:MCH = {
 			create_pop = {
 				culture = manchu
 				size = 8400
@@ -460,7 +460,7 @@
 		}
 	}
 	s:STATE_XIAN = {
-		region_state:XIB = {
+		region_state:MCH = {
 			create_pop = {
 				culture = han
 				size = 8620103
@@ -473,7 +473,7 @@
 		}
 	}
 	s:STATE_NINGXIA = {
-		region_state:XIB = {
+		region_state:MCH = {
 			create_pop = {
 				culture = mongol
 				size = 262550
