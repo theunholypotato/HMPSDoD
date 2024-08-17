@@ -79,8 +79,8 @@
 			map_color = { 77 15 51 }
 
 			founding_date = 1802.8.2
-			identity = identity_military_treaty_organization
-			principle = principle_defensive_cooperation_1
+			identity = identity_trade_league
+			principle = principle_internal_trade_1
 
 			member = c:WUR
 			member = c:SWI
