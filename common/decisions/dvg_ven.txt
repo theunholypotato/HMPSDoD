@@ -58,3 +58,31 @@
 		base = 100
 	}
 }
+
+dvg_ven_acceptgreeks = {
+	is_shown = {
+		exists = c:VEN
+		root = c:VEN
+		NOT = {
+			c:VEN = {
+				country_has_primary_culture = cu:greek
+			}
+		}
+	}
+
+	possible = {
+		root = {
+			is_at_war = no
+		}
+	}
+	
+    when_taken = {
+		c:VEN = {
+			add_primary_culture = cu:greek
+		}
+    }
+
+	ai_chance = {
+		base = 50
+	}
+}
