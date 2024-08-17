@@ -156,7 +156,7 @@
 				size = 133814
 			}
 			create_pop = {
-				culture = han
+				culture = manchu
 				size = 7933
 			}
 			create_pop = {

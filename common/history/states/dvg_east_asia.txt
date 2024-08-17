@@ -53,6 +53,7 @@
 		}
 		
 		add_homeland = cu:mongol
+		add_homeland = cu:manchu
 
 		add_claim = c:DZU
 	}
