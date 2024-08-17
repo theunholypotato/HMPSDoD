@@ -1,0 +1,28 @@
+dvg_sca_acceptestonians = {
+	is_shown = {
+		exists = c:SCA
+		root = c:SCA
+		NOT = {
+			c:SCA = {
+				country_has_primary_culture = cu:estonian
+			}
+		}
+	}
+
+	possible = {
+		root = {
+			is_at_war = no
+		}
+		has_technology_researched = pan-nationalism
+	}
+	
+    when_taken = {
+		c:SCA = {
+			add_primary_culture = cu:estonian
+		}
+    }
+
+	ai_chance = {
+		base = 50
+	}
+}
