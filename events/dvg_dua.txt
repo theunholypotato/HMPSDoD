@@ -171,17 +171,17 @@ dvg_dua.1 = {
 		}
 		
 		add_radicals = {
-			value = 0.1
+			value = 0.05
 			culture = cu:french
 		}
 	
 		add_radicals = {
-			value = 0.1
+			value = 0.05
 			culture = cu:occitan
 		}
 	
 		add_radicals = {
-			value = 0.1
+			value = 0.05
 			culture = cu:british
 		}
 
@@ -653,19 +653,19 @@ dvg_dua.110 = { # Patron
 		# }
 
 		add_radicals = {
-			value = medium_radicals
+			value = small_radicals
 			culture = cu:french
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = small_radicals
 			culture = cu:occitan
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = small_radicals
 			culture = cu:british
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = small_radicals
 			culture = cu:irish
 		}
 
@@ -2142,15 +2142,15 @@ dvg_dua.129 = {
 				has_variable = anglois_path
 			}
 			add_radicals = {
-				value = large_radicals
+				value = medium_radicals
 				culture = cu:british
 			}
 			add_radicals = {
-				value = large_radicals
+				value = medium_radicals
 				culture = cu:french
 			}
 			add_radicals = {
-				value = large_radicals
+				value = medium_radicals
 				culture = cu:occitan
 			}
 			custom_tooltip = {

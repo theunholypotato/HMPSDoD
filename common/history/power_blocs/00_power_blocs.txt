@@ -35,6 +35,11 @@
 			member = c:SAV
 			member = c:ZSA
 			member = c:JOH
+			member = c:PTN
+			member = c:KDH
+			member = c:PSA
+			member = c:BRU
+			member = c:BGL
 		}
 		if = {
 			limit = {

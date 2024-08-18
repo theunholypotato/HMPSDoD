@@ -17,6 +17,109 @@
     #    }
     #}
 
+### HISTORICAL CHARACTER ACCESSORIES ###
+
+    historical_reza_pahlavi_stage_one = {
+        dna_modifiers = {
+            accessory = {
+               mode = add
+               gene = medals
+               template = generic_medals
+               accessory = male_medals_generic_01_02
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                scope:character ?= {
+                    has_template = PER_reza_pahlavi
+                    is_ruler = no
+                }
+            }
+        }
+    }
+
+    historical_reza_pahlavi_stage_two = {
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = medals
+                template = generic_medals
+                accessory = male_medals_generic_01_03
+            }
+        }
+
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = sashes
+                template = european_sashes_colours
+                accessory = male_sash_european_01_lightblue
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                scope:character ?= {
+                    has_template = PER_reza_pahlavi
+                    is_ruler = yes
+                    owner ?= {
+                        NOT = { has_law = law_type:law_monarchy }
+                    }
+                }
+            }
+        }
+    }
+
+    historical_reza_pahlavi_stage_three = {
+        dna_modifiers = {
+            accessory = {
+               mode = add
+               gene = medals
+               template = generic_medals
+               accessory = male_medals_generic_01_05 # no number of medals can adequately reflect the splendor of the Shahanshah
+            }
+        }
+
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = sashes
+                template = european_sashes_colours
+                accessory = male_sash_european_01_lightblue
+            }
+        }
+
+        dna_modifiers = {
+            accessory = {
+                mode = add
+                gene = necklaces
+                template = necklace_reza_shah_pahlavi
+                range = { 0 1 }
+            }
+        }
+
+        weight = {
+            base = 0
+            modifier = {
+                add = 90000
+                scope:character ?= {
+                    has_template = PER_reza_pahlavi
+                    is_ruler = yes
+                    owner ?= {
+                        has_law = law_type:law_monarchy
+                    }
+                }
+            }
+        }
+    }
+
+### END OF HISTORICAL CHARACTER ACCESSORIES ###
+
     european_shopkeeper_clothes = {
         dna_modifiers = {
             accessory = {
@@ -132,9 +235,15 @@
             modifier = {
                add = 10000
                 agitator_character_trigger = no
-                german_clothes_trigger = yes
                 scope:character ?= {
-                    age > 12
+                    exists = home_country
+                    home_country = {
+                        OR = {
+                            c:PRU ?= this
+                            was_formed_from = PRU
+                        }
+                    }
+                    age > define:NCharacters|ADULT_AGE
                     NOR = {
                         has_template = agitator_jules_brunet
                         has_template = rus_leon_trotsky_character_template
@@ -187,24 +296,24 @@
                 agitator_character_trigger = no
                 OR = {
                     american_clothes_trigger = yes
-                    # AND = {
-                    #     exists = scope:character
-                    #     scope:character = {
-					# 		exists = home_country
-                    #         home_country = {
-                    #             exists = c:CSA
-                    #             c:CSA = this
-                    #             is_subject = no
-                    #         }
-                    #     }
-                    # }
+                    AND = {
+                        exists = scope:character
+                        scope:character = {
+							exists = home_country
+                            home_country = {
+                                exists = c:CSA
+                                c:CSA = this
+                                is_subject = no
+                            }
+                        }
+                    }
                 }
                 OR = {
                     military_clothes_trigger = yes
                     monarchy_clothes_trigger = yes
                 }
                 scope:character ?= {
-                    age > 12
+                    age > define:NCharacters|ADULT_AGE
                     NOR = {
                         has_template = agitator_jules_brunet
                         has_template = rus_leon_trotsky_character_template
@@ -219,82 +328,7 @@
         }
     }
 
-    commander_accessories = {
-        dna_modifiers = {
-             accessory = {
-                 mode = add
-                 gene = medals
-                 template = generic_medals
-                 range = { 0 1 } # For the randomness to work correctly
-            }
-            accessory = {
-                mode = add
-                gene = epaulettes
-                template = all_epaulettes
-                range = { 0 1 } # For the randomness to work correctly
-            }
-            accessory = {
-                mode = add
-                gene = belts
-                template = all_belts
-                range = { 0 1 } # For the randomness to work correctly
-            }
-            accessory = {
-                mode = add
-                gene = sashes
-                template = all_sashes
-                range = { 0 1 } # For the randomness to work correctly
-            }
-            accessory = {
-                mode = add
-                gene = aiguillettes
-                template = all_aiguillettes
-                range = { 0 1 } # For the randomness to work correctly
-            }
-        }
-        weight = {
-            base = 0
-            modifier = {
-                add = 1000
-                agitator_character_trigger = no
-                european_clothes_trigger = yes
-                republic_clothes_trigger = no
-                scope:character = {
-                    age > 12
-                    NOR = {
-                        has_template = agitator_jules_brunet
-                        has_template = rus_leon_trotsky_character_template
-                        has_template = agitator_nestor_makhno
-                        has_template = fra_georges_boulanger_character_template
-                        has_template = agitator_louise_michel
-                        has_template = agitator_susan_b_anthony
-                        has_template = agitator_emiliano_zapata
-                    }
-                }
-                OR = {
-                    military_clothes_trigger = yes
-                    officers_clothes_pop_trigger = yes
-                    AND = {
-                        european_clothes_trigger = yes
-                        ruler_clothes_trigger = yes
-                        NOT = {
-                            scope:character = {
-    							exists = c:PAP
-								exists = home_country
-                                home_country = c:PAP
-                            }
-                        }
-                    }
-                    AND = {
-                        armed_forces_clothes_trigger = yes
-                        politician_clothes_trigger = yes
-                    }
-                }
-            } 
-        }
-    }
-
-        male_epaulettes_03_only = {
+    male_epaulettes_03_only = {
         dna_modifiers = {
             accessory = {
                 mode = add
@@ -340,7 +374,7 @@
                 add = 10000
 
                 c:PER ?= {
-                    NOT = { has_technology_researched = bolt_action_rifles }
+                    NOT = { has_technology_researched = automatic_machine_guns }
                 }
 
                 scope:character ?= {
@@ -386,6 +420,122 @@
         }
     }
 
+    commander_accessories = {
+        dna_modifiers = {
+             accessory = {
+                 mode = add
+                 gene = medals
+                 template = generic_medals
+                 range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = epaulettes
+                template = all_epaulettes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = belts
+                template = all_belts
+                range = { 0 0.66 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = sashes
+                template = all_sashes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = aiguillettes
+                template = all_aiguillettes
+                range = { 0 1 } # For the randomness to work correctly
+            }
+        }
+        weight = {
+            base = 0
+            modifier = {
+                add = 10000
+                agitator_character_trigger = no
+                european_clothes_trigger = yes
+                republic_clothes_trigger = no
+                scope:character = {
+                    age > define:NCharacters|ADULT_AGE
+                    NOR = {
+                        has_template = agitator_jules_brunet
+                        has_template = rus_leon_trotsky_character_template
+                        has_template = agitator_nestor_makhno
+                        has_template = fra_georges_boulanger_character_template
+                        has_template = agitator_louise_michel
+                        has_template = agitator_susan_b_anthony
+                        has_template = agitator_emiliano_zapata
+                    }
+                }
+                OR = {
+                    military_clothes_trigger = yes
+                    AND = {
+                        ruler_clothes_trigger = yes
+                        NOT = {
+                            scope:character = {
+    							exists = c:PAP
+								exists = home_country
+                                home_country = c:PAP
+                            }
+                        }
+                    }
+                    AND = {
+                        armed_forces_clothes_trigger = yes
+                        politician_clothes_trigger = yes
+                    }
+                }
+                NAND = { # redundant, but i am an ardent supporter of redundancy and redundant design.
+                    ruler_clothes_trigger = yes
+                    republic_clothes_trigger = yes
+                }
+            } 
+        }
+    }
+
+    american_commander_accessories = {
+        dna_modifiers = {
+             accessory = {
+                 mode = add
+                 gene = medals
+                 template = generic_medals
+                 range = { 0 1 } # For the randomness to work correctly
+            }
+            accessory = {
+                mode = add
+                gene = epaulettes
+                template = all_epaulettes
+                range = { 0.8 1 }
+            }
+            accessory = {
+                mode = add
+                gene = belts
+                template = all_belts
+                range = { 0 0.66 } # For the randomness to work correctly
+            }
+            # no aiguillettes
+        }
+        weight = {
+            base = 0
+            modifier = { # I am forcing American generals to wear commander accessories
+                add = 90000
+
+                c:USA ?= {
+                    NOT = { has_technology_researched = automatic_machine_guns }
+                }
+
+                scope:character ?= {
+                    owner ?= c:USA
+                    has_role = general
+                    is_ruler = no
+                }
+            }
+        }
+    }
 
     egyptian_commander_accessories = {
         dna_modifiers = {
@@ -427,11 +577,34 @@
                         }
                     }
                 }
-            }
+            } 
         }
     }
 
-        qing_emperor_necklace = {
+	african_expedition_necklace = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = necklaces
+				template = african_necklaces
+				range = { 0 1 } # For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100000
+                AND = {
+                    exists = scope:character
+                    scope:character = {
+                      has_variable = expedition_trading_gifts
+                    }  
+                }     
+			}
+		}
+	}
+
+    qing_emperor_necklace = {
         dna_modifiers = {
             accessory = {
                mode = add
@@ -498,6 +671,7 @@
                         OR = {
                             culture = cu:malagasy
                             culture = cu:cherokee
+                            culture = cu:muskogean
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -508,30 +682,6 @@
             }
         }
     }
-
-	african_expedition_necklace = {
-		dna_modifiers = {
-			accessory = {
-				mode = add
-				gene = necklaces
-				template = african_necklaces
-				range = { 0 1 } # For the randomness to work correctly
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 100000
-                AND = {
-                    exists = scope:character
-                    scope:character = {
-                      has_variable = expedition_trading_gifts
-                    }  
-                }     
-			}
-		}
-	}
-}
 
     ### SPHERE OF INFLUENCE POWER BLOC ACCESSORIES ###
     ### P-P-P-Powerbloc! ###
@@ -754,7 +904,10 @@
                     AND = {
                         exists = scope:character
                         scope:character = {
-                            culture = cu:cherokee
+                            OR = {
+                                culture = cu:cherokee
+                                culture = cu:muskogean
+                            }
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -781,7 +934,8 @@
                     scope:character ?= {
                         OR = {
                             culture = cu:malagasy
-                            culture = cu:cherokee                       
+                            culture = cu:cherokee
+                            culture = cu:muskogean
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -797,7 +951,10 @@
                     AND = {
                         exists = scope:character
                         scope:character = {
+                            OR = {
                                 culture = cu:cherokee
+                                culture = cu:muskogean
+                            }
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -885,6 +1042,7 @@
                         OR = {
                             culture = cu:malagasy
                             culture = cu:cherokee
+                            culture = cu:muskogean
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -937,7 +1095,7 @@
                         OR = {
                             culture = cu:malagasy
                             culture = cu:cherokee
-                            
+                            culture = cu:muskogean
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -998,7 +1156,7 @@
                         OR = {
                             culture = cu:malagasy
                             culture = cu:cherokee
-                            
+                            culture = cu:muskogean
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -1051,7 +1209,7 @@
                         OR = {
                             culture = cu:malagasy
                             culture = cu:cherokee
-                            
+                            culture = cu:muskogean
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -1112,7 +1270,7 @@
                         OR = {
                             culture = cu:malagasy
                             culture = cu:cherokee
-                            
+                            culture = cu:muskogean
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -1165,7 +1323,7 @@
                         OR = {
                             culture = cu:malagasy
                             culture = cu:cherokee
-                            
+                            culture = cu:muskogean
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -1225,7 +1383,7 @@
                         OR = {
                             culture = cu:malagasy
                             culture = cu:cherokee
-                            
+                            culture = cu:muskogean
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -1277,7 +1435,7 @@
                         OR = {
                             culture = cu:malagasy
                             culture = cu:cherokee
-                            
+                            culture = cu:muskogean
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -1337,7 +1495,7 @@
                         OR = {
                             culture = cu:malagasy
                             culture = cu:cherokee
-                            
+                            culture = cu:muskogean
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -1700,17 +1858,8 @@
                             has_trait = master_bureaucrat
                         }
                         AND = {
-                            is_historical = no
-                            has_trait = engineer
-                        }
-                        AND = {
                             has_dlc_feature = ep1_cosmetics
-                            OR = {
-                                has_trait = erudite
-                                has_trait = literary
-                                has_trait = master_bureaucrat
-                                has_trait = engineer
-                            }
+
                             is_ruler = yes
                             owner ?= {
                                 is_in_power_bloc = yes
@@ -1769,17 +1918,15 @@
                         AND = {
                             exists = scope:character
                             scope:character = {
-                                culture = cu:cherokee
+                                OR = {
+                                    culture = cu:cherokee
+                                    culture = cu:muskogean
+                                }
                             }
                         }
                         african_diaspora_clothes_trigger = yes
                     }
-                    OR = {
-                        armed_forces_clothes_trigger = yes
-                        military_clothes_trigger = yes
-                        monarchy_clothes_trigger = yes
-                        army_traits_trigger = yes
-                    }
+
                     age >= define:NCharacters|ADULT_AGE
 
                     owner ?= {
@@ -1885,7 +2032,7 @@
                         OR = {
                             culture = cu:malagasy
                             culture = cu:cherokee
-                            
+                            culture = cu:muskogean
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -1933,7 +2080,7 @@
                         OR = {
                             culture = cu:malagasy
                             culture = cu:cherokee
-                            
+                            culture = cu:muskogean
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -1981,7 +2128,7 @@
                         OR = {
                             culture = cu:malagasy
                             culture = cu:cherokee
-                            
+                            culture = cu:muskogean
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -2029,7 +2176,7 @@
                         OR = {
                             culture = cu:malagasy
                             culture = cu:cherokee
-                            
+                            culture = cu:muskogean
                         }
                     }
                     african_diaspora_clothes_trigger = yes
@@ -2077,7 +2224,7 @@
                         OR = {
                             culture = cu:malagasy
                             culture = cu:cherokee
-                            
+                            culture = cu:muskogean
                         }
                     }
                     african_diaspora_clothes_trigger = yes
