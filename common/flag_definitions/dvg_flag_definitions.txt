@@ -27,8 +27,7 @@ DZU = { #Dzungar
 		coa_with_overlord_canton = XIB_republic
 		priority = 100
 		trigger = { 	
-			coa_def_republic_flag_trigger = yes	
-		}	
+			coa_def_republic_flag_trigger = yes
 	}
 	flag_definition = {	
 		coa = DZU_theocracy_muslim
@@ -3534,24 +3533,24 @@ HNA = { #Hunan
 		coa = HNA_subject
 		allow_overlord_canton = yes		
 		priority = 1500
-		trigger = { 
-			OR = {
-				c:SHU = {
-					has_diplomatic_pact = {
-						who = c:HNA
-						type = puppet
-						is_initiator = yes
-					}
-				}
-				c:SHU = {
-					has_diplomatic_pact = {
-						who = c:HNA
-						type = vassal
-						is_initiator = yes
-					}
-				}
-			}
-			}
+		# trigger = { 
+		# 	OR = {
+		# 		c:SHU = {
+		# 			has_diplomatic_pact = {
+		# 				who = c:HNA
+		# 				type = puppet
+		# 				is_initiator = yes
+		# 			}
+		# 		}
+		# 		c:SHU = {
+		# 			has_diplomatic_pact = {
+		# 				who = c:HNA
+		# 				type = vassal
+		# 				is_initiator = yes
+		# 			}
+		# 		}
+		# 	}
+		# 	}
 	}
 }
 SIH = { #Sichuan
@@ -3559,59 +3558,59 @@ SIH = { #Sichuan
 		coa = SIH
 		coa_with_overlord_canton = SIH
 	}
-	flag_definition = {
-		coa = SIH_subject_SHU
-		allow_overlord_canton = yes		
-		priority = 50
-		trigger = { 
-			OR = {
-				c:SHU = {
-					has_diplomatic_pact = {
-						who = c:SIH
-						type = puppet
-						is_initiator = yes
-					}
-				}
-				c:SHU = {
-					has_diplomatic_pact = {
-						who = c:SIH
-						type = vassal
-						is_initiator = yes
-					}
-				}
-			}
-			}
-	}
-}
+# 	flag_definition = {
+# 		coa = SIH_subject_SHU
+# 		allow_overlord_canton = yes		
+# 		priority = 50
+# 		trigger = { 
+# 			OR = {
+# 				c:SHU = {
+# 					has_diplomatic_pact = {
+# 						who = c:SIH
+# 						type = puppet
+# 						is_initiator = yes
+# 					}
+# 				}
+# 				c:SHU = {
+# 					has_diplomatic_pact = {
+# 						who = c:SIH
+# 						type = vassal
+# 						is_initiator = yes
+# 					}
+# 				}
+# 			}
+# 			}
+# 	}
+# }
 
 GUI = { #Guizhou
 	flag_definition = {
 		coa = GUI
 		coa_with_overlord_canton = GUI
 	}
-	flag_definition = {
-		coa = GUI_subjec_SHU
-		allow_overlord_canton = yes		
-		priority = 50
-		trigger = { 
-			OR = {
-				c:SHU = {
-					has_diplomatic_pact = {
-						who = c:GUI
-						type = puppet
-						is_initiator = yes
-					}
-				}
-				c:SHU = {
-					has_diplomatic_pact = {
-						who = c:GUI
-						type = vassal
-						is_initiator = yes
-					}
-				}
-			}
-		}
-	}
+	# flag_definition = {
+	# 	coa = GUI_subjec_SHU
+	# 	allow_overlord_canton = yes		
+	# 	priority = 50
+	# 	trigger = { 
+	# 		OR = {
+	# 			c:SHU = {
+	# 				has_diplomatic_pact = {
+	# 					who = c:GUI
+	# 					type = puppet
+	# 					is_initiator = yes
+	# 				}
+	# 			}
+	# 			c:SHU = {
+	# 				has_diplomatic_pact = {
+	# 					who = c:GUI
+	# 					type = vassal
+	# 					is_initiator = yes
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
 }
 
 NAN = { #Nanjing/Wu
