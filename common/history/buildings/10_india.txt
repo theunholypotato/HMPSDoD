@@ -985,15 +985,15 @@
 				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts"   }
 			}
 		}
-		region_state:DUA={
+		region_state:BRG={
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:DUA"
+						country="c:BRG"
 						levels=1
-						region="STATE_ILE_DE_FRANCE"
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -1004,9 +1004,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:DUA"
+						country="c:BRG"
 						levels=3
-						region="STATE_ILE_DE_FRANCE"
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -1017,9 +1017,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:DUA"
+						country="c:BRG"
 						levels=1
-						region="STATE_ILE_DE_FRANCE"
+						region="STATE_FLANDERS"
 					}
 				}
 				reserves=1
@@ -1029,7 +1029,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:DUA"
+						country="c:BRG"
 						levels=1
 					}
 				}
@@ -1908,12 +1908,12 @@
 		}
 	}
 	s:STATE_KOLKATA={
-		region_state:BRG={
+		region_state:DUA={
 			create_building={
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:BRG"
+						country="c:DUA"
 						levels=1
 					}
 				}
@@ -1925,9 +1925,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:BRG"
+						country="c:DUA"
 						levels=2
-						region="STATE_FLANDERS"
+						region="STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves=1
@@ -1938,9 +1938,9 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:BRG"
+						country="c:DUA"
 						levels=3
-						region="STATE_FLANDERS"
+						region="STATE_ILE_DE_FRANCE"
 					}
 				}
 				reserves=1

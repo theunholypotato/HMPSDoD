@@ -74,6 +74,13 @@ dvg_ven_acceptgreeks = {
 		root = {
 			is_at_war = no
 		}
+		owns_entire_state_region = STATE_SKOPIA
+		owns_entire_state_region = STATE_MACEDONIA
+		owns_entire_state_region = STATE_THESSALIA
+		owns_entire_state_region = STATE_IONIAN_ISLANDS
+		owns_entire_state_region = STATE_ATTICA
+		owns_entire_state_region = STATE_PELOPONNESE
+
 		has_technology_researched = nationalism
 	}
 	
