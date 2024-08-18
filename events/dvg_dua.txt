@@ -466,17 +466,17 @@ dvg_dua.101 = {
 		# }
 
 		add_radicals = {
-			value = 0.20
+			value = 0.10
 			culture = cu:french
 		}
 	
 		add_radicals = {
-			value = 0.20
+			value = 0.10
 			culture = cu:occitan
 		}
 	
 		add_radicals = {
-			value = 0.20
+			value = 0.10
 			culture = cu:british
 		}
 	}
