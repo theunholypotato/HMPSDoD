@@ -3086,7 +3086,7 @@ dvg_dua.510 = { #Midi Revolution
 
 			create_diplomatic_play = {
 				target_country = c:OCC
-				war = no
+				war = yes
 				type = dp_rebellion
 			}
 		}
