@@ -405,6 +405,11 @@
 				is_decaying = yes
 			}
 		}
+
+		ig:ig_landowners = {
+			add_ideology = ideology_heavenly_kingdom_theocratic
+		}
+		
 		add_journal_entry = {
 			type = je_china_reunification
 		}
@@ -481,6 +486,7 @@
 		#activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
+		activate_law = law_type:law_freedom_of_conscience
 
 		
 		set_ruling_interest_groups = {
@@ -727,7 +733,7 @@
 		#activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_colonial_exploitation
 		activate_law = law_type:law_tenant_farmers
-		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_serfdom
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
