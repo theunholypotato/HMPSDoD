@@ -253,7 +253,11 @@ ITA = { #Italy
 	ai_will_do = { has_technology_researched = nationalism }
 
 	possible = {
-		NOT = { country_has_primary_culture = cu:catalan }
+
+		NOT = { this = C:ARN }
+		
+		NOT = { this = C:ARI }
+
 		OR = {
 			country_has_primary_culture = cu:north_italian
 			country_has_primary_culture = cu:south_italian
@@ -265,8 +269,8 @@ ITA = { #Italy
 
 		
 		has_technology_researched = nationalism
-		}
-			}
+	}
+}
 
 
 
