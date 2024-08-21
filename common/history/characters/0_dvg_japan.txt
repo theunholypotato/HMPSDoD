@@ -11,7 +11,7 @@
 			ideology = ideology_reformer
 			traits = {
 				arrogant
-				innovative
+				#innovative
 				scarred
 				senile
 				#immortal
@@ -32,7 +32,7 @@
 			traits = {
 				
 				firebrand
-
+				innovative
 				#immortal
 			}
 			on_created = {
