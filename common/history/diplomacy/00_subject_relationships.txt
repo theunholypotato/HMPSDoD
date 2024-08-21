@@ -2,9 +2,14 @@
 	c:JAP = {
 		create_diplomatic_pact = {
 			country = c:AIN
+			type = dominion
+		}
+		create_diplomatic_pact = {
+			country = c:SDK
 			type = puppet
 		}
 	}
+
 	c:VEN = {
 		create_diplomatic_pact = {
 			country = c:ATH
@@ -307,14 +312,7 @@
 		}
 	}
 
-	c:JAP = {
-		create_diplomatic_pact = {
-			country = c:SDK
-			type = tributary
-		}
-		
-		
-	}
+	
 	c:BRU = {
 		create_diplomatic_pact = {
 			country = c:LAN
