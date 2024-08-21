@@ -255,7 +255,7 @@ ITA = { #Italy
 	possible = {
 
 		NOT = { this = C:ARN }
-		
+
 		NOT = { this = C:ARI }
 
 		OR = {
@@ -333,11 +333,11 @@ RUS = { #Russia
 	unification_play = dp_unify_russia
 	leadership_play = dp_leadership_russia
 
-	required_states_fraction = 0.8
+	required_states_fraction = 0.7
+
 	
 	possible = {
 		country_rank >= rank_value:major_power
-		NOT = { has_journal_entry = je_nov_main }
 		any_country = {
 			OR = {
 				country_has_primary_culture = cu:russian
