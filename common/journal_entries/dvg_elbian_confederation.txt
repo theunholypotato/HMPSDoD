@@ -5,7 +5,7 @@
 
 	complete = {
 		cu:north_german = {
-			NOT = { culture_is_discriminated_in = ROOT }
+			culture_is_discriminated_in = ROOT 
 		}
 	}
 

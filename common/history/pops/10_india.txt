@@ -366,7 +366,7 @@
 				size = 3630449
 			}
 		}
-		region_state:BRG = {
+		region_state:DUA = {
 			create_pop = {
 				culture = bengali
 				religion = hindu
@@ -753,7 +753,7 @@ create_pop = {
     size = 45294
 }
 		}
-		region_state:DUA = {
+		region_state:BRG = {
 create_pop = {
     culture = telegu
     size = 97923
