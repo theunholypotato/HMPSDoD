@@ -24,10 +24,6 @@
 	}
 	c:AMA = {
 		create_diplomatic_pact = {
-			country = c:EQX
-			type = puppet
-		}
-		create_diplomatic_pact = {
 			country = c:TUP
 			type = colonization_rights
 		}
