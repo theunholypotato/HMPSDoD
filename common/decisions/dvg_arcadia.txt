@@ -128,9 +128,9 @@ dvg_manifest_destiny_cadien = {
 		}
 	}
     when_taken = {
-		trigger_event = {
-			id = dvg_plantagenia.10
-		}
+		#trigger_event = {
+		#	id = dvg_plantagenia.10
+		#}
 		every_state = {
 			limit = {
 				
@@ -167,32 +167,32 @@ dvg_manifest_destiny_cadien = {
 		s:STATE_TEJAS = {
 			add_claim = ROOT
 		}
-		if = {
-			limit = {
-				OR = {
-					ruler = {
-						has_ideology = ideology:ideology_jingoist_leader
-					}
-					any_interest_group = {
-						OR = {
-							has_ideology = ideology:ideology_jingoist
-							leader = {
-								has_ideology = ideology:ideology_jingoist_leader
-							}
-						}
-						is_powerful = yes
-					}
-
-				}
-				
-			}
-			s:STATE_BAJA_CALIFORNIA = {
-				add_claim = ROOT
-			}
-			s:STATE_XINGTIAN = {
-				add_claim = ROOT
-			}
-		}
+		#if = {
+		#	limit = {
+		#		OR = {
+		#			ruler = {
+		#				has_ideology = ideology:ideology_jingoist_leader
+		#			}
+		#			any_interest_group = {
+		#				OR = {
+		#					has_ideology = ideology:ideology_jingoist
+		#					leader = {
+		#						has_ideology = ideology:ideology_jingoist_leader
+		#					}
+		#				}
+		#				is_powerful = yes
+		#			}
+#
+		#		}
+		#		
+		#	}
+		#	s:STATE_BAJA_CALIFORNIA = {
+		#		add_claim = ROOT
+		#	}
+		#	s:STATE_XINGTIAN = {
+		#		add_claim = ROOT
+		#	}
+		#}
 		add_journal_entry = {
 			type = je_manifest_destiny_pla
 		}

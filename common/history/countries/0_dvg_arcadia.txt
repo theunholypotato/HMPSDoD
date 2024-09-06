@@ -339,6 +339,9 @@
 		trigger_event = {
 			id = dvg_plantagenia.1
 		}
+		add_journal_entry = {
+			type = je_pla_slavery
+		}
 		
 	}
 	c:CHE = { #Cherokee

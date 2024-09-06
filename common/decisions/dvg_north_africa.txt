@@ -325,112 +325,112 @@ dvg_maghreb_liberation = {
 		base = 100
 	}
 }
-dvg_embrace_maghrebi = {
-	is_shown = {
-		any_primary_culture = {
-			has_discrimination_trait = arab_speaking
-		}
-		NOT = {
-			country_has_primary_culture = cu:maghrebi
-		}
-	}
-
-    possible = {
-		has_technology_researched = pan-nationalism
-		cu:maghrebi = {
-			NOT = {
-			culture_is_discriminated_in = ROOT
-			}
-		}
-		any_scope_state = {
-			is_incorporated = yes
-			state_region = {
-				is_homeland = cu:maghrebi
-			}
-		}
-		
-	}
-
-    when_taken = {
-		add_primary_culture = cu:maghrebi
-    }
-
-	ai_chance = {
-		base = 100
-	}
-}
-dvg_embrace_misri = {
-	is_shown = {
-		
-		any_primary_culture = {
-			has_discrimination_trait = arab_speaking
-		}
-		NOT = {
-			country_has_primary_culture = cu:misri
-		}
-	}
-
-    possible = {
-		has_technology_researched = pan-nationalism
-		cu:misri = {
-			NOT = {
-			culture_is_discriminated_in = ROOT
-			}
-		}
-		any_scope_state = {
-			is_incorporated = yes
-			state_region = {
-				is_homeland = cu:misri
-			}
-		}
-		
-		
-	}
-
-    when_taken = {
-		add_primary_culture = cu:misri
-    }
-
-	ai_chance = {
-		base = 100
-	}
-}
-dvg_embrace_sudanese = {
-	is_shown = {
-		
-		any_primary_culture = {
-			has_discrimination_trait = arab_speaking
-		}
-		NOT = {
-			country_has_primary_culture = cu:sudanese
-		}
-	}
-
-    possible = {
-		has_technology_researched = pan-nationalism
-		cu:sudanese = {
-			NOT = {
-			culture_is_discriminated_in = ROOT
-			}
-		}
-		any_scope_state = {
-			is_incorporated = yes
-			state_region = {
-				is_homeland = cu:sudanese
-			}
-		}
-		
-		
-	}
-
-    when_taken = {
-		add_primary_culture = cu:sudanese
-    }
-
-	ai_chance = {
-		base = 100
-	}
-}
+#dvg_embrace_maghrebi = {
+#	is_shown = {
+#		any_primary_culture = {
+#			has_discrimination_trait = arab_speaking
+#		}
+#		NOT = {
+#			country_has_primary_culture = cu:maghrebi
+#		}
+#	}
+#
+#    possible = {
+#		has_technology_researched = pan-nationalism
+#		cu:maghrebi = {
+#			NOT = {
+#			culture_is_discriminated_in = ROOT
+#			}
+#		}
+#		any_scope_state = {
+#			is_incorporated = yes
+#			state_region = {
+#				is_homeland = cu:maghrebi
+#			}
+#		}
+#		
+#	}
+#
+#    when_taken = {
+#		add_primary_culture = cu:maghrebi
+#    }
+#
+#	ai_chance = {
+#		base = 100
+#	}
+#}
+#dvg_embrace_misri = {
+#	is_shown = {
+#		
+#		any_primary_culture = {
+#			has_discrimination_trait = arab_speaking
+#		}
+#		NOT = {
+#			country_has_primary_culture = cu:misri
+#		}
+#	}
+#
+#    possible = {
+#		has_technology_researched = pan-nationalism
+#		cu:misri = {
+#			NOT = {
+#			culture_is_discriminated_in = ROOT
+#			}
+#		}
+#		any_scope_state = {
+#			is_incorporated = yes
+#			state_region = {
+#				is_homeland = cu:misri
+#			}
+#		}
+#		
+#		
+#	}
+#
+#    when_taken = {
+#		add_primary_culture = cu:misri
+#    }
+#
+#	ai_chance = {
+#		base = 100
+#	}
+#}
+#dvg_embrace_sudanese = {
+#	is_shown = {
+#		
+#		any_primary_culture = {
+#			has_discrimination_trait = arab_speaking
+#		}
+#		NOT = {
+#			country_has_primary_culture = cu:sudanese
+#		}
+#	}
+#
+#    possible = {
+#		has_technology_researched = pan-nationalism
+#		cu:sudanese = {
+#			NOT = {
+#			culture_is_discriminated_in = ROOT
+#			}
+#		}
+#		any_scope_state = {
+#			is_incorporated = yes
+#			state_region = {
+#				is_homeland = cu:sudanese
+#			}
+#		}
+#		
+#		
+#	}
+#
+#    when_taken = {
+#		add_primary_culture = cu:sudanese
+#    }
+#
+#	ai_chance = {
+#		base = 100
+#	}
+#}
 
 
 
