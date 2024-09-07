@@ -171,9 +171,9 @@
 			level = 2
 		}
 		
-		trigger_event = {
-            id = dvg_atlantia.10
-        }
+		#trigger_event = {
+        #    id = dvg_atlantia.10
+        #}
 		
 		set_ruling_interest_groups = {
 			ig_landowners
