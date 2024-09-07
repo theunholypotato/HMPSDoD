@@ -336,9 +336,9 @@
 		ig:ig_rural_folk = {
 			add_ideology = ideology_populist
 		}
-		trigger_event = {
-			id = dvg_plantagenia.1
-		}
+		#trigger_event = {
+		#	id = dvg_plantagenia.1
+		#}
 		add_journal_entry = {
 			type = je_pla_slavery
 		}
