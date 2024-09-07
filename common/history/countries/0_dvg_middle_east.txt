@@ -192,7 +192,7 @@
 		add_technology_researched = urban_planning
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_migration_controls
@@ -213,7 +213,7 @@
 		add_technology_researched = urban_planning
 		
 		effect_starting_politics_traditional = yes
-		#activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_censorship
 		#activate_law = law_type:law_slave_trade
@@ -250,7 +250,7 @@
 		add_technology_researched = mandatory_service
 		
 		effect_starting_politics_traditional = yes
-		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_slave_trade
@@ -291,7 +291,7 @@
 		# add_technology_researched = law_enforcement
 		# add_technology_researched = urban_planning
 		
-		# activate_law = law_type:law_racial_segregation
+		# activate_law = law_type:law_national_supremacy
 		# activate_law = law_type:law_land_based_taxation
 		# activate_law = law_type:law_censorship
 		# activate_law = law_type:law_slave_trade
@@ -328,7 +328,7 @@
 	effect_starting_politics_traditional = yes
 	activate_law = law_type:law_land_based_taxation
 	activate_law = law_type:law_slavery_banned
-	activate_law = law_type:law_cultural_exclusion
+	activate_law = law_type:law_national_supremacy
 	activate_law = law_type:law_right_of_assembly
 	activate_law = law_type:law_low_income_tax	
 	activate_law = law_type:law_moderate_consumption_tax

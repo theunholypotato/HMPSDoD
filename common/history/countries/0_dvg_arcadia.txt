@@ -388,7 +388,7 @@
 		add_technology_researched = sericulture
 		
 		activate_law = law_type:law_republic
-		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_landed_voting
 		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_appointed_bureaucrats
@@ -429,13 +429,13 @@
 			add_ideology = ideology_mengzi
 		}
 		
-		trigger_event = {
-			id = qingqiu_federation.1
-		}
-		add_modifier = {
-			name = qin_federal_sys
-			months = -1 
-		}
+		#trigger_event = {
+		#	id = qingqiu_federation.1
+		#}
+		#add_modifier = {
+		#	name = qin_federal_sys
+		#	months = -1 
+		#}
 		#add_modifier = {
 		#	name = dvg_qingqiu_leagues
 		#	months = -1 
@@ -451,7 +451,7 @@
 		
 		activate_law = law_type:law_republic
 		activate_law = law_type:law_oligarchy
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_right_of_assembly
@@ -487,7 +487,7 @@
 		
 		activate_law = law_type:law_republic
 		activate_law = law_type:law_oligarchy
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_right_of_assembly
