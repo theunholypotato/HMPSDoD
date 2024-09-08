@@ -56,19 +56,13 @@ dvg_spain.2 = {
 
 	duration = 3
 
+
+
 	immediate = {
-		set_variable = {
-			name = dvg_castillian_tensions_var
-			value = 0
 		}
-		add_journal_entry = {
-			type = je_castillian_tensions
-		}
-		add_journal_entry = {
-			type = je_keep_castillian_tensions_low
-		}
-	}
+
 	trigger = {
+		game_date = 1836.2.1
 	}
 	
 	# For God, for King, for Country, destroy Colombia!

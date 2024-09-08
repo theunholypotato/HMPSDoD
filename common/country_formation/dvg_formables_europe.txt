@@ -253,20 +253,26 @@ ITA = { #Italy
 	ai_will_do = { has_technology_researched = nationalism }
 
 	possible = {
+
+		
+		
 		NOT = { country_has_primary_culture = cu:catalan }
-		OR = {
-			country_has_primary_culture = cu:north_italian
-			country_has_primary_culture = cu:south_italian
-			country_has_primary_culture = cu:central_italian
-			country_has_primary_culture = cu:maltese
-			country_has_primary_culture = cu:corsican
-			country_has_primary_culture = cu:venetian	
+
+		any_country = {
+			OR = {
+				country_has_primary_culture = cu:north_italian
+				country_has_primary_culture = cu:south_italian
+				country_has_primary_culture = cu:central_italian
+				country_has_primary_culture = cu:maltese
+				country_has_primary_culture = cu:corsican
+				country_has_primary_culture = cu:venetian	
+			}
 		}
 
 		
 		has_technology_researched = nationalism
-		}
-			}
+	}
+}
 
 
 
@@ -329,11 +335,11 @@ RUS = { #Russia
 	unification_play = dp_unify_russia
 	leadership_play = dp_leadership_russia
 
-	required_states_fraction = 0.8
+	required_states_fraction = 0.7
+
 	
 	possible = {
 		country_rank >= rank_value:major_power
-		NOT = { has_journal_entry = je_nov_main }
 		any_country = {
 			OR = {
 				country_has_primary_culture = cu:russian

@@ -801,7 +801,7 @@
 		}
 	}
 	s:STATE_CAPPADOCE = {
-		region_state:EQX = {
+		region_state:AMA = {
 			create_pop = {
 				culture = equinoxien			
 				size = 226585 
@@ -876,7 +876,7 @@
 		}
 	}
 	s:STATE_VAURA = {
-		region_state:EQX = {
+		region_state:AMA = {
 			create_pop = {
 				culture = equinoxien
 				size = 50461

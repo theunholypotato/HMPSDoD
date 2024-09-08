@@ -120,7 +120,7 @@ dvg_provence.3 = {
 	c:DUA = { save_scope_as = scope_DUA }
 	c:ARN = { save_scope_as = scope_ARA }
     c:PAP = { save_scope_as = scope_PAP }
-    c:AVN = { save_scope_as = scope_AVN }
+    #c:AVN = { save_scope_as = scope_AVN }
     c:BRG = { save_scope_as = scope_BRG }
 	c:PAR = { save_scope_as = scope_PAR
 	ruler = {

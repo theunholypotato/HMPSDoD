@@ -2,9 +2,14 @@
 	c:JAP = {
 		create_diplomatic_pact = {
 			country = c:AIN
-			type = vassal
+			type = dominion
+		}
+		create_diplomatic_pact = {
+			country = c:SDK
+			type = puppet
 		}
 	}
+
 	c:VEN = {
 		create_diplomatic_pact = {
 			country = c:ATH
@@ -18,10 +23,6 @@
 		}
 	}
 	c:AMA = {
-		create_diplomatic_pact = {
-			country = c:EQX
-			type = puppet
-		}
 		create_diplomatic_pact = {
 			country = c:TUP
 			type = colonization_rights
@@ -343,14 +344,7 @@
 		}
 	}
 
-	c:JAP = {
-		create_diplomatic_pact = {
-			country = c:SDK
-			type = tributary
-		}
-		
-		
-	}
+	
 	c:BRU = {
 		create_diplomatic_pact = {
 			country = c:LAN

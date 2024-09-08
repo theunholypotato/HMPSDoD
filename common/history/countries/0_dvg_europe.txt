@@ -266,7 +266,7 @@
 		}
 
 		trigger_event = {
-			id = dvg_spain.1
+		#	id = dvg_spain.1
 		}
 		set_secret_goal = {
 			country = c:MOR
