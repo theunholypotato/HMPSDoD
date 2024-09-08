@@ -39,7 +39,7 @@
 		}	
 		OR = {
 			any_interest_group = {
-				OR = {
+				AND = {
 					is_powerful = yes
 					is_insurrectionary = yes
 				}
