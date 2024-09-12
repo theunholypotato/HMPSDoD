@@ -30,7 +30,6 @@
 			interest_group = ig_intelligentsia
 			ideology = ideology_humanitarian_royalist
 			traits = {
-				immortal
 				persistent
 				trait_child
 				ambitious

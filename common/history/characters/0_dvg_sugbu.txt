@@ -13,7 +13,7 @@
 				
 				experienced_diplomat
 				
-				immortal
+				#immortal
 			}
 		}
 		create_character = {
@@ -28,7 +28,7 @@
 				
 				experienced_diplomat
 				
-				immortal
+				#immortal
 			}
 		}
 	}
