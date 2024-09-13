@@ -618,23 +618,25 @@ ITC = { #Italian Confederation
 		STATE_UMBRIA
 		STATE_LAZIO
 		STATE_CORSICA
+		STATE_VENETIA
+		STATE_ISTRIA
 	}
 	
-	required_states_fraction = 0.70	
+	required_states_fraction = 0.50	
 
 	ai_will_do = { always = yes }
 
 	possible = {
-		OR = {
+		#OR = {
 			country_has_primary_culture = cu:north_italian
 			country_has_primary_culture = cu:central_italian
-		}
-		any_country = {
-			OR = {
-				country_has_primary_culture = cu:north_italian
-				country_has_primary_culture = cu:central_italian
-			}
-		}
+		#}
+		#any_country = {
+		#	OR = {
+		#		country_has_primary_culture = cu:north_italian
+		#		country_has_primary_culture = cu:central_italian
+		#	}
+		#}
 	}
 }
 
@@ -720,7 +722,7 @@ CPT = { #Carpathia
 
 	possible = {
 		has_technology_researched = pan-nationalism
-		NOT = { has_game_rule = plausible_formable_nations }
+		#NOT = { has_game_rule = plausible_formable_nations }
 	}
 	
 	ai_will_do = { always = yes }
