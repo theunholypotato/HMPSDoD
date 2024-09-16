@@ -21,3 +21,58 @@
 	}
 }
 
+sgf_formation_event = {
+	is_shown = {
+		OR = {
+			AND = {
+				exists = c:BAV
+				this = c:BAV
+			}
+			AND = {
+				exists = c:AUS
+				this = c:AUS
+			}
+		}
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+		country_rank <= rank_value:major_power
+		has_law = law_type:law_monarchy
+	}
+
+	when_taken = {
+		annex_with_incorporation = c:TYR
+		annex_with_incorporation = c:BAD
+		annex_with_incorporation = c:WUR
+		annex_with_incorporation = c:ULM
+		annex_with_incorporation = c:AGR
+		annex_with_incorporation = c:SLZ
+
+		
+
+		if = {
+			limit = {
+				exists = c:BAV
+				this = c:BAV
+			}
+
+			annex_with_incorporation = C:AUS
+			c:BAV = { change_tag = SGF }
+
+		}
+		else_if = {
+			limit = {
+				exists = c:AUS
+				this = c:AUS
+			}
+
+			annex_with_incorporation = c:BAV
+			c:AUS = { change_tag = SGF }
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
