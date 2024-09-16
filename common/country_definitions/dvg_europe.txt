@@ -274,7 +274,7 @@ SAV = { #Savoy
 
 	tier = grand_principality
 	
-	cultures = { north_italian romand }
+	cultures = { north_italian }
 	capital = STATE_PIEDMONT
 }
 
