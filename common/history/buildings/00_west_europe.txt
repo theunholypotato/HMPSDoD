@@ -5759,7 +5759,7 @@
 				add_ownership={
 					country={
 						country="c:BRG"
-						levels=5
+						levels=3
 					}
 				}
 				reserves=1

@@ -37,7 +37,7 @@ sgf_formation_event = {
 
 	possible = {
 		has_technology_researched = nationalism
-		country_rank <= rank_value:major_power
+		country_rank >= rank_value:major_power
 		has_law = law_type:law_monarchy
 	}
 
