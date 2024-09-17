@@ -819,7 +819,7 @@ SGF = { #Danubian Confederation
 
 	tier = kingdom
 
-	cultures = { south_german }
+	cultures = { south_german rheinish }
 	capital = STATE_BAVARIA
 }
 
