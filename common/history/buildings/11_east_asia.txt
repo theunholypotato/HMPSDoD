@@ -3393,7 +3393,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:JAP"
-						levels=2
+						levels=1
 						region="STATE_HOKKAIDO"
 					}
 				}
@@ -3484,7 +3484,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:JAP"
-						levels=3
+						levels=1
 						region="STATE_TOHOKU"
 					}
 				}
@@ -3510,7 +3510,7 @@
 					building={
 						type="building_manor_house"
 						country="c:JAP"
-						levels=3
+						levels=1
 						region="STATE_TOHOKU"
 					}
 				}
@@ -3534,7 +3534,7 @@
 					building={
 						type="building_iron_mine"
 						country="c:JAP"
-						levels=3
+						levels=2
 						region="STATE_TOHOKU"
 					}
 				}
@@ -3588,7 +3588,7 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:JAP"
-						levels=3
+						levels=2
 						region="STATE_KANTO"
 					}
 				}
@@ -3627,7 +3627,7 @@
 					building={
 						type="building_manor_house"
 						country="c:JAP"
-						levels=2
+						levels=1
 						region="STATE_KANTO"
 					}
 				}
@@ -3640,7 +3640,7 @@
 					building={
 						type="building_manor_house"
 						country="c:JAP"
-						levels=3
+						levels=2
 						region="STATE_KANTO"
 					}
 				}
@@ -3767,7 +3767,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:JAP"
-						levels=4
+						levels=3
 						region="STATE_CHUBU"
 					}
 				}
@@ -3995,7 +3995,7 @@
 					building={
 						type="building_manor_house"
 						country="c:JAP"
-						levels=2
+						levels=1
 						region="STATE_KANSAI"
 					}
 				}
@@ -4008,7 +4008,7 @@
 					building={
 						type="building_manor_house"
 						country="c:JAP"
-						levels=5
+						levels=4
 						region="STATE_KANSAI"
 					}
 				}

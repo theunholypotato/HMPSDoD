@@ -815,10 +815,10 @@ je_kaigan_railway = {
 			state_region = s:STATE_KITA_KAIGAN
 			has_building = building_railway
 		}
-		any_scope_state = {
-			state_region = s:STATE_KITA_KAIGAN
-			has_building = building_railway
-		}
+		#any_scope_state = {
+		#	state_region = s:STATE_KITA_KAIGAN
+		#	has_building = building_railway
+		#}
 		any_scope_state = {
 			state_region = s:STATE_CHUKOTKA
 			has_building = building_railway
