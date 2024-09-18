@@ -18,6 +18,7 @@
 			}
 		}
 		has_law = law_type:law_racial_segregation
+		
 
 	}
 		
@@ -208,10 +209,10 @@ dvg_embrace_afro_arcadian = {
 	is_shown = {
 		
 		any_primary_culture = {
-			has_discrimination_trait = francophone
+			has_discrimination_trait = arcadian
 		}
 		country_is_in_north_america = yes
-		has_law = law_type:law_slavery_banned
+		
 		NOT = {
 			country_has_primary_culture = cu:afro_arcadian
 		}
@@ -221,33 +222,35 @@ dvg_embrace_afro_arcadian = {
     possible = {
 		
 		has_technology_researched = human_rights
-		cu:afro_arcadian = {
-			NOT = {
-				culture_is_discriminated_in = ROOT
-			}
-		}
-		any_interest_group = {
-			is_powerful = yes
-			is_in_government = yes
-			law_stance = {
-				law = law_type:law_cultural_exclusion
-				value >= approve
-			}
-		}
-		OR = {
-			ROOT = {
-				culture_percent_country = {
-				  target = cu:afro_arcadian 
-				  value >= 0.33
-				}
-			} 
-			any_scope_state = {
-				is_capital = yes
-				state_region = {
-					is_homeland = cu:afro_arcadian
-				}
-			}
-		}
+		has_technology_researched = pan-nationalism
+		has_law = law_type:law_slavery_banned
+		#cu:afro_arcadian = {
+		#	NOT = {
+		#		culture_is_discriminated_in = ROOT
+		#	}
+		#}
+		#any_interest_group = {
+		#	is_powerful = yes
+		#	is_in_government = yes
+		#	law_stance = {
+		#		law = law_type:law_cultural_exclusion
+		#		value >= approve
+		#	}
+		#}
+		#OR = {
+		#	ROOT = {
+		#		culture_percent_country = {
+		#		  target = cu:afro_arcadian 
+		#		  value >= 0.33
+		#		}
+		#	} 
+		#	any_scope_state = {
+		#		is_capital = yes
+		#		state_region = {
+		#			is_homeland = cu:afro_arcadian
+		#		}
+		#	}
+		#}
 		
 	}
 		
@@ -255,7 +258,7 @@ dvg_embrace_afro_arcadian = {
 
     when_taken = {
 		
-		add_primary_culture = cu:afro_arcadian
+		activate_law = law_type:law_cultural_exclusion
 
 		
     }
