@@ -49,7 +49,7 @@ sgf_formation_event = {
 		annex_with_incorporation = c:AGR
 		annex_with_incorporation = c:SLZ
 
-		
+		add_primary_culture = cu:rheinish
 
 		if = {
 			limit = {
