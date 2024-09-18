@@ -538,7 +538,7 @@ je_rhine_burgundy = {
 	}
 
 	possible = {
-		has_technology_researched = nationalism
+		has_technology_researched = pan-nationalism
 	}
 
 	immediate = {
