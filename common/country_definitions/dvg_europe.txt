@@ -274,7 +274,7 @@ SAV = { #Savoy
 
 	tier = grand_principality
 	
-	cultures = { north_italian romand }
+	cultures = { north_italian }
 	capital = STATE_PIEDMONT
 }
 
@@ -819,7 +819,7 @@ SGF = { #Danubian Confederation
 
 	tier = kingdom
 
-	cultures = { south_german }
+	cultures = { south_german rheinish }
 	capital = STATE_BAVARIA
 }
 

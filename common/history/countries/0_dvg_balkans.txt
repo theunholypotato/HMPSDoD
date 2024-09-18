@@ -123,7 +123,7 @@
 		effect_starting_technology_tier_3_tech = yes
 
 		effect_starting_politics_conservative = yes
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_freedom_of_conscience
 
 		add_taxed_goods = g:tobacco
@@ -167,7 +167,7 @@
 		effect_starting_technology_tier_3_tech = yes
 
 		effect_starting_politics_conservative = yes
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax

@@ -13,7 +13,6 @@
 			traits = {
 				persistent
 				psychological_affliction
-				immortal
 			}
 			on_created = {
 				set_variable = is_married
@@ -36,7 +35,6 @@
 				firebrand
 				bigoted
 				basic_political_operator
-				immortal
 			}
 		}
 		

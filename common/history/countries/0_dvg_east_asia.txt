@@ -170,7 +170,7 @@
 	#	effect_starting_politics_traditional = yes
 	#	activate_law = law_type:law_monarchy
 	#	activate_law = law_type:law_appointed_bureaucrats
-	#	activate_law = law_type:law_cultural_exclusion
+	#	activate_law = law_type:law_national_supremacy
 	#	activate_law = law_type:law_total_separation
 	#	activate_law = law_type:law_traditionalism
 	#	activate_law = law_type:law_debt_slavery
@@ -202,7 +202,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_women_own_property
@@ -236,7 +236,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_women_own_property
@@ -268,7 +268,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_women_own_property
@@ -302,7 +302,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_women_own_property
@@ -336,7 +336,7 @@
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_women_own_property
@@ -373,7 +373,7 @@
 		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_national_guard
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_national_supremacy
 		#activate_law = law_type:law_homesteading
 		#activate_law = law_type:law_religious_schools
 		#activate_law = law_type:law_charitable_health_system
@@ -478,7 +478,7 @@
 		
 		effect_starting_politics_traditional = yes
 
-		#activate_law = law_type:law_cultural_exclusion
+		#activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_censorship
@@ -569,7 +569,7 @@
 		effect_starting_politics_traditional = yes
 		
 		activate_law = law_type:law_landed_voting
-		#activate_law = law_type:law_cultural_exclusion
+		#activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_appointed_bureaucrats
 		#activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_tenant_farmers
@@ -614,7 +614,7 @@
 		add_technology_researched = mass_communication
 
 		activate_law = law_type:law_traditionalism
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_censorship
@@ -645,7 +645,7 @@
 #		add_technology_researched = academia
 #		add_technology_researched = law_enforcement
 #		
-#		activate_law = law_type:law_cultural_exclusion
+#		activate_law = law_type:law_national_supremacy
 #		activate_law = law_type:law_appointed_bureaucrats
 #		activate_law = law_type:law_land_based_taxation
 #		activate_law = law_type:law_censorship

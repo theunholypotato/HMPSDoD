@@ -39,12 +39,6 @@
 				charismatic
 				experienced_diplomat
 			}
-			on_created = {
-				set_variable = {
-					name = is_llapa_inka
-				}
-				set_character_immortal = yes
-			}
 		}
 		create_character = {
 			historical = yes
@@ -80,12 +74,6 @@
 				arrogant
 				meticulous
 				pious
-			}
-			on_created = {
-				set_variable = { 
-					name = roqa_waqaq_var
-				}
-				set_character_immortal = yes
 			}
 		}
 		create_character = {
@@ -125,10 +113,6 @@
 				basic_naval_commander
 				wrathful
 			}
-			on_created = {
-				set_variable = { name = amachaq_fujimori_var }    
-				set_character_immortal = yes
-			}
 		}
 
 		create_character = {
@@ -145,10 +129,6 @@
 				firebrand
 				erudite
 				basic_political_operator
-			}
-			on_created = {     
-				set_variable = { name = amachaq_samiri_var }
-				set_character_immortal = yes
 			}
 			
 		}

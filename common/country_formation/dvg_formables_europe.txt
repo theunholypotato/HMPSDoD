@@ -618,32 +618,8 @@ ITC = { #Italian Confederation
 		STATE_UMBRIA
 		STATE_LAZIO
 		STATE_CORSICA
-	}
-	
-	required_states_fraction = 0.70	
-
-	ai_will_do = { always = yes }
-
-	possible = {
-		OR = {
-			country_has_primary_culture = cu:north_italian
-			country_has_primary_culture = cu:central_italian
-		}
-		any_country = {
-			OR = {
-				country_has_primary_culture = cu:north_italian
-				country_has_primary_culture = cu:central_italian
-			}
-		}
-	}
-}
-
-
-SWZ = { #Switzerland Confederation
-	states = {
-		STATE_EAST_SWITZERLAND
-		STATE_WEST_SWITZERLAND
-		STATE_FRANCHE_COMTE
+		STATE_VENETIA
+		STATE_ISTRIA
 	}
 	
 	required_states_fraction = 0.50	
@@ -651,9 +627,35 @@ SWZ = { #Switzerland Confederation
 	ai_will_do = { always = yes }
 
 	possible = {
-		has_technology_researched = nationalism
+		#OR = {
+			country_has_primary_culture = cu:north_italian
+			country_has_primary_culture = cu:central_italian
+		#}
+		#any_country = {
+		#	OR = {
+		#		country_has_primary_culture = cu:north_italian
+		#		country_has_primary_culture = cu:central_italian
+		#	}
+		#}
 	}
 }
+
+
+#SWZ = { #Switzerland Confederation
+#	states = {
+#		STATE_EAST_SWITZERLAND
+#		STATE_WEST_SWITZERLAND
+#		#STATE_FRANCHE_COMTE
+#	}
+#	
+#	required_states_fraction = 0.50	
+#
+#	ai_will_do = { always = yes }
+#
+#	possible = {
+#		has_technology_researched = nationalism
+#	}
+#}
 
 TAR = { #Kipchak Khanate (Tatarstan)
 	use_culture_states = yes
@@ -720,7 +722,7 @@ CPT = { #Carpathia
 
 	possible = {
 		has_technology_researched = pan-nationalism
-		NOT = { has_game_rule = plausible_formable_nations }
+		#NOT = { has_game_rule = plausible_formable_nations }
 	}
 	
 	ai_will_do = { always = yes }

@@ -5759,7 +5759,7 @@
 				add_ownership={
 					country={
 						country="c:BRG"
-						levels=5
+						levels=3
 					}
 				}
 				reserves=1
@@ -7394,7 +7394,7 @@
 					building={
 						type="building_paper_mills"
 						country="c:BAV"
-						levels=1
+						levels=2
 						region="STATE_BAVARIA"
 					}
 				}
@@ -7407,7 +7407,7 @@
 					building={
 						type="building_tooling_workshops"
 						country="c:BAV"
-						levels=1
+						levels=2
 						region="STATE_BAVARIA"
 					}
 				}
@@ -7439,7 +7439,7 @@
 					building={
 						type="building_glassworks"
 						country="c:BAV"
-						levels=2
+						levels=3
 						region="STATE_BAVARIA"
 					}
 				}
@@ -7476,7 +7476,7 @@
 					building={
 						type="building_manor_house"
 						country="c:BAV"
-						levels=10
+						levels=5
 						region="STATE_BAVARIA"
 					}
 				}
@@ -7502,7 +7502,7 @@
 					building={
 						type="building_iron_mine"
 						country="c:BAV"
-						levels=2
+						levels=4
 						region="STATE_BAVARIA"
 					}
 				}
@@ -7515,7 +7515,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:BAV"
-						levels=2
+						levels=4
 						region="STATE_BAVARIA"
 					}
 					building={
@@ -7601,7 +7601,7 @@
 					building={
 						type="building_manor_house"
 						country="c:BAV"
-						levels=5
+						levels=3
 						region="STATE_FRANCONIA"
 					}
 				}
@@ -8102,7 +8102,7 @@
 					building={
 						type="building_iron_mine"
 						country="c:AUS"
-						levels=1
+						levels=2
 						region="STATE_TYROL"
 					}
 				}
@@ -8117,7 +8117,7 @@
 					building={
 						type="building_iron_mine"
 						country="c:BAV"
-						levels=1
+						levels=2
 						region="STATE_TYROL"
 					}
 				}
@@ -8160,7 +8160,7 @@
 					building={
 						type="building_financial_district"
 						country="c:AUS"
-						levels=1
+						levels=2
 						region="STATE_AUSTRIA"
 					}
 				}
@@ -8286,7 +8286,7 @@
 					building={
 						type="building_financial_district"
 						country="c:AUS"
-						levels=3
+						levels=5
 						region="STATE_AUSTRIA"
 					}
 				}
@@ -8327,7 +8327,7 @@
 					building={
 						type="building_financial_district"
 						country="c:AUS"
-						levels=3
+						levels=4
 						region="STATE_STYRIA"
 					}
 				}
@@ -8353,7 +8353,7 @@
 					building={
 						type="building_manor_house"
 						country="c:AUS"
-						levels=2
+						levels=1
 						region="STATE_STYRIA"
 					}
 				}
