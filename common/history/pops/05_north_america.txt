@@ -589,8 +589,6 @@
 				culture = algonquian
 				size = 12011
 			}
-		}
-		region_state:VIN = {
 			create_pop = {
 				culture = rohnnst
 				size = 9001
