@@ -71,6 +71,8 @@
 		activate_law = law_type:law_Moderate_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
 
+		add_technology_researched = nationalism
+
 		add_taxed_goods = g:liquor
 		add_taxed_goods = g:wine
 		add_taxed_goods = g:tobacco
