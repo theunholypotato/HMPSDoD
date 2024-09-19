@@ -863,11 +863,23 @@
 				activate_production_methods={ "pm_steel" "pm_automation_disabled" }
 			}
 			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:CNF"
+						levels=3
+						region="STATE_NOUVELLE_FLANDRE"
+					}
+				}
+				reserves=1
+			}
+			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
 						country="c:CNF"
-						levels=2
+						levels=5
 					}
 				}
 				reserves=1
