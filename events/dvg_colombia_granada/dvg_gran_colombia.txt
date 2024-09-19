@@ -19,9 +19,9 @@ dvg_gran_colombia.1 = {
 
 	duration = 3
 	
-	immediate = {
-		add_modifier = { name = dvg_war_preparation }
-	}
+	#immediate = {
+	#	add_modifier = { name = dvg_war_preparation }
+	#}
 	trigger = {
 	}
 	

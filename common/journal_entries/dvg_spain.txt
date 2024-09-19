@@ -229,7 +229,7 @@ je_rebuild_spain = {
 	}
 	
     on_fail = {
-		trigger_event = { id = dvg_spain.10 }
+		#trigger_event = { id = dvg_spain.10 }
 	}
 
 	weight = 100
