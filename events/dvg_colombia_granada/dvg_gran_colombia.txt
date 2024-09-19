@@ -73,6 +73,8 @@ dvg_gran_colombia.2 = {
 		}
 		add_modifier = {
 			name = dvg_spanish_independence_fighters
+			days = 912
+			is_decaying = yes
 		}
 		
 		remove_modifier = dvg_war_preparation
@@ -118,6 +120,23 @@ dvg_gran_colombia.3 = {
 		trigger_event = { id = dvg_gran_colombia.13 months = 6 }
 		ai_chance = {
 			base = 1
+		}
+
+		if = {
+			limit = { 
+				c:GRA = {
+					overlord = C:GCO
+				}
+			}
+			annex_with_incorporation = c:GRA
+		}
+		if = {
+			limit = { 
+				c:QUI = {
+					overlord = C:GCO
+				}
+			}
+			annex_with_incorporation = c:QUI
 		}
 	}
 	

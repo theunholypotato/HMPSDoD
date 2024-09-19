@@ -83,17 +83,30 @@ dvg_spain.2 = {
 					target_state = s:STATE_CUBA.region_state:CUB
 					target_country = c:GCO
 				}
+
+				add_war_goal = {
+					holder = GCO
+					type = transfer_subject
+					target_country = c:GRA
+				}
+				add_war_goal = {
+					holder = GCO
+					type = transfer_subject
+					target_country = c:QUI
+				}
 			}
-			trigger_event = { id = dvg_spain.3 }
+			#trigger_event = { id = dvg_spain.3 }
+			change_infamy = -50
 		}
 		c:GCO = { 
 			trigger_event = { id = dvg_gran_colombia.2 }
+			change_infamy = -50
 		}
-		c:QUI = {
-			add_journal_entry = {
-				type = je_colombian_war_of_independence_QUI
-			}
-		}
+		#c:QUI = {
+		#	add_journal_entry = {
+		#		type = je_colombian_war_of_independence_QUI
+		#	}
+		#}
 		add_journal_entry = {
 			type = je_colombian_war_of_independence_SPA
 		}
@@ -109,31 +122,41 @@ dvg_spain.2 = {
 		name = dvg_spain.2.b
 		
 		c:SPA = {
-			remove_diplomatic_pact = {
-				country = c:GRA
-				type = puppet
+			#remove_diplomatic_pact = {
+			#	country = c:GRA
+			#	type = puppet
+			#}
+			#remove_diplomatic_pact = {
+			#	country = c:QUI
+			#	type = protectorate
+			#}
+			#add_journal_entry = {
+			#	type = je_rebuild_spain
+			#}
+			#add_journal_entry = {
+			#	type = je_army_reform_spain
+			#}
+			add_loyalists = {
+				value = 0.3
 			}
-			remove_diplomatic_pact = {
-				country = c:QUI
-				type = protectorate
+			add_radicals = {
+				value = 0.3
+				pop_type = aristocrats
 			}
-			add_journal_entry = {
-				type = je_rebuild_spain
-			}
-			add_journal_entry = {
-				type = je_army_reform_spain
+			ig:ig_landowners = {
+				add_modifier = {
+					name = ig_demand_not_met
+					days = 3650
+				}
 			}
 		}
 		
 		c:GCO = { 
 			trigger_event = { id = dvg_gran_colombia.3 }
 		}
-		c:QUI = {
-			trigger_event = { id = dvg_caladero.8 }
-		}
-		add_radicals = {
-			value = 0.1
-		}
+		#c:QUI = {
+		#	trigger_event = { id = dvg_caladero.8 }
+		#}
 		ai_chance = {
 			base = 0
 		}

@@ -205,7 +205,7 @@ je_conquer_caladero_gran_colombia = { #Ai should NOT have strategies for this, a
 		owns_entire_state_region = STATE_CAJAMARCA
 		owns_entire_state_region = STATE_ECUADOR
 		owns_entire_state_region = STATE_PASTAZA
-		owns_entire_state_region = STATE_NEAR_ANTISUYU
+		#owns_entire_state_region = STATE_NEAR_ANTISUYU
 		NOT = { exists = c:QUI }
 	}
 
@@ -232,9 +232,9 @@ je_conquer_new_spain_gran_colombia = { #Ai should NOT have strategies for this, 
 		owns_entire_state_region = STATE_ECUADOR
 		owns_entire_state_region = STATE_PASTAZA
 		owns_entire_state_region = STATE_CAUCA
-		owns_entire_state_region = STATE_CUZCO
-		owns_entire_state_region = STATE_CUNTISUYU
-		owns_entire_state_region = STATE_NEAR_ANTISUYU
+		#owns_entire_state_region = STATE_CUZCO
+		#owns_entire_state_region = STATE_CUNTISUYU
+		#owns_entire_state_region = STATE_NEAR_ANTISUYU
 		owns_entire_state_region = STATE_ANGOSTURA
 		owns_entire_state_region = STATE_BOLIVAR
 		owns_entire_state_region = STATE_MIRANDA
@@ -244,13 +244,13 @@ je_conquer_new_spain_gran_colombia = { #Ai should NOT have strategies for this, 
 		owns_entire_state_region = STATE_CUNDINAMARCA
 		owns_entire_state_region = STATE_CAUCA
 		owns_entire_state_region = STATE_CUBA
-		owns_entire_state_region = STATE_TERRAS_VERMELHAS
-		owns_entire_state_region = STATE_APACHERIA
-		owns_entire_state_region = STATE_COMANCHERIE
-		owns_entire_state_region = STATE_XINGTIAN
-		owns_entire_state_region = STATE_DONGHAI
-		owns_entire_state_region = STATE_JINSHAN
-		owns_entire_state_region = STATE_YICHENG
+		#owns_entire_state_region = STATE_TERRAS_VERMELHAS
+		#owns_entire_state_region = STATE_APACHERIA
+		#owns_entire_state_region = STATE_COMANCHERIE
+		#owns_entire_state_region = STATE_XINGTIAN
+		#owns_entire_state_region = STATE_DONGHAI
+		#owns_entire_state_region = STATE_JINSHAN
+		#owns_entire_state_region = STATE_YICHENG
 	}
 
     on_complete = {
@@ -260,61 +260,61 @@ je_conquer_new_spain_gran_colombia = { #Ai should NOT have strategies for this, 
 	weight = 100
 	should_be_pinned_by_default = yes
 }
-je_veracruz_conference = {
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-	
-	group = je_group_internal_affairs
-	
-	immediate = {
-		set_variable = {
-			name = dvg_conservative_anger_var
-			value = 0
-		}
-	}
-	current_value = {
-		value = var:dvg_conservative_anger_var
-	}
-
-	goal_add_value = {
-		value = 6
-	}
-
-	progressbar = yes
-	
-	complete = {
-		custom_tooltip = {
-			text = veracruz_conference_finished
-			has_variable = constitution_convention_finished
-		}
-		custom_tooltip = {
-			text = conservative_angered
-			this = { var:dvg_conservative_anger_var >= 6 }
-		}
-		
-	}
-	
-	fail = {
-		custom_tooltip = {
-			text = veracruz_conference_finished
-			has_variable = constitution_convention_finished
-		}
-		custom_tooltip = {
-			text = conservative_pleased
-			this = { var:dvg_conservative_anger_var < 6 }
-		}
-		
-	}
-	
-	on_complete = {
-		trigger_event = { id = dvg_gran_colombia.37 } #You make people too angry
-	}
-	
-	on_fail = {
-		trigger_event = { id = dvg_gran_colombia.36 } #You calm everyone down
-	}
-	weight = 100
-	should_be_pinned_by_default = yes
-}
+#je_veracruz_conference = {
+#	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+#	
+#	group = je_group_internal_affairs
+#	
+#	immediate = {
+#		set_variable = {
+#			name = dvg_conservative_anger_var
+#			value = 0
+#		}
+#	}
+#	current_value = {
+#		value = var:dvg_conservative_anger_var
+#	}
+#
+#	goal_add_value = {
+#		value = 6
+#	}
+#
+#	progressbar = yes
+#	
+#	complete = {
+#		custom_tooltip = {
+#			text = veracruz_conference_finished
+#			has_variable = constitution_convention_finished
+#		}
+#		custom_tooltip = {
+#			text = conservative_angered
+#			this = { var:dvg_conservative_anger_var >= 6 }
+#		}
+#		
+#	}
+#	
+#	fail = {
+#		custom_tooltip = {
+#			text = veracruz_conference_finished
+#			has_variable = constitution_convention_finished
+#		}
+#		custom_tooltip = {
+#			text = conservative_pleased
+#			this = { var:dvg_conservative_anger_var < 6 }
+#		}
+#		
+#	}
+#	
+#	on_complete = {
+#		trigger_event = { id = dvg_gran_colombia.37 } #You make people too angry
+#	}
+#	
+#	on_fail = {
+#		trigger_event = { id = dvg_gran_colombia.36 } #You calm everyone down
+#	}
+#	weight = 100
+#	should_be_pinned_by_default = yes
+#}
 je_colombian_civil_war = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	
