@@ -1362,6 +1362,7 @@ dvg_plantagenia.19 = {
 
 		trigger_event = {
 			id = dvg_plantagenia.20
+			days = 30
 		}
 		if = {
 			limit = {
@@ -1369,7 +1370,10 @@ dvg_plantagenia.19 = {
 					has_technology_researched = egalitarianism
 				}
 			}
-			add_technology_researched = egalitarianism
+			add_technology_progress = {
+				technology = egalitarianism
+				progress = 5000
+			}
 		}
 
 		
@@ -1378,7 +1382,8 @@ dvg_plantagenia.19 = {
 		name = dvg_plantagenia.19.b
 
 		add_loyalists = {
-			value = 0.10
+			value = 0.05
+			culture = cu:cadien
 		}
 		every_interest_group = {
 			limit = {
@@ -1388,9 +1393,9 @@ dvg_plantagenia.19 = {
 				}
 			}
 			add_modifier = {
-				name = modifier_ig_approves
-				months = 3
-				is_decaying = yes
+				name = ig_placated
+				months = 12
+				#is_decaying = yes
 			}
 		}
 
@@ -1436,19 +1441,23 @@ dvg_plantagenia.20 = {
 		name = dvg_plantagenia.20.a
 		default_option = yes 
 
-		trigger_event = {
-			id = dvg_plantagenia.21
-			days = 30
-
-		}
+		#trigger_event = {
+		#	id = dvg_plantagenia.21
+		#	days = 30
+		#
+		#}
 
 		add_loyalists = {
 			value = 0.25
 			culture = cu:afro_amerigan
 		}
+		add_radicals = {
+			value = 0.20
+			pop_type = aristocrats
+		}
 		add_modifier = {
 			name = dvg_modifier_intelligentsia_bolstered
-			months = 30
+			months = 36
 			is_decaying = yes
 		}
 		if = {
@@ -2534,17 +2543,23 @@ dvg_plantagenia.34 = {
 		default_option = yes 
 
 		add_radicals = {
-			value = 0.10
+			value = 0.04
+			culture = cu:afro_arcadian
 		}
 
 		hidden_effect = {
-			trigger_event = {
-				id = dvg_plantagenia.35 
-				days = 100
+			if = {
+				limit = { 
+					NOT = {
+						has_variable = tolouse_raided
+					}
+				}
+				trigger_event = {
+					id = dvg_plantagenia.35 
+					days = 50
+				}
 			}
 		}
-
-		
 	}
 	
 }
@@ -2570,6 +2585,9 @@ dvg_plantagenia.35 = {
 	
 	trigger = {
 		owns_entire_state_region = STATE_ALIBAMON
+		NOT = {
+			has_variable = tolouse_raided
+		}
 	}
 
 	immediate = {
@@ -2583,6 +2601,10 @@ dvg_plantagenia.35 = {
 		name = dvg_plantagenia.35.a
 		default_option = yes 
 
+		add_radicals = {
+			value = 0.10
+			culture = cu:afro_arcadian
+		}
 		
 		set_variable = tolouse_raided
 		

@@ -771,7 +771,7 @@ je_pla_slavery = {
 	}
 	progressbar = yes
 
-	timeout = 10550
+	#timeout = 10550
 
 	on_timeout = {
 		trigger_event = {
