@@ -85,16 +85,21 @@ dvg_spain.2 = {
 				}
 
 				add_war_goal = {
-					holder = GCO
-					type = transfer_subject
+					holder = c:GCO
+					type = annex_country
 					target_country = c:GRA
+					
+					
 				}
 				add_war_goal = {
-					holder = GCO
-					type = transfer_subject
+					holder = c:GCO
+					type = annex_country
 					target_country = c:QUI
+					
 				}
 			}
+
+
 			#trigger_event = { id = dvg_spain.3 }
 			change_infamy = -50
 		}
@@ -277,51 +282,51 @@ dvg_spain.4 = {
 }
 
 # Withdrawal from Granada
-dvg_spain.5 = {
-	type = country_event
-	placement = ROOT
-
-	title = dvg_spain.5.t
-	desc = dvg_spain.5.d
-	flavor = dvg_spain.5.f
-	
-	event_image = {
-		video = "southamerica_war_civilians"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/war_civilians"
-
-	icon = "gfx/interface/icons/event_icons/event_fire.dds"
-
-	duration = 3
-
-	trigger = {
-	}
-	
-	immediate = {
-		c:SPA = {
-			create_bidirectional_truce = {
-				country = c:GRA
-				months = 48
-			}
-			change_infamy = -50
-		}
-	}
-	
-	# Let them go
-	option = {
-		name = dvg_spain.5.a
-		default_option = yes
-		change_relations = {
-			country = c:GRA
-			value = -50
-		}
-		ai_chance = {
-			base = 1
-		}
-	}
-}
+#dvg_spain.5 = {
+#	type = country_event
+#	placement = ROOT
+#
+#	title = dvg_spain.5.t
+#	desc = dvg_spain.5.d
+#	flavor = dvg_spain.5.f
+#	
+#	event_image = {
+#		video = "southamerica_war_civilians"
+#	}
+#
+#	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+#	on_opened_soundeffect = "event:/SFX/Events/southamerica/war_civilians"
+#
+#	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+#
+#	duration = 3
+#
+#	trigger = {
+#	}
+#	
+#	immediate = {
+#		c:SPA = {
+#			create_bidirectional_truce = {
+#				country = c:GRA
+#				months = 48
+#			}
+#			change_infamy = -50
+#		}
+#	}
+#	
+#	# Let them go
+#	option = {
+#		name = dvg_spain.5.a
+#		default_option = yes
+#		change_relations = {
+#			country = c:GRA
+#			value = -50
+#		}
+#		ai_chance = {
+#			base = 1
+#		}
+#	}
+#}
 # Colombian Alliance is defeated
 dvg_spain.6 = {
 	type = country_event
@@ -1985,14 +1990,27 @@ dvg_spain.27 = {
 	option = {
 		name = dvg_spain.27.a
 		default_option = yes
-		hidden_effect = {
 			if = {
 				limit = {
 					NOT = { has_law = law_type:law_monarchy }
 				}
 				activate_law = law_type:law_monarchy
 			}
+	
+		annex_with_incorporation = c:GRA
+		annex_with_incorporation = c:QUI
+		annex_with_incorporation = c:CUB
+
+		add_primary_culture = cu:caladeran
+		add_primary_culture = cu:granadan
+		add_primary_culture = cu:caribeno
+
+		c:GCO = {
+			change_subject_type = subject_type_dominion
 		}
+		
+
+
 		ai_chance = {
 			base = 1
 		}

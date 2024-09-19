@@ -619,6 +619,8 @@ je_building_the_colombian_identity = {
 		}
 		add_modifier = {
 			name = dvg_nation_built
+			days = 7300
+			is_decaying = yes
 		}
 		add_primary_culture = cu:colombian
 		remove_primary_culture = cu:lusitanian

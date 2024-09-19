@@ -24,9 +24,9 @@
 		}
 	}
 	
-	on_yearly_pulse = {
-		events = { dvg_spain.4 }	# Truce of 1838
-	}
+	#on_yearly_pulse = {
+	#	events = { dvg_spain.4 }	# Truce of 1838
+	#}
 
     on_complete = {
 		trigger_event = { id = dvg_spain.6 }
@@ -192,49 +192,49 @@ je_reconquer_new_spain = {
 	should_be_pinned_by_default = yes
 }
 
-je_rebuild_spain = {
-	icon = "gfx/interface/icons/event_icons/event_map.dds"
-	
-	group = je_group_internal_affairs
-
-	invalid = {
-		has_variable = remove_many_spanish_jes_var
-	}
-	
-	complete = {
-		AND = {
-			NOT = {
-				has_law = law_type:law_serfdom
-				has_law = law_type:law_land_based_taxation
-			}
-		}
-	}
-	
-	fail = {
-		OR = {
-			AND = {
-				year > 1848
-				NOT = {
-					has_modifier = dvg_army_reform_spain
-				}
-			}
-			year > 1860
-		}
-	}
-
-
-	on_complete = {
-		trigger_event = { id = dvg_spain.9 }
-		remove_modifier = dvg_fallen_kingdom
-	}
-	
-    on_fail = {
-		#trigger_event = { id = dvg_spain.10 }
-	}
-
-	weight = 100
-	should_be_pinned_by_default = yes
-}
+#je_rebuild_spain = {
+#	icon = "gfx/interface/icons/event_icons/event_map.dds"
+#	
+#	group = je_group_internal_affairs
+#
+#	invalid = {
+#		has_variable = remove_many_spanish_jes_var
+#	}
+#	
+#	complete = {
+#		AND = {
+#			NOT = {
+#				has_law = law_type:law_serfdom
+#				has_law = law_type:law_land_based_taxation
+#			}
+#		}
+#	}
+#	
+#	fail = {
+#		OR = {
+#			AND = {
+#				year > 1848
+#				NOT = {
+#					has_modifier = dvg_army_reform_spain
+#				}
+#			}
+#			year > 1860
+#		}
+#	}
+#
+#
+#	on_complete = {
+#		trigger_event = { id = dvg_spain.9 }
+#		remove_modifier = dvg_fallen_kingdom
+#	}
+#	
+#    on_fail = {
+#		#trigger_event = { id = dvg_spain.10 }
+#	}
+#
+#	weight = 100
+#	should_be_pinned_by_default = yes
+#}
 
 je_a_new_empire_in_an_old_world = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"

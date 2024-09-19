@@ -112,12 +112,12 @@ dvg_gran_colombia.3 = {
 		name = dvg_gran_colombia.3.a
 		default_option = yes
 		add_loyalists = {
-			value = 0.2
+			value = 0.1
 		}
 		remove_modifier = dvg_spanish_independence_fighters
 		remove_modifier = dvg_spanish_independence
 		
-		trigger_event = { id = dvg_gran_colombia.13 months = 6 }
+		#trigger_event = { id = dvg_gran_colombia.13 months = 6 }
 		ai_chance = {
 			base = 1
 		}
