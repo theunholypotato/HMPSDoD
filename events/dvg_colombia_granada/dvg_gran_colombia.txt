@@ -124,20 +124,18 @@ dvg_gran_colombia.3 = {
 
 		if = {
 			limit = { 
-				c:GRA = {
-					overlord = C:GCO
-				}
+				exists = c:GRA
 			}
-			annex_with_incorporation = c:GRA
+			annex = c:GRA
 		}
 		if = {
 			limit = { 
-				c:QUI = {
-					overlord = C:GCO
-				}
+				exists = c:QUI
 			}
-			annex_with_incorporation = c:QUI
+			annex = c:QUI
 		}
+
+		
 	}
 	
 }
