@@ -502,7 +502,7 @@ je_amerigan_nation_building_integrate_atlantian = {
 				has_variable = amerigan_atlantian_hero_var
 			}
 			ig:ig_intelligentsia = {
-				ig_approval >= 10 
+				ig_approval >= 5 
 			}
 		}
 		hidden_trigger = {
@@ -584,7 +584,7 @@ je_amerigan_nation_building_integrate_antarctican = {
 			}
 		}
 		ig:ig_landowners = {
-			ig_approval >= 10 
+			ig_approval >= 5 
 		}
 		enacting_any_law = no
 		OR = {
