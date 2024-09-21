@@ -305,6 +305,7 @@ dvg_embrace_afro_amerigans = {
 		OR = {
 			this = c:AMA
 			this = c:AME
+			this = c:LOT
 		}
 	
 		NOT = {
