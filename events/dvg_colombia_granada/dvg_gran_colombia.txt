@@ -32,9 +32,6 @@ dvg_gran_colombia.1 = {
 		add_loyalists = {
 			value = 0.1
 		}
-		add_journal_entry = {
-			type = je_colombian_war_of_independence_GCO
-		}
 		ai_chance = {
 			base = 1
 		}

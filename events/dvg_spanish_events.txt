@@ -106,6 +106,9 @@ dvg_spain.2 = {
 		c:GCO = { 
 			trigger_event = { id = dvg_gran_colombia.2 }
 			change_infamy = -50
+			add_journal_entry = {
+				type = je_colombian_war_of_independence_GCO
+			}
 		}
 		#c:QUI = {
 		#	add_journal_entry = {
@@ -154,10 +157,14 @@ dvg_spain.2 = {
 					days = 3650
 				}
 			}
+			create_bidirectional_truce = {
+				country = c:GCO
+				months = 48
+			}
 		}
 		
 		c:GCO = { 
-			trigger_event = { id = dvg_gran_colombia.3 }
+			trigger_event = { id = dvg_gran_colombia.5 }
 		}
 		#c:QUI = {
 		#	trigger_event = { id = dvg_caladero.8 }
