@@ -296,8 +296,15 @@
 dvg_embrace_afro_amerigans = {
 	is_shown = {
 
-		any_primary_culture = {
-			has_discrimination_trait = amerigan
+		#any_primary_culture = {
+		#	has_discrimination_trait = {
+		#		trait = cu:amerigan
+		#	}
+		#}
+
+		OR = {
+			this = c:AMA
+			this = c:AME
 		}
 	
 		NOT = {
