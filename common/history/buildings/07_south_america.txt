@@ -571,6 +571,17 @@
 				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
 			create_building={
+				building="building_gold_mine"
+				add_ownership={
+					country={
+						country="c:TWT"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}
+			create_building={
 				building="building_maize_farm"
 				add_ownership={
 					building={
@@ -660,6 +671,28 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" }
+			}
+			create_building={
+				building="building_gold_mine"
+				add_ownership={
+					country={
+						country="c:TWT"
+						levels=4
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}
+			create_building={
+				building="building_tooling_workshops"
+				add_ownership={
+					country={
+						country="c:TWT"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled" }
 			}
 			create_building={
 				building="building_arms_industry"
@@ -754,7 +787,7 @@
 				add_ownership={
 					country={
 						country="c:TWT"
-						levels=4
+						levels=8
 					}
 				}
 				reserves=1
@@ -813,6 +846,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
+			}
+			create_building={
+				building="building_gold_mine"
+				add_ownership={
+					country={
+						country="c:TWT"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -1027,7 +1071,7 @@
 				add_ownership={
 					country={
 						country="c:TWT"
-						levels=5
+						levels=6
 					}
 				}
 				reserves=1
@@ -1043,6 +1087,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_religious_academia" }
+			}
+			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					building={
+						type="building_paper_mills"
+						country="c:TWT"
+						levels=1
+						region="STATE_CUZCO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled" }
 			}
 			#create_building={
 			#	building="building_arts_academy"
@@ -1904,6 +1961,17 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
+			create_building={
+				building="building_gold_mine"
+				add_ownership={
+					country={
+						country="c:TWT"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_picks_and_shovels_building_gold_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}
 		}
 	}
 	s:STATE_TRANSFLEUVE={
@@ -1954,7 +2022,7 @@
 				add_ownership={
 					country={
 						country="c:TWT"
-						levels=1
+						levels=5
 					}
 				}
 				reserves=1
