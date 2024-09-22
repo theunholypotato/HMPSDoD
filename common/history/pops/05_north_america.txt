@@ -404,7 +404,7 @@
 		region_state:VIN = {
 			create_pop = {
 				culture = vinlander
-				size = 457503
+				size = 957503
 			}
 			create_pop = {
 				culture = afro_germanic
@@ -499,7 +499,7 @@
 		region_state:VIN = {
 			create_pop = {
 				culture = vinlander
-				size = 5459
+				size = 800594
 			}
 			create_pop = {
 				culture = iroquoian
