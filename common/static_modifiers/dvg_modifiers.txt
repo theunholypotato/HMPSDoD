@@ -2,6 +2,21 @@
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 }
 
+caliphate_empowerment = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_devout_pop_attraction_mult = 0.5
+}
+
+janissary_revolt = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	building_training_rate_add = -100
+	unit_army_defense_mult = -0.1
+	unit_army_offense_mult = -0.1
+	interest_group_ig_armed_forces_pop_attraction_mult = 0.2
+	country_authority_mult = -0.2
+	state_radicals_from_discrimination_mult = 0.2
+}
+
 neutrality = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 	country_influence_mult = -0.3

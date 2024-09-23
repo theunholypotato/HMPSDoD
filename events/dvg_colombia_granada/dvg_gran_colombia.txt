@@ -74,7 +74,7 @@ dvg_gran_colombia.2 = {
 			is_decaying = yes
 		}
 		
-		remove_modifier = dvg_war_preparation
+		#remove_modifier = dvg_war_preparation
 		ai_chance = {
 			base = 1
 		}
