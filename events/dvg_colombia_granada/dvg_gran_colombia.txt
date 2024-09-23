@@ -19,9 +19,9 @@ dvg_gran_colombia.1 = {
 
 	duration = 3
 	
-	immediate = {
-		add_modifier = { name = dvg_war_preparation }
-	}
+	#immediate = {
+	#	add_modifier = { name = dvg_war_preparation }
+	#}
 	trigger = {
 	}
 	
@@ -31,9 +31,6 @@ dvg_gran_colombia.1 = {
 		default_option = yes
 		add_loyalists = {
 			value = 0.1
-		}
-		add_journal_entry = {
-			type = je_colombian_war_of_independence_GCO
 		}
 		ai_chance = {
 			base = 1
@@ -73,9 +70,11 @@ dvg_gran_colombia.2 = {
 		}
 		add_modifier = {
 			name = dvg_spanish_independence_fighters
+			days = 912
+			is_decaying = yes
 		}
 		
-		remove_modifier = dvg_war_preparation
+		#remove_modifier = dvg_war_preparation
 		ai_chance = {
 			base = 1
 		}
@@ -110,15 +109,30 @@ dvg_gran_colombia.3 = {
 		name = dvg_gran_colombia.3.a
 		default_option = yes
 		add_loyalists = {
-			value = 0.2
+			value = 0.1
 		}
 		remove_modifier = dvg_spanish_independence_fighters
 		remove_modifier = dvg_spanish_independence
 		
-		trigger_event = { id = dvg_gran_colombia.13 months = 6 }
+		#trigger_event = { id = dvg_gran_colombia.13 months = 6 }
 		ai_chance = {
 			base = 1
 		}
+
+		if = {
+			limit = { 
+				exists = c:GRA
+			}
+			annex = c:GRA
+		}
+		if = {
+			limit = { 
+				exists = c:QUI
+			}
+			annex = c:QUI
+		}
+
+		
 	}
 	
 }

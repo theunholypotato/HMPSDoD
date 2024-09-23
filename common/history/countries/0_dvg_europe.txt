@@ -248,6 +248,7 @@
 		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_mercantilism
 		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_moderate_income_tax
 		activate_law = law_type:law_colonial_exploitation
 		activate_law = law_type:law_local_police
 		activate_law = law_type:law_serfdom
@@ -266,8 +267,9 @@
 		}
 
 		trigger_event = {
-		#	id = dvg_spain.1
+			id = dvg_spain.2
 		}
+		
 		set_secret_goal = {
 			country = c:MOR
 			secret_goal = conquer
@@ -1567,7 +1569,9 @@
 		add_technology_researched = urban_planning
 		add_technology_researched = line_infantry
 		add_technology_researched = intensive_agriculture
+
 		set_tax_level = medium
+		add_taxed_goods = g:tobacco
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_autocracy
@@ -1595,6 +1599,14 @@
 			set_interest_group_name = ig_kadizadeli
 		}
 
+		add_journal_entry = {
+			type = je_disquiet_army
+		}
+
+		trigger_event = {
+			id = dvg_ottomans_reclaim.5
+		}
+		
 		#trigger_event = {
 		#	id = sick_man.1
 		#}

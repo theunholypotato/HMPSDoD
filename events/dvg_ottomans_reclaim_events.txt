@@ -128,3 +128,73 @@ dvg_ottomans_reclaim.4 = {
 		}
 	}
 }
+
+dvg_ottomans_reclaim.5 = {
+	type = country_event
+	placement = ROOT
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/capitalists_meeting"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	title = dvg_ottomans_reclaim.5.t
+	desc = dvg_ottomans_reclaim.5.d
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = { #ottoman_courts
+		name = dvg_ottomans_reclaim.5.a
+		default_option = yes
+		
+		add_journal_entry = {
+			type = je_embrace_ottoman_courts
+		}
+		
+
+		ig:ig_intelligentsia = {
+			add_modifier = {
+				name = ig_placated
+				days = 1095
+			}
+		}
+		
+	}
+
+	option = { #caliphate
+		name = dvg_ottomans_reclaim.5.b
+		default_option = no
+
+				
+		
+		add_journal_entry = {
+			type = je_centre_of_islam
+		}
+
+		ig:ig_devout = {
+			add_modifier = {
+				name = ig_placated
+				days = 1095
+			}
+		}
+	}
+
+	option = {
+		name = dvg_ottomans_reclaim.5.c
+		default_option = no
+
+		ig:ig_landowners = {
+			add_modifier = {
+				name = ig_placated
+				days = 1095
+			}
+		}
+	}
+}

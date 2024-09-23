@@ -131,35 +131,36 @@ dvg_ari_unification.4 = {
 	trigger = {
 	}
 
-	option = {
-		name = dvg_ari_unification.4.a
-		default_option = yes
-		give_claims_on_italy = yes
-
-		ruler = {
-			add_modifier = {
-				name = ari_unifier_ruler
-			}
-		}
-	}
+	#option = {
+	#	name = dvg_ari_unification.4.a
+	#	default_option = yes
+	#	give_claims_on_italy = yes
+#
+	#	ruler = {
+	#		add_modifier = {
+	#			name = ari_unifier_ruler
+	#		}
+	#	}
+	#}
 	option = {
 		name = dvg_ari_unification.4.b
 		give_claims_on_italy = yes
-
+		active_law = law_type:law_national_supremacy 
+			
 		add_loyalists = {
-			value = 0.1
+			value = 0.05
 			culture = cu:catalan
 		}
 		add_loyalists = {
-			value = 0.1
+			value = 0.05
 			culture = cu:north_italian
 		}
 		add_loyalists = {
-			value = 0.1
+			value = 0.05
 			culture = cu:central_italian
 		}
 		add_loyalists = {
-			value = 0.1
+			value = 0.05
 			culture = cu:south_italian
 		}
 	}

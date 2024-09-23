@@ -14,6 +14,13 @@
   je_tur_reclaim_iraq_reason:0 "While not entirely opposed to Ottoman rule, the Iraqi Elayets saw an opportunity during the civil war to declare independence, and they took it. To restore the honor of the Empire, Iraq must be returned."
   je_tur_reclaim_serbia:0 "Pacify the Serbs"
   je_tur_reclaim_serbia_reason:0 "One of the more uppity of our territories, several large uprisings have taken place in Serbia during our several hundred years of rightful occupation. However, being a strong seat of Jannisaries, at the edge of the Empire, the Serbs used the civil war to break away from our rule. They must be pacified!"
+  je_centre_of_islam:0 "The Centre of the Muslim world"
+  je_centre_of_islam_reason:0 "The division between different Muslim peoples has left us righteous but weak. We must devote ourselves to the teachings of The Prophet, aquire the holy cities and reclaim the fertile cresent."
+  je_embrace_ottoman_courts:0 "Elevate the Ottoman Cortiers"
+  je_embrace_ottoman_courts_reason:0 "Ever since the Turkish people succeeded the Byzantine throne as successors to Rome the Hellenic people and balkan peoples have remained in the Ottoman courts. We should elevate these peoples and reconquer our balkan holdings"
+  je_disquiet_army:0 "Army in Disarray"
+  je_disquiet_army_reason:0 "The Jannisaries have been in a thorn in the side of the nation for a while. Providing better training and clearing up the Kurdish tribesmen in the east will put their fears at bay"
+
 
   #Events
   dvg_sick_man.1.f:0 "The road to decline began with the rise of Selim III in 1789. Selim, ever the reformer, sought to reform an Ottoman Empire that had begun to lag behind the European powers, a decline began at the beginning of the century. However, one such reform, to create a European-styled Army, was opposed violently by the Janissaries, who had Selim murdered in 1807 and replaced with his cousin, Mustafa IV. This move saw revolts by the reformer elements within the Empire, triggering the Ottoman Civil War, a period of almost thirty years of conflict between the reactionaries under Mustafa IV, and the forces of reform under his brother, Suleiman. Eventually, the reformers won, but the balkans was lost. Now we can finally start the reforms that are required to rise again. First, of course, we need to replace the Janissaries with a truly modern military force. But in addition, we must restore the place of the Sublime Porte as the very height of civilization. Education, urbanization, and sovereignty shall be the top items of the [ROOT.GetCountry.GetAdjectiveNoFormatting] agenda."
@@ -32,3 +39,14 @@
   #macedonian decision, this is very placeholder, until the Balkan rework is done.
   dvg_mcd_acceptgreeks:0 "Accept Greeks"
   dvg_mcd_acceptgreeks_desc:0 "We have formed a nation for the Southern Slavs, but many prominent members of our government are still Greek. Perhaps they can be reintegrated into a new nation for both Southern Slavs and Greeks?"
+  dvg_ottomans_reclaim.5.t:0 "The Straits between East and West"
+  dvg_ottomans_reclaim.5.d:0 "There has been much discussion in Konstantinopolis about the direction of the Sultanate. Do we look to a more secular West, or to our Islamic roots to the East. Whichever path we choose the minority tensions will increase and only completing our reform will quell it, maybe indecision is the best choice?"
+  dvg_ottomans_reclaim.5.a:0 "Elevate our Courtly Vassals!"
+  dvg_ottomans_reclaim.5.b:0 "Empower our Muslim Brothers!"
+  dvg_ottomans_reclaim.5.c:0 "The Turkish dominace seems like the safe option..."
+
+  
+
+  caliphate_empowerment:0 "Empowered Caliphate"
+  ig_placated:0 "Favored Path"
+

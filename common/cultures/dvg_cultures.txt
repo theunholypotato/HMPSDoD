@@ -1460,7 +1460,7 @@ lusitanian={
 colombian = {
 	color=RGB { 255 234 168 }
 	religion = catholic
-	traits = { lusophone gran_colombian european_heritage } #dvg lusophone
+	traits = { lusophone hispanophone gran_colombian european_heritage } #dvg lusophone
 	male_common_first_names={
 		Adrian_2
 		Agustin

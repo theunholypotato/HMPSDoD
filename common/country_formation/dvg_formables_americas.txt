@@ -86,7 +86,7 @@ AME = { #Amerigan Federation
 				country_has_primary_culture = cu:lotharian
 				country_has_primary_culture = cu:atlantian
 			}			
-			has_technology_researched = pan-nationalism
+			has_technology_researched = nationalism
 		}
 	}
 }
@@ -127,7 +127,7 @@ BLC = { #Belgium
 					
 				has_technology_researched = nationalism
 		}
-		year >= 1840
+		#year >= 1840
 		is_subject = no
 	}
 	

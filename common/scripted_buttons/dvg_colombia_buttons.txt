@@ -40,7 +40,7 @@
 				has_variable = colombian_caribeno_hero_var
 			}
 			ig:ig_petty_bourgeoisie = {
-				ig_approval >= 10 
+				ig_approval >= 5 
 			}
 		}
 		hidden_trigger = {
@@ -126,21 +126,20 @@ je_colombian_nation_building_integrate_mexican = {
 				text = je_colombian_nation_building_colombian_national_hero_owned
 				has_variable = colombian_mexican_hero_var
 			}
-			NOT = {
-				any_scope_state = {
-					state_region = {
-						is_homeland = cu:mexican
-					}
-					radical_fraction = {
-						value >= 0.10
-						culture = cu:mexican
-					}
+			
+			any_scope_state = {
+				state_region = {
+					is_homeland = cu:mexican
 				}
+				literacy_rate >= 0.6
 			}
+			ig:ig_intelligentsia = {
+				ig_approval >= 5
+			}
+			
 		}
-		ig:ig_intelligentsia = {
-			ig_approval >= 10
-		}
+		
+		
 
 		hidden_trigger = {
 			NOT = {
@@ -224,9 +223,7 @@ je_colombian_nation_building_integrate_central_american = {
 				is_homeland = cu:central_american
 			}
 		}
-		ig:ig_landowners = {
-			ig_approval >= 10 
-		}
+		
 		OR = {
 			custom_tooltip = {
 				text = je_colombian_nation_building_colombian_national_hero_owned
@@ -239,6 +236,9 @@ je_colombian_nation_building_integrate_central_american = {
 					}
 					devastation > 0
 				}
+			}
+			ig:ig_landowners = {
+				ig_approval >= 5 
 			}
 		}
 		hidden_trigger = {
@@ -301,7 +301,7 @@ je_colombian_nation_building_integrate_lusitanian = {
 	possible = {
 		OR = {
 			ig:ig_rural_folk = {
-				ig_approval >= 10 
+				ig_approval >= 5 
 			}
 			owns_entire_state_region = STATE_TERRAS_VERMELHAS
 			owns_entire_state_region = STATE_APACHERIA

@@ -2,6 +2,21 @@
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 }
 
+caliphate_empowerment = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_devout_pop_attraction_mult = 0.5
+}
+
+janissary_revolt = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	building_training_rate_add = -100
+	unit_army_defense_mult = -0.1
+	unit_army_offense_mult = -0.1
+	interest_group_ig_armed_forces_pop_attraction_mult = 0.2
+	country_authority_mult = -0.2
+	state_radicals_from_discrimination_mult = 0.2
+}
+
 neutrality = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 	country_influence_mult = -0.3
@@ -134,7 +149,7 @@ dvg_regency_government = {
 dvg_spanish_independence_fighters = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	#state_conscription_rate_add = 0.025
-	building_training_rate_add = 500
+	building_training_rate_add = 400
 	unit_army_offense_mult = 0.05
 	unit_army_defense_mult = 0.05
 }
@@ -176,10 +191,10 @@ dvg_bad_taxation = {
 dvg_fragile_country = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
 	country_radicals_from_legitimacy_mult = 1
-	country_legitimacy_ideological_incoherence_mult = 0.25
-	political_movement_radicalism_mult = 0.25
-	state_turmoil_effects_mult = 0.25
-	state_radicals_from_sol_change_mult = 0.33
+	country_legitimacy_ideological_incoherence_mult = 0.2
+	political_movement_radicalism_mult = 0.2
+	state_turmoil_effects_mult = 0.2
+	state_radicals_from_sol_change_mult = 0.3
 	state_radicals_from_discrimination_mult = 0.1
 }
 

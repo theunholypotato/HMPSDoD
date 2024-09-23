@@ -62,7 +62,7 @@ dvg_spain.2 = {
 		}
 
 	trigger = {
-		game_date = 1836.2.1
+		#game_date = 1836.2.1
 	}
 	
 	# For God, for King, for Country, destroy Colombia!
@@ -83,17 +83,38 @@ dvg_spain.2 = {
 					target_state = s:STATE_CUBA.region_state:CUB
 					target_country = c:GCO
 				}
+
+				add_war_goal = {
+					holder = c:GCO
+					type = annex_country
+					target_country = c:GRA
+					
+					
+				}
+				add_war_goal = {
+					holder = c:GCO
+					type = annex_country
+					target_country = c:QUI
+					
+				}
 			}
-			trigger_event = { id = dvg_spain.3 }
+
+
+			#trigger_event = { id = dvg_spain.3 }
+			change_infamy = -50
 		}
 		c:GCO = { 
 			trigger_event = { id = dvg_gran_colombia.2 }
-		}
-		c:QUI = {
+			change_infamy = -50
 			add_journal_entry = {
-				type = je_colombian_war_of_independence_QUI
+				type = je_colombian_war_of_independence_GCO
 			}
 		}
+		#c:QUI = {
+		#	add_journal_entry = {
+		#		type = je_colombian_war_of_independence_QUI
+		#	}
+		#}
 		add_journal_entry = {
 			type = je_colombian_war_of_independence_SPA
 		}
@@ -109,31 +130,45 @@ dvg_spain.2 = {
 		name = dvg_spain.2.b
 		
 		c:SPA = {
-			remove_diplomatic_pact = {
-				country = c:GRA
-				type = puppet
+			#remove_diplomatic_pact = {
+			#	country = c:GRA
+			#	type = puppet
+			#}
+			#remove_diplomatic_pact = {
+			#	country = c:QUI
+			#	type = protectorate
+			#}
+			#add_journal_entry = {
+			#	type = je_rebuild_spain
+			#}
+			#add_journal_entry = {
+			#	type = je_army_reform_spain
+			#}
+			add_loyalists = {
+				value = 0.3
 			}
-			remove_diplomatic_pact = {
-				country = c:QUI
-				type = protectorate
+			add_radicals = {
+				value = 0.3
+				pop_type = aristocrats
 			}
-			add_journal_entry = {
-				type = je_rebuild_spain
+			ig:ig_landowners = {
+				add_modifier = {
+					name = ig_demand_not_met
+					days = 3650
+				}
 			}
-			add_journal_entry = {
-				type = je_army_reform_spain
+			create_bidirectional_truce = {
+				country = c:GCO
+				months = 48
 			}
 		}
 		
 		c:GCO = { 
-			trigger_event = { id = dvg_gran_colombia.3 }
+			trigger_event = { id = dvg_gran_colombia.5 }
 		}
-		c:QUI = {
-			trigger_event = { id = dvg_caladero.8 }
-		}
-		add_radicals = {
-			value = 0.1
-		}
+		#c:QUI = {
+		#	trigger_event = { id = dvg_caladero.8 }
+		#}
 		ai_chance = {
 			base = 0
 		}
@@ -254,51 +289,51 @@ dvg_spain.4 = {
 }
 
 # Withdrawal from Granada
-dvg_spain.5 = {
-	type = country_event
-	placement = ROOT
-
-	title = dvg_spain.5.t
-	desc = dvg_spain.5.d
-	flavor = dvg_spain.5.f
-	
-	event_image = {
-		video = "southamerica_war_civilians"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/war_civilians"
-
-	icon = "gfx/interface/icons/event_icons/event_fire.dds"
-
-	duration = 3
-
-	trigger = {
-	}
-	
-	immediate = {
-		c:SPA = {
-			create_bidirectional_truce = {
-				country = c:GRA
-				months = 48
-			}
-			change_infamy = -50
-		}
-	}
-	
-	# Let them go
-	option = {
-		name = dvg_spain.5.a
-		default_option = yes
-		change_relations = {
-			country = c:GRA
-			value = -50
-		}
-		ai_chance = {
-			base = 1
-		}
-	}
-}
+#dvg_spain.5 = {
+#	type = country_event
+#	placement = ROOT
+#
+#	title = dvg_spain.5.t
+#	desc = dvg_spain.5.d
+#	flavor = dvg_spain.5.f
+#	
+#	event_image = {
+#		video = "southamerica_war_civilians"
+#	}
+#
+#	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+#	on_opened_soundeffect = "event:/SFX/Events/southamerica/war_civilians"
+#
+#	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+#
+#	duration = 3
+#
+#	trigger = {
+#	}
+#	
+#	immediate = {
+#		c:SPA = {
+#			create_bidirectional_truce = {
+#				country = c:GRA
+#				months = 48
+#			}
+#			change_infamy = -50
+#		}
+#	}
+#	
+#	# Let them go
+#	option = {
+#		name = dvg_spain.5.a
+#		default_option = yes
+#		change_relations = {
+#			country = c:GRA
+#			value = -50
+#		}
+#		ai_chance = {
+#			base = 1
+#		}
+#	}
+#}
 # Colombian Alliance is defeated
 dvg_spain.6 = {
 	type = country_event
@@ -511,118 +546,118 @@ dvg_spain.9 = {
 }
 
 # A Spanish Revolution
-dvg_spain.10 = {
-	type = country_event
-	placement = ROOT
-
-	title = dvg_spain.10.t
-	desc = dvg_spain.10.d
-	flavor = dvg_spain.10.f
-
-	event_image = {
-		video = "southamerica_war_civilians"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/war_civilians"
-
-	icon = "gfx/interface/icons/event_icons/event_fire.dds"
-
-	duration = 3
-
-	trigger = {
-	}
-	
-	
-	# For the republic!
-	option = {
-		name = dvg_spain.10.a
-		default_option = yes
-		add_loyalists = {
-			value = 0.4
-		}
-		add_modifier = {
-			name = dvg_overthrown_kingdom
-		}
-		add_journal_entry = {
-			type = je_spanish_india
-		}
-		add_journal_entry = {
-			type = je_spanish_africa
-		}
-		remove_modifier = dvg_fallen_kingdom
-		ig:ig_landowners = {
-			remove_ideology = ideology_patriarchal
-			add_ideology = ideology_republican_paternalistic
-		}
-		c:CUB = {
-			trigger_event = { id = dvg_cuba.2 days = 7 }
-		}
-		hidden_effect = {
-			remove_modifier = dvg_army_reform_spain
-			if = {
-				limit = {
-					NOT = { has_law = law_type:law_republic }
-				}
-				activate_law = law_type:law_republic
-			}
-			if = {
-				limit = {
-					NOT = { has_law = law_type:law_national_militia }
-				}
-				activate_law = law_type:law_national_militia
-			}
-			if = {
-				limit = {
-					NOT = { has_law = law_type:law_census_voting }
-				}
-				activate_law = law_type:law_census_voting
-			}
-			if = {
-				limit = {
-					NOT = { has_law = law_type:law_right_of_assembly }
-				}
-				activate_law = law_type:law_right_of_assembly
-			}
-			if = {
-				limit = {
-					NOT = { has_law = law_type:law_per_capita_based_taxation }
-				}
-				activate_law = law_type:law_per_capita_based_taxation
-			}
-			if = {
-				limit = {
-					NOT = { has_law = law_type:law_freedom_of_conscience }
-				}
-				activate_law = law_type:law_freedom_of_conscience
-			}
-			if = {
-				limit = {
-					NOT = { has_law = law_type:law_public_schools }
-				}
-				activate_law = law_type:law_public_schools
-			}
-			if = {
-				limit = {
-					NOT = { has_law = law_type:law_elected_bureaucrats }
-				}
-				activate_law = law_type:law_elected_bureaucrats
-			}
-			if = {
-				limit = {
-					NOT = { has_law = law_type:law_tenant_farmers }
-				}
-				activate_law = law_type:law_tenant_farmers
-			}
-			if = {
-				limit = {
-					NOT = { has_law = law_type:law_interventionism}
-				}
-				activate_law = law_type:law_interventionism
-			}
-		}
-	}
-}
+#dvg_spain.10 = {
+#	type = country_event
+#	placement = ROOT
+#
+#	title = dvg_spain.10.t
+#	desc = dvg_spain.10.d
+#	flavor = dvg_spain.10.f
+#
+#	event_image = {
+#		video = "southamerica_war_civilians"
+#	}
+#
+#	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+#	on_opened_soundeffect = "event:/SFX/Events/southamerica/war_civilians"
+#
+#	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+#
+#	duration = 3
+#
+#	trigger = {
+#	}
+#	
+#	
+#	# For the republic!
+#	option = {
+#		name = dvg_spain.10.a
+#		default_option = yes
+#		add_loyalists = {
+#			value = 0.4
+#		}
+#		add_modifier = {
+#			name = dvg_overthrown_kingdom
+#		}
+#		add_journal_entry = {
+#			type = je_spanish_india
+#		}
+#		add_journal_entry = {
+#			type = je_spanish_africa
+#		}
+#		remove_modifier = dvg_fallen_kingdom
+#		ig:ig_landowners = {
+#			remove_ideology = ideology_patriarchal
+#			add_ideology = ideology_republican_paternalistic
+#		}
+#		c:CUB = {
+#			trigger_event = { id = dvg_cuba.2 days = 7 }
+#		}
+#		hidden_effect = {
+#			remove_modifier = dvg_army_reform_spain
+#			if = {
+#				limit = {
+#					NOT = { has_law = law_type:law_republic }
+#				}
+#				activate_law = law_type:law_republic
+#			}
+#			if = {
+#				limit = {
+#					NOT = { has_law = law_type:law_national_militia }
+#				}
+#				activate_law = law_type:law_national_militia
+#			}
+#			if = {
+#				limit = {
+#					NOT = { has_law = law_type:law_census_voting }
+#				}
+#				activate_law = law_type:law_census_voting
+#			}
+#			if = {
+#				limit = {
+#					NOT = { has_law = law_type:law_right_of_assembly }
+#				}
+#				activate_law = law_type:law_right_of_assembly
+#			}
+#			if = {
+#				limit = {
+#					NOT = { has_law = law_type:law_per_capita_based_taxation }
+#				}
+#				activate_law = law_type:law_per_capita_based_taxation
+#			}
+#			if = {
+#				limit = {
+#					NOT = { has_law = law_type:law_freedom_of_conscience }
+#				}
+#				activate_law = law_type:law_freedom_of_conscience
+#			}
+#			if = {
+#				limit = {
+#					NOT = { has_law = law_type:law_public_schools }
+#				}
+#				activate_law = law_type:law_public_schools
+#			}
+#			if = {
+#				limit = {
+#					NOT = { has_law = law_type:law_elected_bureaucrats }
+#				}
+#				activate_law = law_type:law_elected_bureaucrats
+#			}
+#			if = {
+#				limit = {
+#					NOT = { has_law = law_type:law_tenant_farmers }
+#				}
+#				activate_law = law_type:law_tenant_farmers
+#			}
+#			if = {
+#				limit = {
+#					NOT = { has_law = law_type:law_interventionism}
+#				}
+#				activate_law = law_type:law_interventionism
+#			}
+#		}
+#	}
+#}
 
 # Reformed spanish army
 dvg_spain.11 = {
@@ -1962,14 +1997,27 @@ dvg_spain.27 = {
 	option = {
 		name = dvg_spain.27.a
 		default_option = yes
-		hidden_effect = {
 			if = {
 				limit = {
 					NOT = { has_law = law_type:law_monarchy }
 				}
 				activate_law = law_type:law_monarchy
 			}
+	
+		annex_with_incorporation = c:GRA
+		annex_with_incorporation = c:QUI
+		annex_with_incorporation = c:CUB
+
+		add_primary_culture = cu:caladeran
+		add_primary_culture = cu:granadan
+		add_primary_culture = cu:caribeno
+
+		c:GCO = {
+			change_subject_type = subject_type_dominion
 		}
+		
+
+
 		ai_chance = {
 			base = 1
 		}

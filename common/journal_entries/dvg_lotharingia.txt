@@ -66,7 +66,7 @@
 				limit = {
 					any_interest_group = {
 						is_insurrectionary = yes
-						ig_clout >= 0.12
+						ig_clout >= 0.20
 					}
 					
 				}

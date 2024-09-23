@@ -3508,7 +3508,7 @@ serb={
 bulgarian={
 	color= hsv{ 0.40 0.26 0.58 }
 	religion = orthodox
-	traits = { jugoslav european_heritage }
+	traits = { jugoslav european_heritage greek_culture}
 	male_common_first_names={
 		Aleksandar
 		Andrey
@@ -3635,7 +3635,7 @@ bulgarian={
 albanian={
 	color= hsv{ 0.10 0.60 0.44 }
 	religion = sunni
-	traits = { albanian_language european_heritage }
+	traits = { albanian_language european_heritage greek_culture }
 	male_common_first_names={
 		Ahmet
 		Ali
@@ -6203,7 +6203,7 @@ sephardic={
 turkish={
 	color= hsv{ 0.99 0.48 0.80 }
 	religion = sunni
-	traits = { turkic greek_culture middle_eastern_heritage european_heritage
+	traits = { turkic greek_culture middle_eastern_heritage }
 	obsessions = {
 		tea
 	}

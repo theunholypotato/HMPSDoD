@@ -19,9 +19,9 @@
 
  rule_rum_collapse: "Kayser-i Rûm"
  setting_collapse: "Rum collapses"
- setting_collapse_desc: "The Empire of Rum will collapse shortly after 1836, tearing the Balkans into chaos"
+ setting_collapse_desc: "The Ottomans will collapse shortly after 1836, tearing the Balkans into chaos"
  setting_no_collapse: "Rum does not collapse"
- setting_no_collapse_desc: "The Empire of Rum manages to stay together and stabilize its territories"
+ setting_no_collapse_desc: "The Ottomans manage to stay together and stabilize its territories"
 
  rule_dvg_hungary_crisis_burgundy: "The Congress of Venice"
  setting_hungary_crisis_historical_burgundy: "Peace"
