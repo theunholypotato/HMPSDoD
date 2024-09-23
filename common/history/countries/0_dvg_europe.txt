@@ -959,6 +959,10 @@
 		ig:ig_devout = {
 			set_interest_group_name = ig_catholic_church
 		}
+		trigger_event = {
+			id = dvg_danubia.1
+			days = 730
+		}
 	}
 	
 	c:SWI = { #Switzerland
@@ -1146,6 +1150,10 @@
 		}
 		ig:ig_devout = {
 			set_interest_group_name = ig_catholic_church
+		}
+		trigger_event = {
+			id = dvg_danubia.1
+			days = 730
 		}
 	}
 	
