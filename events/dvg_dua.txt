@@ -50,7 +50,7 @@ dvg_dua.1 = {
 		}
 	}
 
-	option = {
+	option = { #French
 		name = dvg_dua.1.a
 		default_option = yes
 
@@ -101,7 +101,7 @@ dvg_dua.1 = {
 		}
 	}
 
-	option = {
+	option = { #English
 		name = dvg_dua.1.b
 
 		set_variable = english_path
@@ -156,7 +156,7 @@ dvg_dua.1 = {
 		}
 	}
 
-	option = {
+	option = { #Anglois
 		name = dvg_dua.1.c
 
 		set_variable = anglois_path
@@ -466,17 +466,17 @@ dvg_dua.101 = {
 		# }
 
 		add_radicals = {
-			value = 0.10
+			value = 0.05
 			culture = cu:french
 		}
 	
 		add_radicals = {
-			value = 0.10
+			value = 0.05
 			culture = cu:occitan
 		}
 	
 		add_radicals = {
-			value = 0.10
+			value = 0.05
 			culture = cu:british
 		}
 	}
@@ -532,12 +532,12 @@ dvg_dua.110 = { # Patron
 		# }
 
 		add_radicals = {
-			value = medium_radicals
+			value = 0.03
 			culture = cu:british
 		}
 
 		add_radicals = {
-			value = medium_radicals
+			value = 0.03
 			culture = cu:welsh
 		}
 
@@ -592,11 +592,11 @@ dvg_dua.110 = { # Patron
 		# }
 
 		add_radicals = {
-			value = medium_radicals
+			value = 0.03
 			culture = cu:french
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = 0.03
 			culture = cu:occitan
 		}
 
@@ -653,22 +653,25 @@ dvg_dua.110 = { # Patron
 		# }
 
 		add_radicals = {
-			value = small_radicals
+			value = 0.01
 			culture = cu:french
 		}
 		add_radicals = {
-			value = small_radicals
+			value = 0.01
 			culture = cu:occitan
 		}
 		add_radicals = {
-			value = small_radicals
+			value = 0.01
 			culture = cu:british
 		}
 		add_radicals = {
-			value = small_radicals
+			value = 0.01
 			culture = cu:irish
 		}
-
+		add_radicals = {
+			value = 0.01
+			culture = cu:welsh
+		}
 		# ig:ig_intelligentsia = {
 		# 	add_modifier = {
 		# 		name = dvg_displeased_ig
@@ -752,7 +755,7 @@ dvg_dua.111 = { # Publication of "Histoire de la France depuis ses origines"
 		# }
 
 		add_radicals = {
-			value = large_radicals
+			value = 0.05
 			culture = cu:british
 		}
 
@@ -791,11 +794,11 @@ dvg_dua.111 = { # Publication of "Histoire de la France depuis ses origines"
 		}
 
 		add_radicals = {
-			value = large_radicals
+			value = 0.05
 			culture = cu:french
 		}
 		add_radicals = {
-			value = large_radicals
+			value = 0.05
 			culture = cu:occitan
 		}
 	}
@@ -853,11 +856,11 @@ dvg_dua.112 = { #Publication of "Saxon Poetry"
 		# }
 
 		add_radicals = {
-			value = large_radicals
+			value = 0.03
 			culture = cu:french
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = 0.03
 			culture = cu:occitan
 		}
 	}
@@ -883,7 +886,7 @@ dvg_dua.112 = { #Publication of "Saxon Poetry"
 		# }
 
 		add_radicals = {
-			value = large_radicals
+			value = 0.05
 			culture = cu:british
 		}
 	}
@@ -949,11 +952,11 @@ dvg_dua.113 = { #The Great Travel of the Dauphin
 		# }
 		
 		add_radicals = {
-			value = large_radicals
+			value = 0.05
 			culture = cu:french
 		}
 		add_radicals = {
-			value = large_radicals
+			value = 0.05
 			culture = cu:occitan
 		}
 
@@ -1023,11 +1026,11 @@ dvg_dua.114 = { #The 'Immortals'
 		# }
 
 		add_radicals = {
-			value = medium_radicals
+			value = 0.02
 			culture = cu:french
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = 0.02
 			culture = cu:occitan
 		}
 
@@ -1056,7 +1059,7 @@ dvg_dua.114 = { #The 'Immortals'
 		# }
 
 		add_radicals = {
-			value = medium_radicals
+			value = 0.02
 			culture = cu:british
 		}
 
@@ -1086,15 +1089,15 @@ dvg_dua.114 = { #The 'Immortals'
 		# }
 
 		add_radicals = {
-			value = medium_radicals
+			value = 0.05
 			culture = cu:french
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = 0.05
 			culture = cu:occitan
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = 0.05
 			culture = cu:british
 		}
 
@@ -1108,8 +1111,8 @@ dvg_dua.114 = { #The 'Immortals'
 
 		ig:ig_intelligentsia = {
 			add_modifier = {
-				name = dvg_displeased_ig
-				months = normal_modifier_time
+				name = ig_not_placated
+				months = 25
 			}
 		}
 
@@ -1158,7 +1161,7 @@ dvg_dua.115 = { #Celebration of the German Revolution
 
 		change_relations = { 
 			country = c:BOH
-			value = -100 
+			value = -30 
 		}  
 
 		add_loyalists = {
@@ -1184,8 +1187,8 @@ dvg_dua.115 = { #Celebration of the German Revolution
 
 		ig:ig_landowners = {
 			add_modifier = {
-				name = dvg_displeased_ig
-				months = normal_modifier_time
+				name = ig_not_placated
+				months = 25
 			}
 		}
 
@@ -1199,19 +1202,19 @@ dvg_dua.115 = { #Celebration of the German Revolution
 		
 		change_relations = { 
 			country = c:BOH
-			value = 50 
+			value = 20 
 		}  
 
 		add_radicals = {
-			value = medium_radicals
+			value = 0.03
 			culture = cu:french
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = 0.03
 			culture = cu:occitan
 		}
 		add_radicals = {
-			value = medium_radicals
+			value = 0.03
 			culture = cu:british
 		}
 
@@ -1225,8 +1228,8 @@ dvg_dua.115 = { #Celebration of the German Revolution
 
 		ig:ig_intelligentsia = {
 			add_modifier = {
-				name = dvg_displeased_ig
-				months = normal_modifier_time
+				name = ig_not_placated
+				months = 25
 			}
 		}
 
@@ -1332,23 +1335,23 @@ dvg_dua.116 = { #Springtime
 		# }
 
 		add_radicals = {
-			value = large_radicals
+			value = 0.1
 			culture = cu:french
 		}
 		add_radicals = {
-			value = large_radicals
+			value = 0.1
 			culture = cu:occitan
 		}
 		add_radicals = {
-			value = large_radicals
+			value = 0.1
 			culture = cu:british
 		}
 		add_radicals = {
-			value = large_radicals
+			value = 0.1
 			culture = cu:welsh
 		}
 		add_radicals = {
-			value = large_radicals
+			value = 0.1
 			culture = cu:irish
 		}
 	}
@@ -1393,8 +1396,29 @@ dvg_dua.117 = { #Springtime ended
 		default_option = yes
 
 		custom_tooltip = {
-			text = dvg_anglois_progress_increase_tick_05_tt
-			change_variable = { name = anglois_progress_from_effects add = 0.5 }
+			text = dvg_anglois_progress_increase_10_tt
+			change_variable = { name = anglois_progress_from_effects add = 1 }
+		}
+
+		add_loyalists = {
+			value = 0.05
+			culture = cu:french
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:occitan
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:british
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:welsh
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:irish
 		}
 	}
 }
@@ -1502,26 +1526,31 @@ dvg_dua.118 = { #Springtime sons
 
 	option = {
 		name = dvg_dua.118.b
-		
+		trigger = {
+			OR = {
+				has_law = law_type:law_censorship
+				has_law = law_type:law_outlawed_dissent
+			}
+			OR  = {
+				has_law = law_type:law_secret_police
+				has_law = law_type:law_national_guard
+				has_law = law_type:law_dedicated_police
+				has_law = law_type:law_militarized_police
+			}
+		}
 		add_radicals = {
-			value = large_radicals
+			value = 0.08
 			culture = cu:french
 		}
 		add_radicals = {
-			value = large_radicals
+			value = 0.08
 			culture = cu:occitan
 		}
 		add_radicals = {
-			value = large_radicals
+			value = 0.08
 			culture = cu:british
 		}
 
-		if = {
-			limit = {
-				NOT = { has_law = law_type:law_outlawed_dissent }
-			}
-			activate_law = law_type:law_outlawed_dissent
-		}
 
 		custom_tooltip = {
 			text = dvg_anglois_progress_increase_10_tt
@@ -1534,6 +1563,8 @@ dvg_dua.118 = { #Springtime sons
 		ai_chance = {
 			base = 50
 		}
+
+		
 	}
 }
 
@@ -1642,7 +1673,7 @@ dvg_dua.120 = { #Radical
 			leader = { set_ideology = ideology:ideology_radical }
 			add_modifier = {
 				name = dvg_extra_dissident_radical_faction
-				months = short_modifier_time
+				months = 12
 			}
 		}
 	}
@@ -1701,7 +1732,7 @@ dvg_dua.121 = { #Scottish subversion
 		# }
 
 		add_radicals = {
-			value = large_radicals
+			value = 0.04
 			culture = cu:british
 		}
 	}
@@ -1767,15 +1798,15 @@ dvg_dua.126 = { #Anglois failure 1855
 		# }
 
 		add_radicals = {
-			value = large_radicals
+			value = 0.08
 			culture = cu:french
 		}
 		add_radicals = {
-			value = large_radicals
+			value = 0.08
 			culture = cu:occitan
 		}
 		add_radicals = {
-			value = large_radicals
+			value = 0.08
 			culture = cu:british
 		}
 	}
@@ -1841,15 +1872,15 @@ dvg_dua.127 = { #Anglois failure 1860
 		# }
 
 		add_radicals = {
-			value = large_radicals
+			value = 0.08
 			culture = cu:french
 		}
 		add_radicals = {
-			value = large_radicals
+			value = 0.08
 			culture = cu:occitan
 		}
 		add_radicals = {
-			value = large_radicals
+			value = 0.08
 			culture = cu:british
 		}
 	}
@@ -1914,15 +1945,15 @@ dvg_dua.128 = { #Anglois failure 1865
 		# }
 
 		add_radicals = {
-			value = large_radicals
+			value = 0.12
 			culture = cu:french
 		}
 		add_radicals = {
-			value = large_radicals
+			value = 0.12
 			culture = cu:occitan
 		}
 		add_radicals = {
-			value = large_radicals
+			value = 0.12
 			culture = cu:british
 		}
 	}
@@ -2025,15 +2056,15 @@ dvg_dua.129 = {
 				has_variable = anglois_path
 			}
 			add_radicals = {
-				value = medium_radicals
+				value = 0.03
 				culture = cu:british
 			}
 			add_radicals = {
-				value = medium_radicals
+				value = 0.03
 				culture = cu:french
 			}
 			add_radicals = {
-				value = medium_radicals
+				value = 0.03
 				culture = cu:occitan
 			}
 			custom_tooltip = {
@@ -2046,7 +2077,7 @@ dvg_dua.129 = {
 				has_variable = french_path
 			}
 			add_radicals = {
-				value = medium_radicals
+				value = 0.03
 				culture = cu:british
 			}
 			custom_tooltip = {
@@ -2059,11 +2090,11 @@ dvg_dua.129 = {
 				has_variable = english_path
 			}
 			add_radicals = {
-				value = small_radicals
+				value = 0.01
 				culture = cu:french
 			}
 			add_radicals = {
-				value = small_radicals
+				value = 0.01
 				culture = cu:occitan
 			}
 			custom_tooltip = {
@@ -2084,15 +2115,15 @@ dvg_dua.129 = {
 				has_variable = anglois_path
 			}
 			add_radicals = {
-				value = medium_radicals
+				value = 0.03
 				culture = cu:british
 			}
 			add_radicals = {
-				value = medium_radicals
+				value = 0.03
 				culture = cu:french
 			}
 			add_radicals = {
-				value = medium_radicals
+				value = 0.03
 				culture = cu:occitan
 			}
 			custom_tooltip = {
@@ -2105,7 +2136,7 @@ dvg_dua.129 = {
 				has_variable = french_path
 			}
 			add_radicals = {
-				value = medium_radicals
+				value = 0.03
 				culture = cu:british
 			}
 			custom_tooltip = {
@@ -2118,11 +2149,11 @@ dvg_dua.129 = {
 				has_variable = english_path
 			}
 			add_radicals = {
-				value = small_radicals
+				value = 0.01
 				culture = cu:french
 			}
 			add_radicals = {
-				value = small_radicals
+				value = 0.01
 				culture = cu:occitan
 			}
 			custom_tooltip = {
@@ -2142,15 +2173,15 @@ dvg_dua.129 = {
 				has_variable = anglois_path
 			}
 			add_radicals = {
-				value = medium_radicals
+				value = 0.03
 				culture = cu:british
 			}
 			add_radicals = {
-				value = medium_radicals
+				value = 0.03
 				culture = cu:french
 			}
 			add_radicals = {
-				value = medium_radicals
+				value = 0.03
 				culture = cu:occitan
 			}
 			custom_tooltip = {
@@ -2163,7 +2194,7 @@ dvg_dua.129 = {
 				has_variable = french_path
 			}
 			add_radicals = {
-				value = large_radicals
+				value = 0.05
 				culture = cu:british
 			}
 			custom_tooltip = {
@@ -2176,11 +2207,11 @@ dvg_dua.129 = {
 				has_variable = english_path
 			}
 			add_radicals = {
-				value = medium_radicals
+				value = 0.03
 				culture = cu:french
 			}
 			add_radicals = {
-				value = medium_radicals
+				value = 0.03
 				culture = cu:occitan
 			}
 			custom_tooltip = {
@@ -2232,7 +2263,7 @@ dvg_dua.211 = { #St Louis Speech
 		}
 
 		add_radicals = {
-			value = medium_radicals
+			value = 0.03
 			culture = cu:british
 		}
 	}
@@ -2280,7 +2311,7 @@ dvg_dua.212 = { #The great travel
 		}
 
 		add_radicals = {
-			value = medium_radicals
+			value = 0.04
 			culture = cu:british
 		}
 	}
@@ -2374,7 +2405,7 @@ dvg_dua.214 = { #Sorbonne
 		default_option = yes
 
 		add_radicals = {
-			value = large_radicals
+			value = 0.08
 			culture = cu:british
 		}
 
@@ -2403,7 +2434,7 @@ dvg_dua.214 = { #Sorbonne
 		name = dvg_dua.214.b
 		
 		add_radicals = {
-			value = medium_radicals
+			value = 0.04
 			culture = cu:french
 		}
 
@@ -2472,12 +2503,12 @@ dvg_dua.311 = { #The great travel
 		}
 
 		add_radicals = {
-			value = medium_radicals
+			value = 0.04
 			culture = cu:french
 		}
 
 		add_radicals = {
-			value = medium_radicals
+			value = 0.04
 			culture = cu:occitan
 		}
 	}

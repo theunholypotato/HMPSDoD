@@ -456,9 +456,9 @@ je_destroy_provence = {
 			owns_entire_state_region = STATE_PROVENCE
 
 		}
-		any_neighbouring_state = {
-			owner = c:AVN
-		}	
+		#any_neighbouring_state = {
+		#	owner = c:AVN
+		#}	
 	}
 
 	on_complete = {
