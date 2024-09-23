@@ -157,21 +157,44 @@ dvg_ottomans_reclaim.5 = {
 		add_journal_entry = {
 			type = je_embrace_ottoman_courts
 		}
+		
+
+		ig:ig_intelligentsia = {
+			add_modifier = {
+				name = ig_placated
+				days = 1095
+			}
+		}
+		
 	}
 
 	option = { #caliphate
 		name = dvg_ottomans_reclaim.5.b
 		default_option = no
 
-		interest_group_ig_devout_approval_add = 3		
+				
 		
 		add_journal_entry = {
 			type = je_centre_of_islam
+		}
+
+		ig:ig_devout = {
+			add_modifier = {
+				name = ig_placated
+				days = 1095
+			}
 		}
 	}
 
 	option = {
 		name = dvg_ottomans_reclaim.5.c
 		default_option = no
+
+		ig:ig_landowners = {
+			add_modifier = {
+				name = ig_placated
+				days = 1095
+			}
+		}
 	}
 }

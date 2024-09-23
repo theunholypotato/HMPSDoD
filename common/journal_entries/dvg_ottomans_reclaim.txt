@@ -112,6 +112,7 @@ je_embrace_ottoman_courts = {
 			owns_entire_state_region = STATE_NORTHERN_THRACE
 			owns_entire_state_region = STATE_BULGARIA
 			owns_entire_state_region = STATE_WESTERN_THRACE
+			owns_entire_state_region = STATE_CYPRUS
 		}
 
 		has_law = law_type:law_appointed_bureaucrats
@@ -168,7 +169,7 @@ je_centre_of_islam = {
 
 		owns_entire_state_region = STATE_PALESTINE
 		owns_entire_state_region = STATE_HEDJAZ
-		owns_entire_state_region = STATE_EASTERN_THRACE
+		owns_entire_state_region = STATE_WESTERN_THRACE
 
 		has_law = law_type:law_state_religion
 
