@@ -318,3 +318,13 @@ dvg_bavaria.6.t: "The Ducal Pamphlet of 1840"
   dvg_bavaria.62.f: ""
   dvg_bavaria.62.a: "We, too, are Danubians!"
   dvg_bavaria.62.b: "This is not our fate."
+
+  #HMPS
+
+  dvg_danubia.1.t: "The Council of South German States"
+  dvg_danubia.1.d: "The Council of South German States has convined and agreed to further unification in hopes of carving out a Federation for the Danubians and reducing influence of other major powers in the area."
+  dvg_danubia.1.f: "'The future of south germany cannot be decided by imperialists in smoke filled rooms miles away, we must carve our own path away from the powers of the empire'"
+  dvg_danubia.1.a: "Glory to Danubia!"
+
+  sgf_formation.t: "Form the Danubian Federation"
+  sgf_formation.d: "Bring the Rheinish into the fold"
