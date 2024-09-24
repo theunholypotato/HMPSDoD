@@ -12,6 +12,7 @@
 		scope:journal_entry = {
 			is_goal_complete = yes
 		}
+		#has_law = law_type:law_national_supremacy
 	}
 
 	on_complete = {
@@ -420,7 +421,7 @@ je_total_revolution = {
 
 	progressbar = yes
 
-	timeout = 5475
+	timeout = 8030
 
 	weight = 10000
 	should_be_pinned_by_default = yes

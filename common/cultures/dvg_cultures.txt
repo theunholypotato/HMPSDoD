@@ -1809,7 +1809,7 @@ granadan ={ #Granadan
 rheinish={
 	color= { 171 146 115 }
 	religion = protestant
-	traits = { german_speaking european_heritage }
+	traits = { german_speaking european_heritage rheinlander }
 	male_common_first_names={
 		Adelbert
 		Adolf

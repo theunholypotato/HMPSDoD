@@ -110,7 +110,7 @@
 		effect_starting_technology_tier_1_tech = yes
 		
 		activate_law = law_type:law_wealth_voting
-		activate_law = law_type:law_ethnostate
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_interventionism
@@ -959,6 +959,10 @@
 		ig:ig_devout = {
 			set_interest_group_name = ig_catholic_church
 		}
+		trigger_event = {
+			id = dvg_danubia.1
+			days = 730
+		}
 	}
 	
 	c:SWI = { #Switzerland
@@ -1146,6 +1150,10 @@
 		}
 		ig:ig_devout = {
 			set_interest_group_name = ig_catholic_church
+		}
+		trigger_event = {
+			id = dvg_danubia.1
+			days = 730
 		}
 	}
 	
