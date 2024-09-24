@@ -23,7 +23,7 @@ dvg_danubia.1 = {
 		name = dvg_danubia.1.a
 
 		add_modifier = {
-			name = greek_nationalism
+			name = dvg_sgf_first_council
 			months = 1200
 		}
 
