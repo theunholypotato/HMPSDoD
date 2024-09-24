@@ -110,7 +110,7 @@
 		effect_starting_technology_tier_1_tech = yes
 		
 		activate_law = law_type:law_wealth_voting
-		activate_law = law_type:law_ethnostate
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_interventionism

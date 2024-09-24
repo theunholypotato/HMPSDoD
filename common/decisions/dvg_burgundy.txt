@@ -1,0 +1,31 @@
+dvg_brg_dutchrhine = {
+	is_shown = {
+		exists = c:BRG
+		root = c:BRG
+		NOT = {
+			c:BRG = {
+				country_has_primary_culture = cu:dutch
+			}
+		}
+	}
+
+	possible = {
+		root = {
+			is_at_war = no
+		}
+		has_technology_researched = pan-nationalism
+		ruler = {
+			has_variable = jean_var
+		}
+	}
+	
+    when_taken = {
+		c:BRG = {
+			add_primary_culture = cu:dutch
+		}
+    }
+
+	ai_chance = {
+		base = 50
+	}
+}
