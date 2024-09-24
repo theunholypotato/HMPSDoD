@@ -1192,130 +1192,130 @@ je_anism = {
 #	inheritable = no
 #}
 
-je_reconquer_rhine = {
-	icon = "gfx/interface/icons/event_icons/event_military.dds"
-
-	group = je_group_foreign_affairs
-
-	is_shown_when_inactive = {
-		exists = c:BRG
-		c:BRG = ROOT
-		NOT = {
-			owns_entire_state_region = STATE_RHINELAND
-		}
-	}
-	possible = {
-		OR = {
-			AND = {
-				exists = c:RHI
-				c:RHI = {
-					is_diplomatic_play_enemy_of = c:BRG
-				}
-			}
-			owns_entire_state_region = STATE_RHINELAND
-			NOT = {
-				exists = c:RHI
-			}
-		}
-	}
-
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					exists = c:RHI
-				}
-				set_secret_goal = {
-					country = c:RHI
-					secret_goal = conquer
-				}
-			}
-		}
-		s:STATE_RHINELAND = {
-			add_claim = ROOT
-		}
-	}
-
-	
-
-	complete = {
-		OR = {
-			owns_entire_state_region = STATE_RHINELAND
-			NOT = {
-				exists = c:RHI
-			}
-		}
-	}
-
-	on_complete = {
-		
-		trigger_event = { id = dvg_burgundy.16 }
-		if = {
-			limit = {
-				NOT = {
-					has_global_variable = pinto_affair
-				}
-			}
-			trigger_event = { id = dvg_burgundy.22 days = 100 }
-		}
-	}
-	should_be_pinned_by_default = yes
-}
-
-je_rhine_independence = {
-	icon = "gfx/interface/icons/invention_icons/nationalism.dds"
-
-
-	group = je_group_foreign_affairs
-
-	is_shown_when_inactive = {
-		is_subject = yes
-		exists = c:RHI
-		c:RHI = ROOT
-	}
-	possible = {
-		OR = {
-			is_diplomatic_play_committed_participant = yes
-			has_technology_researched = nationalism
-		}
-		
-	}
-
-	immediate = {
-		trigger_event = {
-			id = dvg_burgundy.14
-		}
-	}
-
-	
-
-	complete = {
-		is_subject = no
-		is_at_war = no
-		is_diplomatic_play_committed_participant = no
-	}
-
-	on_complete = {
-
-		
-		if = {
-			limit = {
-				is_country_type = unrecognized
-			}
-			set_country_type = recognized
-		}
-		
-		trigger_event = {
-			id = dvg_burgundy.15
-		}
-
-		
-		
-
-		
-	}
-	should_be_pinned_by_default = yes
-}
+#je_reconquer_rhine = {
+#	icon = "gfx/interface/icons/event_icons/event_military.dds"
+#
+#	group = je_group_foreign_affairs
+#
+#	is_shown_when_inactive = {
+#		exists = c:BRG
+#		c:BRG = ROOT
+#		NOT = {
+#			owns_entire_state_region = STATE_RHINELAND
+#		}
+#	}
+#	possible = {
+#		OR = {
+#			AND = {
+#				exists = c:RHI
+#				c:RHI = {
+#					is_diplomatic_play_enemy_of = c:BRG
+#				}
+#			}
+#			owns_entire_state_region = STATE_RHINELAND
+#			NOT = {
+#				exists = c:RHI
+#			}
+#		}
+#	}
+#
+#	immediate = {
+#		hidden_effect = {
+#			if = {
+#				limit = {
+#					exists = c:RHI
+#				}
+#				set_secret_goal = {
+#					country = c:RHI
+#					secret_goal = conquer
+#				}
+#			}
+#		}
+#		s:STATE_RHINELAND = {
+#			add_claim = ROOT
+#		}
+#	}
+#
+#	
+#
+#	complete = {
+#		OR = {
+#			owns_entire_state_region = STATE_RHINELAND
+#			NOT = {
+#				exists = c:RHI
+#			}
+#		}
+#	}
+#
+#	on_complete = {
+#		
+#		trigger_event = { id = dvg_burgundy.16 }
+#		if = {
+#			limit = {
+#				NOT = {
+#					has_global_variable = pinto_affair
+#				}
+#			}
+#			trigger_event = { id = dvg_burgundy.22 days = 100 }
+#		}
+#	}
+#	should_be_pinned_by_default = yes
+#}
+#
+#je_rhine_independence = {
+#	icon = "gfx/interface/icons/invention_icons/nationalism.dds"
+#
+#
+#	group = je_group_foreign_affairs
+#
+#	is_shown_when_inactive = {
+#		is_subject = yes
+#		exists = c:RHI
+#		c:RHI = ROOT
+#	}
+#	possible = {
+#		OR = {
+#			is_diplomatic_play_committed_participant = yes
+#			has_technology_researched = nationalism
+#		}
+#		
+#	}
+#
+#	immediate = {
+#		trigger_event = {
+#			id = dvg_burgundy.14
+#		}
+#	}
+#
+#	
+#
+#	complete = {
+#		is_subject = no
+#		is_at_war = no
+#		is_diplomatic_play_committed_participant = no
+#	}
+#
+#	on_complete = {
+#
+#		
+#		if = {
+#			limit = {
+#				is_country_type = unrecognized
+#			}
+#			set_country_type = recognized
+#		}
+#		
+#		trigger_event = {
+#			id = dvg_burgundy.15
+#		}
+#
+#		
+#		
+#
+#		
+#	}
+#	should_be_pinned_by_default = yes
+#}
 
 #HMPS DoD Burgundian culture reform
 
