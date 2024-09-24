@@ -57,6 +57,12 @@ dvg_dua.1 = {
 		set_variable = french_path
 		set_variable = supporting_french_var
 
+		remove_primary_culture = cu:anglois
+		remove_primary_culture = cu:breton
+		remove_primary_culture = cu:welsh
+		add_primary_culture = cu:french
+		activate_law = law_type:law_national_supremacy
+
 		add_journal_entry = {
 			type = je_french_integration
 		}
@@ -106,6 +112,12 @@ dvg_dua.1 = {
 
 		set_variable = english_path
 		set_variable = supporting_english_var
+
+		remove_primary_culture = cu:anglois
+		remove_primary_culture = cu:breton
+		remove_primary_culture = cu:welsh
+		add_primary_culture = cu:british
+		activate_law = law_type:law_national_supremacy
 
 		add_journal_entry = {
 			type = je_english_integration
@@ -248,7 +260,13 @@ dvg_dua.2 = {
 
 		if = {
 			limit = {
-				NOT = { has_law = law_type:law_cultural_exclusion }
+				NOT = { 
+					OR = {
+						has_law = law_type:law_cultural_exclusion 
+						has_law = law_type:law_language_discrimination
+						has_law = law_type:law_multicultural
+					}
+				}
 			}
 			activate_law = law_type:law_national_supremacy
 		}

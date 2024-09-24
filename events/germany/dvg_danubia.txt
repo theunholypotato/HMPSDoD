@@ -6,7 +6,7 @@ dvg_danubia.1 = {
 	title = dvg_danubia.1.t
 	desc = dvg_danubia.1.d
 	flavor = dvg_danubia.1.f
-
+	
 	event_image = {
 		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
 	}
@@ -17,7 +17,6 @@ dvg_danubia.1 = {
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
 
 	trigger = {
-		is_player = yes
 	}
 
 	option = {
