@@ -94,6 +94,7 @@
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
+		
 
 		
 		set_ruling_interest_groups = {
@@ -208,6 +209,8 @@
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
+		activate_law = law_type:law_no_migration_controls
+
 
 		
 		ig:ig_intelligentsia = {
@@ -242,6 +245,8 @@
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
+		activate_law = law_type:law_no_migration_controls
+
 		
 		ig:ig_intelligentsia = {
 			set_interest_group_name = ig_literati
@@ -274,6 +279,8 @@
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
+		activate_law = law_type:law_no_migration_controls
+
 
 		
 		ig:ig_intelligentsia = {
@@ -308,6 +315,8 @@
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
+		activate_law = law_type:law_no_migration_controls
+
 
 		
 		ig:ig_intelligentsia = {
@@ -342,6 +351,8 @@
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
+		activate_law = law_type:law_no_migration_controls
+
 
 		
 		ig:ig_intelligentsia = {
@@ -382,6 +393,8 @@
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
+		activate_law = law_type:law_no_migration_controls
+
 
 		
 		ig:ig_intelligentsia = {
@@ -487,6 +500,7 @@
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
 		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_no_migration_controls
 
 		
 		set_ruling_interest_groups = {
@@ -534,7 +548,7 @@
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_mass_conscription
 		#activate_law = law_type:law_free_trade
-		#activate_law = law_type:law_no_migration_controls
+		activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_low_income_tax	
@@ -577,7 +591,7 @@
 		activate_law = law_type:law_mass_conscription
 		#activate_law = law_type:law_interventionism
 		activate_law = law_type:law_colonial_exploitation
-		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_migration_controls
 		#activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
@@ -619,7 +633,7 @@
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_mass_conscription
-		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
 		

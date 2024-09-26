@@ -20,6 +20,8 @@ color = { 78  104  81 }
 	cultures = { zhourao }
 	
 	capital = STATE_ZHENG_HE
+	religion = mahayana
+	capital = STATE_QINGSHUI
 }
 
 ZSA = { #Zhushan

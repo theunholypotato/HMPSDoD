@@ -1,11 +1,11 @@
 ﻿BUILDINGS={
 	s:STATE_ZHENG_HE={
-		region_state:MJN={
+		region_state:ZHR={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:MJN"
+						country="c:ZHR"
 						levels=2
 					}
 				}
@@ -17,7 +17,7 @@
 				add_ownership={
 					building={
 						type="building_tooling_workshops"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=1
 						region="STATE_ZHENG_HE"
 					}
@@ -30,7 +30,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:MJN"
+						country="c:ZHR"
 						levels=8
 					}
 				}
@@ -42,7 +42,7 @@
 				add_ownership={
 					building={
 						type="building_arms_industry"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=1
 						region="STATE_ZHENG_HE"
 					}
@@ -55,7 +55,7 @@
 				add_ownership={
 					building={
 						type="building_shipyards"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=1
 						region="STATE_ZHENG_HE"
 					}
@@ -67,7 +67,7 @@
 				building="building_naval_base"
 				add_ownership={
 					country={
-						country="c:MJN"
+						country="c:ZHR"
 						levels=4
 					}
 				}
@@ -79,7 +79,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=5
 						region="STATE_ZHENG_HE"
 					}
@@ -92,7 +92,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=1
 						region="STATE_ZHENG_HE"
 					}
@@ -105,7 +105,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=1
 						region="STATE_ZHENG_HE"
 					}
@@ -118,7 +118,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=1
 						region="STATE_ZHENG_HE"
 					}
@@ -131,7 +131,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=2
 						region="STATE_ZHENG_HE"
 					}
@@ -144,7 +144,7 @@
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=1
 						region="STATE_ZHENG_HE"
 					}
@@ -157,7 +157,7 @@
 				add_ownership={
 					building={
 						type="building_artillery_foundries"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=1
 						region="STATE_ZHENG_HE"
 					}
@@ -168,12 +168,12 @@
 		}
 	}
 	s:STATE_WEIHUAI={
-		region_state:MJN={
+		region_state:ZHR={
 			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:MJN"
+						country="c:ZHR"
 						levels=3
 					}
 				}
@@ -184,7 +184,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:MJN"
+						country="c:ZHR"
 						levels=10
 					}
 				}
@@ -195,7 +195,7 @@
 				building="building_naval_base"
 				add_ownership={
 					country={
-						country="c:MJN"
+						country="c:ZHR"
 						levels=3
 					}
 				}
@@ -206,7 +206,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:MJN"
+						country="c:ZHR"
 						levels=1
 					}
 				}
@@ -218,13 +218,13 @@
 				add_ownership={
 					building={
 						type="building_shipyards"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=1
 						region="STATE_WEIHUAI"
 					}
 					building={
 						type="building_financial_district"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=1
 						region="STATE_WEIHUAI"
 					}
@@ -237,13 +237,13 @@
 				add_ownership={
 					building={
 						type="building_textile_mills"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=1
 						region="STATE_WEIHUAI"
 					}
 					building={
 						type="building_financial_district"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=1
 						region="STATE_WEIHUAI"
 					}
@@ -256,7 +256,7 @@
 				add_ownership={
 					building={
 						type="building_food_industry"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=1
 						region="STATE_WEIHUAI"
 					}
@@ -270,7 +270,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=5
 						region="STATE_WEIHUAI"
 					}
@@ -283,7 +283,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=2
 						region="STATE_WEIHUAI"
 					}
@@ -296,7 +296,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=1
 						region="STATE_WEIHUAI"
 					}
@@ -309,7 +309,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:MJN"
+						country="c:ZHR"
 						levels=2
 						region="STATE_WEIHUAI"
 					}
@@ -320,13 +320,13 @@
 		}
 	}
 	s:STATE_QINGSHUI={
-		region_state:YLO={
+		region_state:ZHR={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
 					building={
 						type="building_food_industry"
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 						region="STATE_QINGSHUI"
 					}
@@ -339,7 +339,7 @@
 				add_ownership={
 					building={
 						type="building_tooling_workshops"
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 						region="STATE_QINGSHUI"
 					}
@@ -352,7 +352,7 @@
 				add_ownership={
 					building={
 						type="building_rice_farm"
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 						region="STATE_QINGSHUI"
 					}
@@ -365,7 +365,7 @@
 				add_ownership={
 					building={
 						type="building_sugar_plantation"
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 						region="STATE_QINGSHUI"
 					}
@@ -378,7 +378,7 @@
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 						region="STATE_QINGSHUI"
 					}
@@ -391,7 +391,7 @@
 				add_ownership={
 					building={
 						type="building_livestock_ranch"
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 						region="STATE_QINGSHUI"
 					}
@@ -403,7 +403,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:YLO"
+						country="c:ZHR"
 						levels=2
 					}
 				}
@@ -414,7 +414,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:YLO"
+						country="c:ZHR"
 						levels=7
 					}
 				}
@@ -425,7 +425,7 @@
 				building="building_naval_base"
 				add_ownership={
 					country={
-						country="c:YLO"
+						country="c:ZHR"
 						levels=5
 					}
 				}
@@ -436,7 +436,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 					}
 				}
@@ -448,7 +448,7 @@
 				add_ownership={
 					building={
 						type="building_shipyards"
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 						region="STATE_QINGSHUI"
 					}
@@ -459,13 +459,13 @@
 		}
 	}
 	s:STATE_GUANSHAN={
-		region_state:YLO={
+		region_state:ZHR={
 			create_building={
 				building="building_tea_plantation"
 				add_ownership={
 					building={
 						type="building_tea_plantation"
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 						region="STATE_GUANSHAN"
 					}
@@ -477,7 +477,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 					}
 				}
@@ -488,7 +488,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:YLO"
+						country="c:ZHR"
 						levels=6
 					}
 				}
@@ -500,7 +500,7 @@
 				add_ownership={
 					building={
 						type="building_rice_farm"
-						country="c:YLO"
+						country="c:ZHR"
 						levels=2
 						region="STATE_GUANSHAN"
 					}
@@ -513,7 +513,7 @@
 				add_ownership={
 					building={
 						type="building_whaling_station"
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 						region="STATE_GUANSHAN"
 					}
@@ -526,7 +526,7 @@
 				add_ownership={
 					building={
 						type="building_sulfur_mine"
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 						region="STATE_GUANSHAN"
 					}
@@ -537,13 +537,13 @@
 		}
 	}
 	s:STATE_XINXIANG={
-		region_state:YLO={
+		region_state:ZHR={
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:YLO"
+						country="c:ZHR"
 						levels=2
 						region="STATE_XINXIANG"
 					}
@@ -556,7 +556,7 @@
 				add_ownership={
 					building={
 						type="building_silk_plantation"
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 						region="STATE_XINXIANG"
 					}
@@ -568,7 +568,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 					}
 				}
@@ -579,7 +579,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 					}
 				}
@@ -591,7 +591,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:YLO"
+						country="c:ZHR"
 						levels=2
 						region="STATE_XINXIANG"
 					}
@@ -603,7 +603,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:YLO"
+						country="c:ZHR"
 						levels=4
 					}
 				}
@@ -615,7 +615,7 @@
 				add_ownership={
 					building={
 						type="building_coal_mine"
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 						region="STATE_XINXIANG"
 					}
@@ -628,7 +628,7 @@
 				add_ownership={
 					building={
 						type="building_artillery_foundries"
-						country="c:YLO"
+						country="c:ZHR"
 						levels=1
 						region="STATE_XINXIANG"
 					}
@@ -689,13 +689,13 @@
 		}
 	}
 	s:STATE_WENCHENG={      #Jiangzhou
-		region_state:ZSA={
+		region_state:ZHR={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=2
 						region="STATE_WENCHENG"
 					}
@@ -708,7 +708,7 @@
 				add_ownership={
 					building={
 						type="building_fishing_wharf"
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=3
 						region="STATE_WENCHENG"
 					}
@@ -720,7 +720,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=1
 					}
 				}
@@ -732,7 +732,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=2
 						region="STATE_WENCHENG"
 					}
@@ -744,7 +744,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=4
 					}
 				}
@@ -756,7 +756,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=1
 						region="STATE_WENCHENG"
 					}
@@ -767,13 +767,13 @@
 		}
 	}
 	s:STATE_WEIZHOU={      #Tingzhou
-		region_state:ZSA={
+		region_state:ZHR={
 			create_building={
 				building="building_wheat_farm"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=5
 						region="STATE_WEIZHOU"
 					}
@@ -785,7 +785,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=1
 					}
 				}
@@ -797,7 +797,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=1
 						region="STATE_WEIZHOU"
 					}
@@ -810,7 +810,7 @@
 				add_ownership={
 					building={
 						type="building_tooling_workshops"
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=1
 						region="STATE_WEIZHOU"
 					}
@@ -823,7 +823,7 @@
 				add_ownership={
 					building={
 						type="building_arms_industry"
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=1
 						region="STATE_WEIZHOU"
 					}
@@ -836,7 +836,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=1
 						region="STATE_WEIZHOU"
 					}
@@ -849,7 +849,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=1
 						region="STATE_WEIZHOU"
 					}
@@ -861,7 +861,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=5
 					}
 				}
@@ -873,7 +873,7 @@
 				add_ownership={
 					building={
 						type="building_iron_mine"
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=2
 						region="STATE_WEIZHOU"
 					}
@@ -884,13 +884,13 @@
 		}
 	}
 	s:STATE_JINZHOU={
-		region_state:ZSA={
+		region_state:ZHR={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
 					building={
 						type="building_food_industry"
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=1
 						region="STATE_JINZHOU"
 					}
@@ -902,7 +902,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=1
 					}
 				}
@@ -919,7 +919,7 @@
 				building="building_naval_base"
 				add_ownership={
 					country={
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=5
 					}
 				}
@@ -931,7 +931,7 @@
 				add_ownership={
 					building={
 						type="building_shipyards"
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=1
 						region="STATE_JINZHOU"
 					}
@@ -943,7 +943,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=1
 					}
 				}
@@ -955,7 +955,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=5
 						region="STATE_JINZHOU"
 					}
@@ -968,7 +968,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=1
 						region="STATE_JINZHOU"
 					}
@@ -980,7 +980,7 @@
 				building="building_artillery_foundries"
 				add_ownership={
 					country={
-						country="c:ZSA"
+						country="c:ZHR"
 						levels=1
 					}
 				}
@@ -994,13 +994,13 @@
 		}
 	}
 	s:STATE_YONGLING={
-		region_state:KOO={
+		region_state:ZHR={
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
 					building={
 						type="building_iron_mine"
-						country="c:KOO"
+						country="c:ZHR"
 						levels=2
 						region="STATE_YONGLING"
 					}
@@ -1013,7 +1013,7 @@
 				add_ownership={
 					building={
 						type="building_lead_mine"
-						country="c:KOO"
+						country="c:ZHR"
 						levels=1
 						region="STATE_YONGLING"
 					}
