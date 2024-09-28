@@ -93,7 +93,7 @@ dua_weekly_pulse_anglois_progress = {
 			change_variable = { name = anglois_progress_from_military add = prev.level }
 		}
 	}
-	change_variable = { name = anglois_progress_from_military divide = 1000 }
+	change_variable = { name = anglois_progress_from_military divide = 500 }
 	
 	every_scope_building = { 
 		limit = {
@@ -104,7 +104,7 @@ dua_weekly_pulse_anglois_progress = {
 			change_variable = { name = anglois_progress_from_university add = prev.level }
 		}
 	}
-	change_variable = { name = anglois_progress_from_university divide = 1000 }
+	change_variable = { name = anglois_progress_from_university divide = 100 }
 
 	every_scope_building = {
 		limit = {
@@ -113,6 +113,8 @@ dua_weekly_pulse_anglois_progress = {
 			state = {
 				state_region = {
 					is_homeland = cu:anglois
+					is_homeland = cu:breton
+					is_homeland = cu:welsh
 				}
 			}
 		}
