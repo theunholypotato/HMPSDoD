@@ -143,6 +143,15 @@
 				reserves=1
 				activate_production_methods={ "pm_anchorage" }
 			}
+			create_building = {
+				building = "building_guano_mine"
+				add_ownership={
+					country={
+						country="c:BRG"
+						levels=5
+					}
+				}
+			}
 		}
 	}
 	
@@ -177,7 +186,7 @@
 			}
 			create_building = {
 				building = "building_guano_mine"
-				add_ownership{
+				add_ownership={
 					country={
 						country="c:SCA"
 						levels=10

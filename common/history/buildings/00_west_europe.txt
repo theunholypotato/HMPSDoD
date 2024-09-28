@@ -4635,7 +4635,7 @@
 					building={
 						type="building_financial_district"
 						country="c:BRG"
-						levels=3
+						levels=10
 						region="STATE_FLANDERS"
 					}
 				}
@@ -5200,6 +5200,19 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
 			}
 			create_building={
+				building="building_railway"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:BRG"
+						levels=3
+						region="STATE_FLANDERS"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steam_trains" "pm_no_passenger_trains" }
+			}
+			create_building={
 				building="building_construction_sector"
 				add_ownership={
 					country={
@@ -5278,7 +5291,7 @@
 					building={
 						type="building_financial_district"
 						country="c:BRG"
-						levels=2
+						levels=8
 						region="STATE_HOLLAND"
 					}
 				}
@@ -5580,7 +5593,7 @@
 					building={
 						type="building_financial_district"
 						country="c:BRG"
-						levels=3
+						levels=7
 						region="STATE_WALLONIA"
 					}
 				}
@@ -5593,7 +5606,7 @@
 					building={
 						type="building_financial_district"
 						country="c:BRG"
-						levels=4
+						levels=10
 						region="STATE_WALLONIA"
 					}
 				}
@@ -5658,7 +5671,7 @@
 					building={
 						type="building_financial_district"
 						country="c:BRG"
-						levels=3
+						levels=7
 						region="STATE_WALLONIA"
 					}
 				}
@@ -5710,7 +5723,7 @@
 					building={
 						type="building_financial_district"
 						country="c:BRG"
-						levels=1
+						levels=3
 						region="STATE_FLANDERS"
 					}
 				}

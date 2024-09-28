@@ -200,6 +200,7 @@ STATE_EENDRACHTSLAND = {
     capped_resources = {
         bg_logging = 4
         bg_fishing = 5
+        bg_guano_mining = 5
     }
     resource = {
         type = bg_rubber
