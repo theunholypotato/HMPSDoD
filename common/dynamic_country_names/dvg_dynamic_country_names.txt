@@ -1563,13 +1563,13 @@ QUL = {
 						is_initiator = yes
 					}
 				}
-				c:ADS = {
-					has_diplomatic_pact = {
-						who = c:QUL
-						type = dominion
-						is_initiator = yes
-					}
-				}
+				# c:ADS = {
+				# 	has_diplomatic_pact = {
+				# 		who = c:QUL
+				# 		type = dominion
+				# 		is_initiator = yes
+				# 	}
+				# }
 			}
 		}
 	}
@@ -3726,25 +3726,25 @@ KRB = {
 	}
 }
 
-TUP = {
-	dynamic_country_name = {
-		name = dyn_c_hatunjesuyu
-		adjective =  dyn_c_hatunjesuyu_adj
+# TUP = {
+# 	dynamic_country_name = {
+# 		name = dyn_c_hatunjesuyu
+# 		adjective =  dyn_c_hatunjesuyu_adj
 
-		is_main_tag_only = yes
-		priority = 1
+# 		is_main_tag_only = yes
+# 		priority = 1
 		
-		trigger = {
-			c:TWT = {
-				has_diplomatic_pact = {
-					who = c:TUP
-					type = puppet
-					is_initiator = yes
-				}
-			}
-		}
-	}
-}
+# 		trigger = {
+# 			c:TWT = {
+# 				has_diplomatic_pact = {
+# 					who = c:TUP
+# 					type = puppet
+# 					is_initiator = yes
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
 TGI = {
 	dynamic_country_name = {

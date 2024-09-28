@@ -1,16 +1,150 @@
 ﻿TRADE_ROUTES = {
 	c:SCA = {
-		create_trade_route = {
-			goods = silk
-			level = 1
-			direction = import
-			target = c:YLO.market
-		}
+		# create_trade_route = {
+		# 	goods = silk
+		# 	level = 1
+		# 	direction = import
+		# 	target = c:YLO.market
+		# }
 		create_trade_route = {
 			goods = fertilizer 
 			level = 1
 			direction = import
 			target = c:BRG.market
+		}
+	}
+	c:DUA = {
+		create_trade_route = {
+			goods = fertilizer
+			level = 10
+			direction = import
+			target = c:SPA.market
+		}
+		create_trade_route = {
+			goods = fertilizer
+			level = 6
+			direction = import
+			target = c:BOH.market
+		}
+		create_trade_route = {
+			goods = tools
+			level = 8
+			direction = export
+			target = c:SPA.market
+		}
+		create_trade_route = {
+			goods = ammunition
+			level = 3
+			direction = export
+			target = c:SPA.market
+		}
+		create_trade_route = {
+			goods = luxury_furniture
+			level = 3
+			direction = export
+			target = c:SPA.market
+		}
+		create_trade_route = {
+			goods = luxury_clothes
+			level = 4
+			direction = export
+			target = c:SPA.market
+		}
+	}
+	c:PLA = {
+		create_trade_route = {
+			goods = grain
+			level = 11
+			direction = import
+			target = c:DUA.market
+		}
+		create_trade_route = {
+			goods = liquor
+			level = 11
+			direction = import
+			target = c:DUA.market
+		}
+		create_trade_route = {
+			goods = fertilizer
+			level = 7
+			direction = import
+			target = c:ARN.market
+		}
+	}
+	c:VIN = {
+		create_trade_route = {
+			goods = fertilizer
+			level = 3
+			direction = import
+			target = c:SCA.market
+		}
+		create_trade_route = {
+			goods = fertilizer
+			level = 2
+			direction = import
+			target = c:PLO.market
+		}
+	}
+	c:CNF = {
+		create_trade_route = {
+			goods = sugar
+			level = 12
+			target = c:SPA.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = fertilizer
+			level = 4
+			target = c:SPA.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = fertilizer
+			level = 1
+			target = c:DUA.market
+			direction = import
+		}
+	}
+	c:ARN = {
+		create_trade_route = {
+			goods = dye
+			level = 3
+			target = c:SCA.market
+			direction = import
+		}
+	}
+	c:BOH = {
+		create_trade_route = {
+			goods = sugar
+			level = 10
+			target = c:BUR.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = sugar
+			level = 10
+			target = c:SCA.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = dye		
+			level = 6
+			target = c:SCA.market
+			direction = import
+		}
+	}
+	c:POL = {
+		create_trade_route = {
+			goods = fertilizer
+			level = 6
+			target = c:BRG.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = fertilizer
+			level = 4
+			target = c:BOH.market
+			direction = import
 		}
 	}
 	c:BGL = {

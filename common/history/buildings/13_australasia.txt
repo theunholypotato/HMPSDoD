@@ -74,19 +74,19 @@
 				reserves=1
 				activate_production_methods={ "pm_no_naval_theory" }
 			}
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:ZHR"
-						levels=5
-						region="STATE_ZHENG_HE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_citrus_orchards" }
-			}
+			# create_building={
+			# 	building="building_wheat_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:ZHR"
+			# 			levels=5
+			# 			region="STATE_ZHENG_HE"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_citrus_orchards" }
+			# }
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
@@ -265,19 +265,19 @@
 				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_pot_stills" "pm_manual_dough_processing" }
 			}
 
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:ZHR"
-						levels=5
-						region="STATE_WEIHUAI"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
-			}
+			# create_building={
+			# 	building="building_wheat_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:ZHR"
+			# 			levels=5
+			# 			region="STATE_WEIHUAI"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
+			# }
 			create_building={
 				building="building_cotton_plantation"
 				add_ownership={
@@ -347,19 +347,19 @@
 				reserves=1
 				activate_production_methods={ "pm_crude_tools" "pm_automation_disabled" }
 			}
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_rice_farm"
-						country="c:ZHR"
-						levels=1
-						region="STATE_QINGSHUI"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_rice_farm"
+			# 			country="c:ZHR"
+			# 			levels=1
+			# 			region="STATE_QINGSHUI"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" }
+			# }
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
@@ -495,19 +495,19 @@
 				reserves=1
 				activate_production_methods={ "pm_no_organization" }
 			}
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_rice_farm"
-						country="c:ZHR"
-						levels=2
-						region="STATE_GUANSHAN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"  }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_rice_farm"
+			# 			country="c:ZHR"
+			# 			levels=2
+			# 			region="STATE_GUANSHAN"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"  }
+			# }
 			create_building={
 				building="building_whaling_station"
 				add_ownership={
@@ -751,36 +751,36 @@
 				reserves=1
 				activate_production_methods={ "pm_no_organization" }
 			}
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:ZHR"
-						levels=1
-						region="STATE_WENCHENG"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:ZHR"
+			# 			levels=1
+			# 			region="STATE_WENCHENG"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
+			# }
 		}
 	}
 	s:STATE_WEIZHOU={      #Tingzhou
 		region_state:ZHR={
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:ZHR"
-						levels=5
-						region="STATE_WEIZHOU"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming"   "pm_tools_disabled" "pm_citrus_orchards" }
-			}
+			# create_building={
+			# 	building="building_wheat_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:ZHR"
+			# 			levels=5
+			# 			region="STATE_WEIZHOU"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming"   "pm_tools_disabled" "pm_citrus_orchards" }
+			# }
 			create_building={
 				building="building_government_administration"
 				add_ownership={
@@ -950,19 +950,19 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
 			}
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:ZHR"
-						levels=5
-						region="STATE_JINZHOU"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_no_secondary" }
-			}
+			# create_building={
+			# 	building="building_wheat_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:ZHR"
+			# 			levels=5
+			# 			region="STATE_JINZHOU"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_no_secondary" }
+			# }
 			create_building={
 				building="building_cotton_plantation"
 				add_ownership={

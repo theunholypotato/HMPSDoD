@@ -1,19 +1,19 @@
 ﻿BUILDINGS={
 	s:STATE_MALAYA={
 		region_state:PTN={
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:PTN"
-						levels=2
-						region="STATE_MALAYA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:PTN"
+			# 			levels=2
+			# 			region="STATE_MALAYA"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" }
+			# }
 			create_building={
 				building="building_banana_plantation"
 				add_ownership={
@@ -209,19 +209,19 @@
 	}
 	s:STATE_WEST_BORNEO={
 		region_state:LAN={
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:LAN"
-						levels=1
-						region="STATE_WEST_BORNEO"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm"  "pm_tools_disabled"  }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:LAN"
+			# 			levels=1
+			# 			region="STATE_WEST_BORNEO"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm"  "pm_tools_disabled"  }
+			# }
 			create_building={
 				building="building_dye_plantation"
 				add_ownership={
@@ -272,19 +272,19 @@
 	}
 	s:STATE_EAST_BORNEO={
 		region_state:KTI={
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:KTI"
-						levels=1
-						region="STATE_EAST_BORNEO"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:KTI"
+			# 			levels=1
+			# 			region="STATE_EAST_BORNEO"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" }
+			# }
 			create_building={
 				building="building_barracks"
 				add_ownership={
@@ -298,19 +298,19 @@
 			}
 		}
 		region_state:BEI={
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:BEI"
-						levels=1
-						region="STATE_EAST_BORNEO"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
-			}	
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:BEI"
+			# 			levels=1
+			# 			region="STATE_EAST_BORNEO"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+			# }	
 			create_building={
 				building="building_port"
 				add_ownership={
@@ -324,19 +324,19 @@
 			}
 		}
 		region_state:BNJ={
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:BNJ"
-						levels=1
-						region="STATE_EAST_BORNEO"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm"   "pm_tools_disabled"  }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:BNJ"
+			# 			levels=1
+			# 			region="STATE_EAST_BORNEO"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm"   "pm_tools_disabled"  }
+			# }
 			create_building={
 				building="building_banana_plantation"
 				add_ownership={
@@ -400,25 +400,25 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:BRG"
-						levels=10
-						region="STATE_HOLLAND"
-					}
-					building={
-						type="building_manor_house"
-						country="c:BEI"
-						levels=5
-						region="STATE_WEST_JAVA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm"   "pm_tools_disabled" "pm_no_secondary" }
-			}			
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:BRG"
+			# 			levels=10
+			# 			region="STATE_HOLLAND"
+			# 		}
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:BEI"
+			# 			levels=5
+			# 			region="STATE_WEST_JAVA"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm"   "pm_tools_disabled" "pm_no_secondary" }
+			# }			
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
@@ -552,25 +552,25 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:BRG"
-						levels=3
-						region="STATE_HOLLAND"
-					}
-					building={
-						type="building_financial_district"
-						country="c:BRG"
-						levels=2
-						region="STATE_HOLLAND"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
-			}			
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:BRG"
+			# 			levels=3
+			# 			region="STATE_HOLLAND"
+			# 		}
+			# 		building={
+			# 			type="building_financial_district"
+			# 			country="c:BRG"
+			# 			levels=2
+			# 			region="STATE_HOLLAND"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+			# }			
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
@@ -694,19 +694,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" }
 			}		
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:YOG"
-						levels=5
-						region="STATE_CENTRAL_JAVA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:YOG"
+			# 			levels=5
+			# 			region="STATE_CENTRAL_JAVA"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+			# }
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
@@ -748,19 +748,19 @@
 	}
 	s:STATE_EAST_JAVA={
 		region_state:MDR={
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:MDR"
-						levels=3
-						region="STATE_EAST_JAVA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:MDR"
+			# 			levels=3
+			# 			region="STATE_EAST_JAVA"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+			# }
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
@@ -813,19 +813,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:PLM"
-						levels=10
-						region="STATE_NORTH_SUMATRA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:PLM"
+			# 			levels=10
+			# 			region="STATE_NORTH_SUMATRA"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+			# }
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
@@ -876,19 +876,19 @@
 			}
 		}
 		region_state:IAK={
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:IAK"
-						levels=2
-						region="STATE_NORTH_SUMATRA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled"  }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:IAK"
+			# 			levels=2
+			# 			region="STATE_NORTH_SUMATRA"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled"  }
+			# }
 			create_building={
 				building="building_barracks"
 				add_ownership={
@@ -979,19 +979,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:PLM"
-						levels=5
-						region="STATE_SOUTH_SUMATRA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
-			}			
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:PLM"
+			# 			levels=5
+			# 			region="STATE_SOUTH_SUMATRA"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+			# }			
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
@@ -1057,19 +1057,19 @@
 			}
 		}
 		region_state:PAG={
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:PAG"
-						levels=2
-						region="STATE_SOUTH_SUMATRA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm"   "pm_tools_disabled"  }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:PAG"
+			# 			levels=2
+			# 			region="STATE_SOUTH_SUMATRA"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm"   "pm_tools_disabled"  }
+			# }
 			create_building={
 				building="building_dye_plantation"
 				add_ownership={
@@ -1146,19 +1146,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:BRG"
-						levels=2
-						region="STATE_FLANDERS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm"   "pm_tools_disabled" "pm_no_secondary" }
-			}			
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:BRG"
+			# 			levels=2
+			# 			region="STATE_FLANDERS"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm"   "pm_tools_disabled" "pm_no_secondary" }
+			# }			
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={
@@ -1224,19 +1224,19 @@
 	}
 	s:STATE_ACEH={
 		region_state:ACE={
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:ACE"
-						levels=1
-						region="STATE_ACEH"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:ACE"
+			# 			levels=1
+			# 			region="STATE_ACEH"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+			# }
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
@@ -1464,19 +1464,19 @@
 				reserves=1
 				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts" }
 			}
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:SCA"
-						levels=3
-						region="STATE_ZEALAND"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:SCA"
+			# 			levels=3
+			# 			region="STATE_ZEALAND"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
+			# }
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
@@ -1505,19 +1505,19 @@
 			}
 		}
 		region_state:MKS={
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:MKS"
-						levels=1
-						region="STATE_CELEBES"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:MKS"
+			# 			levels=1
+			# 			region="STATE_CELEBES"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+			# }
 			create_building={
 				building="building_barracks"
 				add_ownership={
@@ -1544,19 +1544,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" }
 			}		
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:BAL"
-						levels=3
-						region="STATE_SUNDA_ISLANDS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm"   "pm_tools_disabled" "pm_no_secondary" }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:BAL"
+			# 			levels=3
+			# 			region="STATE_SUNDA_ISLANDS"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm"   "pm_tools_disabled" "pm_no_secondary" }
+			# }
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
@@ -1683,19 +1683,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" }
 			}	
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:SCA"
-						levels=5
-						region="STATE_ZEALAND"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:SCA"
+			# 			levels=5
+			# 			region="STATE_ZEALAND"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
+			# }
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
@@ -1820,19 +1820,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" }
 			}		
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:FRS"
-						levels=5
-						region="STATE_LUZON"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:FRS"
+			# 			levels=5
+			# 			region="STATE_LUZON"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
+			# }
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
@@ -1896,19 +1896,19 @@
 			}
 		}
 		region_state:SUG={
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:SUG"
-						levels=1
-						region="STATE_LUZON"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:SUG"
+			# 			levels=1
+			# 			region="STATE_LUZON"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
+			# }
 			create_building={
 				building="building_port"
 				add_ownership={
@@ -1924,19 +1924,19 @@
 	}
 	s:STATE_VISAYAS={
 		region_state:SUG={
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:SUG"
-						levels=1
-						region="STATE_VISAYAS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:SUG"
+			# 			levels=1
+			# 			region="STATE_VISAYAS"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
+			# }
 			create_building={
 				building="building_tobacco_plantation"
 				add_ownership={

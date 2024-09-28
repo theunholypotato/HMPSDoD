@@ -113,8 +113,6 @@ dua_weekly_pulse_anglois_progress = {
 			state = {
 				state_region = {
 					is_homeland = cu:anglois
-					is_homeland = cu:breton
-					is_homeland = cu:welsh
 				}
 			}
 		}

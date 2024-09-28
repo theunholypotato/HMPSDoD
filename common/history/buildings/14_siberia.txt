@@ -83,19 +83,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
-			create_building={
-				building="building_rye_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:DZU"
-						levels=1
-						region="STATE_TOMSK"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
-			}
+			# create_building={
+			# 	building="building_rye_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:DZU"
+			# 			levels=1
+			# 			region="STATE_TOMSK"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+			# }
 		}
 	}
 	s:STATE_TUVA={
@@ -124,19 +124,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
-			create_building={
-				building="building_rye_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:DZU"
-						levels=1
-						region="STATE_TUVA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled"  }
-			}
+			# create_building={
+			# 	building="building_rye_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:DZU"
+			# 			levels=1
+			# 			region="STATE_TUVA"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled"  }
+			# }
 		}
 	}
 	s:STATE_IRKUTSK={
@@ -176,19 +176,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
-			create_building={
-				building="building_rye_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:DZU"
-						levels=2
-						region="STATE_IRKUTSK"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled"  }
-			}
+			# create_building={
+			# 	building="building_rye_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:DZU"
+			# 			levels=2
+			# 			region="STATE_IRKUTSK"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled"  }
+			# }
 		}
 		region_state:SIB={
 		}
