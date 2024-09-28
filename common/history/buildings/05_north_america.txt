@@ -146,6 +146,17 @@
 				reserves=1
 				activate_production_methods={ "pm_cannons" "pm_automation_disabled" }
 			}
+			create_building={
+				building="building_arms_industry"
+				add_ownership={
+					country={
+						country="c:VIN"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" }
+			}
 		}
 	}
 	s:STATE_MARKLAND={
@@ -1863,7 +1874,7 @@
 					building={
 						type="building_iron_mine"
 						country="c:PLA"
-						levels=2
+						levels=5
 						region="STATE_ALIBAMON"
 					}
 				}

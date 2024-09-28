@@ -66,9 +66,23 @@
 		}
 		create_trade_route = {
 			goods = fertilizer
-			level = 6
+			level = 7
 			direction = import
 			target = c:ARN.market
+		}
+	}
+	c:VIN = {
+		create_trade_route = {
+			goods = fertilizer
+			level = 3
+			direction = import
+			target = c:SCA.market
+		}
+		create_trade_route = {
+			goods = fertilizer
+			level = 2
+			direction = import
+			target = c:PLOmarket
 		}
 	}
 	c:BGL = {
