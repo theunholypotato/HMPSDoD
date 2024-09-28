@@ -2271,12 +2271,25 @@
 					building={
 						type="building_tooling_workshops"
 						country="c:DUA"
-						levels=3
+						levels=8
 						region="STATE_YORKSHIRE"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled" }
+				activate_production_methods={ "pm_steel" "pm_automation_disabled" }
+			}
+			create_building={
+				building="building_motor_industry"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:DUA"
+						levels=1
+						region="STATE_YORKSHIRE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steam_engines" "pm_automobiles_disabled" "pm_automation_disabled" }
 			}
 			create_building={
 				building="building_steel_mills"
