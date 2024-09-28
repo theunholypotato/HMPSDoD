@@ -9323,7 +9323,7 @@
 					building={
 						type="building_financial_district"
 						country="c:BOH"
-						levels=6
+						levels=9
 						region="STATE_BOHEMIA"
 					}
 				}
