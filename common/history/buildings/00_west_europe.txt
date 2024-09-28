@@ -274,7 +274,7 @@
 				add_ownership={
 					country={
 						country="c:SCA"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -303,6 +303,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_leblanc_process" }
+			}
+			create_building={
+				building="building_railway"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SCA"
+						levels=1
+						region="STATE_SCANIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steam_trains" "pm_no_passenger_trains" }
 			}
 			create_building={
 				building="building_arms_industry"
@@ -602,7 +615,20 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_iron_frame_buildings" }
-			}			
+			}	
+			create_building={
+				building="building_railway"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SCA"
+						levels=1
+						region="STATE_ZEALAND"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steam_trains" "pm_no_passenger_trains" }
+			}		
 			create_building={
 				building="building_university"
 				add_ownership={
@@ -970,6 +996,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
+			}
+			create_building={
+				building="building_railway"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SCA"
+						levels=1
+						region="STATE_EASTERN_NORWAY"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steam_trains" "pm_no_passenger_trains" }
 			}
 			create_building={
 				building="building_construction_sector"
@@ -1578,7 +1617,33 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_iron_frame_buildings" }
+			}
+			create_building={
+				building="building_railway"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SCA"
+						levels=1
+						region="STATE_LOWLANDS"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steam_trains" "pm_no_passenger_trains" }
 			}	
+			create_building={
+				building="building_motor_industry"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:SCA"
+						levels=1
+						region="STATE_LOWLANDS"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steam_engines" "pm_automobiles_disabled" "pm_automation_disabled" }
+			}
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
