@@ -228,13 +228,13 @@ genoa.6 = {
 			name = dvg_a_dukes_pleasures
 			months = 600
 		}
-		c:DUA = {
-			trigger_event = {
-                id = genoa.8
-                days = 7
-                popup = yes
-            }
-        }
+		# c:DUA = {
+		# 	trigger_event = {
+        #         id = genoa.8
+        #         days = 7
+        #         popup = yes
+        #     }
+        # }
 		
 		custom_tooltip = {
 			text = dvg_this_will_lead_to_war_with_genoa
