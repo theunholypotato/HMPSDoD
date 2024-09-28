@@ -2336,6 +2336,32 @@
 				activate_production_methods={ "pm_scholastic_education" }
 			}
 			create_building={
+				building="building_sulfur_mine"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:POL"
+						levels=4
+						region="STATE_WEST_GALICIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_sulfur_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}
+			create_building={
+				building="building_chemical_plants"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:POL"
+						levels=4
+						region="STATE_WEST_GALICIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_artificial_fertilizers" }
+			}
+			create_building={
 				building="building_textile_mills"
 				add_ownership={
 					building={

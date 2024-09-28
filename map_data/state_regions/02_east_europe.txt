@@ -347,6 +347,7 @@ STATE_WEST_GALICIA = {
         bg_coal_mining = 140
         bg_iron_mining = 33
         bg_logging = 17
+        bg_sulfur_mining = 20
     }
     resource = {
         type = bg_oil_extraction
