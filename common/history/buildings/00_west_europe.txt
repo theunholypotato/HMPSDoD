@@ -2786,6 +2786,19 @@
 				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled" }
 			}
 			create_building={
+				building="building_railway"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:DUA"
+						levels=1
+						region="STATE_HOME_COUNTIES"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steam_trains" "pm_no_passenger_trains" }
+			}
+			create_building={
 				building="building_lead_mine"
 				add_ownership={
 					building={
@@ -2797,6 +2810,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_lead_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}
+			create_building={
+				building="building_chemical_plants"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:DUA"
+						levels=5
+						region="STATE_HOME_COUNTIES"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_artificial_fertilizers" }
 			}
 			create_building={
 				building="building_sulfur_mine"
