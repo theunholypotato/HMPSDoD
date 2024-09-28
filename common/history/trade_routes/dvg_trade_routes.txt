@@ -51,6 +51,26 @@
 			target = c:SPA.market
 		}
 	}
+	c:PLA = {
+		create_trade_route = {
+			goods = grain
+			level = 11
+			direction = import
+			target = c:DUA.market
+		}
+		create_trade_route = {
+			goods = liquor
+			level = 11
+			direction = import
+			target = c:DUA.market
+		}
+		create_trade_route = {
+			goods = fertilizer
+			level = 6
+			direction = import
+			target = c:ARN.market
+		}
+	}
 	c:BGL = {
 		create_trade_route = {
 			goods = small_arms
