@@ -1,7 +1,7 @@
 ﻿POPS = {
 	#Mianjin
 	s:STATE_ZHENG_HE = {
-		region_state:MJN = {
+		region_state:ZHR = {
 			create_pop = {
 				culture = zhourao
 				size = 686816
@@ -24,7 +24,7 @@
 		}
 	}
 	s:STATE_WEIHUAI = {
-		region_state:MJN = {
+		region_state:ZHR = {
 			create_pop = {
 				culture = zhourao
 				size = 750000
@@ -48,7 +48,7 @@
 	}
 	#Yulao
 	s:STATE_QINGSHUI = {
-		region_state:YLO = {
+		region_state:ZHR = {
 			create_pop = {
 				culture = zhourao
 				size = 1115080
@@ -66,7 +66,7 @@
 		}
 	}
 	s:STATE_GUANSHAN = {
-		region_state:YLO = {
+		region_state:ZHR = {
 			create_pop = {
 				culture = zhourao
 				size = 658400
@@ -84,7 +84,7 @@
 		}
 	}
 	s:STATE_XINXIANG = {
-		region_state:YLO = {
+		region_state:ZHR = {
 			create_pop = {
 				culture = zhourao
 				size = 896800
@@ -108,7 +108,7 @@
 		}
 	}
 	s:STATE_YONGLING = {
-		region_state:KOO = {
+		region_state:ZHR = {
 			create_pop = {
 				culture = aborigine
 				religion = mahayana
@@ -123,8 +123,6 @@
 				religion = animist
 				size = 66246
 			}
-		}
-		region_state:YLO = {
 			create_pop = {
 				culture = aborigine
 				religion = mahayana
@@ -178,7 +176,7 @@
 				size = 24430
 			}
 		}
-		region_state:MJN = {
+		region_state:ZHR = {
 			create_pop = {
 				culture = aborigine
 				religion = animist
@@ -324,7 +322,7 @@
 	}
 	#Zhushan
 	s:STATE_WENCHENG = {
-		region_state:ZSA = {
+		region_state:ZHR = {
 			create_pop = {
 				culture = aborigine
 				religion = sunni
@@ -363,7 +361,7 @@
 		}
 	}
 	s:STATE_JINZHOU = {
-		region_state:ZSA = {
+		region_state:ZHR = {
 			create_pop = {
 				culture = aborigine
 				religion = sunni
@@ -390,7 +388,7 @@
 		}
 	}
 	s:STATE_WEIZHOU = {
-		region_state:ZSA = {
+		region_state:ZHR = {
 			create_pop = {
 				culture = zhourao
 				religion = sunni

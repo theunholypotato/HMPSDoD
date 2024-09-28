@@ -21,7 +21,7 @@
 	}
 }
 
-sgf_formation_event = {
+sgf_formation = {
 	is_shown = {
 		OR = {
 			AND = {

@@ -33,7 +33,7 @@
 
 
 			member = c:SAV
-			member = c:ZSA
+			#member = c:ZSA
 			member = c:JOH
 			member = c:PTN
 			member = c:KDH
