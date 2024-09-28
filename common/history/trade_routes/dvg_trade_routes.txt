@@ -1,16 +1,30 @@
 ﻿TRADE_ROUTES = {
 	c:SCA = {
-		create_trade_route = {
-			goods = silk
-			level = 1
-			direction = import
-			target = c:YLO.market
-		}
+		# create_trade_route = {
+		# 	goods = silk
+		# 	level = 1
+		# 	direction = import
+		# 	target = c:YLO.market
+		# }
 		create_trade_route = {
 			goods = fertilizer 
 			level = 1
 			direction = import
 			target = c:BRG.market
+		}
+	}
+	c:DUA = {
+		create_trade_route = {
+			goods = fertilizer
+			level = 10
+			direction = import
+			target = c:SPA.market
+		}
+		create_trade_route = {
+			goods = fertilizer
+			level = 10
+			direction = import
+			target = c:BOH.market
 		}
 	}
 	c:BGL = {

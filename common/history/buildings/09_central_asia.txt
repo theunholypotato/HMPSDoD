@@ -453,19 +453,19 @@
 			}
 		}
 		region_state:DAG={
-			create_building={
-				building="building_rice_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:DAG"
-						levels=1
-						region="STATE_AZERBAIJAN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming_building_rice_farm"  "pm_tools_disabled" }
-			}
+			# create_building={
+			# 	building="building_rice_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:DAG"
+			# 			levels=1
+			# 			region="STATE_AZERBAIJAN"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm"  "pm_tools_disabled" }
+			# }
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
@@ -713,19 +713,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
-			create_building={
-				building="building_rye_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:IUS"
-						levels=4
-						region="STATE_TARTARIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled"  }
-			}
+			# create_building={
+			# 	building="building_rye_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:IUS"
+			# 			levels=4
+			# 			region="STATE_TARTARIA"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled"  }
+			# }
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
@@ -929,19 +929,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" }
 			}
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:DZU"
-						levels=2
-						region="STATE_UZBEKIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
-			}
+			# create_building={
+			# 	building="building_wheat_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:DZU"
+			# 			levels=2
+			# 			region="STATE_UZBEKIA"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			# }
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
@@ -1037,19 +1037,19 @@
 	}
 	s:STATE_KIRGHIZIA={
 		region_state:DZU={
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:DZU"
-						levels=2
-						region="STATE_KIRGHIZIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
-			}
+			# create_building={
+			# 	building="building_wheat_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:DZU"
+			# 			levels=2
+			# 			region="STATE_KIRGHIZIA"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			# }
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
@@ -1147,19 +1147,19 @@
 	}
 	s:STATE_WESTERN_AFGHANISTAN={
 		region_state:AFG={
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:AFG"
-						levels=1
-						region="STATE_WESTERN_AFGHANISTAN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
-			}
+			# create_building={
+			# 	building="building_wheat_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:AFG"
+			# 			levels=1
+			# 			region="STATE_WESTERN_AFGHANISTAN"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
+			# }
 			create_building={
 				building="building_opium_plantation"
 				add_ownership={
@@ -1212,19 +1212,19 @@
 				reserves=1
 				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
 			}
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:TRC"
-						levels=1
-						region="STATE_WESTERN_AFGHANISTAN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
-			}
+			# create_building={
+			# 	building="building_wheat_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:TRC"
+			# 			levels=1
+			# 			region="STATE_WESTERN_AFGHANISTAN"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
+			# }
 			create_building={
 				building="building_opium_plantation"
 				add_ownership={
@@ -1305,19 +1305,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:AFG"
-						levels=6
-						region="STATE_EASTERN_AFGHANISTAN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled"  }
-			}
+			# create_building={
+			# 	building="building_wheat_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:AFG"
+			# 			levels=6
+			# 			region="STATE_EASTERN_AFGHANISTAN"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled"  }
+			# }
 			create_building={
 				building="building_tea_plantation"
 				add_ownership={
@@ -1385,19 +1385,19 @@
 				reserves=1
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
 			}
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:BLH"
-						levels=1
-						region="STATE_BALUCHISTAN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
-			}
+			# create_building={
+			# 	building="building_wheat_farm"
+			# 	add_ownership={
+			# 		building={
+			# 			type="building_manor_house"
+			# 			country="c:BLH"
+			# 			levels=1
+			# 			region="STATE_BALUCHISTAN"
+			# 		}
+			# 	}
+			# 	reserves=1
+			# 	activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
+			# }
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
