@@ -82,7 +82,69 @@
 			goods = fertilizer
 			level = 2
 			direction = import
-			target = c:PLOmarket
+			target = c:PLO.market
+		}
+	}
+	c:CNF = {
+		create_trade_route = {
+			goods = sugar
+			level = 12
+			target = c:SPA.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = fertilizer
+			level = 4
+			target = c:SPA.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = fertilizer
+			level = 1
+			target = c:DUA.market
+			direction = import
+		}
+	}
+	c:ARN = {
+		create_trade_route = {
+			goods = dye
+			level = 3
+			target = c:SCA.market
+			direction = import
+		}
+	}
+	c:BOH = {
+		create_trade_route = {
+			goods = sugar
+			level = 10
+			target = c:BUR.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = sugar
+			level = 10
+			target = c:SCA.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = dye		
+			level = 6
+			target = c:SCA.market
+			direction = import
+		}
+	}
+	c:POL = {
+		create_trade_route = {
+			goods = fertilizer
+			level = 6
+			target = c:BRG.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = fertilizer
+			level = 4
+			target = c:BOH.market
+			direction = import
 		}
 	}
 	c:BGL = {
