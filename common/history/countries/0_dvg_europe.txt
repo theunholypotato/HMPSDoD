@@ -75,6 +75,7 @@
 		activate_law = law_type:law_high_consumption_tax
 		activate_law = law_type:law_debtors_prisons
 		activate_law = law_type:law_local_police
+		activate_law = law_type:law_poor_laws
 		
 		set_institution_investment_level = {
 			institution = institution_schools
