@@ -205,6 +205,14 @@
 			target = c:CNF.market
 		}
 	}
+	c:BRG = {
+		create_trade_route = {
+			goods = silk
+			level = 12
+			target = c:GNG.market
+			direction = import
+		}
+	}
 	c:TWT = {
 		create_trade_route = {
 			goods = paper
