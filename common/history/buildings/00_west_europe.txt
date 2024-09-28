@@ -9101,6 +9101,19 @@
 				activate_production_methods={ "pm_saw_mills" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building={
+				building="building_chemical_plants"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:BOH"
+						levels=6
+						region="STATE_BOHEMIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_artificial_fertilizers" }
+			}
+			create_building={
 				building="building_university"
 				add_ownership={
 					country={
@@ -9117,7 +9130,7 @@
 					building={
 						type="building_financial_district"
 						country="c:BOH"
-						levels=2
+						levels=3
 						region="STATE_BOHEMIA"
 					}
 				}
@@ -9169,7 +9182,7 @@
 					building={
 						type="building_financial_district"
 						country="c:BOH"
-						levels=3
+						levels=6
 						region="STATE_BOHEMIA"
 					}
 				}
