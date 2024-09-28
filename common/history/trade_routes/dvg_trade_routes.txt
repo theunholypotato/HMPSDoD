@@ -22,9 +22,33 @@
 		}
 		create_trade_route = {
 			goods = fertilizer
-			level = 10
+			level = 6
 			direction = import
 			target = c:BOH.market
+		}
+		create_trade_route = {
+			goods = tools
+			level = 8
+			direction = export
+			target = c:SPA.market
+		}
+		create_trade_route = {
+			goods = ammunition
+			level = 3
+			direction = export
+			target = c:SPA.market
+		}
+		create_trade_route = {
+			goods = luxury_furniture
+			level = 3
+			direction = export
+			target = c:SPA.market
+		}
+		create_trade_route = {
+			goods = luxury_clothes
+			level = 4
+			direction = export
+			target = c:SPA.market
 		}
 	}
 	c:BGL = {
