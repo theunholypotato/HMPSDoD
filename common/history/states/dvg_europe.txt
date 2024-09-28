@@ -33,6 +33,7 @@
 		}
 		
 		add_homeland = cu:welsh
+		add_homeland = cu:anglois
 	}
 	s:STATE_YORKSHIRE = {
 		create_state = {
@@ -169,6 +170,7 @@
 		
 		add_homeland = cu:breton
 		add_homeland = cu:french
+		add_homeland = cu:anglois
 	}
 	s:STATE_CHAMPAGNE = {
 		create_state = {
