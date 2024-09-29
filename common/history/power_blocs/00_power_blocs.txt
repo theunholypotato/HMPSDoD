@@ -119,7 +119,7 @@
 
 			founding_date = 1804.4.4
 			identity = identity_sovereign_empire
-			principle = principle_vassalization_3
+			principle = principle_vassalization_1
 
 			member = c:FRE
 			member = c:FRW
