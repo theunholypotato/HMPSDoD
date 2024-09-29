@@ -8595,6 +8595,19 @@
 				activate_production_methods={ "pm_vertical_filing_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
+				building="building_railway"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:BOH"
+						levels=1
+						region="STATE_BOHEMIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steam_trains" "pm_no_passenger_trains" }
+			}
+			create_building={
 				building="building_arms_industry"
 				add_ownership={
 					building={
@@ -8881,6 +8894,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_vertical_filing_cabinets" }
+			}
+			create_building={
+				building="building_railway"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:BOH"
+						levels=1
+						region="STATE_BOHEMIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steam_trains" "pm_no_passenger_trains" }
 			}
 			create_building={
 				building="building_tooling_workshops"
@@ -9240,6 +9266,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_saw_mills" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+			}
+			create_building={
+				building="building_railway"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:BOH"
+						levels=1
+						region="STATE_BOHEMIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steam_trains" "pm_no_passenger_trains" }
 			}
 			create_building={
 				building="building_chemical_plants"
