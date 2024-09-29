@@ -1,0 +1,152 @@
+dvg_picardy_reclaimed = {
+	is_shown = {
+		exists = c:DUA
+		root = c:DUA
+		NOT = { has_variable = dua_reclaim_picardy }
+	}
+    possible = {
+
+		any_country = {
+			AND = {
+			country_has_primary_culture = cu:anglois
+			owns_entire_state_region = STATE_PICARDY
+			NOT = { has_variable = dua_reclaim_picardy }
+			}
+			
+		}
+	
+	}
+
+	when_taken = {
+		add_loyalists = {
+			value = 0.05
+			culture = cu:french
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:occitan
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:british
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:welsh
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:irish
+		}
+
+		set_variable = dua_reclaim_picardy
+
+    }
+
+	ai_chance = {
+		base = 100
+	}
+
+}
+
+dvg_burgundy_reclaimed = {
+	is_shown = {
+		exists = c:DUA
+		root = c:DUA
+		NOT = { has_variable = dua_reclaim_burgundy }
+	}
+    possible = {
+
+		any_country = {
+			AND = {
+			country_has_primary_culture = cu:anglois
+			owns_entire_state_region = STATE_BURGUNDY
+			NOT = { has_variable = dua_reclaim_burgundy }
+			}
+			
+		}
+	
+	}
+
+	when_taken = {
+		add_loyalists = {
+			value = 0.05
+			culture = cu:french
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:occitan
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:british
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:welsh
+		}
+		add_loyalists = {
+			value = 0.05
+			culture = cu:irish
+		}
+
+		set_variable = dua_reclaim_burgundy
+
+    }
+
+	ai_chance = {
+		base = 100
+	}
+
+}
+
+dvg_provence_reclaimed = {
+	is_shown = {
+		exists = c:DUA
+		root = c:DUA
+		NOT = { has_variable = dua_reclaim_provence }
+	}
+    possible = {
+
+		any_country = {
+			AND = {
+			country_has_primary_culture = cu:anglois
+			owns_entire_state_region = STATE_PROVENCE
+			NOT = { has_variable = dua_reclaim_provence }
+			}
+			
+		}
+	
+	}
+
+	when_taken = {
+		add_loyalists = {
+			value = 0.1
+			culture = cu:french
+		}
+		add_loyalists = {
+			value = 0.1
+			culture = cu:occitan
+		}
+		add_loyalists = {
+			value = 0.1
+			culture = cu:british
+		}
+		add_loyalists = {
+			value = 0.1
+			culture = cu:welsh
+		}
+		add_loyalists = {
+			value = 0.1
+			culture = cu:irish
+		}
+
+		set_variable = dua_reclaim_provence
+
+    }
+
+	ai_chance = {
+		base = 100
+	}
+
+}
