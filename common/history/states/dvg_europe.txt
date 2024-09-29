@@ -645,6 +645,8 @@
 		
 		add_homeland = cu:scandinavian
 		add_homeland = cu:north_german
+
+		add_claim = c:BOH
 	}
 	s:STATE_MECKLENBURG = {
 		create_state = {

@@ -22,7 +22,7 @@
 			}
 		}
 		NOT = {
-			this = c:LEW
+			# this = c:LEW
 			#this = c:BTV
 		}
 	}

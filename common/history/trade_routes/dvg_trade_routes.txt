@@ -147,6 +147,14 @@
 			direction = import
 		}
 	}
+	c:HUN = {
+		create_trade_route = {
+			goods = sulfur
+			level = 5
+			target = c:BOH.market
+			direction = import
+		}
+	}
 	c:BGL = {
 		create_trade_route = {
 			goods = small_arms
@@ -195,6 +203,14 @@
 			level = 1
 			direction = import
 			target = c:CNF.market
+		}
+	}
+	c:BRG = {
+		create_trade_route = {
+			goods = silk
+			level = 12
+			target = c:GNG.market
+			direction = import
 		}
 	}
 	c:TWT = {
