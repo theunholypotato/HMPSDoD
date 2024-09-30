@@ -483,7 +483,7 @@
 	}
 	
 	c:MCH = { #Qing/Manchuria
-		effect_starting_technology_tier_3_tech = yes
+		effect_starting_technology_tier_4_tech = yes
 		add_technology_researched = urban_planning
 		add_technology_researched = sericulture
 		add_technology_researched = academia
@@ -579,7 +579,7 @@
 	}
 	
 	c:FRS = { #Tungning
-		effect_starting_technology_tier_3_tech = yes
+		effect_starting_technology_tier_4_tech = yes
 		effect_starting_politics_traditional = yes
 		
 		activate_law = law_type:law_landed_voting
@@ -704,7 +704,7 @@
 	}
 	
 	c:KOR = { #Korea
-		effect_starting_technology_tier_3_tech = yes
+		effect_starting_technology_tier_4_tech = yes
 		
 		effect_starting_politics_traditional = yes
 
@@ -732,7 +732,7 @@
 	}
 	
 	c:JAP = { #Japan
-		effect_starting_technology_tier_3_tech = yes
+		effect_starting_technology_tier_4_tech = yes
 		effect_starting_politics_traditional = yes
 
 		activate_law = law_type:law_landed_voting
