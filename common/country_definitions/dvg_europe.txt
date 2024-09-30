@@ -1016,7 +1016,7 @@ LIP = { #Lippe
 
 	tier = principality
 	
-	cultures = { north_german }
+	cultures = { rheinish }
 	capital = STATE_WESTPHALIA
 }
 

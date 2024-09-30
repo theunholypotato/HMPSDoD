@@ -599,6 +599,10 @@
 		ig:ig_devout = {
 			set_interest_group_name = ig_evangelical_church
 		}
+
+		trigger_event = {
+			id = dvg_rheinish_unification.10
+		}
 	}
 	
 	c:NAS = { #Nassau
@@ -873,6 +877,7 @@
 		ig:ig_devout = {
 			set_interest_group_name = ig_evangelical_church
 		}
+
 	}
 
 	c:OSN = {
