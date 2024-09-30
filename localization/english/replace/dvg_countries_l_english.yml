@@ -180,8 +180,8 @@
  dyn_c_csk_republic: "Cossackia"
  dyn_c_csk_fascist: "Cossack Freehold"
  dyn_c_csk_communist: "Free Territory of Ukraine"
- TAR: "Kipchakstan" #Formerly Tatarstan
- TAR_ADJ: "Kipchak"
+ TAR: "Tatarstan" #Formerly Tatarstan
+ TAR_ADJ: "Tatar"
  dyn_c_golden_horde: "Golden Horde"
  LVL: "Livland"
  LVL_ADJ: "Balters"
