@@ -53,6 +53,10 @@
 			country = c:QUI
 			type = puppet
 		}
+		create_diplomatic_pact = {
+			country = c:OMA
+			type = protectorate
+		}
 	}
 	c:SCA = {
 		create_diplomatic_pact = {
