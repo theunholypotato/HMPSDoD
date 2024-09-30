@@ -186,15 +186,15 @@ dvg_ottomans_reclaim.5 = {
 		}
 	}
 
-	option = {
-		name = dvg_ottomans_reclaim.5.c
-		default_option = no
-
-		ig:ig_landowners = {
-			add_modifier = {
-				name = ig_placated
-				days = 1095
-			}
-		}
-	}
+	#option = {
+	#	name = dvg_ottomans_reclaim.5.c
+	#	default_option = no
+	#
+	#	ig:ig_landowners = {
+	#		add_modifier = {
+	#			name = ig_placated
+	#			days = 1095
+	#		}
+	#	}
+	#}
 }
