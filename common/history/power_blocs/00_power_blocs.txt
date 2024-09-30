@@ -39,7 +39,6 @@
 			member = c:KDH
 			member = c:PSA
 			member = c:BRU
-			member = c:BGL
 		}
 		if = {
 			limit = {
