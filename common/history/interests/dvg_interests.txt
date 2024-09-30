@@ -21,6 +21,10 @@
 		add_declared_interest = region_danubia
 		add_declared_interest = region_poland
 		add_declared_interest = region_baltic
+		add_declared_interest = region_france
+		add_declared_interest = region_england
+		add_declared_interest = region_occitania
+		add_declared_interest = region_north_sea
 	}
 	c:BRG = {
 		add_declared_interest = region_north_germany
