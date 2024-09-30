@@ -59,7 +59,7 @@
 		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_elected_bureaucrats
-		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_protectionism
 		activate_law = law_type:law_per_capita_based_taxation
@@ -256,7 +256,7 @@
 		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_elected_bureaucrats
-		activate_law = law_type:law_mass_conscription
+		activate_law = law_type:law_national_militia
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_frontier_colonization
@@ -298,7 +298,7 @@
 		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_mass_conscription
+		activate_law = law_type:law_national_militia
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_frontier_colonization
@@ -357,7 +357,7 @@
 		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_mass_conscription
+		activate_law = law_type:law_national_militia
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		#activate_law = law_type:law_frontier_colonization
@@ -398,7 +398,7 @@
 		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_traditionalism
 		activate_law = law_type:law_homesteading
 		activate_law = law_type:law_land_based_taxation
@@ -516,7 +516,7 @@
 		activate_law = law_type:law_republic
 		activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_national_supremacy
-		activate_law = law_type:law_mass_conscription
+		activate_law = law_type:law_national_militia
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_censorship

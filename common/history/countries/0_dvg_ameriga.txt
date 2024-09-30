@@ -108,7 +108,7 @@
 	#	activate_law = law_type:law_cultural_exclusion
 	#	activate_law = law_type:law_freedom_of_conscience
 	#	activate_law = law_type:law_appointed_bureaucrats
-	#	activate_law = law_type:law_national_militia
+	#	activate_law = law_type:law_professional_army
 	#	activate_law = law_type:law_interventionism
 	#	activate_law = law_type:law_per_capita_based_taxation
 	#	activate_law = law_type:law_homesteading
@@ -325,7 +325,7 @@
 		activate_law = law_type:law_public_health_insurance
 		activate_law = law_type:law_poor_laws
 		activate_law = law_type:law_women_own_property
-		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_national_guard
 		activate_law = law_type:law_moderate_income_tax	
 		activate_law = law_type:law_high_consumption_tax
