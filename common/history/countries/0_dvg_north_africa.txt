@@ -134,9 +134,9 @@
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 		}
-		trigger_event = {
-			id = dvg_maghreb.1
-		}
+		#trigger_event = {
+		#	id = dvg_maghreb.1
+		#}
 	}
 	
 	c:EGY = { #Egypt
@@ -264,9 +264,9 @@
 		}
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
-		}
-		trigger_event = {
-			id = dvg_morocco.1
-		}
+		#}
+		#trigger_event = {
+		#	id = dvg_morocco.1
+		#}
 	}
 }

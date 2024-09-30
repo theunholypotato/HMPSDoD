@@ -53,7 +53,7 @@
 	
 	
 	c:DZU = { #Dzungar
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = academia
 		add_technology_researched = colonization
 		
@@ -85,7 +85,7 @@
 	}
 	
 	c:TIB = { #Tibet
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_theocracy
@@ -108,7 +108,7 @@
 	}
 	
 	#c:SHU = {
-	#	effect_starting_technology_tier_4_tech = yes
+	#	effect_starting_technology_tier_2_tech = yes
 	#	add_technology_researched = urban_planning
 	#	add_technology_researched = sericulture
 	#	add_technology_researched = academia
@@ -158,7 +158,7 @@
 	#}
 	
 	#c:XIB = {
-	#	effect_starting_technology_tier_4_tech = yes
+	#	effect_starting_technology_tier_2_tech = yes
 	#	add_technology_researched = urban_planning
 	#	add_technology_researched = sericulture
 	#	add_technology_researched = academia
@@ -190,7 +190,7 @@
 	#}
 	
 	c:SIH = {
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = urban_planning
 		add_technology_researched = sericulture
 		add_technology_researched = academia
@@ -226,7 +226,7 @@
 	}
 	
 	c:GUI = {
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = urban_planning
 		add_technology_researched = sericulture
 		add_technology_researched = academia
@@ -260,7 +260,7 @@
 	}
 	
 	c:HNA = {
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = urban_planning
 		add_technology_researched = sericulture
 		add_technology_researched = academia
@@ -296,7 +296,7 @@
 
 	}
 	c:HBI = {
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = urban_planning
 		add_technology_researched = sericulture
 		add_technology_researched = academia
@@ -332,7 +332,7 @@
 	}
 	
 	c:GNG = {
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = urban_planning
 		add_technology_researched = sericulture
 		add_technology_researched = academia
@@ -368,7 +368,7 @@
 	}
 	
 	c:JIA = {
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = urban_planning
 		add_technology_researched = sericulture
 		add_technology_researched = academia
@@ -433,7 +433,7 @@
 	}
 	
 	c:YUE= {
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = urban_planning
 		add_technology_researched = sericulture
 		add_technology_researched = academia
@@ -530,7 +530,7 @@
 	}
 	
 	c:NAN = { #Nanjing Regency
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_3_tech = yes
 		effect_starting_politics_traditional = yes
 		add_technology_researched = urban_planning
 		add_technology_researched = sericulture
@@ -618,7 +618,7 @@
 	}
 	
 	c:YUN = { #Yunnan
-        effect_starting_technology_tier_4_tech = yes
+        effect_starting_technology_tier_2_tech = yes
 		effect_starting_politics_traditional = yes
         add_technology_researched = urban_planning
         add_technology_researched = sericulture
@@ -653,7 +653,7 @@
 	}
 	
 #	c:TPG = { #Taiping
-#		effect_starting_technology_tier_4_tech = yes
+#		effect_starting_technology_tier_2_tech = yes
 #		add_technology_researched = urban_planning
 #		add_technology_researched = sericulture
 #		add_technology_researched = academia
@@ -689,7 +689,7 @@
 #	}
 	
 	c:DAI = { #Vietnam
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_legacy_slavery
@@ -704,7 +704,7 @@
 	}
 	
 	c:KOR = { #Korea
-		effect_starting_technology_tier_3_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		
 		effect_starting_politics_traditional = yes
 
@@ -732,7 +732,7 @@
 	}
 	
 	c:JAP = { #Japan
-		effect_starting_technology_tier_3_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		effect_starting_politics_traditional = yes
 
 		activate_law = law_type:law_landed_voting
@@ -775,7 +775,7 @@
 	}
 	
 	c:AIN = { #Ainu Mosir
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = colonization
 		
 		effect_starting_politics_traditional = yes
@@ -802,7 +802,7 @@
 	}
 	
 	c:CHA = { #Champa
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_right_of_assembly
@@ -818,7 +818,7 @@
 	}
 	
 	# c:CMI = { #Chiang Mai
-		# effect_starting_technology_tier_4_tech = yes
+		# effect_starting_technology_tier_2_tech = yes
 		
 		# effect_starting_politics_traditional = yes
 		
@@ -833,7 +833,7 @@
 	# }
 	
 	c:LAO = { #Laos
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_right_of_assembly
@@ -851,7 +851,7 @@
 	}
 	
 	c:CAM = { #Khmer
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		
 		effect_starting_politics_traditional = yes
 		add_technology_researched = mandatory_service
@@ -871,7 +871,7 @@
 	}
 	
 	c:BUR = { #Burma
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = academia
 		add_technology_researched = law_enforcement
 		add_technology_researched = mandatory_service
@@ -904,7 +904,7 @@
 	}
 	
 	c:SHS = { #Shan
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = academia
 		add_technology_researched = law_enforcement
 		add_technology_researched = mandatory_service
@@ -925,7 +925,7 @@
 	}
 	
 	c:MZM = { #Mizoram
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = academia
 		add_technology_researched = law_enforcement
 		add_technology_researched = mandatory_service
@@ -946,7 +946,7 @@
 	}
 
 	c:SIA = { #Siam
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		add_technology_researched = mandatory_service
 	
 		
@@ -967,7 +967,7 @@
 	}
 	
 	c:MRK = { #Morikawa
-		effect_starting_technology_tier_3_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		
 		effect_starting_politics_traditional = yes
 
