@@ -19,15 +19,15 @@ dvg_picardy_reclaimed = {
 
 	when_taken = {
 		add_loyalists = {
-			value = 0.033
+			value = 0.5
 			culture = cu:french
 		}
 		add_loyalists = {
-			value = 0.033
+			value = 0.5
 			culture = cu:occitan
 		}
 		add_loyalists = {
-			value = 0.033
+			value = 0.5
 			culture = cu:british
 		}
 		#add_loyalists = {
