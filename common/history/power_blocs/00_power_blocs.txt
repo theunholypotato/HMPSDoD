@@ -62,7 +62,6 @@
 			principle = principle_internal_trade_1
 
 			member = c:MCD
-			member = c:VEN
 			member = c:PRO
 			member = c:PAP
 
@@ -143,4 +142,32 @@
 			}
 		}
 	}
+	
+	c:SPA = {
+		create_power_bloc = {
+			name = SPA_BLOC
+
+			map_color = { 221 167 99 }
+
+			founding_date = 1521.2.21 #Aztec Conquest
+			identity = identity_sovereign_empire
+			principle = principle_vassalization_1
+			
+			member = c:OMA
+			member = c:CUB
+			member = c:GRA
+			member = c:QUI
+			member = c:ATL
+			member = c:MOR
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_external_trade_1
+			}
+		}
+	}
+
 }

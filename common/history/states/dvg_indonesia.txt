@@ -8,6 +8,7 @@
 		create_state = {
 			country = c:DUA
 			owned_provinces = { "xC00130" "x8080B0" }
+			state_type = unincorporated
 		}
 		create_state = {
 			country = c:PTN

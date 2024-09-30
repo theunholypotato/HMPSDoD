@@ -267,6 +267,7 @@
 		create_state = {
 			country = c:SPA
 			owned_provinces = {"x025A94" "x3C68C9" }
+			state_type = unincorporated
 		}
 		add_homeland = cu:bengali
 		add_claim = c:BGL
