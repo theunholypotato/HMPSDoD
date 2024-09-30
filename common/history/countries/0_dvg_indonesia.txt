@@ -232,9 +232,9 @@
 			add_ideology = ideology_mengzi
 		}
 		
-		add_modifier = {
-			name = dvg_kongsi_modifier
-		}
+		#add_modifier = {
+		#	name = dvg_kongsi_modifier
+		#}
 
 	}
 	c:SDK = { #Sandakan
@@ -446,9 +446,9 @@
 			remove_ideology = ideology_patriarchal
 			add_ideology = ideology_dharmic
 		}
-		trigger_event = {
-            id = dvg_bali.1
-        }
+		#trigger_event = {
+        #    id = dvg_bali.1
+        #}
 	}
 	
 	c:MKS = { #Makassar
@@ -681,9 +681,9 @@
 		#		months = -1
 		#	}
 		#}
-		trigger_event = {
-			id = dvg_polynesia.1 
-		}
+		#trigger_event = {
+		#	id = dvg_polynesia.1 
+		#}
 	}
 
 	c:BEI = { #Burgundian East Indies

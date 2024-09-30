@@ -82,13 +82,13 @@
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
-		trigger_event = {
-			id = dvg_leeuwin.1
-		}		
+		#trigger_event = {
+		#	id = dvg_leeuwin.1
+		#}		
 		ig:ig_devout = {
 			set_interest_group_name = ig_evangelical_church
 		}
-		add_journal_entry = { type = je_king_aloysius }
+		#add_journal_entry = { type = je_king_aloysius }
 	}
 	
 	c:OPS = { #Opstalia
@@ -112,9 +112,9 @@
 		ig:ig_armed_forces = {
 			set_interest_group_name = ig_kommandos
 		}
-		trigger_event = {
-			id = dvg_opstalia.1
-		}
+		#trigger_event = {
+		#	id = dvg_opstalia.1
+		#}
 	}
 	
 	c:NFL = { #Nuweflander
@@ -135,12 +135,12 @@
 		set_ruling_interest_groups = {
 			ig_rural_folk
 		}
-		trigger_event = {
-			id = dvg_nuweflander.1
-		}
-		add_modifier = {
-			name = dvg_poor_mans_republic
-		}
+		#trigger_event = {
+		#	id = dvg_nuweflander.1
+		#}
+		#add_modifier = {
+		#	name = dvg_poor_mans_republic
+		#}
 	}
 
 
@@ -167,9 +167,9 @@
 			institution = institution_colonial_affairs
 			level = 1
 		}
-		trigger_event = {
-			id = dvg_cape_colony.1
-		}	
+		#trigger_event = {
+		#	id = dvg_cape_colony.1
+		#}	
 		set_variable = southern_africa_subject_var
 	}
 	
@@ -189,9 +189,9 @@
 		activate_law = law_type:law_moderate_consumption_tax
 
 		
-		trigger_event = {
-			id = dvg_vryland.1
-		}		
+		#trigger_event = {
+		#	id = dvg_vryland.1
+		#}		
 	}
 	
 	c:ZUL = { #Zulu
@@ -491,8 +491,8 @@
 			ig_landowners
 			ig_devout
 		}
-		add_journal_entry = { type = je_religion_ethiopia } 
-		add_journal_entry = { type = je_mahdist_revolt } 
+		#add_journal_entry = { type = je_religion_ethiopia } 
+		#add_journal_entry = { type = je_mahdist_revolt } 
 	}
 	
 	c:GLD = { #Ajuuran Sultanate
