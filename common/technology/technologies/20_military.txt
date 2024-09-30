@@ -65,7 +65,6 @@ mandatory_service = {
 	
 	modifier = {
 		state_conscription_rate_mult = 0.2
-		country_institution_army_model_max_investment_add = 1
 	}
 	
 	unlocking_technologies = {
@@ -483,7 +482,6 @@ military_statistics = {
 	
 	modifier = {
 		military_formation_organization_gain_mult = 0.2
-		country_institution_army_model_max_investment_add = 1
 	}
 	
 	unlocking_technologies = {	
@@ -701,7 +699,6 @@ war_propaganda = {
 	modifier = {
 		unit_morale_loss_mult = -0.05
 		state_conscription_rate_mult = 0.2
-		country_institution_army_model_max_investment_add = 1
 	}
 	
 	on_researched = {
@@ -728,6 +725,7 @@ wargaming = {
 
 	modifier = {
 		unit_army_offense_mult = 0.1
+		country_institution_army_model_max_investment_add = 1
 	}
 	
 	unlocking_technologies = {

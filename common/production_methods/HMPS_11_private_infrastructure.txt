@@ -54,7 +54,7 @@ pm_steam_trains_principle_transport_3 = {
 	is_hidden_when_unavailable = yes
 
 	unlocking_principles = {
-		principle_transport_3
+		principle_transport_1
 	}
 
 	unlocking_technologies = {
@@ -118,7 +118,7 @@ pm_electric_trains_principle_transport_3 = {
 	is_hidden_when_unavailable = yes
 
 	unlocking_principles = {
-		principle_transport_3
+		principle_transport_1
 	}
 	
 	unlocking_technologies = {
@@ -183,7 +183,7 @@ pm_diesel_trains_principle_transport_3 = {
 	is_hidden_when_unavailable = yes
 
 	unlocking_principles = {
-		principle_transport_3
+		principle_transport_1
 	}
 
 	unlocking_technologies = {
@@ -217,8 +217,8 @@ pm_trade_center_principle_external_trade_2 = {
 	is_hidden_when_unavailable = yes
 	
 	unlocking_principles = {
-		principle_external_trade_2
-		principle_external_trade_3
+		principle_external_trade_1
+		principle_external_trade_1
 	}
 	
 	country_modifiers = {

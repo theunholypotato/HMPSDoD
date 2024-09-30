@@ -71,9 +71,9 @@
 		ig:ig_devout = { 
 			set_interest_group_name = ig_twelvers
 		}
-		trigger_event = {
-			id = dvg_persia.1
-		}
+		#trigger_event = {
+		#	id = dvg_persia.1
+		#}
 	}
 	
 	
