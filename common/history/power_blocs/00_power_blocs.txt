@@ -154,7 +154,6 @@
 			principle = principle_vassalization_1
 			
 			member = c:OMA
-			member = c:MYS
 			member = c:CUB
 			member = c:GRA
 			member = c:QUI
