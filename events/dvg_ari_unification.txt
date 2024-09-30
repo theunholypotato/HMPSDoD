@@ -144,9 +144,10 @@ dvg_ari_unification.4 = {
 	#}
 	option = {
 		name = dvg_ari_unification.4.b
-		give_claims_on_italy = yes
-		active_law = law_type:law_national_supremacy 
-			
+		#give_claims_on_italy = yes
+		activate_law = law_type:law_national_supremacy 
+		change_tag = ARI 
+
 		add_loyalists = {
 			value = 0.05
 			culture = cu:catalan
