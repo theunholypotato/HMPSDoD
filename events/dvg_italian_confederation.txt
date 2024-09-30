@@ -31,24 +31,27 @@ dvg_italian_confederation.1 = {
 	option = {
 		name = dvg_italian_confederation.1.a
 		default_option = yes
-		give_claims_on_north_italy = yes
+		#give_claims_on_north_italy = yes
 		# prestige
 		add_modifier = {
 			name = italian_unifier_prestige
 			months = long_modifier_time
 		}
+		change_tag = ITC
+		add_primary_culture = cu:central_italian
+		add_primary_culture = cu:north_italian
 	}
-	option = {
-		name = dvg_italian_confederation.1.b
-		give_claims_on_north_italy = yes
-		# ruler IG attraction
-		scope:ruler_ig_scope = {
-			add_modifier = {
-				name = italian_unifiers_ig
-				months = normal_modifier_time
-			}
-		}
-	}
+	#option = {
+	#	name = dvg_italian_confederation.1.b
+	#	give_claims_on_north_italy = yes
+	#	# ruler IG attraction
+	#	scope:ruler_ig_scope = {
+	#		add_modifier = {
+	#			name = italian_unifiers_ig
+	#			months = normal_modifier_time
+	#		}
+	#	}
+	#}
 }
 
 dvg_italian_confederation.2 = {

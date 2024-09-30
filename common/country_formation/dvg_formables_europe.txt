@@ -633,38 +633,38 @@ NET = { #Netherlands
 	}
 }
 
-ITC = { #Italian Confederation
-	states = {
-		STATE_SAVOY
-		STATE_PIEDMONT
-		STATE_EMILIA
-		STATE_TUSCANY
-		STATE_ROMAGNA
-		STATE_LOMBARDY
-		STATE_UMBRIA
-		STATE_LAZIO
-		STATE_CORSICA
-		STATE_VENETIA
-		STATE_ISTRIA
-	}
-	
-	required_states_fraction = 0.50	
-
-	ai_will_do = { always = yes }
-
-	possible = {
-		#OR = {
-			country_has_primary_culture = cu:north_italian
-			country_has_primary_culture = cu:central_italian
-		#}
-		#any_country = {
-		#	OR = {
-		#		country_has_primary_culture = cu:north_italian
-		#		country_has_primary_culture = cu:central_italian
-		#	}
-		#}
-	}
-}
+#ITC = { #Italian Confederation
+#	states = {
+#		#STATE_SAVOY
+#		STATE_PIEDMONT
+#		STATE_EMILIA
+#		STATE_TUSCANY
+#		STATE_ROMAGNA
+#		STATE_LOMBARDY
+#		STATE_UMBRIA
+#		STATE_LAZIO
+#		STATE_CORSICA
+#		STATE_VENETIA
+#		STATE_ISTRIA
+#	}
+#	
+#	required_states_fraction = 0.50	
+#
+#	ai_will_do = { always = yes }
+#
+#	possible = {
+#		#OR = {
+#			country_has_primary_culture = cu:north_italian
+#			country_has_primary_culture = cu:central_italian
+#		#}
+#		#any_country = {
+#		#	OR = {
+#		#		country_has_primary_culture = cu:north_italian
+#		#		country_has_primary_culture = cu:central_italian
+#		#	}
+#		#}
+#	}
+#}
 
 
 #SWZ = { #Switzerland Confederation

@@ -9,7 +9,7 @@
 
 	possible = {
 		#country_rank >= rank_value:major_power
-		#has_technology_researched = pan-nationalism
+		has_technology_researched = pan-nationalism
 		#is_subject = no
 	}
 
