@@ -480,43 +480,43 @@ SPA = { #Spain
 	}
 }
 
-ARI = { #Aragon-Italy
-	states = {
-		STATE_CATALONIA
-		STATE_ARAGON
-		STATE_VALENCIA
-		STATE_BALEARES
-		STATE_SARDINIA
-		STATE_CORSICA
-		STATE_MALTA
-		STATE_SICILY
-		STATE_CALABRIA
-		STATE_CAMPANIA
-		STATE_APULIA
-		STATE_ABRUZZO
-		STATE_LAZIO
-		STATE_UMBRIA
-		STATE_TUSCANY
-		STATE_ROMAGNA
-		STATE_EMILIA
-		STATE_PIEDMONT
-		STATE_LOMBARDY
-		#STATE_SAVOY
-		STATE_VENETIA
-		STATE_ISTRIA
-		STATE_DALMATIA
-		STATE_MALTA
-	}
-
-	required_states_fraction = 0.8
-
-	ai_will_do = { always = yes }
-
-	possible = {
-		country_has_primary_culture = cu:catalan
-		has_technology_researched = pan-nationalism
-	}
-}
+#ARI = { #Aragon-Italy
+#	states = {
+#		STATE_CATALONIA
+#		STATE_ARAGON
+#		STATE_VALENCIA
+#		STATE_BALEARES
+#		STATE_SARDINIA
+#		STATE_CORSICA
+#		STATE_MALTA
+#		STATE_SICILY
+#		STATE_CALABRIA
+#		STATE_CAMPANIA
+#		STATE_APULIA
+#		STATE_ABRUZZO
+#		STATE_LAZIO
+#		STATE_UMBRIA
+#		STATE_TUSCANY
+#		STATE_ROMAGNA
+#		STATE_EMILIA
+#		STATE_PIEDMONT
+#		STATE_LOMBARDY
+#		#STATE_SAVOY
+#		STATE_VENETIA
+#		STATE_ISTRIA
+#		STATE_DALMATIA
+#		STATE_MALTA
+#	}
+#
+#	required_states_fraction = 0.8
+#
+#	ai_will_do = { always = yes }
+#
+#	possible = {
+#		country_has_primary_culture = cu:catalan
+#		has_technology_researched = pan-nationalism
+#	}
+#}
 
 RUT = { #Ruthenia
 	use_culture_states = yes
