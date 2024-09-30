@@ -589,7 +589,7 @@ dvg_dzungaria.3 = {  #Dzungar Holds on
 		name = dvg_dzungaria.3.a
 		default_option = yes
 		add_loyalists = {
-			value = 0.25
+			value = 0.1
 		}
 		s:STATE_BASHKORTOSTAN = {
 			add_claim = c:DZU

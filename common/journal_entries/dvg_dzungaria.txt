@@ -6,12 +6,34 @@
 	timeout = 8760
 
 	complete = {
-			is_country_type = recognized
+			#is_country_type = recognized
 			NOT = { has_law = law_type:law_autocracy }
 			NOT = { has_law = law_type:law_oligarchy }
 			NOT = { has_law = law_type:law_outlawed_dissent }
 			NOT = { has_law = law_type:law_censorship }
 			has_technology_researched = mass_communication
+
+			calc_true_if = {
+				amount >= 8
+				owns_entire_state_region = STATE_DVG_PERM
+				owns_entire_state_region = STATE_DVG_VYATKA
+				#owns_entire_state_region = STATE_BRYANSK
+				#owns_entire_state_region = STATE_DVG_MOSCOW
+				owns_entire_state_region = STATE_ASTRAKHAN
+				owns_entire_state_region = STATE_DVG_ROSTOV
+				owns_entire_state_region = STATE_DVG_CRIMEA
+				#owns_entire_state_region = STATE_DVG_KIEV
+				owns_entire_state_region = STATE_DAGESTAN
+				owns_entire_state_region = STATE_KUBAN
+				#owns_entire_state_region = STATE_GREATER_CAUCASUS
+				owns_entire_state_region = STATE_DVG_URALSK
+				owns_entire_state_region = STATE_QOBAN
+				owns_entire_state_region = STATE_BASHKORTOSTAN
+				owns_entire_state_region = STATE_IDEL
+				owns_entire_state_region = STATE_URAL
+				owns_entire_state_region = STATE_TARTARIA
+				#owns_entire_state_region = 
+			}
 	}
 
 
