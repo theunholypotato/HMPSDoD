@@ -1,7 +1,7 @@
 ﻿DIPLOMACY = {
 	c:DUA = {
 		create_diplomatic_pact = {
-			country = c:SPA
+			country = c:BOH
 			type = defensive_pact
 		}	
 	}
@@ -18,14 +18,6 @@
 		}	
 	}
 	c:POL = {
-		create_diplomatic_pact = {
-			country = c:MSO
-			type = defensive_pact
-		}
-		create_diplomatic_pact = {
-			country = c:HUN
-			type = defensive_pact
-		}
 		create_diplomatic_pact = {
 			country = c:MOL
 			type = defensive_pact

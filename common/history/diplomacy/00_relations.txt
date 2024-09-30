@@ -180,8 +180,6 @@
 	c:POL = {
 		set_relations = { country = c:PRU value = 30 }
 		set_relations = { country = c:LIT value = 50 }
-		set_relations = { country = c:HUN value = 40 }
-		set_relations = { country = c:MSO value = 50 }
 		#set_relations = { country = c:TVE value = 50 }
 		#set_relations = { country = c:RYA value = 50 }
 		set_relations = { country = c:MOL value = 30 }
@@ -191,7 +189,6 @@
 		set_relations = { country = c:ZAZ value = 30 }
 	}
 	c:MSO = {
-		set_relations = { country = c:POL value = 50 }
 		#set_relations = { country = c:NZH value = 50 }
 		#set_relations = { country = c:TVE value = 50 }
 		set_relations = { country = c:NOV value = -50 }
@@ -258,7 +255,6 @@
 	}
 	c:HUN = {
 		set_relations = { country = c:WAL value = 40 }
-		set_relations = { country = c:POL value = 40 }
 	}
 	c:WAL = {
 		set_relations = { country = c:HUN value = 40 }
