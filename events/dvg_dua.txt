@@ -117,6 +117,7 @@ dvg_dua.1 = {
 		remove_primary_culture = cu:breton
 		remove_primary_culture = cu:welsh
 		add_primary_culture = cu:british
+		add_primary_culture = cu:irish
 		activate_law = law_type:law_national_supremacy
 
 		add_journal_entry = {
