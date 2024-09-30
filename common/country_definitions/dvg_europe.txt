@@ -330,7 +330,7 @@ VEN = { #Venice
 
 	tier = kingdom
 	
-	cultures = { venetian north_italian }
+	cultures = { venetian }
 	capital = STATE_VENETIA
 	is_named_from_capital = yes
 }
