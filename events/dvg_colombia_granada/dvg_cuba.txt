@@ -114,7 +114,7 @@ dvg_cuba.4 = {
 	
 	trigger = {
 		exists = c:GCO
-		this = c:CUB
+		# this = c:CUB
 		year < 1864
 		c:GCO = {
 			NOR = {

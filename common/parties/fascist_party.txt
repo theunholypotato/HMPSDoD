@@ -176,12 +176,12 @@
 					country_has_primary_culture = cu:persian
 				}
 			}
-			triggered_desc = {
-				desc = integralist_action_party
-				trigger = {
-					country_has_primary_culture = cu:brazilian
-				}
-			}
+			# triggered_desc = {
+			# 	desc = integralist_action_party
+			# 	trigger = {
+			# 		country_has_primary_culture = cu:brazilian
+			# 	}
+			# }
 			triggered_desc = {
 				desc = falangist_party
 				trigger = {
