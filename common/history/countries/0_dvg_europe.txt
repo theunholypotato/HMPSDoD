@@ -242,6 +242,9 @@
 		add_journal_entry = {
 			type = je_hre_external
 		}
+		add_journal_entry = {
+			type = je_elbian_confederation
+		}
 	}
 	
 	c:SPA = { #Spain

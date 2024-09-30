@@ -7,6 +7,21 @@
 		cu:north_german = {
 			culture_is_discriminated_in = ROOT 
 		}
+		calc_true_if = {
+			amount >= 7
+			owns_entire_state_region = STATE_BOHEMIA
+			owns_entire_state_region = STATE_MORAVIA
+			owns_entire_state_region = STATE_SILESIA
+			owns_entire_state_region = STATE_SAXONY
+			owns_entire_state_region = STATE_BRANDENBURG
+			owns_entire_state_region = STATE_ANHALT
+			owns_entire_state_region = STATE_POMERANIA
+			owns_entire_state_region = STATE_MECKLENBURG
+			owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			owns_entire_state_region = STATE_HANNOVER
+		}
+
+		has_technology_researched = nationalism
 	}
 
 	on_complete = {
@@ -16,33 +31,28 @@
 	}
 
 	fail = {
-		cu:north_german = {
-			culture_secession_progress = {
-				target = ROOT
-				value > 0.5
-			}
-		}
+		this = C:HLR
 	}
 
-	on_fail = {
-		set_variable = elbian_confederation_fail
-		trigger_event = {
-			id = elbian_confederation.1
-		}
-	}
+	#on_fail = {
+	#	set_variable = elbian_confederation_fail
+	#	trigger_event = {
+	#		id = elbian_confederation.1
+	#	}
+	#}
 
-	on_monthly_pulse = {
-		effect = {
-			if = {
-				limit = {
-					NOT = { has_law = law_type:law_racial_segregation }
-					is_player = no
-					year >= 1849
-				}
-				activate_law = law_type:law_racial_segregation
-			}
-		}
-	}
+	#on_monthly_pulse = {
+	#	effect = {
+	#		if = {
+	#			limit = {
+	#				NOT = { has_law = law_type:law_racial_segregation }
+	#				is_player = no
+	#				year >= 1849
+	#			}
+	#			activate_law = law_type:law_racial_segregation
+	#		}
+	#	}
+	#}
 
 	invalid = {
 		custom_tooltip = {
