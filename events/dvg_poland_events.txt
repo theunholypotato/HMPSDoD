@@ -81,7 +81,7 @@ poland.2 = {
 		}
         add_modifier = {
             name = modifier_magnate_oligarchy
-            months = -1
+            months = 61
         }
         remove_modifier = modifier_slave_to_liberty
 	}
@@ -120,7 +120,7 @@ poland.3 = {
         ROOT = {
             add_modifier = {
                 name = modifier_noble_democracy
-                months = -1
+                months = 61
             }
             remove_modifier = modifier_slave_to_liberty
         }

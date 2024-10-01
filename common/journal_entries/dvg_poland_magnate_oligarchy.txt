@@ -4,53 +4,42 @@
 	group = je_group_internal_affairs
 
     complete = {
-        OR = {
-            AND = {
-                ig:ig_landowners = {
-			        is_powerful = yes
-			        is_in_government = yes
-		        }
-		        has_insurrectionary_interest_groups = no
-                owns_entire_state_region = STATE_DVG_MAZOVIA
-                has_law = law_type:law_hereditary_bureaucrats
-                has_law = law_type:law_agrarianism
-                has_law = law_type:law_serfdom
-                has_law = law_type:law_oligarchy
-            }
-            AND = {
-                ig:ig_landowners = {
-			        is_powerful = no
-			        is_in_government = no
-		        }
-                has_insurrectionary_interest_groups = no
-                owns_entire_state_region = STATE_DVG_MAZOVIA
-                has_law = law_type:law_interventionism
-                has_law = law_type:law_wealth_voting
-                NOT = {
-                    has_law = law_type:law_hereditary_bureaucrats
-                    has_law = law_type:law_serfdom
-                }
-            }
+        ig:ig_landowners = {
+		    is_powerful = no
+		    #is_in_government = no
+		}
+        has_insurrectionary_interest_groups = no
+        owns_entire_state_region = STATE_DVG_MAZOVIA
+        owns_entire_state_region = STATE_DVG_LESSER_POLAND
+        owns_entire_state_region = STATE_DVG_GREATER_POLAND
+        
+        NOT = {
+            #HMPS MAYBE CONSIDER ADDING THESE IF TOO EZ
+            #has_law = law_type:law_hereditary_bureaucrats
+            has_law = law_type:law_serfdom
+            has_law = law_type:law_traditionalism
+            has_law = law_type:law_landed_voting
+            #has_law = law_type:law_peasant_levies
         }
     }
 
     on_complete = {
-        if = {
-            limit = {
-                ig:ig_landowners = {
-			        is_powerful = yes
-			        is_in_government = yes
-		        }
-            }
-            trigger_event = {
-			    id = poland.2
-		    }
-        }
-        else = {
+        #if = {
+        #    limit = {
+        #        ig:ig_landowners = {
+		#	        is_powerful = yes
+		#	        is_in_government = yes
+		#        }
+        #    }
+        #    trigger_event = {
+		#	    id = poland.2
+		#    }
+        #}
+        #else = {
             trigger_event = {
 			    id = poland.3
 		    }
-        }
+        #}
     }
 
     timeout = 16425
@@ -103,12 +92,25 @@ je_uniting_the_commonwealth = {
     }
 
     on_complete = {
-        trigger_event = {
-            id = poland.4
+        #trigger_event = {
+        #    id = poland.4
+        #}
+#
+        #add_journal_entry = {
+        #    type = je_eastern_resistance
+        #}
+
+        add_loyalists = {
+            value = 0.1
         }
 
-        add_journal_entry = {
-            type = je_eastern_resistance
+        if = {
+            limit = {
+                c:PRU = {
+                    is_subject_of = c:PLC
+                }
+            }
+            annex_with_incorporation = c:PRU
         }
     }
 
