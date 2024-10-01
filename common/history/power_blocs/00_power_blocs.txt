@@ -60,6 +60,7 @@
 			identity = identity_trade_league
 			principle = principle_internal_trade_1
 
+			member = c:MCD
 			member = c:PRO
 			member = c:PAP
 
