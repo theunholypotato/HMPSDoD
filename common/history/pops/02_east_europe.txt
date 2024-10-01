@@ -638,10 +638,10 @@
 		}
 	}
 	s:STATE_YEDISAN = {
-		region_state:ZAZ = {
+		region_state:CRI = {
 			create_pop = {
 				culture = kirim
-				size = 101714
+				size = 201714
 			}
 			create_pop = {
 				culture = romanian
@@ -649,7 +649,7 @@
 			}
 			create_pop = {
 				culture = cossack
-				size = 513585
+				size = 413585
 			}
 			create_pop = {
 				culture = ruthenian
@@ -663,8 +663,6 @@
 				culture = ashkenazi
 				size = 24334
 			}
-		}
-		region_state:CRI = {
 			create_pop = {
 				culture = kirim
 				size = 388545
@@ -1020,8 +1018,6 @@
 				culture = ashkenazi
 				size = 45288
 			}
-		}
-		region_state:ZAZ = {
 			create_pop = {
 				culture = kirim
 				size = 87198

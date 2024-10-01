@@ -1190,14 +1190,14 @@
 		}
 	}
 	s:STATE_YEDISAN={
-		region_state:ZAZ={
+		region_state:CRI={
 			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ZAZ"
-						levels=2
+						country="c:CRI"
+						levels=3
 						region="STATE_YEDISAN"
 					}
 				}
@@ -1209,7 +1209,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:ZAZ"
+						country="c:CRI"
 						levels=1
 						region="STATE_YEDISAN"
 					}
@@ -1222,7 +1222,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:ZAZ"
+						country="c:CRI"
 						levels=2
 						region="STATE_YEDISAN"
 					}
@@ -1234,52 +1234,50 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:ZAZ"
-						levels=5
+						country="c:CRI"
+						levels=15
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_no_organization" }
 			}
-		}
-		region_state:CRI={
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:CRI"
-						levels=10
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_organization" }
-			}
-			create_building={
-				building="building_livestock_ranch"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:CRI"
-						levels=1
-						region="STATE_YEDISAN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
-			}
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:CRI"
-						levels=1
-						region="STATE_YEDISAN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
-			}
+			#create_building={
+			#	building="building_barracks"
+			#	add_ownership={
+			#		country={
+			#			country="c:CRI"
+			#			levels=10
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "pm_no_organization" }
+			#}
+			#create_building={
+			#	building="building_livestock_ranch"
+			#	add_ownership={
+			#		building={
+			#			type="building_manor_house"
+			#			country="c:CRI"
+			#			levels=1
+			#			region="STATE_YEDISAN"
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+			#}
+			#create_building={
+			#	building="building_wheat_farm"
+			#	add_ownership={
+			#		building={
+			#			type="building_manor_house"
+			#			country="c:CRI"
+			#			levels=1
+			#			region="STATE_YEDISAN"
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+			#}
 			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
@@ -2585,7 +2583,7 @@
 					building={
 						type="building_manor_house"
 						country="c:KIE"
-						levels=2
+						levels=5
 						region="STATE_DVG_KIEV"
 					}
 				}
@@ -2597,47 +2595,8 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:KIE"
-						levels=5
-						region="STATE_DVG_KIEV"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
 						country="c:KIE"
 						levels=7
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_organization" } 
-			}
-		}
-		region_state:ZAZ={
-			create_building={
-				building="building_livestock_ranch"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:ZAZ"
-						levels=2
-						region="STATE_DVG_KIEV"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
-			}			
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:ZAZ"
-						levels=4
 						region="STATE_DVG_KIEV"
 					}
 				}
@@ -2648,13 +2607,50 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:ZAZ"
-						levels=5
+						country="c:KIE"
+						levels=12
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_no_organization" } 
 			}
+			#create_building={
+			#	building="building_livestock_ranch"
+			#	add_ownership={
+			#		building={
+			#			type="building_manor_house"
+			#			country="c:KIE"
+			#			levels=2
+			#			region="STATE_DVG_KIEV"
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
+			#}			
+			#create_building={
+			#	building="building_wheat_farm"
+			#	add_ownership={
+			#		building={
+			#			type="building_manor_house"
+			#			country="c:KIE"
+			#			levels=4
+			#			region="STATE_DVG_KIEV"
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
+			#}
+			#create_building={
+			#	building="building_barracks"
+			#	add_ownership={
+			#		country={
+			#			country="c:KIE"
+			#			levels=5
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "pm_no_organization" } 
+			#}
 		}
 	}
 	s:STATE_DVG_KURSK={

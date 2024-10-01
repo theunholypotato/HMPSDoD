@@ -20,9 +20,9 @@ dvg_kipchak.1 = {
 	icon = "gfx/interface/icons/event_icons/event_default.dds"
 
 	immediate = {
-		c:ZAZ = {
-			save_scope_as = zaz_scope
-		}
+		#c:ZAZ = {
+		#	save_scope_as = zaz_scope
+		#}
 		c:KHK = {
 			save_scope_as = khk_scope
 		}

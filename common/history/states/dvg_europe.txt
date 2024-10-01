@@ -1669,12 +1669,12 @@
 	s:STATE_DVG_KIEV = {
 		create_state = {
 			country = c:KIE
-			owned_provinces = { "x01E0E0" "x022620" "x11F253" "x18E9E1" "x1C7F2D" "x2472F3" "x2E05DE" "x4C92CC" "x7DA787" "x7DF67D" "x8CE323" "x98E808" "xA9FA61" "xCD2CE5" "xD5E7D2" "xD6537D" "xD8EA8C" "xDCE378" "xDD790F" "xF0E021" "xFF7D57" }
+			owned_provinces = { "x4ABD60" "x54B5C4" "x726291" "x7FC1CF" "x82AE2F" "x925815" "x9E24DE" "xF061A0" "x01E0E0" "x022620" "x11F253" "x18E9E1" "x1C7F2D" "x2472F3" "x2E05DE" "x4C92CC" "x7DA787" "x7DF67D" "x8CE323" "x98E808" "xA9FA61" "xCD2CE5" "xD5E7D2" "xD6537D" "xD8EA8C" "xDCE378" "xDD790F" "xF0E021" "xFF7D57" }
 		}
-		create_state = {
-			country = c:ZAZ
-			owned_provinces = { "x4ABD60" "x54B5C4" "x726291" "x7FC1CF" "x82AE2F" "x925815" "x9E24DE" "xF061A0" }
-		}
+		#create_state = {
+		#	country = c:ZAZ
+		#	owned_provinces = { "x4ABD60" "x54B5C4" "x726291" "x7FC1CF" "x82AE2F" "x925815" "x9E24DE" "xF061A0" }
+		#}
 
 		add_homeland = cu:ruthenian
 	}
@@ -1711,13 +1711,13 @@
 		add_homeland = cu:krymchak
 	}
 	s:STATE_YEDISAN = {
-		create_state = {
-			country = c:ZAZ
-			owned_provinces = { "x13997A" "x29EE58" "x3DA304" "x5BE6ED" "x652CE8" "x71E061" "x73216A" "x924D7E" "xB285AE" "xE315A3" "xF0E0A0" "xF60A93" "xFD6659" }
-		}
+		#create_state = {
+		#	country = c:ZAZ
+		#	owned_provinces = { "x13997A" "x29EE58" "x3DA304" "x5BE6ED" "x652CE8" "x71E061" "x73216A" "x924D7E" "xB285AE" "xE315A3" "xF0E0A0" "xF60A93" "xFD6659" }
+		#}
 		create_state = {
 			country = c:CRI
-			owned_provinces = { "xCC0D93" "x0E1864" "x305004" "x3E5AF0" "x3E66A1" "x421B54" "x716121" "x71E021" "x89CE7C" "xA669E7" "xA81C77" "xB02161" "xB5123B" "xD7E3C1" "xE4AA78" "xF9066A" "xFDD2CF" }
+			owned_provinces = { "x13997A" "x29EE58" "x3DA304" "x5BE6ED" "x652CE8" "x71E061" "x73216A" "x924D7E" "xB285AE" "xE315A3" "xF0E0A0" "xF60A93" "xFD6659" "xCC0D93" "x0E1864" "x305004" "x3E5AF0" "x3E66A1" "x421B54" "x716121" "x71E021" "x89CE7C" "xA669E7" "xA81C77" "xB02161" "xB5123B" "xD7E3C1" "xE4AA78" "xF9066A" "xFDD2CF" }
 		}	
 
 		add_homeland = cu:kirim
