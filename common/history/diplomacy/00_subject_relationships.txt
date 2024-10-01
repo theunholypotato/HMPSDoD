@@ -104,10 +104,10 @@
 			country = c:PRU
 			type = puppet
 		}
-		create_diplomatic_pact = {
-			country = c:ZAZ
-			type = puppet
-		}
+		#create_diplomatic_pact = {
+		#	country = c:ZAZ
+		#	type = puppet
+		#}
 		create_diplomatic_pact = {
 			country = c:KHK
 			type = puppet
