@@ -8,7 +8,7 @@
 			culture_is_discriminated_in = ROOT 
 		}
 		calc_true_if = {
-			amount >= 7
+			amount >= 8
 			owns_entire_state_region = STATE_BOHEMIA
 			owns_entire_state_region = STATE_MORAVIA
 			owns_entire_state_region = STATE_SILESIA
