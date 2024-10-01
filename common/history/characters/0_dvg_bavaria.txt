@@ -11,6 +11,9 @@
 			ideology = ideology_royalist
 			traits = {
 				romantic
+				literary
+				brave
+				ambitious
 			}
 			on_created = {
 				set_variable = is_married
