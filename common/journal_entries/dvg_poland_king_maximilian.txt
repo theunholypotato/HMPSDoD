@@ -23,13 +23,13 @@
 			}
 			trigger_event = { id = poland.10 }
 		}
-		if = {
-			limit = {
-				exists = c:POL
-				c:POL = ROOT
-			}
-			remove_modifier = diplomatic_plays_blocked
-		}
+		#if = {
+		#	limit = {
+		#		exists = c:POL
+		#		c:POL = ROOT
+		#	}
+		#	remove_modifier = diplomatic_plays_blocked
+		#}
 	}
 
 	on_monthly_pulse = {

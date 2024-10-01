@@ -327,16 +327,16 @@ poland.10 = {
                 }
                 create_bidirectional_truce = { country = c:KHK months = 24 }
             }
-            if = {
-                limit = {
-                    exists = c:ZAZ
-                }
-                remove_diplomatic_pact = {
-                    country = c:ZAZ
-                    type = puppet
-                }
-                create_bidirectional_truce = { country = c:ZAZ months = 24 }
-            }
+            #if = {
+            #    limit = {
+            #        exists = c:ZAZ
+            #    }
+            #    remove_diplomatic_pact = {
+            #        country = c:ZAZ
+            #        type = puppet
+            #    }
+            #    create_bidirectional_truce = { country = c:ZAZ months = 24 }
+            #}
             #if = {
             #    limit = {
             #        exists = c:KIE
@@ -354,7 +354,87 @@ poland.10 = {
             #    create_bidirectional_truce = { country = c:UKR months = 24 }
             #}
 		}
+    
+    
 
         set_global_variable = move_CSK
 	}
+
+    option = {
+        name = poland.10.b
+        c:POL = {
+            if = {
+                limit = {
+                    exists = c:SMO
+                }
+                c:SMO = {
+                    capital = {
+                        save_scope_as = smo_capital_scope
+                    }
+                    create_diplomatic_play = {
+                        target_country = c:POL
+                        escalation = 80
+                        type = dp_independence
+                        
+                        target_state = scope:smo_capital_scope
+                
+                        add_war_goal = {
+                            holder = c:POL
+                            type = annex_country
+                            target_country = c:SMO
+                        }
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    exists = c:KHK
+                }
+                c:KHK = {
+                    capital = {
+                        save_scope_as = khk_capital_scope
+                    }
+                    create_diplomatic_play = {
+                        target_country = c:POL
+                        escalation = 80
+                        type = dp_independence
+                        
+                        target_state = scope:khk_capital_scope
+                
+                        add_war_goal = {
+                            holder = c:POL
+                            type = annex_country
+                            target_country = c:KHK
+                        }
+                    }
+                }
+            }
+            #if = {
+            #    limit = {
+            #        exists = c:ZAZ
+            #    }
+            #    remove_diplomatic_pact = {
+            #        country = c:ZAZ
+            #        type = puppet
+            #    }
+            #    create_bidirectional_truce = { country = c:ZAZ months = 24 }
+            #}
+            #if = {
+            #    limit = {
+            #        exists = c:KIE
+            #    }
+            #    remove_diplomatic_pact = {
+            #        country = c:KIE
+            #        type = puppet
+            #    }
+            #    s:STATE_DVG_KIEV = {
+            #        add_claim = c:KIE
+            #    }
+            #    c:KIE = {
+            #        change_tag = UKR
+            #    }
+            #    create_bidirectional_truce = { country = c:UKR months = 24 }
+            #}
+		}
+    }
 }
