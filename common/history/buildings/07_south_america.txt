@@ -532,6 +532,19 @@
 		}
 	}
 	s:STATE_ATACAMA={
+		region_state:BRG={
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:BRG"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+		}
 		region_state:TWT={
 			create_building={
 				building="building_fishing_wharf"
@@ -2005,6 +2018,19 @@
 		}
 	}
 	s:STATE_NEAR_COLLASUYU={
+		region_state:SCA={
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:SCA"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+		}
 		region_state:TWT={
 			create_building={
 				building="building_naval_base"
