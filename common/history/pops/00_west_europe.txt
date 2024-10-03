@@ -1315,7 +1315,7 @@
 	
 	#Hannover + Bremen + Brunswick
 	s:STATE_HANNOVER = {
-		region_state:HAN = {
+		region_state:BOH = {
 			create_pop = {
 				culture = north_german
 				size = 422521
@@ -1329,8 +1329,8 @@
 				culture = ashkenazi
 				size = 8331
 			}
-		}
-		region_state:BRE = {
+		#}
+		#region_state:BRE = {
 			create_pop = {
 				culture = north_german
 				size = 11904
@@ -1340,8 +1340,8 @@
 				size = 52096
 				religion = catholic
 			}
-		}
-		region_state:BRA = {
+		#}
+		#region_state:BRA = {
 			create_pop = {
 				culture = north_german
 				size = 72936
