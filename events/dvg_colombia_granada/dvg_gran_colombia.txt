@@ -1,6 +1,6 @@
 ﻿namespace = dvg_gran_colombia
 
-dvg_gran_colombia.1 = {
+dvg_gran_colombia.1 = { #tag start event
 	type = country_event
 	placement = ROOT
 	
@@ -38,7 +38,7 @@ dvg_gran_colombia.1 = {
 	}
 }
 
-# Colombian Alliance's final stand against the Spanish
+# Colombian Alliance's final stand against the Spanish, On war start event
 dvg_gran_colombia.2 = {
 	type = country_event
 	placement = ROOT
@@ -81,7 +81,7 @@ dvg_gran_colombia.2 = {
 	}
 }
 
-# The Alliance Continues
+# The Alliance Continues, Victory
 dvg_gran_colombia.3 = {
 	type = country_event
 	placement = ROOT
@@ -111,6 +111,9 @@ dvg_gran_colombia.3 = {
 		add_loyalists = {
 			value = 0.1
 		}
+
+		activate_law = law_type:law_racial_segregation
+		
 		remove_modifier = dvg_spanish_independence_fighters
 		remove_modifier = dvg_spanish_independence
 		
@@ -239,6 +242,8 @@ dvg_gran_colombia.5 = {
 		default_option = yes
 		remove_modifier = dvg_spanish_independence_fighters
 		remove_modifier = dvg_spanish_independence
+
+		activate_law = law_type:law_racial_segregation
 		
 		add_journal_entry = {
 			type = je_build_a_navy_gran_colombia

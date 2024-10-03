@@ -2006,7 +2006,7 @@ dvg_spain.27 = {
 	
 		annex_with_incorporation = c:GRA
 		annex_with_incorporation = c:QUI
-		annex_with_incorporation = c:CUB
+		#annex_with_incorporation = c:CUB
 
 		add_primary_culture = cu:caladeran
 		add_primary_culture = cu:granadan
