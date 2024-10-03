@@ -1,93 +1,93 @@
 ﻿namespace = dvg_beornia
 
-dvg_beornia.1 = { #Intro Event
-	type = country_event
-	placement = ROOT
-
-	title = dvg_beornia.1.t
-	desc = dvg_beornia.1.d
-	flavor = dvg_beornia.1.f
-	
-	event_image = {
-		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
-
-	icon = "gfx/interface/icons/ideology_icons/royalist.dds"
-
-	duration = 1
-
-	trigger = {
-	   
-	}
-	
-	immediate = { 
-		
-		
-			ig:ig_landowners = {
-					save_scope_as = cattle_barons_ig
-					leader = {
-						save_scope_as = landowners_leader
-					}
-				}
-			ig:ig_rural_folk = {
-					save_scope_as = rural_folk_ig
-					leader = {
-						save_scope_as = rural_folk_leader
-					}
-				}
-			ig:ig_devout = {
-					save_scope_as = devout_ig
-					leader = {
-						save_scope_as = devout_leader
-					}
-				}
-			
-			ig:ig_industrialists = {
-					save_scope_as = industrialists_ig
-					leader = {
-						save_scope_as = industrialists_leader
-					}
-				}
-		
-		}
-	
-	
-	# Vive!
-	option = {
-		name = dvg_beornia.1.a
-		default_option = yes
-		
-		add_journal_entry = {
-			type = je_cattle_barons_wrath
-		}
-
-		add_primary_culture = cu:british
-		
-		hidden_effect = {
-			trigger_event = { id = dvg_beornia.2 days =  1480 }
-			
-			trigger_event = { id = dvg_beornia.4 days =  500 }
-			
-			trigger_event = { id = dvg_beornia.11 days = 46 }
-			
-			trigger_event = { id = dvg_beornia.21 days = 465 }
-		}
-		add_loyalists = {
-			value = 0.20
-			culture = cu:beornian
-		}
-		change_relations = {
-				country = c:LOT
-				value = 15
-			}
-		ai_chance = {
-			base = 100
-		}
-	}
-}
+#dvg_beornia.1 = { #Intro Event
+#	type = country_event
+#	placement = ROOT
+#
+#	title = dvg_beornia.1.t
+#	desc = dvg_beornia.1.d
+#	flavor = dvg_beornia.1.f
+#	
+#	event_image = {
+#		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+#	}
+#
+#	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+#	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+#
+#	icon = "gfx/interface/icons/ideology_icons/royalist.dds"
+#
+#	duration = 1
+#
+#	trigger = {
+#	   
+#	}
+#	
+#	immediate = { 
+#		
+#		
+#			ig:ig_landowners = {
+#					save_scope_as = cattle_barons_ig
+#					leader = {
+#						save_scope_as = landowners_leader
+#					}
+#				}
+#			ig:ig_rural_folk = {
+#					save_scope_as = rural_folk_ig
+#					leader = {
+#						save_scope_as = rural_folk_leader
+#					}
+#				}
+#			ig:ig_devout = {
+#					save_scope_as = devout_ig
+#					leader = {
+#						save_scope_as = devout_leader
+#					}
+#				}
+#			
+#			ig:ig_industrialists = {
+#					save_scope_as = industrialists_ig
+#					leader = {
+#						save_scope_as = industrialists_leader
+#					}
+#				}
+#		
+#		}
+#	
+#	
+#	# Vive!
+#	option = {
+#		name = dvg_beornia.1.a
+#		default_option = yes
+#		
+#		add_journal_entry = {
+#			type = je_cattle_barons_wrath
+#		}
+#
+#		add_primary_culture = cu:british
+#		
+#		hidden_effect = {
+#			trigger_event = { id = dvg_beornia.2 days =  1480 }
+#			
+#			trigger_event = { id = dvg_beornia.4 days =  500 }
+#			
+#			trigger_event = { id = dvg_beornia.11 days = 46 }
+#			
+#			trigger_event = { id = dvg_beornia.21 days = 465 }
+#		}
+#		add_loyalists = {
+#			value = 0.20
+#			culture = cu:beornian
+#		}
+#		change_relations = {
+#				country = c:LOT
+#				value = 15
+#			}
+#		ai_chance = {
+#			base = 100
+#		}
+#	}
+#}
 
 dvg_beornia.2 = { #Border Raids
 	type = country_event
@@ -1872,7 +1872,7 @@ dvg_beornia.20 = {
 	}		
 }
 
-dvg_beornia.21 = {
+dvg_beornia.21 = { #agricultural reform
 	type = country_event
 	placement = ROOT
 
