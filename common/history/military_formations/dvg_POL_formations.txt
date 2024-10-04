@@ -54,7 +54,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_DVG_MAZOVIA
-				count = 5
+				count = 10
 			}
 
 			combat_unit = {
@@ -64,9 +64,9 @@
 			}
 			
 			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
+				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_DVG_GREATER_POLAND
-				count = 5
+				count = 10
 			}
 			
 			combat_unit = {

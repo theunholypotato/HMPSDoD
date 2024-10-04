@@ -2016,17 +2016,17 @@
 				reserves=1
 				activate_production_methods={ "pm_lathe" "pm_automation_disabled" "pm_luxury_furniture" }
 			}
-			create_building={
-				building="building_naval_base"
-				add_ownership={
-					country={
-						country="c:DUA"
-						levels=15
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_naval_theory" }
-			}
+			#create_building={
+			#	building="building_naval_base"
+			#	add_ownership={
+			#		country={
+			#			country="c:DUA"
+			#			levels=15
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "pm_no_naval_theory" }
+			#}
 			create_building={
 				building="building_rye_farm"
 				add_ownership={
@@ -2131,17 +2131,17 @@
 				reserves=1
 				activate_production_methods={ "pm_disabled_canning" "pm_bakery" "pm_manual_dough_processing" "pm_disabled_distillery" }
 			}
-			create_building={
-				building="building_naval_base"
-				add_ownership={
-					country={
-						country="c:DUA"
-						levels=5
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_naval_theory" }
-			}
+			#create_building={
+			#	building="building_naval_base"
+			#	add_ownership={
+			#		country={
+			#			country="c:DUA"
+			#			levels=5
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "pm_no_naval_theory" }
+			#}
 			create_building={
 				building="building_construction_sector"
 				add_ownership={
@@ -2434,17 +2434,17 @@
 				reserves=1
 				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated" }
 			}
-			create_building={
-				building="building_naval_base"
-				add_ownership={
-					country={
-						country="c:DUA"
-						levels=5
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_naval_theory" }
-			}
+			#create_building={
+			#	building="building_naval_base"
+			#	add_ownership={
+			#		country={
+			#			country="c:DUA"
+			#			levels=5
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "pm_no_naval_theory" }
+			#}
 			create_building={
 				building="building_coal_mine"
 				add_ownership={
@@ -2536,17 +2536,17 @@
 				reserves=1
 				activate_production_methods={ "pm_muskets" }
 			}
-			create_building={
-				building="building_naval_base"
-				add_ownership={
-					country={
-						country="c:DUA"
-						levels=15
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_naval_theory" }
-			}
+			#create_building={
+			#	building="building_naval_base"
+			#	add_ownership={
+			#		country={
+			#			country="c:DUA"
+			#			levels=15
+			#		}
+			#	}
+			#	reserves=1
+			#	activate_production_methods={ "pm_no_naval_theory" }
+			#}
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
