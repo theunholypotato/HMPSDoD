@@ -116,12 +116,12 @@
 	}
 
 	goal_add_value = {
-		add = 1300
+		add = 1500
 	}
 
 	progressbar = yes
 
-	timeout = 12775
+	timeout = 19710
 
 	weight = 10000
 	should_be_pinned_by_default = yes
@@ -337,95 +337,95 @@ je_dua_bureaucracy = {
 	weight = 5000
 }
 
-je_total_revolution = {
-	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+# je_total_revolution = {
+# 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
-	group = je_group_crises
+# 	group = je_group_crises
 
-	immediate = {
-		dua_set_total_revolution_revolt_variables = yes
-	}
+# 	immediate = {
+# 		dua_set_total_revolution_revolt_variables = yes
+# 	}
 
-	scripted_button = dua_total_revolution_button
+# 	scripted_button = dua_total_revolution_button
 	
-	complete = {
-		custom_tooltip = {
-			text = anglois_accepted_tooltip
-			has_global_variable = anglois_accepted
-		}
-	}
+# 	complete = {
+# 		custom_tooltip = {
+# 			text = anglois_accepted_tooltip
+# 			has_global_variable = anglois_accepted
+# 		}
+# 	}
 
-	on_complete = {
-		#trigger_event = {
-		#	id = dvg_dua.2
-		#}
-	}
+# 	on_complete = {
+# 		#trigger_event = {
+# 		#	id = dvg_dua.2
+# 		#}
+# 	}
 
-	fail = {
-		OR = {
-			custom_tooltip = {
-				text = dvg_dua_timeout
-				has_variable = dua_timeout
-			}
-			custom_tooltip = {
-				text = dvg_dua_control_lost
-				AND = {
-					NOT = { has_variable = occ_revolted }
-					NOT = { has_variable = eng_revolted }
-					OR = {
-						exists = c:OCC
-						exists = c:FRA
-						exists = c:ENG
-						exists = c:IRE
-					}
-					is_diplomatic_play_committed_participant = no
-					is_at_war = no
-					has_revolution = no
-				}
-			}
-			scope:journal_entry = {
-				is_goal_complete = yes
-			}
-			NOT = {
-				has_law = law_type:law_monarchy
-			}
-		}
-	}
+# 	fail = {
+# 		OR = {
+# 			custom_tooltip = {
+# 				text = dvg_dua_timeout
+# 				has_variable = dua_timeout
+# 			}
+# 			custom_tooltip = {
+# 				text = dvg_dua_control_lost
+# 				AND = {
+# 					NOT = { has_variable = occ_revolted }
+# 					NOT = { has_variable = eng_revolted }
+# 					OR = {
+# 						exists = c:OCC
+# 						exists = c:FRA
+# 						exists = c:ENG
+# 						exists = c:IRE
+# 					}
+# 					is_diplomatic_play_committed_participant = no
+# 					is_at_war = no
+# 					has_revolution = no
+# 				}
+# 			}
+# 			scope:journal_entry = {
+# 				is_goal_complete = yes
+# 			}
+# 			NOT = {
+# 				has_law = law_type:law_monarchy
+# 			}
+# 		}
+# 	}
 
-	on_fail = {
-		set_global_variable = dua_global_revolted
-		trigger_event = {
-			id = dvg_dua.500
-		}
-	}
+# 	on_fail = {
+# 		set_global_variable = dua_global_revolted
+# 		trigger_event = {
+# 			id = dvg_dua.500
+# 		}
+# 	}
 
-	on_weekly_pulse = {
-		effect = {
-			dua_weekly_pulse_total_revolution_revolt = yes
-		}
-	}
+# 	on_weekly_pulse = {
+# 		effect = {
+# 			dua_weekly_pulse_total_revolution_revolt = yes
+# 		}
+# 	}
 
-	on_monthly_pulse = {
-		effect = {
-			change_variable = { name = dua_total_revolution_revolt add = var:dua_total_revolution_revolt_next }
-		}
-	}
+# 	on_monthly_pulse = {
+# 		effect = {
+# 			change_variable = { name = dua_total_revolution_revolt add = var:dua_total_revolution_revolt_next }
+# 		}
+# 	}
 
-	current_value = {
-		value = root.var:dua_total_revolution_revolt
-	}
+# 	current_value = {
+# 		value = root.var:dua_total_revolution_revolt
+# 	}
 
-	goal_add_value = {
-		value = 100
-	}
+# 	goal_add_value = {
+# 		value = 100
+# 	}
 
-	progressbar = yes
+# 	progressbar = yes
 
-	timeout = 6935
+# 	timeout = 6935
 
-	weight = 10000
-	should_be_pinned_by_default = yes
-}
+# 	weight = 10000
+# 	should_be_pinned_by_default = yes
+# }
 je_destroy_provence = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
