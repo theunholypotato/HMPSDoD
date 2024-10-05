@@ -11,6 +11,7 @@
 		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
+		activate_law = law_type:law_ethnostate
 
 		set_ruling_interest_groups = {
 			ig_landowners

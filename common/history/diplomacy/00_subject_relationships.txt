@@ -230,10 +230,10 @@
 			country = c:OSN
 			type = puppet
 		}		
-		#create_diplomatic_pact = {
-		#	country = c:HAN
-		#	type = puppet
-		#}		
+		create_diplomatic_pact = {
+			country = c:HAN
+			type = puppet
+		}		
 		#create_diplomatic_pact = {
 		#	country = c:BRE
 		#	type = puppet
