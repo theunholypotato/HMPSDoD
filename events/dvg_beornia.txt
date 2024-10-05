@@ -800,26 +800,26 @@ dvg_beornia.9 = { #Cattle Barons Coup
 		
 		set_strategy = ai_strategy_plantation_economy
 
-		trigger_event = { id = dvg_beornia.26 days =  365 }
+		#trigger_event = { id = dvg_beornia.26 days =  365 }
 
 
 		ruler = { 
-			remove_trait = immortal
+			#remove_trait = immortal
 			exile_character = yes }
-		activate_law = law_type:law_migration_controls
-		activate_law = law_type:law_national_supremacy
-		activate_law = law_type:law_industry_banned
-		activate_law = law_type:law_tenant_farmers
+		#activate_law = law_type:law_migration_controls
+		#activate_law = law_type:law_national_supremacy
+		#activate_law = law_type:law_industry_banned
+		#activate_law = law_type:law_tenant_farmers
 		add_modifier = {
                     name = dvg_modifier_landowners_bolstered
-                    months = 120
+                    months = 61
 					is_decaying	= yes
                 }
-		add_modifier = {
-                    name = dvg_approval_buff
-                    months = 12
-					is_decaying	= yes
-                }
+		#add_modifier = {
+        #            name = dvg_approval_buff
+        #            months = 12
+		#			is_decaying	= yes
+        #        }
 		ig:ig_industrialists = {
 			set_interest_group_name = ig_industrialists
 			remove_ideology = ideology_patriotic
@@ -835,7 +835,7 @@ dvg_beornia.9 = { #Cattle Barons Coup
 		}
 		scope:landowners_leader = {
 			set_character_as_ruler = yes
-			remove_trait = immortal
+			#remove_trait = immortal
 		}
 		create_character = {
 			heir = yes
@@ -930,9 +930,9 @@ dvg_beornia.10 = { #Cattle Barons Thwarted
 		name = dvg_beornia.10.a
 		default_option = yes
 		
-		ruler = { remove_trait = immortal }
+		#ruler = { remove_trait = immortal }
 		scope:landowners_leader = {
-			remove_trait = immortal
+			#remove_trait = immortal
 			exile_character = yes
 		}
 		ig:ig_landowners = {
@@ -940,20 +940,20 @@ dvg_beornia.10 = { #Cattle Barons Thwarted
 			add_ideology = ideology_plutocratic
 		}
 		add_loyalists = {
-			value = 0.30
+			value = 0.05
 			culture = cu:beornian
 		}
 		add_modifier = {
                     name = dvg_modifier_industrialists_bolstered
-                    months = 120
+                    months = 61
 					is_decaying	= yes
                 }
 		add_modifier = {
                     name = dvg_modifier_landowners_purged
-                    months = 120
+                    months = 61
 					is_decaying	= yes
                 }
-		trigger_event = { id = dvg_beornia.25 days =  30 }
+		#trigger_event = { id = dvg_beornia.25 days =  30 }
 	}
 }
 
@@ -1863,7 +1863,7 @@ dvg_beornia.20 = {
 		ruler = { remove_trait = immortal }
 		add_modifier = {
                     name = dvg_modifier_industrialists_bolstered
-                    months = 60
+                    months = 61
 					is_decaying	= yes
                 }
 		ai_chance = {

@@ -312,6 +312,10 @@
 			set_interest_group_name = ig_parish_pioneers
 			add_ideology = ideology_heavenly_kingdom_theocratic
 		}
+
+		add_journal_entry = {
+			type = je_cattle_barons_wrath
+		}
 	}
 	
 	c:TWT = { #Inca

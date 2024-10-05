@@ -164,164 +164,164 @@
 	should_be_pinned_by_default = yes
 }
 
-je_ameriga_conquer = {
-	icon = "gfx/interface/icons/invention_icons/wargaming.dds"
+#je_ameriga_conquer = {
+#	icon = "gfx/interface/icons/invention_icons/wargaming.dds"
+#
+#	group = je_group_foreign_affairs
+#
+#	is_shown_when_inactive = {	
+#		
+#	}
+#
+#    possible = {
+#	}
+#
+#	complete = {
+#		is_diplomatic_play_committed_participant = no
+#		any_scope_state = {
+#		
+#		count >= 8
+#				
+#			AND = {	
+#				region = sr:region_brazil
+#				
+#				
+#				
+#				owner = ROOT
+#
+#			}
+#			}
+#		any_scope_state = {
+#		
+#		count >= 6
+#				
+#			AND = {	
+#				region = sr:region_la_plata
+#				
+#				
+#				owner = ROOT
+#
+#			}
+#			}
+#		any_scope_state = {
+#		
+#			count >= 5
+#				
+#			AND = {	
+#				region = sr:region_gran_colombia
+#				
+#				
+#				owner = ROOT
+#	
+#			}
+#			}
+#		any_scope_state = {
+#		
+#			count >= 7
+#				
+#			AND = {	
+#				region = sr:region_andes
+#				
+#				
+#				owner = ROOT
+#	
+#			}
+#			}
+#		
+#			}
+#    on_complete = {
+#		trigger_event = { id = dvg_hbe.6 popup = yes }
+#		
+#    }
+#	fail = {
+#		
+#		
+#		
+#		OR = {
+#			
+#			custom_tooltip = {
+#				text = lost_war_tt
+#				OR = {
+#					has_variable = recently_lost_war
+#					AND = {
+#						has_variable = recently_had_war
+#						NOT = {
+#							has_variable = recently_won_war
+#						}
+#					}
+#				}
+#			}
+#
+#		}
+#			
+#		}
+#	on_fail = {
+#	
+#		
+#		
+#		trigger_event = {
+#			id = dvg_hbe.7
+#		}
+#	}
+#	should_be_pinned_by_default = yes
+#
+#}
 
-	group = je_group_foreign_affairs
-
-	is_shown_when_inactive = {	
-		
-	}
-
-    possible = {
-	}
-
-	complete = {
-		is_diplomatic_play_committed_participant = no
-		any_scope_state = {
-		
-		count >= 8
-				
-			AND = {	
-				region = sr:region_brazil
-				
-				
-				
-				owner = ROOT
-
-			}
-			}
-		any_scope_state = {
-		
-		count >= 6
-				
-			AND = {	
-				region = sr:region_la_plata
-				
-				
-				owner = ROOT
-
-			}
-			}
-		any_scope_state = {
-		
-			count >= 5
-				
-			AND = {	
-				region = sr:region_gran_colombia
-				
-				
-				owner = ROOT
-	
-			}
-			}
-		any_scope_state = {
-		
-			count >= 7
-				
-			AND = {	
-				region = sr:region_andes
-				
-				
-				owner = ROOT
-	
-			}
-			}
-		
-			}
-    on_complete = {
-		trigger_event = { id = dvg_hbe.6 popup = yes }
-		
-    }
-	fail = {
-		
-		
-		
-		OR = {
-			
-			custom_tooltip = {
-				text = lost_war_tt
-				OR = {
-					has_variable = recently_lost_war
-					AND = {
-						has_variable = recently_had_war
-						NOT = {
-							has_variable = recently_won_war
-						}
-					}
-				}
-			}
-
-		}
-			
-		}
-	on_fail = {
-	
-		
-		
-		trigger_event = {
-			id = dvg_hbe.7
-		}
-	}
-	should_be_pinned_by_default = yes
-
-}
-
-je_world_conquer = {
-	icon = "gfx/interface/icons/invention_icons/civilizing_mission.dds"
-
-	group = je_group_foreign_affairs
-
-	is_shown_when_inactive = {	
-		
-	}
-
-    possible = {
-	}
-
-	complete = {
-		
-		total_population_including_subjects_share >= 0.33
-		
-		gdp > {
-			value = global_gdp
-			multiply = 0.25
-		}
-		global_country_ranking = 1
-		
-		
-		
-	}
-    on_complete = {
-		trigger_event = { id = dvg_hbe.2 popup = yes }
-		
-    }
-	fail = {
-		
-		
-		
-		OR = {
-			NOT = { 
-			        has_law = law_type:law_autocracy
-			}
-			
-			NOT = { 
-			        has_law = law_type:law_monarchy
-			}
-			
-			}
-		}
-	on_fail = {
-	
-		
-		
-		trigger_event = {
-			id = dvg_hbe.7
-		}
-	}
-	should_be_pinned_by_default = yes
-
-}
+#je_world_conquer = {
+#	icon = "gfx/interface/icons/invention_icons/civilizing_mission.dds"
+#
+#	group = je_group_foreign_affairs
+#
+#	is_shown_when_inactive = {	
+#		
+#	}
+#
+#    possible = {
+#	}
+#
+#	complete = {
+#		
+#		total_population_including_subjects_share >= 0.33
+#		
+#		gdp > {
+#			value = global_gdp
+#			multiply = 0.25
+#		}
+#		global_country_ranking = 1
+#		
+#		
+#		
+#	}
+#    on_complete = {
+#		trigger_event = { id = dvg_hbe.2 popup = yes }
+#		
+#    }
+#	fail = {
+#		
+#		
+#		
+#		OR = {
+#			NOT = { 
+#			        has_law = law_type:law_autocracy
+#			}
+#			
+#			NOT = { 
+#			        has_law = law_type:law_monarchy
+#			}
+#			
+#			}
+#		}
+#	on_fail = {
+#	
+#		
+#		
+#		trigger_event = {
+#			id = dvg_hbe.7
+#		}
+#	}
+#	should_be_pinned_by_default = yes
+#
+#}
 
 je_anglo_summit = {
 	icon = "gfx/interface/icons/invention_icons/pan_nationalism.dds"
