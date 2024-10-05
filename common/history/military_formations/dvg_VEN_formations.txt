@@ -57,13 +57,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_VENETIA
-				count = 55
+				count = 30
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_VENETIA
-				count = 40
+				count = 30
 			}
 
 			save_scope_as = ven_home_fleet

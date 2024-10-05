@@ -18,11 +18,11 @@
 				count = 20
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_DVG_NOVGOROD
-				count = 5
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_hussars
+			#	state_region = s:STATE_DVG_NOVGOROD
+			#	count = 5
+			#}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
@@ -30,11 +30,11 @@
 				count = 10
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_DVINA
-				count = 10
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_hussars
+			#	state_region = s:STATE_DVINA
+			#	count = 10
+			#}
 
 			save_scope_as = dvg_nov_main_army
 		}

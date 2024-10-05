@@ -33,12 +33,12 @@
 			type = rivalry
 		}
 	}
-	c:HAN = {
-		create_diplomatic_pact = {
-			country = c:THU
-			type = rivalry
-		}
-	}
+	#c:HAN = {
+	#	create_diplomatic_pact = {
+	#		country = c:THU
+	#		type = rivalry
+	#	}
+	#}
 	
 	c:FRS = {
 		create_diplomatic_pact = {

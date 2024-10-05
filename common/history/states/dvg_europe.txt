@@ -716,17 +716,17 @@
 	}
 	s:STATE_HANNOVER = {
 		create_state = {
-			country = c:HAN
-			owned_provinces = { "x165E05" "x392FDA" "x418061" "x694B91" "x7C8FD3" "xA5E2E8" "xBBA504" "xBF00DF" "xC080E0" "xF54C13" }
+			country = c:BOH
+			owned_provinces = { "x165E05" "x392FDA" "x418061" "x694B91" "x7C8FD3" "xA5E2E8" "xBBA504" "xBF00DF" "xC080E0" "xF54C13" "x68BE66" "xC08061" "xA61E6E" "x2180E0" "xA001E0" "x43D537" }
 		}
-		create_state = {
-			country = c:BRE
-			owned_provinces = { "x68BE66" "xC08061" }
-		}
-		create_state = {
-			country = c:BRA
-			owned_provinces = { "xA61E6E" "x2180E0" "xA001E0" "x43D537" }
-		}
+		#create_state = {
+		#	country = c:BRE
+		#	owned_provinces = { "x68BE66" "xC08061" }
+		#}
+		#create_state = {
+		#	country = c:BRA
+		#	owned_provinces = { "xA61E6E" "x2180E0" "xA001E0" "x43D537" }
+		#}
 		
 		add_homeland = cu:north_german
 	}

@@ -88,7 +88,7 @@ HUN = { #Hungary
 
 	tier = kingdom
 	
-	cultures = { hungarian }
+	cultures = { hungarian slovak }
 	religion = catholic
 	capital = STATE_CENTRAL_HUNGARY
 }
@@ -2008,7 +2008,7 @@ CPT = { #Carpathia
 
 	tier = empire
 	
-	cultures = { hungarian romanian}
+	cultures = { hungarian romanian slovak }
 	capital = STATE_NORTHERN_TRANSYLVANIA
 }
 

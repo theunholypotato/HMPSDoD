@@ -635,9 +635,13 @@ dvg_hbe.8 = {
 		
 		change_infamy = 8
 		
-		random_primary_culture = {
-				add_cultural_obsession = opium
-			}
+		cu:british = {
+			add_cultural_obsession = opium
+		}
+
+		cu:beornian = {
+			add_cultural_obsession = opium
+		}
 		
 		
 			ai_chance = {
