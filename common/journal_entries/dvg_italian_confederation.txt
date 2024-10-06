@@ -5,7 +5,13 @@
 
 	is_shown_when_inactive = {
 		NOT = { exists = c:ITC }
-		NOT = { this = c:ARN }
+		NOT = {
+			country_has_primary_culture = cu:catalan
+		}
+		#NOT = { 
+		#	exists = c:ARI
+		#	this = c:ARI
+		#}
 		# NOT = { this = c:ARI }
 		OR = {
 			country_has_primary_culture = cu:north_italian

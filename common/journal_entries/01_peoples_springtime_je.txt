@@ -2,7 +2,7 @@
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
 	is_shown_when_inactive = {
-		NOT = { THIS = c:VEN }
+		#NOT = { this = c:VEN }
 		has_global_variable = peoples_springtime_happening
 		has_technology_researched = egalitarianism
 		capital = {
@@ -27,16 +27,16 @@
 	}
 
 	possible = { 
-		NOT = { ## DVG CHANGE
-			AND = {	#only possible for venice if you removed Patricians w decision earlier
-				THIS = c:VEN
-				OR = {
-					has_modifier = dvg_ven_patricians	#still have Patricians
-					has_variable = dvg_ven_radicals_victory_var	#completed ven JE
-					has_variable = dvg_ven_patricians_victory_var #completed ven JE
-				}
-			}
-		}	
+		#NOT = { ## DVG CHANGE
+		#	AND = {	#only possible for venice if you removed Patricians w decision earlier
+		#		this = c:VEN
+		#		OR = {
+		#			has_modifier = dvg_ven_patricians	#still have Patricians
+		#			has_variable = dvg_ven_radicals_victory_var	#completed ven JE
+		#			has_variable = dvg_ven_patricians_victory_var #completed ven JE
+		#		}
+		#	}
+		#}	
 		OR = {
 			any_interest_group = {
 				AND = {

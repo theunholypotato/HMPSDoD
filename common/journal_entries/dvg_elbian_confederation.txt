@@ -31,7 +31,7 @@
 	}
 
 	fail = {
-		this = C:HLR
+		hre_exists = yes
 	}
 
 	#on_fail = {
