@@ -4,7 +4,7 @@
 	group = je_group_internal_affairs
 
 	immediate = {
-		set_variable = { name = je_anglois_integration_progress value = 0 }
+		set__global_variable = { name = je_anglois_integration_progress value = 0 }
 		dua_set_dual_integration_variables = yes
 	}
 
@@ -125,6 +125,7 @@
 
 	weight = 10000
 	should_be_pinned_by_default = yes
+	can_revolution_inherit = yes
 }
 
 je_french_integration = {
@@ -133,7 +134,7 @@ je_french_integration = {
 	group = je_group_internal_affairs
 
 	immediate = {
-		set_variable = { name = je_french_integration_progress value = 0 }
+		set_global_variable = { name = je_french_integration_progress value = 0 }
 		dua_set_french_integration_variables = yes
 	}
 
@@ -219,6 +220,7 @@ je_french_integration = {
 
 	weight = 10000
 	should_be_pinned_by_default = yes
+	can_revolution_inherit = yes
 }
 
 je_english_integration = {
@@ -227,7 +229,7 @@ je_english_integration = {
 	group = je_group_internal_affairs
 
 	immediate = {
-		set_variable = { name = je_english_integration_progress value = 0 }
+		set__global_variable = { name = je_english_integration_progress value = 0 }
 		dua_set_english_integration_variables = yes
 	}
 
@@ -311,6 +313,7 @@ je_english_integration = {
 
 	weight = 10000
 	should_be_pinned_by_default = yes
+	can_revolution_inherit = yes
 }
 
 # Bureaucractic Reform
