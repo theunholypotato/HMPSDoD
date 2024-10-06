@@ -39,11 +39,12 @@ dvg_russian_unification.2 = {
 		any_country = {
 			trigger_if = {
 				limit = {
-					has_technology_researched = pan-nationalism
+					has_technology_researched = nationalism
 				}
 				OR = {
 					country_has_primary_culture = cu:russian
 					country_has_primary_culture = cu:north_russian
+					country_has_primary_culture = cu:cossack
 				}
 			}
 			trigger_else_if = {
@@ -62,10 +63,10 @@ dvg_russian_unification.2 = {
 				}
 				country_has_primary_culture = cu:north_russian
 			}
-			has_diplomatic_pact = {
-				who = ROOT
-				type = customs_union
-			}
+			#has_diplomatic_pact = {
+			#	who = ROOT
+			#	type = customs_union
+			#}
 			OR = {
 				is_subject = no
 				is_subject_of = ROOT
@@ -82,11 +83,12 @@ dvg_russian_unification.2 = {
 			limit = {
 				trigger_if = {
 					limit = {
-						has_technology_researched = pan-nationalism
+						has_technology_researched = nationalism
 					}
 					OR = {
 						country_has_primary_culture = cu:russian
 						country_has_primary_culture = cu:north_russian
+						country_has_primary_culture = cu:cossack
 					}
 				}
 				trigger_else_if = {
@@ -105,10 +107,10 @@ dvg_russian_unification.2 = {
 					}
 					country_has_primary_culture = cu:north_russian
 				}
-				has_diplomatic_pact = {
-					who = ROOT
-					type = customs_union
-				}
+				#has_diplomatic_pact = {
+				#	who = ROOT
+				#	type = customs_union
+				#}
 				OR = {
 					is_subject = no
 					is_subject_of = ROOT
@@ -171,20 +173,31 @@ dvg_russian_unification.4 = {
 	trigger = {
 	}
 
-	option = {
+	option = { # WESTERN EXPANSION
 		name = dvg_russian_unification.4.a
 		default_option = yes
 		give_claims_on_russia = yes
 
-		ruler = {
-			add_modifier = {
-				name = russian_unifier_ruler
+		every_state = {
+			limit = {
+				NOT = { owner = ROOT }
+				OR = {
+					state_region = s:STATE_LATVIA
+					state_region = s:STATE_LITHUANIA
+					state_region = s:STATE_ESTONIA
+					#state_region = s:STATE_DVG_EAST_KARELIA
+					#state_region = s:STATE_DVG_WEST_KARELIA
+					state_region = s:STATE_DVG_MINSK
+					state_region = s:STATE_DVG_VOLHYNIA
+					state_region = s:STATE_DVG_KIEV
+					
+				}
 			}
+			
+			state_region = { add_claim = ROOT }
 		}
-	}
-	option = {
-		name = dvg_russian_unification.4.b
-		give_claims_on_russia = yes
+
+		change_infamy = 15
 
 		add_loyalists = {
 			value = 0.1
@@ -193,6 +206,71 @@ dvg_russian_unification.4 = {
 		add_loyalists = {
 			value = 0.1
 			culture = cu:north_russian
+		}
+		add_loyalists = {
+			value = 0.1
+			culture = cu:cossack
+		}
+	}
+	option = { # SOUTHERN EXPANSION
+		name = dvg_russian_unification.4.b
+		give_claims_on_russia = yes
+
+
+		every_state = {
+			limit = {
+				NOT = { owner = ROOT }
+				OR = {
+					state_region = s:STATE_TARTARIA
+					state_region = s:STATE_IDEL
+					state_region = s:STATE_DVG_CRIMEA
+					state_region = s:STATE_QOBAN
+					state_region = s:STATE_DAGESTAN
+					state_region = s:STATE_KUBAN
+					state_region = s:STATE_ASTRAKHAN
+					state_region = s:STATE_DVG_URALSK
+					state_region = s:STATE_BASHKORTOSTAN
+					state_region = s:STATE_AZERBAIJAN
+					state_region = s:STATE_KARS
+					state_region = s:STATE_GREATER_CAUCASUS
+					state_region = s:STATE_ARMENIA
+				}
+			}
+			
+			state_region = { add_claim = ROOT }
+		}
+		
+
+		add_loyalists = {
+			value = 0.1
+			culture = cu:russian
+		}
+		add_loyalists = {
+			value = 0.1
+			culture = cu:north_russian
+		}
+		add_loyalists = {
+			value = 0.1
+			culture = cu:cossack
+		}
+		add_radicals = {
+			value = 0.1
+			culture = cu:bashkir
+		}
+		add_radicals = {
+			value = 0.1
+			culture = cu:kazani
+		}add_radicals = {
+			value = 0.1
+			culture = cu:kazak
+		}
+		add_radicals = {
+			value = 0.1
+			culture = cu:kirim
+		}
+		add_radicals = {
+			value = 0.1
+			culture = cu:xacitarxani
 		}
 	}
 }

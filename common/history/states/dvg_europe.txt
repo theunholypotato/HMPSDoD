@@ -1752,6 +1752,7 @@
 		}
 		
 		add_claim = c:MSO
+		add_claim = c:SCA
 		add_homeland = cu:north_russian
 	}
 	

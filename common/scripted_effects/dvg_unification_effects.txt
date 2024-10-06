@@ -12,8 +12,8 @@
 				state_region = s:STATE_DVG_TVER
 				state_region = s:STATE_DANU
 				state_region = s:STATE_DVG_ROSTOV
-				state_region = s:STATE_TARTARIA
-				state_region = s:STATE_IDEL
+				#state_region = s:STATE_TARTARIA
+				#state_region = s:STATE_IDEL
 				state_region = s:STATE_DVG_INGRIA
 				state_region = s:STATE_DVG_NOVGOROD
 				state_region = s:STATE_DVG_ARKHANGELSK
@@ -25,6 +25,8 @@
 				state_region = s:STATE_DVG_NENETSIA
 				state_region = s:STATE_URAL
 				state_region = s:STATE_TOBOLSK
+				state_region = s:STATE_DVG_KURSK
+				state_region = s:STATE_YEDISAN
 			}
 		}
 		

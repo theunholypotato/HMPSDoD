@@ -3,6 +3,8 @@
 
 	group = je_group_foreign_affairs
 
+	
+
 	is_shown_when_inactive = {
 		OR = {
 			country_has_primary_culture = cu:russian
@@ -12,7 +14,6 @@
 
 	possible = {
 		country_rank >= rank_value:major_power
-		has_technology_researched = nationalism
 		is_subject = no
 		NOT = { has_journal_entry = je_nov_main }
 	}
@@ -21,8 +22,9 @@
 		hidden_trigger = {
 			has_variable = je_unification_progress
 		}
+		has_technology_researched = nationalism
 		calc_true_if = {
-			amount >= 12
+			amount >= 15
 			owns_entire_state_region = STATE_ORSHA
 			owns_entire_state_region = STATE_OKA
 			owns_entire_state_region = STATE_SLOBOZ
@@ -39,13 +41,18 @@
 			owns_entire_state_region = STATE_DVG_PERM
 			owns_entire_state_region = STATE_DVG_VYATKA
 			owns_entire_state_region = STATE_DVG_NENETSIA
+			owns_entire_state_region = STATE_DVG_KURSK
+			owns_entire_state_region = STATE_YEDISAN
+			owns_entire_state_region = STATE_DANU
+			owns_entire_state_region = STATE_DVG_ROSTOV
+			owns_entire_state_region = STATE_URAL
 		}
 	}
 
 	on_monthly_pulse = {
 		events = {
 			dvg_russian_unification.2
-			dvg_russian_unification.10
+			#dvg_russian_unification.10
 		}
 		effect = {
 			if = { 
@@ -61,4 +68,6 @@
 	}
 
 	weight = 100
+	should_be_pinned_by_default = yes
+
 }
