@@ -3100,6 +3100,17 @@
 	s:STATE_TRANSDANUBIA={
 		region_state:HUN={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:HUN"
+						levels=5
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
+			}
+			create_building={
 				building="building_food_industry"
 				add_ownership={
 					building={
