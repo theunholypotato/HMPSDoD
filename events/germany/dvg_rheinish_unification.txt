@@ -57,7 +57,7 @@ dvg_rheinish_unification.10 = {
 
 				save_scope_as = minor_to_annex
 				ROOT = {
-					annex = scope:minor_to_annex
+					annex_with_incorporation = scope:minor_to_annex
 				}
 			}
 		}

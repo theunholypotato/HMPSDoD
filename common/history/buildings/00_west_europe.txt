@@ -6292,17 +6292,6 @@
 				activate_production_methods={ "pm_muskets" }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:BRG"
-						levels=10
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_general_training" } 
-			}
-			create_building={
 				building="building_vineyard_plantation"
 				add_ownership={
 					building={
@@ -6396,17 +6385,6 @@
 				}
 				reserves=1
 				activate_production_methods={"pm_disabled_canning" "pm_sweeteners" "pm_manual_dough_processing" "pm_pot_stills" }
-			}
-			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:RHI"
-						levels=5
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_organization" } 
 			}
 		}
 	}
@@ -6522,6 +6500,17 @@
 				reserves=1
 				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled" }
 			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:HEK"
+						levels=6
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
+			}	
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
@@ -6718,6 +6707,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_no_organization" } 
+			}
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:HEK"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
 		}
 		region_state:LIP={
