@@ -7,7 +7,7 @@
 	
 	texture = "gfx/interface/icons/diplomatic_action_icons/grant_market_independence.dds"
 	confirmation_sound = "event:/SFX/UI/MapInteraction/SubjectInteractions/diplomatic_action_subjects_05_grant_own_market_benign"
-
+	
 	potential = {
 		scope:target_country = {
 			market = prev.market
@@ -30,7 +30,7 @@
 		}
 	}
 	
-	pact = {
+	pact = {	
 		cost = 0
 		forced_duration = 12
 		
@@ -48,7 +48,17 @@
 		}
 		
 		actor_can_break = {
-			always = yes
+			scope:target_country = {
+				NOT = {
+					has_law = law_type:law_isolationism
+				}
+			}
+		}
+		
+		target_can_break = {
+			NOT = {
+				has_law = law_type:law_isolationism
+			}
 		}
 		
 		manual_break_effect = {
@@ -84,7 +94,7 @@
 					multiply = 40
 					add = 10
 				}
-			}
+			}				
 		}
 		else_if = {
 			limit = {

@@ -6,7 +6,7 @@
 	should_notify_third_parties = no
 
 	unlocking_technologies = {
-		central_banking
+		#central_banking	### commented out tech lock
 	}
 	
 	selectable = {
@@ -82,19 +82,19 @@
 			}
 		}
 
-	 	requirement_to_maintain = {
+		requirement_to_maintain = {
 			trigger = {
 				custom_tooltip = {
 					text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT
 					scope:target_country.relations:root > relations_threshold:poor
 				}		
 			}
-			
+
 			show_about_to_break_warning = {
 				scope:target_country.relations:root <= -17 # this is: poor + 3
 				scope:target_country.relations_change_rate:root < 0
 			}					
-		}	
+		}
 
 		requirement_to_maintain = {
 			trigger = {
@@ -106,7 +106,7 @@
 					}				
 				}
 			}
-		}				
+		}			
 	
 		requirement_to_maintain = {
 			trigger = {
@@ -122,12 +122,11 @@
 				country_rank >= scope:target_country.country_rank
 			}
 		}
-
 		requirement_to_maintain = {
 			trigger = {
 				in_default = no
 			}
-		}			
+		}
 	}
 	
 	ai = {
@@ -265,7 +264,7 @@
 	
 		propose_score = {
 			value = 10
-
+			
 			if = {
 				limit = {
 					exists = c:CIR

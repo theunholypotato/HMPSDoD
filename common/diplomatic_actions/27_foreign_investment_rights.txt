@@ -104,9 +104,8 @@
 		requirement_to_maintain = {
 			trigger = {
 				custom_tooltip = {
-					text = "DIPLOMATIC_PACT_REQUIREMENT_NO_SUBJECT_RELATION"
+					text = "this_is_your_subject_dummy"
 					NOT = {
-						is_subject_of = scope:target_country
 						scope:target_country = { is_subject_of = root }
 					}
 				}
@@ -324,11 +323,7 @@
 					limit = {
 						AND = {
 							scope:actor.power_bloc ?= {
-								OR = {
-									has_principle = principle:principle_sacred_civics_1
-									# has_principle = principle:principle_sacred_civics_2
-									# has_principle = principle:principle_sacred_civics_3
-								}
+								has_principle = principle:principle_sacred_civics_1
 							}
 							scope:actor.religion = root.religion
 						}
@@ -575,11 +570,7 @@
 					limit = {
 						AND = {
 							scope:actor.power_bloc ?= {
-								OR = {
-									has_principle = principle:principle_sacred_civics_1
-									# has_principle = principle:principle_sacred_civics_2
-									# has_principle = principle:principle_sacred_civics_3
-								}
+								has_principle = principle:principle_sacred_civics_1
 							}
 							scope:actor.religion = root.religion
 						}

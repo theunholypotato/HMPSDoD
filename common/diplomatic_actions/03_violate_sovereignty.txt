@@ -10,7 +10,7 @@
 	selectable = {
 		NOT = { is_country_type = decentralized }
 	}
-	
+
 	potential = {
 		is_at_war = yes
 
@@ -41,12 +41,13 @@
 			}
 		}
 		
-		scope:target_country.relations:root < relations_threshold:amicable
+		#scope:target_country.relations:root < relations_threshold:amicable
 
 		is_revolutionary = no
 		
 		scope:target_country = {
 			is_revolutionary = no
+			NOT = { country_rank = rank_value:great_power }
 		}				
 	}
 	
@@ -105,8 +106,8 @@
 				}
 				add = 1
 			}
-		}	
-	
+		}
+		
 		propose_score = {
 			value = 100
 		}	

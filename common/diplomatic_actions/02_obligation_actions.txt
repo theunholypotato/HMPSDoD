@@ -8,7 +8,7 @@
 	show_effect_in_tooltip = yes
 
 	unlocking_technologies = {
-		central_banking
+		#central_banking	### commented out tech lock
 	}
 	
 	selectable = {
@@ -34,6 +34,7 @@
 			value = scope:target_country.scaled_debt
 		}
 		is_revolutionary = no
+		is_subject = no
 	}
 	
 	accept_effect = {
@@ -75,8 +76,8 @@
 	ai = {
 		evaluation_chance = {
 			value = 0.25
-		}		
-	
+		}
+		
 		propose_score = {
 			value = 100				
 		}
@@ -375,8 +376,8 @@
 						"scope:actor.infamy" >= infamy_threshold:pariah
 					}
 					value = -50
-				}
-			}
+				}					
+			}					
 
 			add = {
 				desc = "DIPLOMATIC_ACCEPTANCE_RANK"
@@ -390,6 +391,15 @@
 					limit = { scope:actor = { country_rank < root.country_rank } }
 					value = -20
 				}				
+			}		
+
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_WAR_ALLY"
+	
+				if = {
+					limit = { is_in_war_together = scope:actor }
+					value = 75
+				}			
 			}
 
 			add = {
@@ -399,19 +409,15 @@
 					limit = {
 						AND = {
 							scope:actor.power_bloc ?= {
-								OR = {
-									has_principle = principle:principle_sacred_civics_1
-									has_principle = principle:principle_sacred_civics_2
-									has_principle = principle:principle_sacred_civics_3
-								}
+								has_principle = principle:principle_sacred_civics_1
 							}
 							scope:actor.religion = root.religion
 						}
 					}
 					add = 20
 				}
-			}
-		}	
+			}	
+		}
 	}
 }
 
@@ -437,18 +443,27 @@ redeem_obligation = {
 		scope:target_country = {
 			is_revolutionary = no
 		}
+		scope:actor	 = {
+			NOT = { has_modifier = absolved_obligation }
+		}
 	}
 
 	accept_effect = {
-		change_relations = { country = scope:target_country value = 30 }
+		change_relations = { country = scope:target_country value = 50 }
+		scope:actor = {
+			add_modifier = {
+				name = absolved_obligation
+				months = 6
+			}
+		}
 		scope:target_country = { set_owes_obligation_to = { country = root setting = no } }
 	}
 	
 	ai = {
 		evaluation_chance = {
 			value = 0.25
-		}	
-	
+		}
+		
 		propose_score = {
 			value = 10
 		}	
