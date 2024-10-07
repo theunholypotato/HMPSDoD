@@ -6,18 +6,10 @@
 			map_color = { 170 206 162 }
 
 			founding_date = 1453.5.29
-			identity = identity_sovereign_empire
-			principle = principle_vassalization_1
+			identity = identity_religious
+			principle = principle_sacred_civics_1
 			
-			member = c:EGY
-		}
-		if = {
-			limit = {
-				has_dlc_feature = power_bloc_features
-			}
-			power_bloc = {
-				add_principle = principle_external_trade_1
-			}
+			member = c:CRI
 		}
 	}
 	
@@ -60,6 +52,7 @@
 			identity = identity_trade_league
 			principle = principle_internal_trade_1
 
+			member = c:MCD
 			member = c:PRO
 			member = c:PAP
 

@@ -532,6 +532,19 @@
 		}
 	}
 	s:STATE_ATACAMA={
+		region_state:BRG={
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:BRG"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+		}
 		region_state:TWT={
 			create_building={
 				building="building_fishing_wharf"
@@ -1043,7 +1056,7 @@
 				add_ownership={
 					country={
 						country="c:QUI"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -1662,7 +1675,7 @@
 				add_ownership={
 					country={
 						country="c:BEO"
-						levels=1
+						levels=4
 					}
 				}
 				reserves=1
@@ -2005,6 +2018,19 @@
 		}
 	}
 	s:STATE_NEAR_COLLASUYU={
+		region_state:SCA={
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:SCA"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+		}
 		region_state:TWT={
 			create_building={
 				building="building_naval_base"
@@ -2057,7 +2083,7 @@
 				add_ownership={
 					country={
 						country="c:TWT"
-						levels=2
+						levels=3
 					}
 				}
 				reserves=1
@@ -2846,7 +2872,7 @@
 				add_ownership={
 					country={
 						country="c:AMA"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -3185,6 +3211,17 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_banana_plantation" "pm_road_carts" }
+			}
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:AMA"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
 			}
 		}
 	}

@@ -13,6 +13,26 @@
 			target = c:BRG.market
 		}
 	}
+	C:SPA = {
+		create_trade_route = {
+			goods = dye
+			level = 7
+			direction = export
+			target = c:DUA.market
+		}
+		create_trade_route = {
+			goods = wine
+			level = 7
+			direction = export
+			target = c:DUA.market
+		}
+		create_trade_route = {
+			goods = tea
+			level = 3
+			direction = export
+			target = c:DUA.market
+		}
+	}
 	c:DUA = {
 		create_trade_route = {
 			goods = fertilizer
@@ -40,7 +60,7 @@
 		}
 		create_trade_route = {
 			goods = luxury_furniture
-			level = 3
+			level = 4
 			direction = export
 			target = c:SPA.market
 		}

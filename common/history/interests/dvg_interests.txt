@@ -60,6 +60,9 @@
 	c:ARN = {
 		add_declared_interest = region_nile_basin
 		add_declared_interest = region_arabic
+		add_declared_interest = region_occitania
+		add_declared_interest = region_balkans
+		add_declared_interest = region_anatolia
 	}
 	c:HUN = {
 		add_declared_interest = region_north_germany

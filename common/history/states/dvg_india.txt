@@ -171,16 +171,11 @@
 	s:STATE_CIRCARS = {
 		create_state = {
 			country = c:BAS
-			owned_provinces = {"x365CC3"  "x063403" "x0AC82E" "x11F0A0" "x180640" "x207C4F" "x34BB3B" "x35AB0E" "x54D463" "x5EC767" "x84EE56"   "x9070A0" "x9193B1"  "xCFF020"  "xE2CF64" "xE9BCE7" "xF91482" }
+			owned_provinces = {"x365CC3"  "x063403" "x0AC82E" "x11F0A0" "x180640" "x207C4F" "x34BB3B" "x35AB0E" "x54D463" "x5EC767" "x84EE56"   "x9070A0" "x9193B1"  "xCFF020"  "xE2CF64" "xE9BCE7" "xF91482" "x8B1F32"}
 		}
 		create_state = {
 			country = c:HYD
 			owned_provinces = {"xD9F23D" "xB83EA4" "x42F4F2" "x8ECE82" "x1170A0"  "x2F70FB" "xC38F66" "xF09DA1" "xB56E8E"  }
-		}
-		create_state = {
-			country = c:BRG
-			owned_provinces = {"x8B1F32"}
-			state_type = treaty_port
 		}
 		add_homeland = cu:telegu
 

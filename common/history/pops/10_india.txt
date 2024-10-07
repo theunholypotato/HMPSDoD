@@ -732,7 +732,7 @@ create_pop = {
 		region_state:BAS = {
 create_pop = {
     culture = telegu
-    size = 3574230
+    size = 3672153
 }
 create_pop = {
     culture = telegu
@@ -752,16 +752,6 @@ create_pop = {
     culture = tamil
     size = 45294
 }
-		}
-		region_state:BRG = {
-create_pop = {
-    culture = telegu
-    size = 97923
-}
-create_pop = {
-    culture = burgundian
-    size = 1998
-}		
 		}
 	}
 	s:STATE_MYSORE = {
@@ -894,7 +884,7 @@ create_pop = {
 }
 create_pop = {
     culture = burgundian
-    size = 7108
+    size = 9106
 }		
 		}
 		region_state:TRA = {
