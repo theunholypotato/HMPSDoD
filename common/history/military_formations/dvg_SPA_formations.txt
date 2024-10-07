@@ -90,11 +90,11 @@
 				count = 10
 			}
 			
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_ESTREMADURA
-				count = 10
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_hussars
+			#	state_region = s:STATE_ESTREMADURA
+			#	count = 10
+			#}
 			
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
@@ -114,11 +114,11 @@
 				count = 5
 			}
 			
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_GRANADA
-				count = 10
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_hussars
+			#	state_region = s:STATE_GRANADA
+			#	count = 10
+			#}
 			
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry

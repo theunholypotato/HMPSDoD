@@ -48,7 +48,7 @@ dvg_bav_draft_constitution_react_attraction = {
 
 dvg_sgf_first_council = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	country_prestige_mult = 0.4
+	country_prestige_mult = 0.6
 
 }
 
