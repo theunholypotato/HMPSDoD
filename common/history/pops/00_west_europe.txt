@@ -103,11 +103,11 @@
 		region_state:DUA = {
 			create_pop = {
 				culture = anglois
-				size = 563280
+				size = 363280
 			}
 			create_pop = {
 				culture = british
-				size = 1870090
+				size = 2070090
 			}
 			create_pop = {
 				culture = british
@@ -120,11 +120,11 @@
 		region_state:DUA = {
 			create_pop = {
 				culture = anglois
-				size = 723672
+				size = 523672
 			}
 			create_pop = {
 				culture = british
-				size = 645012
+				size = 845012
 			}
 			create_pop = {
 				culture = british
@@ -226,11 +226,11 @@
 			}
 			create_pop = {
 				culture = occitan
-				size = 935484
+				size = 1035484
 			}
 			create_pop = {
 				culture = anglois
-				size = 312789
+				size = 212789
 			}
 			create_pop = {
 				culture = romand
@@ -242,11 +242,11 @@
 		region_state:DUA = {
 			create_pop = {
 				culture = anglois
-				size = 320134
+				size = 220134
 			}
 			create_pop = {
 				culture = french
-				size = 1508103
+				size = 1608103
 			}
 			create_pop = {
 				culture = breton
@@ -299,15 +299,15 @@
 		region_state:DUA = {
 			create_pop = {
 				culture = anglois
-				size = 414707
+				size = 214707
 			}
 			create_pop = {
 				culture = french
-				size = 558608
+				size = 658608
 			}
 			create_pop = {
 				culture = burgundian
-				size = 159764
+				size = 259764
 				split_religion = {
 					burgundian = {
 						catholic = 0.5
@@ -367,11 +367,11 @@
 		region_state:DUA = {
 			create_pop = {
 				culture = anglois
-				size = 302163
+				size = 202163
 			}
 			create_pop = {
 				culture = french
-				size = 1239484
+				size = 1339484
 			}
 			# create_pop = {
 				# culture = anglois
@@ -424,7 +424,7 @@
 		region_state:BRG = {
 			create_pop = {
 				culture = burgundian
-				size = 1256682
+				size = 1156682
 			}
 			create_pop = {
 				culture = dutch
@@ -436,7 +436,7 @@
 			}
 			create_pop = {
 				culture = anglois
-				size = 188651
+				size = 288651
 			}
 		}
 	}

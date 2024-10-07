@@ -5,7 +5,7 @@
 
 	tier = empire
 	
-	cultures = { anglois breton welsh}
+	cultures = { anglois breton }
 	capital = STATE_ILE_DE_FRANCE
 }
 

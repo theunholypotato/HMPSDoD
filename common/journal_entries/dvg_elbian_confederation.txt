@@ -9,16 +9,16 @@
 		}
 		calc_true_if = {
 			amount >= 9
-			owns_entire_state_region = STATE_BOHEMIA
-			owns_entire_state_region = STATE_MORAVIA
-			owns_entire_state_region = STATE_SILESIA
-			owns_entire_state_region = STATE_SAXONY
-			owns_entire_state_region = STATE_BRANDENBURG
-			owns_entire_state_region = STATE_ANHALT
-			owns_entire_state_region = STATE_POMERANIA
-			owns_entire_state_region = STATE_MECKLENBURG
-			owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
-			owns_entire_state_region = STATE_HANNOVER
+			country_or_subject_owns_entire_state_region = STATE_BOHEMIA
+			country_or_subject_owns_entire_state_region = STATE_MORAVIA
+			country_or_subject_owns_entire_state_region = STATE_SILESIA
+			country_or_subject_owns_entire_state_region = STATE_SAXONY
+			country_or_subject_owns_entire_state_region = STATE_BRANDENBURG
+			country_or_subject_owns_entire_state_region = STATE_ANHALT
+			country_or_subject_owns_entire_state_region = STATE_POMERANIA
+			country_or_subject_owns_entire_state_region = STATE_MECKLENBURG
+			country_or_subject_owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			country_or_subject_owns_entire_state_region = STATE_HANNOVER
 		}
 
 		has_technology_researched = nationalism
