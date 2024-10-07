@@ -1056,7 +1056,7 @@
 				add_ownership={
 					country={
 						country="c:QUI"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1

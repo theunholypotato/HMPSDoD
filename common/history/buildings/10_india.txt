@@ -868,6 +868,17 @@
 	s:STATE_CIRCARS={
 		region_state:BAS={
 			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:BAS"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_basic_port" }
+			}
+			create_building={
 				building="building_textile_mills"
 				add_ownership={
 					building={
@@ -910,7 +921,7 @@
 					building={
 						type="building_manor_house"
 						country="c:BAS"
-						levels=1
+						levels=2
 						region="STATE_CIRCARS"
 					}
 				}
@@ -923,7 +934,7 @@
 					building={
 						type="building_manor_house"
 						country="c:BAS"
-						levels=2
+						levels=3
 						region="STATE_CIRCARS"
 					}
 				}
@@ -936,7 +947,7 @@
 					building={
 						type="building_manor_house"
 						country="c:BAS"
-						levels=1
+						levels=2
 						region="STATE_CIRCARS"
 					}
 				}
@@ -983,58 +994,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts"   }
-			}
-		}
-		region_state:BRG={
-			create_building={
-				building="building_tobacco_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:BRG"
-						levels=1
-						region="STATE_FLANDERS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"   }
-			}
-			create_building={
-				building="building_dye_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:BRG"
-						levels=3
-						region="STATE_FLANDERS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts"   }
-			}
-			create_building={
-				building="building_sugar_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:BRG"
-						levels=1
-						region="STATE_FLANDERS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts"   }
-			}
-			create_building={
-				building="building_port"
-				add_ownership={
-					country={
-						country="c:BRG"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_basic_port" }
 			}
 		}
 	}
@@ -1287,6 +1246,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
+			}
+			create_building={
+				building="building_dye_plantation"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:BRG"
+						levels=2
+						region="STATE_FLANDERS"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts"   }
 			}
 		}
 		

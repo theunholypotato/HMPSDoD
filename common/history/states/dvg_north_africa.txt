@@ -159,6 +159,7 @@
 			country = c:SPA
 			owned_provinces = { "x082C5F" }
 			state_type = unincorporated
+			state_type = treaty_port
 		}
 		add_homeland = cu:maghrebi
 		add_homeland = cu:berber
@@ -203,6 +204,7 @@
 			country = c:SPA
 			owned_provinces = { "x603080" }
 			state_type = unincorporated
+			state_type = treaty_port
 		}
 		
 		
